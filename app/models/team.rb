@@ -1,7 +1,7 @@
 class Team
     attr_accessor :id, :name, :address, :latlong, :website
     def initialize(jason)
-        puts jason
+        # puts jason
         @id = jason['id']
         @name = jason['name']
         @address = jason['address']
