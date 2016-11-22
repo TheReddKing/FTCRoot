@@ -30,3 +30,4 @@ end
 gem 'markerclustererplus-rails'
 gem 'gon'
 gem 'tether-rails'
+gem 'json'

@@ -1,0 +1,8 @@
+{"id":"11397","name":"BBIT","address":"North Plains, OR 97133 USA","latlong":["45.677028026837256","-123.0158954575503"]}
+{"id":"9204","name":"Bold Gold TECH","address":"Post, TX 79356 USA","latlong":["33.196764938755585","-101.37249979187685"]}
+{"id":"10031","name":"Red Storm Robotics-Blue","address":"Kentwood, MI 49512 USA","latlong":["42.96030799366049","-85.64426300155009"],"website":"http://redstormrobotics.com/ftc/blue-team/"}
+{"id":"9809","name":"#1 The Untouchables","address":"Eureka, MT 59917 USA","latlong":["48.82535005612121","-114.9272964198065"]}
+{"id":"7002","name":"#2 Ninja Turtles","address":"Eureka, MT 59917 USA","latlong":["48.83369691645073","-114.92417326487102"]}
+{"id":"10662","name":"#3 Lazer Sharks in Space","address":"Eureka, MT 59917 USA","latlong":["48.83434637756478","-114.92230724503754"]}
+{"id":"8271","name":"#4 Holy Hand Grenades","address":"Eureka, MT 59917 USA","latlong":["48.84241737477715","-114.91481473779696"]}
+{"id":"5267","name":"'Bots in the Hood","address":"Hood River, OR 97031 USA","latlong":["45.61270489952279","-121.57008208561736"]}

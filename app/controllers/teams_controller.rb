@@ -3,11 +3,18 @@ class TeamsController < ApplicationController
         @books = Book.all
     end
     def map
-        @hello = "HELLO"
+        @hello = Array.new
         puts "HI"
+        File.read("#{Rails.root}/app/data/teamdata.txt").each_line do |line|
+          # name: "Angela"    job: "Writer"    ...
+          @hello.append(Team.new(JSON.parse(line)))
+        #   data = line.split(/\|/)
+        #   name, job = data.map{|d| d.split(": ")[1] }.flatten
+        end
+        # jason = {'id':"2000",'name':"HI","location":"THIS PLACE","latlong":["-20","30"]}
+        # @hello.append(Team.new(jason))
     end
     def show
 
-        # @post=Post.find(params[:id])
     end
 end

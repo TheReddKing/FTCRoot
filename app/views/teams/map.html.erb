@@ -26,7 +26,6 @@
     var map;
     var markers = [];
     var realIndex = 0;
-    console.log("<%= @hello %>");
     function initialize() {
         geocoder = new google.maps.Geocoder();
         var center = new google.maps.LatLng(37.9990858, -100.98347380000001);
@@ -67,54 +66,44 @@
         });
         map.fitBounds(bounds);
       });
-        $.get("emailLog.txt", function(data) {
-            var items = data.split('\n');
-            var infowindow = new google.maps.InfoWindow();
-
-            for(var i=0;i<items.length;i++) {
-                if(items[i].length == 0) {
-                    continue;
+      var infowindow = new google.maps.InfoWindow();
+      var mak;
+      var e;
+        <% @hello.each do |team| %>
+            mak = new google.maps.Marker({map: map,
+                 position: new google.maps.LatLng(<%= team.lat %>, <%= team.long %>),
+                   title: "<%= team.name %>",
+                   address: "<%= team.address %>",
+                   id: "<%= team.id %>",
+                   website: "<%= team.website %>"
+            });
+            // console.log(mak.website);
+            mak.addListener('click', (function(makr) {
+                return function() {
+                  infowindow.setContent("Team " + makr.id + "");
+                  infowindow.open(map, makr);
+                  $("#data-teamname").text( makr.title );
+                  $("#data-teamid").text(makr.id);
+                  $("#data-location").text(makr.address);
+                //   console.log(mark.website);
+                  if(makr.website == "") {
+                      $("#data-website").text("---");
+                      $("#data-website").removeAttr("href");
+                  } else {
+                      $("#data-website").text(makr.website);
+                      $("#data-website").attr("href",makr.website);
+                  }
+                //   $("#data-twitter").text(makr.k_list[list.length-3]);
+                  realIndex = makr.id;
+                //   console.log(i);
                 }
-                var list = items[i].split("|");
-                var address = list[2].split(" ");
-                var mak = new google.maps.Marker({map: map,
-                     position: new google.maps.LatLng(list[list.length-2], list[list.length-1]),
-                       title: list[2]
-                });
-                // var mak = new google.maps.Marker({map: map,
-                //      position: new google.maps.LatLng(Math.round(list[list.length-2]*100)/100, Math.round(list[list.length-1]*100)/100),
-                //        title: list[2]
-                // });
-                mak.k_list = list;
-                mak.k_address = address;
-                var e;
-                mak.addListener('click', (function(makr,i) {
-                    return function() {
-                      infowindow.setContent("Team " + makr.k_list[0] + "\n <a href='" + makr.k_list[list.length-3] + "'> Website </a>");
-                      infowindow.open(map, makr);
-                      $("#data-teamname").text( makr.k_list[1]);
-                      $("#data-teamid").text(makr.k_list[0]);
-                      $("#data-location").text(makr.k_list[2]);
-                      if(makr.k_list[list.length-3] == "NA") {
-                          $("#data-website").text("---");
-                          $("#data-website").removeAttr("href");
-                      } else {
-                          $("#data-website").text(makr.k_list[list.length-3]);
-                          $("#data-website").attr("href",makr.k_list[list.length-3]);
-                      }
-                    //   $("#data-twitter").text(makr.k_list[list.length-3]);
-                      realIndex = i;
-                      console.log(i);
-                    }
-               })(mak,i));
-               markers.push(mak);
-            }
-
+           })(mak));
+           markers.push(mak);
+       <% end %>
             var options = {
                 imagePath: 'images/m'
             };
             var markerCluster = new MarkerClusterer(map, markers, options);
-        });
     }
 </script>
 <style >
