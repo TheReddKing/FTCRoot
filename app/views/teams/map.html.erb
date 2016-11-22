@@ -1,0 +1,199 @@
+<% content_for :title do %>Teams<% end %>
+<div id="container">
+    <div id="map-container">
+        <input id="pac-input" class="controls" type="text" placeholder="Enter City or Zipcode">
+        <div id="map"></div>
+    </div>
+    <div id="data-container">
+        <h1> FTC Team Finder </h1>
+        <div id="data-info">
+            <h3 id="data-teamname"> Click on a marker</h3>
+            <p> Team Number: <span id="data-teamid"> ---</span></p>
+            <p> Location: <span id="data-location"> ---</span></p>
+            <p> Website: <a id="data-website"> ---</a></p>
+            <p> Social Media: <span id="data-socialmedia"> ---</span></p>
+        </div>
+        <br/>
+        <br/>
+        <div>
+            <p> If any information is incorrect, contact meeee </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    var geocoder;
+    var map;
+    var markers = [];
+    var realIndex = 0;
+    console.log("<%= @hello %>");
+    function initialize() {
+        geocoder = new google.maps.Geocoder();
+        var center = new google.maps.LatLng(37.9990858, -100.98347380000001);
+
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: center,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+
+        // Create the search box and link it to the UI element.
+        var input = document.getElementById('pac-input');
+        var searchBox = new google.maps.places.SearchBox(input);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+        // Bias the SearchBox results towards current map's viewport.
+        map.addListener('bounds_changed', function() {
+          searchBox.setBounds(map.getBounds());
+        });
+        searchBox.addListener('places_changed', function() {
+          var places = searchBox.getPlaces();
+
+          if (places.length == 0) {
+            return;
+          }
+          var bounds = new google.maps.LatLngBounds();
+        places.forEach(function(place) {
+          if (!place.geometry) {
+            console.log("Returned place contains no geometry");
+            return;
+          }
+          if (place.geometry.viewport) {
+            // Only geocodes have viewport.
+            bounds.union(place.geometry.viewport);
+          } else {
+            bounds.extend(place.geometry.location);
+          }
+        });
+        map.fitBounds(bounds);
+      });
+        $.get("emailLog.txt", function(data) {
+            var items = data.split('\n');
+            var infowindow = new google.maps.InfoWindow();
+
+            for(var i=0;i<items.length;i++) {
+                if(items[i].length == 0) {
+                    continue;
+                }
+                var list = items[i].split("|");
+                var address = list[2].split(" ");
+                var mak = new google.maps.Marker({map: map,
+                     position: new google.maps.LatLng(list[list.length-2], list[list.length-1]),
+                       title: list[2]
+                });
+                // var mak = new google.maps.Marker({map: map,
+                //      position: new google.maps.LatLng(Math.round(list[list.length-2]*100)/100, Math.round(list[list.length-1]*100)/100),
+                //        title: list[2]
+                // });
+                mak.k_list = list;
+                mak.k_address = address;
+                var e;
+                mak.addListener('click', (function(makr,i) {
+                    return function() {
+                      infowindow.setContent("Team " + makr.k_list[0] + "\n <a href='" + makr.k_list[list.length-3] + "'> Website </a>");
+                      infowindow.open(map, makr);
+                      $("#data-teamname").text( makr.k_list[1]);
+                      $("#data-teamid").text(makr.k_list[0]);
+                      $("#data-location").text(makr.k_list[2]);
+                      if(makr.k_list[list.length-3] == "NA") {
+                          $("#data-website").text("---");
+                          $("#data-website").removeAttr("href");
+                      } else {
+                          $("#data-website").text(makr.k_list[list.length-3]);
+                          $("#data-website").attr("href",makr.k_list[list.length-3]);
+                      }
+                    //   $("#data-twitter").text(makr.k_list[list.length-3]);
+                      realIndex = i;
+                      console.log(i);
+                    }
+               })(mak,i));
+               markers.push(mak);
+            }
+
+            var options = {
+                imagePath: 'images/m'
+            };
+            var markerCluster = new MarkerClusterer(map, markers, options);
+        });
+    }
+</script>
+<style >
+  body {
+    margin: 0;
+    padding: 10px 20px 20px;
+    font-family: Arial;
+    font-size: 16px;
+    height:calc(100%-60px);
+  }
+  #container {
+      display: flex;                  /* establish flex container */
+      flex-direction: row;            /* default value; can be omitted */
+      flex-wrap: nowrap;              /* default value; can be omitted */
+      justify-content: space-between; /* switched from default (flex-start, see below) */
+      /*background-color: lightyellow;*/
+  }
+  #map-container {
+    padding: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc #ccc #999 #ccc;
+    -webkit-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
+    -moz-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
+    box-shadow: rgba(64, 64, 64, 0.1) 0 2px 5px;
+    min-width: 500px;
+    width:70%;
+    /*height:100%;*/
+  }
+  #data-container {
+      width:25%;
+      height:100%;
+  }
+  #map {
+    height: 100%;
+  }
+  .controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  #pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 300px;
+  }
+
+  #pac-input:focus {
+    border-color: #4d90fe;
+  }
+
+  .pac-container {
+    font-family: Roboto;
+  }
+
+  #type-selector {
+    color: #fff;
+    background-color: #4d90fe;
+    padding: 5px 11px 0px 11px;
+  }
+
+  #type-selector label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  #target {
+    width: 345px;
+  }
+</style>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJRN6Cg9T-qyFWxc4dZo8QUC6HbV6rmGk&libraries=places&callback=initialize"></script>

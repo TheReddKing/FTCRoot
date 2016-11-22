@@ -25,3 +25,8 @@ group :development do
   gem 'better_errors'
   gem 'rails_layout'
 end
+
+
+gem 'markerclustererplus-rails'
+gem 'gon'
+gem 'tether-rails'
