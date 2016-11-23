@@ -1,0 +1,39 @@
+
+<div id="container">
+    <div id="left-container">
+        <a class="twitter-timeline" href="https://twitter.com/dshelley0/lists/ftc-robotics">Compiled by dshelley0</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div id="right-container">
+        <h1>FTC teams! </h1>
+    </div>
+</div>
+
+<style>
+
+  #container {
+      display: flex;                  /* establish flex container */
+      flex-direction: row;            /* default value; can be omitted */
+      flex-wrap: nowrap;              /* default value; can be omitted */
+      justify-content: space-between; /* switched from default (flex-start, see below) */
+      /*background-color: lightyellow;*/
+      height:600px;
+  }
+  #left-container {
+    padding: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc #ccc #999 #ccc;
+    -webkit-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
+    -moz-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
+    box-shadow: rgba(64, 64, 64, 0.1) 0 2px 5px;
+    min-width: 500px;
+    width:60%;
+    height: 600px;
+    overflow-x: scroll;
+    /*height:100%;*/
+  }
+  #right-container {
+      width:37%;
+      height:100%;
+  }
+</style>

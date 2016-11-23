@@ -11,9 +11,9 @@
 // about supported directives.
 //
 //= require jquery
+//= require markerclusterer
 //= require jquery_ujs
 //= require turbolinks
+//= require tether
 //= require bootstrap-sprockets
 //= require_tree .
-//= require markerclusterer
-//= require tether
