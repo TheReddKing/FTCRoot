@@ -1,4 +1,4 @@
-<% content_for :title do %>Teams<% end %>
+<% content_for :title do %>FTC Team Search<% end %>
 <div id="container">
     <div id="map-container">
         <input id="pac-input" class="controls" type="text" placeholder="Enter City or Zipcode">
@@ -83,7 +83,7 @@
                 return function() {
                   infowindow.setContent("Team " + makr.id + "");
                   infowindow.open(map, makr);
-                  $("#data-teamname").text( makr.title );
+                  $("#data-teamname").text(makr.title);
                   $("#data-teamid").text(makr.id);
                   $("#data-location").text(makr.address);
                 //   console.log(mark.website);

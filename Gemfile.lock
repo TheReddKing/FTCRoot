@@ -73,6 +73,7 @@ GEM
       json
       multi_json
       request_store (>= 1.0)
+    google-analytics-rails (1.1.0)
     high_voltage (3.0.0)
     i18n (0.7.0)
     jbuilder (2.6.0)
@@ -194,6 +195,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   gon
+  google-analytics-rails
   high_voltage
   jbuilder (~> 2.5)
   jquery-rails
