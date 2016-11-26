@@ -2,7 +2,7 @@
 <div id="container">
     <div id="map-container">
         <input id="pac-input" class="controls" type="text" placeholder="Enter City or Zipcode">
-        <div id="map"></div>
+        <div id="map"><h1>LOADING</div>
     </div>
     <div id="data-container">
         <!-- <h1> FTC Team Finder </h1> -->
@@ -70,41 +70,35 @@
       var infowindow = new google.maps.InfoWindow();
       var mak;
       var e;
-        <% @hello.each do |team| %>
-            mak = new google.maps.Marker({map: map,
-                 position: new google.maps.LatLng(<%= team.lat %>, <%= team.long %>),
-                   title: "<%= team.name %>",
-                   address: "<%= team.address %>",
-                   id: "<%= team.id %>",
-                   website: "<%= team.website %>"
-            });
-            // console.log(mak.website);
-            mak.addListener('click', (function(makr) {
-                return function() {
-                  infowindow.setContent("Team " + makr.id + "");
-                  infowindow.open(map, makr);
-                  $("#data-teamname").text(makr.title);
-                  $("#data-teamid").text(makr.id);
-                  $("#data-location").text(makr.address);
-                //   console.log(mark.website);
-                  if(makr.website == "") {
-                      $("#data-website").text("---");
-                      $("#data-website").removeAttr("href");
-                  } else {
-                      $("#data-website").text(makr.website);
-                      $("#data-website").attr("href",makr.website);
-                  }
-                //   $("#data-twitter").text(makr.k_list[list.length-3]);
-                  realIndex = makr.id;
-                //   console.log(i);
-                }
-           })(mak));
-           markers.push(mak);
+      <% @hello.each do |team| %>
+        mak = new google.maps.Marker({map: map,position: new google.maps.LatLng(<%= team.lat %>, <%= team.long %>),title: "<%= team.name %>",address: "<%= team.address %>",id: "<%= team.id %>",website: "<%= team.website %>"});
+        markers.push(mak);
        <% end %>
-            var options = {
-                imagePath: 'images/m'
-            };
-            var markerCluster = new MarkerClusterer(map, markers, options);
+       for(var i=0;i<markers.length;i++) {
+           mak = markers[i];
+           mak.addListener('click', (function(makr) {
+               return function() {
+                 infowindow.setContent("Team " + makr.id + "");
+                 infowindow.open(map, makr);
+                 $("#data-teamname").text(makr.title);
+                 $("#data-teamid").text(makr.id);
+                 $("#data-location").text(makr.address);
+                 if(makr.website == "") {
+                     $("#data-website").text("---");
+                     $("#data-website").removeAttr("href");
+                 } else {
+                     $("#data-website").text(makr.website);
+                     $("#data-website").attr("href",makr.website);
+                 }
+                 realIndex = makr.id;
+               //   console.log(i);
+               }
+          })(mak));
+       }
+        var options = {
+            imagePath: 'images/m'
+        };
+        var markerCluster = new MarkerClusterer(map, markers, options);
     }
 </script>
 <style >
