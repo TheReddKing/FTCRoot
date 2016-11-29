@@ -36,6 +36,7 @@ gem 'pg'
 gem 'twitter'
 gem 'google-analytics-rails'
 gem 'picky'
+gem 'sitemap_generator'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
