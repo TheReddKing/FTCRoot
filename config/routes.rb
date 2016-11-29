@@ -5,5 +5,8 @@ Rails.application.routes.draw do
   get 'teams/twitter',                to: 'teams#twitter'
     resources :teams
     get "map", to: "teams#map"
-    get 'search/:id',                to: 'teams#search'
+    get 'search',                to: 'teams#search'
+    get 'images/misc/quote_icon.png', to: "teams#nothing"
+    get 'images/buttons/viewpost-right.png', to: "teams#nothing"
+    get 'images/misc/quote-left.png', to: "teams#nothing"
 end
