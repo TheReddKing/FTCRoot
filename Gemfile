@@ -37,6 +37,9 @@ gem 'twitter'
 gem 'google-analytics-rails'
 gem 'picky'
 gem 'sitemap_generator'
+gem 'ruby-stemmer', '>=0.8.3', :require => 'lingua/stemmer'
+gem 'binding_of_caller'
+gem 'htmlentities'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'

@@ -10,7 +10,7 @@
 
 
 <% @results.each do |q| %>
-<%= q.html_safe %>
+<%= highlight(q.html_safe,@keywords, highlighter: '<mark style="color:#F00;"><b>\1</b></mark>') %>
 <% end %>
 
 <style>
