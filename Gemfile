@@ -16,6 +16,7 @@ group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'binding_of_caller'
 end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.0.0.alpha3.1'
@@ -38,7 +39,6 @@ gem 'google-analytics-rails'
 gem 'picky'
 gem 'sitemap_generator'
 gem 'ruby-stemmer', '>=0.8.3', :require => 'lingua/stemmer'
-gem 'binding_of_caller'
 gem 'htmlentities'
 
 source 'https://rails-assets.org' do
