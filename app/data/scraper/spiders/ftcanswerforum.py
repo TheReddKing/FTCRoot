@@ -6,8 +6,8 @@ from scrapy.http import HtmlResponse
 datastore = open("data.txt", 'wb')
 
 class DmozSpider(BaseSpider):
-    name = "dmoz"
-    
+    name = "ftcforum"
+
     # allowed_domains = ["http://ftcforum.usfirst.org/showthread.php?.*Answer-Thread.*"]
     start_urls = [
         "http://ftcforum.usfirst.org/showthread.php?6943-Miscellaneous-Game-Questions-Answer-Thread",
@@ -29,4 +29,3 @@ class DmozSpider(BaseSpider):
         for p in pages:
             if "javascript" not in p:
                 yield Request(response.urljoin(p))
-        
