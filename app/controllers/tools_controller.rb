@@ -1,4 +1,19 @@
-class TeamsController < ApplicationController
+class ToolsController < ApplicationController
+
+    class FTCTeam
+        attr_accessor :id, :name, :address, :latlong, :website
+        def initialize(jason)
+            # puts jason
+            @id = jason['id']
+            @name = jason['name']
+            @address = jason['address']
+            @latlong = jason['latlong']
+            @website = jason['website']
+        end
+        def lat; latlong[0].to_s; end
+        def long; latlong[1].to_s; end
+    end
+
     def index
 
     end
@@ -9,7 +24,7 @@ class TeamsController < ApplicationController
         @hello = Array.new
         puts "SHOWING TEAMS"
         File.read("#{Rails.root}/app/data/teamdata.txt").each_line do |line|
-            @hello.append(Team.new(JSON.parse(line)))
+            @hello.append(FTCTeam.new(JSON.parse(line)))
         end
     end
     Quanda = Struct.new :id, :title, :question
