@@ -7,11 +7,7 @@
     <div id="data-container">
         <h1> FTC Team Finder </h1>
         <div id="data-info">
-            <h3 id="data-teamname"> Click on a marker</h3>
-            <p> Team Number: <span id="data-teamid"> ---</span></p>
-            <p> Location: <span id="data-location"> ---</span></p>
-            <p> Website: <a id="data-website"> ---</a></p>
-            <p> Social Media: <span id="data-socialmedia"> ---</span></p>
+            <h3 id="data-teamname"> Click on a marker to begin</h3>
         </div>
         <br/>
         <br/>
@@ -71,25 +67,20 @@
       var mak;
       var e;
       <% @hello.each do |team| %>
-        mak = new google.maps.Marker({map: map,position: new google.maps.LatLng(<%= team.lat %>, <%= team.long %>),title: "<%= team.name %>",address: "<%= team.address %>",id: "<%= team.id %>",website: "<%= team.website %>"});
+        mak = new google.maps.Marker({map: map,position: new google.maps.LatLng(<%= team.location_lat %>, <%= team.location_long %>),title: "<%= team.name %>",address: "<%= team.location %>",id: "<%= team.id %>"});
         markers.push(mak);
        <% end %>
        for(var i=0;i<markers.length;i++) {
            mak = markers[i];
            mak.addListener('click', (function(makr) {
                return function() {
-                 infowindow.setContent("Team " + makr.id + "");
-                 infowindow.open(map, makr);
-                 $("#data-teamname").text(makr.title);
-                 $("#data-teamid").text(makr.id);
-                 $("#data-location").text(makr.address);
-                 if(makr.website == "") {
-                     $("#data-website").text("---");
-                     $("#data-website").removeAttr("href");
-                 } else {
-                     $("#data-website").text(makr.website);
-                     $("#data-website").attr("href",makr.website);
-                 }
+               $.ajax({
+                    url: "/teams/" + makr.id +"/plain",
+                    cache: false,
+                    success: function(html){
+                      $("#data-info").html(html);
+                    }
+                });
                  realIndex = makr.id;
                //   console.log(i);
                }

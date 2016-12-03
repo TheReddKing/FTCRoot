@@ -21,11 +21,9 @@ class ToolsController < ApplicationController
         super # this calls ActionController::Base initialize
     end
     def map
-        @hello = Array.new
+        @hello = Team.all
         puts "SHOWING TEAMS"
-        File.read("#{Rails.root}/app/data/teamdata.txt").each_line do |line|
-            @hello.append(FTCTeam.new(JSON.parse(line)))
-        end
+
     end
     Quanda = Struct.new :id, :title, :question
     def search

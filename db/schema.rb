@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161203022141) do
+ActiveRecord::Schema.define(version: 20161203034354) do
 
   create_table "league_meet_event_teams", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "teamid"
@@ -45,6 +45,24 @@ ActiveRecord::Schema.define(version: 20161203022141) do
     t.integer  "meetid"
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
+  end
+
+  create_table "team_assets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "team_id"
+    t.string   "content"
+    t.string   "ctype"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["team_id"], name: "index_team_assets_on_team_id", using: :btree
+  end
+
+  create_table "teams", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name"
+    t.string   "location"
+    t.float    "location_lat",  limit: 24
+    t.float    "location_long", limit: 24
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
 end

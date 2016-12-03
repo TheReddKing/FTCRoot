@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @team.name %>
+</p>
+
+<p>
+  <strong>Team Number:</strong>
+  <%= @team.id %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @team.location %>
+</p>
+
+<p>
+  <strong>Location lat:</strong>
+  <%= @team.location_lat %>
+</p>
+
+<p>
+  <strong>Location long:</strong>
+  <%= @team.location_long %>
+</p>
+<% if @team.team_assets[0] %>
+<p>
+  <strong>Website:</strong>
+  <%= link_to(@team.team_assets[0].content,@team.team_assets[0].content) %>
+</p>
+<% end %>
