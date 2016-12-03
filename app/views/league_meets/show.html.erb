@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @league_meet.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @league_meet.description %>
+</p>
+
+<p>
+  <strong>Meetid:</strong>
+  <%= @league_meet.meetid %>
+</p>
+
+<%= link_to 'Edit', edit_league_meet_path(@league_meet) %> |
+<%= link_to 'Back', league_meets_path %>

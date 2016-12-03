@@ -1,0 +1,2 @@
+class LeagueMeetEvent < ApplicationRecord
+end

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :league_meets
   # root to: 'visitors#index'
   root to: "teams#map"
 
