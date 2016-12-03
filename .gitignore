@@ -28,6 +28,7 @@ db/*.sqlite3
 **.war
 *.rbc
 *.sassc
+*.pyc
 .redcar/
 .sass-cache
 /config/config.yml

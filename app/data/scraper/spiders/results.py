@@ -5,7 +5,7 @@ from scrapy.selector import Selector
 from scrapy.http import Request
 from scrapy.http import HtmlResponse
 import glob
-datastore = open("data.txt", 'wb')
+datastore = open("gameresults.txt", 'wb')
 
 
 class ResultsSpider(BaseSpider):
