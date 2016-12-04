@@ -1,4 +1,4 @@
-<% content_for :title do %>FTC Team Search<% end %>
+<% content_for :title do %>FTC Team Map Search<% end %>
 <div id="container">
     <div id="map-container">
         <input id="pac-input" class="controls" type="text" placeholder="Enter City or Zipcode">
@@ -6,6 +6,7 @@
     </div>
     <div id="data-container">
         <h1> FTC Team Finder </h1>
+        <h4><%= link_to("Or click here to search by name/id", teams_path) %></h4>
         <div id="data-info">
             <h3 id="data-teamname"> Click on a marker to begin</h3>
         </div>

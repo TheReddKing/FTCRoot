@@ -1,19 +1,60 @@
+<% content_for :title do %><%=@league_meet.name %><%end %>
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @league_meet.name %>
+    <strong>Name:</strong>
+    <%= @league_meet.name %>
 </p>
 
 <p>
-  <strong>Description:</strong>
-  <%= @league_meet.description %>
+    <strong>Meetid:</strong>
+    <%= @league_meet.id %>
 </p>
 
-<p>
-  <strong>Meetid:</strong>
-  <%= @league_meet.meetid %>
-</p>
-
-<%= link_to 'Edit', edit_league_meet_path(@league_meet) %> |
-<%= link_to 'Back', league_meets_path %>
+<table>
+    <tr>
+        <th>Match Number</th>
+        <th>Red Team</th>
+        <center>
+            <th>Score</th>
+            <th>Result</th>
+            <th>Score</th>
+        </center>
+        <th>Blue Team</th>
+    </tr>
+    <% @league_meet.league_meet_events.each do |event| %>
+    <tr>
+        <td><%= event.order %></td>
+        <td>
+            <% event.league_meet_event_teams.where(:alliance=>"RED").each do |team| %>
+                <% if Team.exists?(team.teamid) %>
+                    <%= link_to(team.teamid, Team.find(team.teamid)) %>
+                <% else %>
+                    <%= team.teamid %>
+                <% end %>
+            <% end %>
+        </td>
+        <center>
+            <td><%= event.redscore %></td>
+            <% if event.redscore > event.bluescore %>
+                <td><<-----</td>
+            <% elsif event.redscore == event.bluescore %>
+                <td>--------</td>
+            <% else %>
+                <td>----->></td>
+            <% end %>
+            <td><%= event.bluescore %></td>
+        </center>
+        <td>
+            <% event.league_meet_event_teams.where(:alliance=>"BLUE").each do |team| %>
+                <% if Team.exists?(team.teamid) %>
+                    <%= link_to(team.teamid, Team.find(team.teamid)) %>
+                <% else %>
+                    <%= team.teamid  %>
+                <% end %>
+            <% end %>
+        </td>
+    </tr>
+    <% end %>
+</table>
+<%= link_to 'Back', 'javascript:history.go(-1);' %>

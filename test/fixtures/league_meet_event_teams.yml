@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  teamid: 1
-  alliance: MyString
-  eventid: 1
-
-two:
-  teamid: 1
-  alliance: MyString
-  eventid: 1
+# one:
+#   teamid: 1
+#   alliance: MyString
+#   eventid: 1
+#
+# two:
+#   teamid: 1
+#   alliance: MyString
+#   # eventid: 1

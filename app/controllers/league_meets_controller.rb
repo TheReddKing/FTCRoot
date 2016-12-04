@@ -55,11 +55,11 @@ class LeagueMeetsController < ApplicationController
   # DELETE /league_meets/1
   # DELETE /league_meets/1.json
   def destroy
-    @league_meet.destroy
-    respond_to do |format|
-      format.html { redirect_to league_meets_url, notice: 'League meet was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    # @league_meet.destroy
+    # respond_to do |format|
+    #   format.html { redirect_to league_meets_url, notice: 'League meet was successfully destroyed.' }
+    #   format.json { head :no_content }
+    # end
   end
 
   private

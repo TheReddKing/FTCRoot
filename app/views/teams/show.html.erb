@@ -1,29 +1,59 @@
+<% content_for :title do %><%= @team.name %> (<%=@team.id %>) -- FTCRoot<%end %>
 <p id="notice"><%= notice %></p>
 
+<h2>
+    <%= @team.name %>
+</h2>
+
 <p>
-  <strong>Name:</strong>
-  <%= @team.name %>
+    <strong>Team ID:</strong>
+    <%= @team.id %>
 </p>
 
 <p>
-  <strong>Teamid:</strong>
-  <%= @team.id %>
+    <strong>Location:</strong>
+    <%= @team.location %>
 </p>
 
-<p>
-  <strong>Location:</strong>
-  <%= @team.location %>
-</p>
+<% if @competitions != [] %>
+<table>
+    <thead>
+        <tr>
+            <th>Event Name</th>
+            <th>Score</th>
+            <th>Result</th>
+            <!-- <th colspan="3"></th> -->
+        </tr>
+    </thead>
+    <tbody>
+        <% @competitions.each do |team| %>
+        <tr>
+            <td><%= link_to(team.league_meet_event.league_meet.name,team.league_meet_event.league_meet) %></td>
+            <% if team.alliance == "RED" %>
+            <td><%= team.league_meet_event.redscore %></td>
+            <% if team.league_meet_event.redscore > team.league_meet_event.bluescore %>
+            <td>WIN</td>
+            <% elsif team.league_meet_event.redscore == team.league_meet_event.bluescore %>
+            <td>DRAW</td>
+            <%else %>
+            <td>LOSS</td>
+        <% end
+            else %>
+            <td><%= team.league_meet_event.bluescore %></td>
+            <% if team.league_meet_event.redscore < team.league_meet_event.bluescore %>
+            <td>WIN</td>
+            <% elsif team.league_meet_event.redscore == team.league_meet_event.bluescore %>
+            <td>DRAW</td>
+            <%else %>
+            <td>LOSS</td>
+            <% end
+            end
+            %>
 
-<p>
-  <strong>Location lat:</strong>
-  <%= @team.location_lat %>
-</p>
+        </tr>
+        <% end %>
 
-<p>
-  <strong>Location long:</strong>
-  <%= @team.location_long %>
-</p>
-
-<%= link_to 'Edit', edit_team_path(@team) %> |
-<%= link_to 'Back', teams_path %>
+    </tbody>
+</table>
+<% end %>
+<%= link_to 'Back', 'javascript:history.go(-1);' %>

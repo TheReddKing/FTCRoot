@@ -1,31 +1,28 @@
+<% content_for :title do %>League Meets<%end %>
 <p id="notice"><%= notice %></p>
 
 <h1>League Meets</h1>
-
+<p>Note: if you are a mentor plz send results files </p>
+<p>Only has Austin Metro Leagues in database </p>
 <table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Meetid</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Meetid</th>
+            <th colspan="3"></th>
+        </tr>
+    </thead>
 
-  <tbody>
-    <% @league_meets.each do |league_meet| %>
-      <tr>
-        <td><%= league_meet.name %></td>
-        <td><%= league_meet.description %></td>
-        <td><%= league_meet.meetid %></td>
-        <td><%= link_to 'Show', league_meet %></td>
-        <td><%= link_to 'Edit', edit_league_meet_path(league_meet) %></td>
-        <td><%= link_to 'Destroy', league_meet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
+    <tbody>
+        <% @league_meets.each do |league_meet| %>
+        <tr>
+            <td><%= link_to league_meet.name, league_meet %></td>
+            <td><%= league_meet.id %></td>
+        </tr>
+        <% end %>
+    </tbody>
 </table>
 
 <br>
 
-<%= link_to 'New League Meet', new_league_meet_path %>
+<%#link_to 'New League Meet', new_league_meet_path %>

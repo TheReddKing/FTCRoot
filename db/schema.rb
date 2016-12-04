@@ -13,15 +13,16 @@
 ActiveRecord::Schema.define(version: 20161203034354) do
 
   create_table "league_meet_event_teams", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "league_meet_event_id"
     t.integer  "teamid"
     t.string   "alliance"
-    t.integer  "eventid"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+    t.index ["league_meet_event_id"], name: "index_league_meet_event_teams_on_league_meet_event_id", using: :btree
   end
 
   create_table "league_meet_events", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "name"
+    t.integer  "league_meet_id"
     t.integer  "redscore"
     t.integer  "redauto"
     t.integer  "redteleop"
@@ -33,18 +34,15 @@ ActiveRecord::Schema.define(version: 20161203034354) do
     t.integer  "blueend"
     t.integer  "bluepenalty"
     t.integer  "order"
-    t.integer  "eventid"
-    t.integer  "meetid"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["league_meet_id"], name: "index_league_meet_events_on_league_meet_id", using: :btree
   end
 
   create_table "league_meets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
-    t.text     "description", limit: 65535
-    t.integer  "meetid"
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "team_assets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

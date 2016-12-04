@@ -2,7 +2,7 @@
 
 <p>
   <strong>Name:</strong>
-  <%= @team.name %>
+  <%= link_to @team.name , @team %>
 </p>
 
 <p>
@@ -15,15 +15,6 @@
   <%= @team.location %>
 </p>
 
-<p>
-  <strong>Location lat:</strong>
-  <%= @team.location_lat %>
-</p>
-
-<p>
-  <strong>Location long:</strong>
-  <%= @team.location_long %>
-</p>
 <% if @team.team_assets[0] %>
 <p>
   <strong>Website:</strong>
