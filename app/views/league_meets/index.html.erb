@@ -3,12 +3,14 @@
 
 <h1>League Meets</h1>
 <p>Note: if you are a mentor plz send results files to <a href="mailto:help@ftcroot.com">help@ftcroot.com</a></p>
-<p>Only has Austin Metro Leagues in database </p>
+<p>Now has Michigan, Oklahoma, and some Texas league meets </p>
 <table>
     <thead>
         <tr>
             <th>Name</th>
-            <th>Meetid</th>
+            <th>Approx. Date</th>
+            <th>Location</th>
+
             <th colspan="3"></th>
         </tr>
     </thead>
@@ -17,7 +19,8 @@
         <% @league_meets.each do |league_meet| %>
         <tr>
             <td><%= link_to league_meet.name, league_meet %></td>
-            <td><%= league_meet.id %></td>
+            <td><%= league_meet.date %></td>
+            <td><%= league_meet.location %></td>
         </tr>
         <% end %>
     </tbody>

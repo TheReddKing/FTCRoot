@@ -1,0 +1,2 @@
+class EventMigration < ApplicationRecord
+end

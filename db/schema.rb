@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161203034354) do
+ActiveRecord::Schema.define(version: 20161215153318) do
+
+  create_table "event_migrations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name"
+    t.string   "migration_date"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
 
   create_table "league_meet_event_teams", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "league_meet_event_id"
@@ -36,13 +43,17 @@ ActiveRecord::Schema.define(version: 20161203034354) do
     t.integer  "order"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+    t.string   "name"
     t.index ["league_meet_id"], name: "index_league_meet_events_on_league_meet_id", using: :btree
   end
 
   create_table "league_meets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "date"
+    t.text     "description", limit: 65535
+    t.string   "location"
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   create_table "team_assets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

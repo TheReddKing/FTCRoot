@@ -4,7 +4,7 @@ class LeagueMeetsController < ApplicationController
   # GET /league_meets
   # GET /league_meets.json
   def index
-    @league_meets = LeagueMeet.all
+    @league_meets = LeagueMeet.all.order( 'date DESC' )
   end
 
   # GET /league_meets/1

@@ -18,7 +18,6 @@ class CreateLeagueMeetEvents < ActiveRecord::Migration[5.0]
       t.integer :order
     #   t.integer :eventid
     #   t.integer :meetid
-
       t.timestamps
     end
   end

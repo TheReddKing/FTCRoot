@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  migration_date: MyString
+
+two:
+  name: MyString
+  migration_date: MyString

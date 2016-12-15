@@ -32,39 +32,49 @@ namespace :init do
                 team.team_assets.create(content: ftcteam.website, ctype: 'WEBSITE')
             end
         end
-
+    end
+    task migrate: :environment do
         meet = nil
         order = 1
-        File.read("#{Rails.root}/app/data/gameresults.txt").each_line do |line|
-            if line.include?('-THEREDDKING-')
-                spl = line.split('-THEREDDKING-')
-                meet = LeagueMeet.new(name: spl[1])
-                meet.save
-                order = 1
-            else
-                spl = line.split('|')
-                splr = spl[2].split(",")
-                splb = spl[3].split(",")
-                event = meet.league_meet_events.create(order:order,
-                redscore:splr[0],
-                redauto:splr[1],
-                redteleop:splr[2],
-                redend:splr[3],
-                redpenalty:splr[4],
-                bluescore:splb[0],
-                blueauto:splb[1],
-                blueteleop:splb[2],
-                blueend:splb[3],
-                bluepenalty:splb[4])
-                for teamn in spl[0].split(",")
-                    event.league_meet_event_teams.create(teamid:teamn,alliance:"RED")
-                end
-                for teamn in spl[1].split(",")
-                    event.league_meet_event_teams.create(teamid:teamn,alliance:"BLUE")
-                end
-
-                order += 1
+        files = Dir["#{Rails.root}/app/data/parsedgameresults/*.txt"]
+        for file in files
+            if(EventMigration.where(name:file.split("/")[-1].split("-")[0]).length > 0)
+                next
             end
+            File.read(file).each_line do |line|
+                if line.include?('-THEREDDKING-')
+                    spl = line.split(',')
+                    meet = LeagueMeet.new(name: spl[1],date:spl[2].split(" ")[0],location:spl[3])
+                    meet.save
+                    order = 1
+                else
+                    spl = line.split('|')
+                    splr = spl[3].split(",")
+                    splb = spl[4].split(",")
+                    event = meet.league_meet_events.create(name:spl[0],order:order,
+                    redscore:splr[0],
+                    redauto:splr[1],
+                    redteleop:splr[2],
+                    redend:splr[3],
+                    redpenalty:splr[4],
+                    bluescore:splb[0],
+                    blueauto:splb[1],
+                    blueteleop:splb[2],
+                    blueend:splb[3],
+                    bluepenalty:splb[4])
+                    for teamn in spl[1].split(",")
+                        event.league_meet_event_teams.create(teamid:teamn,alliance:"RED")
+                    end
+                    for teamn in spl[2].split(",")
+                        event.league_meet_event_teams.create(teamid:teamn,alliance:"BLUE")
+                    end
+
+                    order += 1
+                end
+            end
+            migrate = EventMigration.new(name:file.split("/")[-1].split("-")[0],migration_date:file.split("/")[-1].split("-")[1].split(".")[0])
+            migrate.save
         end
+
     end
 end

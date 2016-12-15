@@ -5,7 +5,7 @@ class TeamsController < ApplicationController
     # GET /teams.json
     def index
         @teams = if params[:search] != nil
-                    Team.where('id like ? or name like ?', "#{params[:search].to_i}%", "#{params[:search]}%")
+                    Team.where('CAST(id as CHAR) like ? or name like ?', "#{params[:search].to_i}%", "%#{params[:search]}%")
                 else
                     Team.all
                 end
