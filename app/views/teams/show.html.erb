@@ -26,23 +26,23 @@
         </tr>
     </thead>
     <tbody>
-        <% @competitions.each do |team| %>
+        <% @competitions.each do |event| %>
         <tr>
-            <td><%= link_to(team.league_meet_event.league_meet.name,team.league_meet_event.league_meet) %></td>
-            <% if team.alliance == "RED" %>
-            <td><%= team.league_meet_event.redscore %></td>
-            <% if team.league_meet_event.redscore > team.league_meet_event.bluescore %>
+            <td><%= link_to(event.league_meet.name,event.league_meet) %></td>
+            <% if @team.id == event.red1 or @team.id == event.red2 %>
+            <td><%= event.redscore %></td>
+            <% if event.redscore > event.bluescore %>
             <td>WIN</td>
-            <% elsif team.league_meet_event.redscore == team.league_meet_event.bluescore %>
+            <% elsif event.redscore == event.bluescore %>
             <td>DRAW</td>
             <%else %>
             <td>LOSS</td>
         <% end
             else %>
-            <td><%= team.league_meet_event.bluescore %></td>
-            <% if team.league_meet_event.redscore < team.league_meet_event.bluescore %>
+            <td><%= event.bluescore %></td>
+            <% if event.redscore < event.bluescore %>
             <td>WIN</td>
-            <% elsif team.league_meet_event.redscore == team.league_meet_event.bluescore %>
+            <% elsif event.redscore == event.bluescore %>
             <td>DRAW</td>
             <%else %>
             <td>LOSS</td>

@@ -30,6 +30,10 @@ ActiveRecord::Schema.define(version: 20161215153318) do
 
   create_table "league_meet_events", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "league_meet_id"
+    t.integer  "red1"
+    t.integer  "red2"
+    t.integer  "blue1"
+    t.integer  "blue2"
     t.integer  "redscore"
     t.integer  "redauto"
     t.integer  "redteleop"

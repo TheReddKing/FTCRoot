@@ -32,11 +32,11 @@
     <tr>
         <td><%= event.order %></td>
         <td>
-            <% event.league_meet_event_teams.where(:alliance=>"RED").each do |team| %>
-                <% if Team.exists?(team.teamid) %>
-                    <%= link_to(team.teamid, Team.find(team.teamid)) %>
+            <% ([event.red1, event.red2]).each do |team| %>
+                <% if Team.exists?(team) %>
+                    <%= link_to(team, Team.find(team)) %>
                 <% else %>
-                    <%= team.teamid %>
+                    <%= team %>
                 <% end %>
             <% end %>
         </td>
@@ -52,11 +52,11 @@
             <td><%= event.bluescore %></td>
         </center>
         <td>
-            <% event.league_meet_event_teams.where(:alliance=>"BLUE").each do |team| %>
-                <% if Team.exists?(team.teamid) %>
-                    <%= link_to(team.teamid, Team.find(team.teamid)) %>
+            <% ([event.blue1,event.blue2]).each  do |team| %>
+                <% if Team.exists?(team) %>
+                    <%= link_to(team, Team.find(team)) %>
                 <% else %>
-                    <%= team.teamid  %>
+                    <%= team  %>
                 <% end %>
             <% end %>
         </td>

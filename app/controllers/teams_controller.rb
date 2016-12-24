@@ -15,7 +15,7 @@ class TeamsController < ApplicationController
     # GET /teams/1
     # GET /teams/1.json
     def show
-        @competitions = LeagueMeetEventTeam.all.where(teamid:@team.id)
+        @competitions = LeagueMeetEvent.all.where("red1 = ? OR red2 = ? OR blue1 = ? OR blue2 = ?", @team.id, @team.id,@team.id,@team.id)
     end
 
     # GET /teams/new

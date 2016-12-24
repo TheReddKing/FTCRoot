@@ -61,13 +61,18 @@ namespace :init do
                     blueauto:splb[1],
                     blueteleop:splb[2],
                     blueend:splb[3],
-                    bluepenalty:splb[4])
-                    for teamn in spl[1].split(",")
-                        event.league_meet_event_teams.create(teamid:teamn,alliance:"RED")
-                    end
-                    for teamn in spl[2].split(",")
-                        event.league_meet_event_teams.create(teamid:teamn,alliance:"BLUE")
-                    end
+                    bluepenalty:splb[4],
+
+                    red1:spl[1].split(",")[0],
+                    red2:spl[1].split(",")[1],
+                    blue1:spl[2].split(",")[0],
+                    blue2:spl[2].split(",")[1])
+                    # for teamn in spl[1].split(",")
+                    #     event.league_meet_event_teams.create(teamid:teamn,alliance:"RED")
+                    # end
+                    # for teamn in spl[2].split(",")
+                    #     event.league_meet_event_teams.create(teamid:teamn,alliance:"BLUE")
+                    # end
 
                     order += 1
                 end
