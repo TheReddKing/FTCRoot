@@ -36,14 +36,14 @@ xml.tag! 'urlset', 'xmlns' => 'http://www.sitemaps.org/schemas/sitemap/0.9' do
   # }
   @teams.each do |team|
     xml.url {
-      xml.loc(base_url + "/teams/" + team.id.to_s + "/" + team.name.gsub(" ","_"))
+      xml.loc(base_url + "/teams/" + team.id.to_s + "/" + team.name.gsub(/[^A-Za-z0-9_ ]/,"").gsub(" ","_"))
       xml.changefreq("monthly")
       xml.priority(0.4)
     }
   end
   @meets.each do |meet|
     xml.url {
-      xml.loc(base_url + "/league_meets/" + meet.id.to_s + "/" + meet.name.gsub(" ","_"))
+      xml.loc(base_url + "/league_meets/" + meet.id.to_s + "/" + meet.name.gsub(/[^A-Za-z0-9_ ]/,"").gsub(" ","_"))
       xml.changefreq("monthly")
       xml.priority(0.2)
     }
