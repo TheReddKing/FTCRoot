@@ -1,4 +1,4 @@
-<% content_for :title do %><%=@league_meet.name %><%end %>
+<% content_for :title do %><%=@league_meet.name %> (<%= @league_meet.location %> FTC Results)<%end %>
 <p id="notice"><%= notice %></p>
 
 <h1>
@@ -16,52 +16,57 @@
     <strong>Approximate Date:</strong>
     <%= @league_meet.date %>
 </p>
-
-<table>
-    <tr>
-        <th>Match Number</th>
-        <th>Red Team</th>
-        <center>
-            <th>Score</th>
-            <th>Result</th>
-            <th>Score</th>
-        </center>
-        <th>Blue Team</th>
-    </tr>
+<center>
+<table class="pure-table pure-table-horizontal centered">
+    <thead>
+        <tr>
+            <th>Match Number</th>
+            <th colspan="2">Red Team</th>
+            <center>
+                <th>Score</th>
+                <th>Result</th>
+                <th>Score</th>
+            </center>
+            <th colspan="2">Blue Team</th>
+        </tr>
+    </thead>
     <% @league_meet.league_meet_events.each do |event| %>
-    <tr>
-        <td><%= event.order %></td>
-        <td>
+        <tr>
+            <td><%= event.name %></td>
             <% ([event.red1, event.red2]).each do |team| %>
-                <% if Team.exists?(team) %>
-                    <%= link_to(team, Team.find(team)) %>
-                <% else %>
-                    <%= team %>
-                <% end %>
+                <td class="teamred">
+                    <% if Team.exists?(team) %>
+                    <% tt = Team.find(team) %>
+                        <%= link_to(team, tt) %>
+                        <span class="teamname">(<%= tt.name %>)</span>
+                    <% else %>
+                        <%= team %>
+                    <% end %>
+                </td>
             <% end %>
-        </td>
-        <center>
             <td><%= event.redscore %></td>
             <% if event.redscore > event.bluescore %>
-                <td><<-----</td>
+                <td class="teamred"><i class="fa fa-arrow-left" aria-hidden="true"></i></td>
             <% elsif event.redscore == event.bluescore %>
-                <td>--------</td>
+                <td></td>
             <% else %>
-                <td>----->></td>
+                <td class="teamblue"><i class="fa fa-arrow-right" aria-hidden="true"></i></td>
             <% end %>
             <td><%= event.bluescore %></td>
-        </center>
-        <td>
             <% ([event.blue1,event.blue2]).each  do |team| %>
-                <% if Team.exists?(team) %>
-                    <%= link_to(team, Team.find(team)) %>
-                <% else %>
-                    <%= team  %>
-                <% end %>
+                <td class="teamblue">
+                    <% if Team.exists?(team) %>
+                    <% tt = Team.find(team) %>
+                        <%= link_to(team, tt) %>
+                        <span class="teamname">(<%= tt.name %>)</span>
+                    <% else %>
+                        <%= team  %>
+                    <% end %>
+                </td>
             <% end %>
-        </td>
-    </tr>
+        </tr>
     <% end %>
 </table>
+</center>
 <p> Team number not highlighted? <%= link_to "Contact Me", "help@ftcroot.com" %> </p>
 <%= link_to 'Back', 'javascript:history.go(-1);' %>

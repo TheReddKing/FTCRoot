@@ -15,4 +15,7 @@ Rails.application.routes.draw do
     get 'images/misc/quote_icon.png', to: "tools#nothing"
     get 'images/buttons/viewpost-right.png', to: "tools#nothing"
     get 'images/misc/quote-left.png', to: "tools#nothing"
+    get 'teams/:id/:name', to: 'teams#show', as: 'fullname'
+    get 'league_meets/:id/:name', to: 'league_meets#show', as: 'fullmeet'
+    get "sitemap.xml" => "visitors#sitemap"
 end

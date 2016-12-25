@@ -1,10 +1,10 @@
 <% content_for :title do %><%= @team.name %> (<%=@team.id %>) -- FTCRoot<%end %>
 <p id="notice"><%= notice %></p>
-
+<center>
 <h2>
     <%= @team.name %>
 </h2>
-
+<br/>
 <p>
     <strong>Team ID:</strong>
     <%= @team.id %>
@@ -14,9 +14,10 @@
     <strong>Location:</strong>
     <%= @team.location %>
 </p>
-
+</center>
 <% if @competitions != [] %>
-<table>
+<p> Note: <i class="fa fa-trophy" aria-hidden="true"></i>=WIN, empty for LOSS</p>
+<table class="pure-table pure-table-horizontal">
     <thead>
         <tr>
             <th>Event Name</th>
@@ -26,34 +27,53 @@
         </tr>
     </thead>
     <tbody>
+    <% wins = 0 %>
+    <% draws = 0 %>
         <% @competitions.each do |event| %>
         <tr>
             <td><%= link_to(event.league_meet.name,event.league_meet) %></td>
             <% if @team.id == event.red1 or @team.id == event.red2 %>
             <td><%= event.redscore %></td>
             <% if event.redscore > event.bluescore %>
-            <td>WIN</td>
+            <td><i class="fa fa-trophy" aria-hidden="true"></i></td>
+            <% wins += 1 %>
             <% elsif event.redscore == event.bluescore %>
+            <% draws += 1 %>
             <td>DRAW</td>
             <%else %>
-            <td>LOSS</td>
+            <td></td>
         <% end
             else %>
             <td><%= event.bluescore %></td>
             <% if event.redscore < event.bluescore %>
-            <td>WIN</td>
+            <td><i class="fa fa-trophy" aria-hidden="true"></i></td>
+            <% wins += 1 %>
             <% elsif event.redscore == event.bluescore %>
+            <% draws += 1 %>
             <td>DRAW</td>
             <%else %>
-            <td>LOSS</td>
+            <td></td>
             <% end
             end
             %>
 
         </tr>
         <% end %>
-
     </tbody>
+    <thead>
+        <tr>
+            <th>Total Matches</th>
+            <th> Wins: <%= wins %></th>
+            <th> Losses: <%= @competitions.length - wins - draws %></th>
+        </tr>
+    </thead>
+</table>
+<% else %>
+<table>
+<center><h5>
+    There are no competitions to show for this team.
+    If you want to help out, have your mentor send result files to <a href="mailto:help@ftcroot.com">help@ftcroot.com</a>
+</h5></center>
 </table>
 <% end %>
 <%= link_to 'Back', 'javascript:history.go(-1);' %>

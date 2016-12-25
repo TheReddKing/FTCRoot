@@ -1,3 +1,16 @@
 // Place all the styles related to the LeagueMeets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.teamred {
+    background-color:#FCC !important;
+}
+.teamblue {
+    background-color:#ACF !important;
+}
+.teamname {
+    font-size: 10px;
+    display: block;
+    white-space:nowrap;
+    padding-top: 0px;
+    margin: -5px;
+}

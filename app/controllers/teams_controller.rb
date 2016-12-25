@@ -15,6 +15,14 @@ class TeamsController < ApplicationController
     # GET /teams/1
     # GET /teams/1.json
     def show
+        if(!params[:name])
+            respond_to do |format|
+                format.html { redirect_to fullname_path(:name=>@team.name.gsub(" ","_")) }
+            end
+            return
+            # render :search
+            # return
+        end
         @competitions = LeagueMeetEvent.all.where("red1 = ? OR red2 = ? OR blue1 = ? OR blue2 = ?", @team.id, @team.id,@team.id,@team.id)
     end
 
