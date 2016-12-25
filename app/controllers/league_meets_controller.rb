@@ -12,7 +12,7 @@ class LeagueMeetsController < ApplicationController
   def show
       if(!params[:name])
           respond_to do |format|
-              format.html { redirect_to fullmeet_path(:name=>@league_meet.name.gsub(" ","_")) }
+              format.html { redirect_to fullmeet_path(:name=>@league_meet.name.gsub(/[^A-Za-z0-9_ ]/,"").gsub(" ","_")) }
           end
           return
           # render :search
