@@ -21,6 +21,7 @@
     <thead>
         <tr>
             <th>Event Name</th>
+            <th>Q_name</th>
             <th>Score</th>
             <th>Result</th>
             <!-- <th colspan="3"></th> -->
@@ -32,6 +33,7 @@
         <% @competitions.each do |event| %>
         <tr>
             <td><%= link_to(event.league_meet.name,event.league_meet) %></td>
+            <td><%= event.name %></td>
             <% if @team.id == event.red1 or @team.id == event.red2 %>
             <td><%= event.redscore %></td>
             <% if event.redscore > event.bluescore %>
@@ -63,7 +65,8 @@
     <thead>
         <tr>
             <th>Total Matches</th>
-            <th> Wins: <%= wins %></th>
+            <th></th>
+            <th> Wins <i class="fa fa-trophy" aria-hidden="true"></i>: <%= wins %></th>
             <th> Losses: <%= @competitions.length - wins - draws %></th>
         </tr>
     </thead>

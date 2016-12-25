@@ -2,11 +2,11 @@
 <h2>FTC Forum Search</h2>
 <p>Pulled from the FTC forum</p>
 <p>Search for keywords or if specific rules ie: "g8" (For "GS1" you can search "GS1g" for better results)</p>
-<%= form_tag("/search", method: "get") do %>
+<%= form_tag("/search", method: "get",:class => "pure-form") do %>
   <p>
   <%= label_tag(:q, "Search for:") %>
   <%= text_field_tag(:q,params[:q]) %>
-  <%= submit_tag("Search") %>
+  <%= submit_tag("Search", :class=>"pure-button pure-button-primary") %>
   <span style="font-size:12px">Answers last pulled on: 20161129</span></p>
 <% end %>
 

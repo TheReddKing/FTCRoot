@@ -4,11 +4,11 @@
 
 <h1>Teams</h1>
 
-<%= form_tag(teams_path(""), method: "get") do %>
+<%= form_tag(teams_path(""), method: "get",:class => "pure-form") do %>
   <p>
     <%= label_tag(:search, "Search Team name or ID:") %>
     <%= text_field_tag(:search,params[:search]) %>
-    <%= submit_tag("Search") %>
+    <%= submit_tag("Search", :class=>"pure-button pure-button-primary") %>
   </p>
 <% end %>
 

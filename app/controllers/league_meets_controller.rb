@@ -10,6 +10,14 @@ class LeagueMeetsController < ApplicationController
   # GET /league_meets/1
   # GET /league_meets/1.json
   def show
+      if(!params[:name])
+          respond_to do |format|
+              format.html { redirect_to fullmeet_path(:name=>@league_meet.name.gsub(" ","_")) }
+          end
+          return
+          # render :search
+          # return
+      end
 
   end
 
