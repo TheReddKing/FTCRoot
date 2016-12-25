@@ -17,7 +17,7 @@ class TeamsController < ApplicationController
     def show
         if(!params[:name])
             respond_to do |format|
-                format.html { redirect_to fullname_path(:name=>@team.name.gsub(" ","_")) }
+                format.html { redirect_to fullname_path(:name=>@team.name.gsub(/[^A-Za-z0-9_ ]/,"").gsub(" ","_")) }
             end
             return
             # render :search
