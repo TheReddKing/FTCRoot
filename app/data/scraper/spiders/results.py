@@ -21,13 +21,21 @@ class ResultsSpider(BaseSpider):
         filename = response.url.split("/")[2]
 
         helperl = open("parsedgameresults/settings.kf","r").read().decode("utf-8").split("\n")
+        helperf = open("parsedgameresults/ftc-dataparse.kf","r").read().decode("utf-8").split("\n")
         datastore = open("parsedgameresults/migrate" + helperl[0].zfill(4) + "-" + time.strftime("%Y%m%d") + ".txt", 'wb')
 
         repeatedFilenames = []
+        repeatedCompetitionnames = []
         i = 1
         while i < len(helperl) - 1:
             repeatedFilenames.append(helperl[i])
             i+=1
+        i = 1
+        while i < len(helperf) - 1:
+            repeatedCompetitionnames.append(helperf[i].split("|")[0])
+            i+=1
+
+
 
         # THIS IS FOR DETAILS ONLY
         for filename in glob.glob("gameresults/**/*.html"):
@@ -91,9 +99,42 @@ class ResultsSpider(BaseSpider):
                     b = [btotal,bautonomous,bteleop,bendgame,bpenalty]
                     datastore.write(name + "|" + ','.join(teamred) + "|" + ','.join(teamblue) + "|" + ",".join(r) + "|" + ",".join(b) + "\n")
 
-                    # print result
-            # break
+        # Special!!!
+        tournhash = {}
+        for tournament in open("gameresults/ftc-data/1617velv-event-list.csv","r").read().decode("utf-8").splitlines(False):
+            print tournament
+            spl = tournament.split(",")
+            tournhash[spl[8]] = spl
+
+        currentGame = ""
+        for game in open("gameresults/ftc-data/1617velv-FULL-MatchResultsDetails.csv","r").read().decode("utf-8").splitlines(False):
+            if("Result,Red0,Red1" in game):
+                continue
+            spl = game.split(",")
+            tournname = spl[0].split("-")[1]
+
+            if tournname in repeatedCompetitionnames:
+                continue
+
+            if(currentGame != tournname):
+                currentGame = tournname
+                date = tournhash[currentGame][0].replace("2016","16").replace("2017","17").split("/")
+                if(len(date[1]) == 1):
+                    date = date[0] + "/0" + date[1] + "/" + date[2]
+                else:
+                    date = date[0] + "/" + date[1] + "/" + date[2]
+                datastore.write("-THEREDDKING-," + tournhash[currentGame][1] + "," + date + "," + tournhash[currentGame][2].split(" -")[0]+ "\n")
+                repeatedCompetitionnames.append(currentGame + "|" + tournhash[currentGame][1] + "|" + date)
+                # 1617velv-gadz-Q-4,Q-4,0-50 B,7437,7432,0,5100,11127,0,0,0,0 ,  0,0,0  ,50,5,0,  45,0, 0,
+                #               0    1  2       3    4    5  6   7    8 9 10 11 12 13 14 15 16 17 18 19 20
+            datastore.write(spl[1] + "|" + ','.join(spl[3:5]) + "|" + ','.join(spl[6:8]) + "|" + ",".join(spl[9:11] + spl[12:15]) + "|" + ",".join(spl[15:17] + spl[18:21]) + "\n")
+
+
         helper = open("parsedgameresults/settings.kf", 'wb')
         helper.write(str((int(helperl[0]) + 1)) + "\n")
         for file in repeatedFilenames:
+            helper.write(file + "\n")
+
+        helper = open("parsedgameresults/ftc-dataparse.kf", 'wb')
+        for file in repeatedCompetitionnames:
             helper.write(file + "\n")

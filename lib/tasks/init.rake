@@ -26,11 +26,8 @@ namespace :init do
             ftcteam = FTCTeam.new(JSON.parse(line))
             # For testing purposes only
             # :name, :id, :location, :location_lat, :location_long
-            team = Team.new(name: ftcteam.name, id: ftcteam.id, location: ftcteam.address, location_lat: ftcteam.lat.to_f, location_long: ftcteam.long.to_f)
+            team = Team.new(name: ftcteam.name, id: ftcteam.id, location: ftcteam.address, location_lat: ftcteam.lat.to_f, location_long: ftcteam.long.to_f,website:ftcteam.website)
             team.save
-            if ftcteam.website
-                team.team_assets.create(content: ftcteam.website, ctype: 'WEBSITE')
-            end
         end
     end
     task migrate: :environment do
@@ -44,8 +41,16 @@ namespace :init do
             File.read(file).each_line do |line|
                 if line.include?('-THEREDDKING-')
                     spl = line.split(',')
+                    region = Region.where(name:spl[3])[0]
+                    if(region == nil)
+                        region = Region.new(name:spl[3])
+                        region.save
+                    end
                     meet = LeagueMeet.new(name: spl[1],date:spl[2].split(" ")[0],location:spl[3])
+                    meet.region = region
                     meet.save
+                    region.save
+
                     order = 1
                 else
                     spl = line.split('|')

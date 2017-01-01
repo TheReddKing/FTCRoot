@@ -2,9 +2,9 @@
 <p id="notice"><%= notice %></p>
 
 <h1>League Meets</h1>
-<p>Note: if you are a mentor plz send results files to <a href="mailto:help@ftcroot.com">help@ftcroot.com</a></p>
-<p>Now has Michigan, Oklahoma, and some Texas league meets </p>
-<p> As of 12/17 Illinois meets are added </p>
+<p>Note: if you have result files, send them to <a href="mailto:help@ftcroot.com">help@ftcroot.com</a></p>
+<p>A lot of events have been added, but it is no means all of it. </p>
+<p> Thank you to everybody who has sent in meet results! </p>
 <table class="pure-table">
     <thead>
         <tr>
@@ -21,7 +21,7 @@
         <tr>
             <td><%= link_to league_meet.name, league_meet %></td>
             <td><%= league_meet.date %></td>
-            <td><%= league_meet.location %></td>
+            <td><%= link_to league_meet.location, league_meet.region %></td>
         </tr>
         <% end %>
     </tbody>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :regions
     root to: "tools#map"
     # scope constraints: {format: :html} do
         resources :teams
