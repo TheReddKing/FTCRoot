@@ -1,0 +1,13 @@
+{
+  "name": "FTCRoot",
+  "description": "View FTC meet results and team info!",
+  "keywords": [
+    "FTC",
+    "score",
+    "competition",
+    "meetings",
+    "locations"
+  ],
+  "website": "http://ftcroot.com/",
+  "repository": "https://github.com/TheReddKing/FTCRoot"
+}
