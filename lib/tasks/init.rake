@@ -22,12 +22,18 @@ namespace :init do
             end
         end
 
-        File.read("#{Rails.root}/app/data/teamdata.txt").each_line do |line|
-            ftcteam = FTCTeam.new(JSON.parse(line))
-            # For testing purposes only
-            # :name, :id, :location, :location_lat, :location_long
-            team = Team.new(name: ftcteam.name, id: ftcteam.id, location: ftcteam.address, location_lat: ftcteam.lat.to_f, location_long: ftcteam.long.to_f,website:ftcteam.website)
-            team.save
+        files = Dir["#{Rails.root}/app/data/teams/*.txt"]
+        for file in files
+            File.read(file).each_line do |line|
+
+                ftcteam = FTCTeam.new(JSON.parse(line))
+                # For testing purposes only
+                # :name, :id, :location, :location_lat, :location_long
+                if(!Team.exists?(ftcteam.id))
+                    team = Team.new(name: ftcteam.name, id: ftcteam.id, location: ftcteam.address, location_lat: ftcteam.lat.to_f, location_long: ftcteam.long.to_f,website:ftcteam.website)
+                    team.save
+                end
+            end
         end
     end
     task migrate: :environment do

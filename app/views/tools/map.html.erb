@@ -14,7 +14,7 @@
         <br/>
         <br/>
         <div>
-            <p> If any information is incorrect, contact <%= link_to("meeee","mailto:reddhelp@gmail.com") %></p>
+            <p> If any information is incorrect, contact <%= link_to("meeee","mailto:help@ftcroot.com") %></p>
             <p> Also the locations are approximations based off of zipcode </p>
         </div>
     </div>
@@ -25,12 +25,21 @@
     var map;
     var markers = [];
     var realIndex = 0;
+    var didinit = false;
+    $(document).on('turbolinks:load', function() {
+
+        if(!didinit) {
+            initialize();
+            didinit = true;
+        }
+
+    });
     function initialize() {
         geocoder = new google.maps.Geocoder();
         var center = new google.maps.LatLng(37.9990858, -100.98347380000001);
-
+        console.log(map);
         map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 5,
           center: center,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         });
@@ -95,18 +104,6 @@
     }
 </script>
 
-<script>
-(function(d, script) {
-    script = d.createElement('script');
-    script.type = 'text/javascript';
-    script.async = true;
-    script.onload = function(){
-        // remote script has loaded
-    };
-    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDJRN6Cg9T-qyFWxc4dZo8QUC6HbV6rmGk&libraries=places&callback=initialize';
-    d.getElementsByTagName('head')[0].appendChild(script);
-}(document));
-</script>
 <style >
   #container {
       display: -webkit-box;

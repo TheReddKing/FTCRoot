@@ -1,0 +1,945 @@
+{"id":"10801","name":"EF FTC","address":"Thornwood, NY 10594 USA","latlong":["41.11095290503271","-73.755741813549"],"website":"http://everythingisfields.eboard.com"}
+{"id":"10803","name":"McU-Bots","address":"Dearborn, MI 48126 USA","latlong":["42.32071765131294","-83.19819495071253"],"website":""}
+{"id":"10805","name":"MicroCreek","address":"Midland, MI 48640 USA","latlong":["43.62804773010842","-84.20906790328877"],"website":""}
+{"id":"10806","name":"ReWired","address":"Warren, OH 44485 USA","latlong":["41.23440878409791","-80.80182359651036"],"website":""}
+{"id":"10808","name":"The Squid Squad","address":"Fairfax Station, VA 22039 USA","latlong":["38.80938794326445","-77.31858624348672"],"website":""}
+{"id":"10809","name":"Crow Force 5","address":"Carlsbad, CA 92010 USA","latlong":["33.1593459913362","-117.27760016380249"],"website":""}
+{"id":"10812","name":"STEM-Bots","address":"Dearborn Heights, MI 48127 USA","latlong":["42.329857072815244","-83.26003204524721"],"website":""}
+{"id":"10813","name":"Kearsley Scrap Rats","address":"Flint, MI 48506 USA","latlong":["43.028152142818456","-83.68702554235661"],"website":""}
+{"id":"10816","name":"WHALES","address":"Westerly, RI 02891 USA","latlong":["41.37184048856226","-71.80641828259942"],"website":""}
+{"id":"10817","name":"The BOTanosits","address":"Fairbanks, AK 99701 USA","latlong":["64.82173697392103","-147.70934798130068"],"website":""}
+{"id":"10818","name":"Bronco Robotics","address":"Coopersville, MI 49404 USA","latlong":["43.0626362093562","-85.92922076795067"],"website":""}
+{"id":"10819","name":"Mechanical Eagles","address":"Bend, OR 97702 USA","latlong":["43.98182968078609","-121.26399038845186"],"website":""}
+{"id":"10820","name":"Falconeers","address":"Avon, CT 06001 USA","latlong":["41.807142038626004","-72.82766205173876"],"website":"http://falconeers.uberbots.org/"}
+{"id":"10824","name":"Tesla Trojans","address":"Juneau, WI 53039 USA","latlong":["43.40774481292039","-88.68826842104754"],"website":""}
+{"id":"10825","name":"RoboBroncs Team 3","address":"Jackson, WY 83001 USA","latlong":["43.47341065208573","-110.74844541524558"],"website":""}
+{"id":"10829","name":"Bay Robotics","address":"Whitefish Bay, WI 53217 USA","latlong":["43.0717268790517","-87.95291578581913"],"website":""}
+{"id":"10830","name":"RoboPanthers2000","address":"Pompano Beach, FL 33065 USA","latlong":["26.237959331024953","-80.1207642062395"],"website":""}
+{"id":"10831","name":"Raptors","address":"Houston, TX 77003 USA","latlong":["29.765447319008125","-95.37059972585106"],"website":""}
+{"id":"10832","name":"Talon","address":"Houston, TX 77003 USA","latlong":["29.767967146276796","-95.36983461274048"],"website":""}
+{"id":"10833","name":"Robo-Scorps","address":"Columbia, MD 21045 USA","latlong":["39.20933006146287","-76.84861657598529"],"website":""}
+{"id":"10835","name":"TestOA","address":"Eastsound, WA 98245 USA","latlong":["48.65416305703243","-122.80027662629459"],"website":"http://www.ocsrobotics.weebly.com"}
+{"id":"10836","name":"STEMper Fi","address":"Elmhurst, IL 60126 USA","latlong":["41.9020550390639","-87.93281062979544"],"website":""}
+{"id":"10840","name":"PIRate Crew","address":"Poth, TX 78147 USA","latlong":["29.081768048422994","-98.07311882547883"],"website":""}
+{"id":"10841","name":"The Pirates of The Grand Island","address":"Grand Island, NE 68801 USA","latlong":["40.92471843575782","-98.35864657629918"],"website":"https://www.facebook.com/GIRobots/?fref=ts"}
+{"id":"10844","name":"Wildbots","address":"Bay City, MI 48706 USA","latlong":["43.60235148527421","-83.87133970174078"],"website":""}
+{"id":"10847","name":"Robo Eagles","address":"Barrington, RI 02806 USA","latlong":["41.73593533133901","-71.30260705057974"],"website":""}
+{"id":"10849","name":"WMS Robotics","address":"Calumet, MI 49913 USA","latlong":["47.25244931420012","-88.44597877222132"],"website":""}
+{"id":"10851","name":"WASA","address":"Wapakoneta, OH 45895 USA","latlong":["40.577216799908484","-84.18756899126308"],"website":""}
+{"id":"10856","name":"UPAIR","address":"Detroit, MI 48202 USA","latlong":["42.38930790564376","-83.09358569708967"],"website":""}
+{"id":"10859","name":"RACE","address":"Durham, NC 27707 USA","latlong":["35.99037285911083","-78.90109728675534"],"website":""}
+{"id":"10860","name":"Boneyard Bandits","address":"Odessa, TX 79762 USA","latlong":["31.857875473693852","-102.35140692316969"],"website":""}
+{"id":"10861","name":"Transformerz","address":"Odessa, TX 79762 USA","latlong":["31.863606344372464","-102.35120533883352"],"website":""}
+{"id":"10862","name":"Droid Rage","address":"Corpus Christi, TX 78404 USA","latlong":["27.809954139399554","-97.38324382539952"],"website":"http://www.droidrage.org"}
+{"id":"10863","name":"Droid Rage","address":"Corpus Christi, TX 78404 USA","latlong":["27.815803464555028","-97.37385512165866"],"website":"http://www.droidrage.org"}
+{"id":"10865","name":"BoyScoutBorg","address":"Centerville, IN 47330 USA","latlong":["39.81911091221029","-84.98080257142333"],"website":"http://boyscoutborg.com"}
+{"id":"10867","name":"TCH Tornado","address":"Trenton, NJ 08608 USA","latlong":["40.223431309805086","-74.75980340073183"],"website":""}
+{"id":"10868","name":"Roboteer Cadets","address":"Saint Peters, MO 63376 USA","latlong":["38.777755678601864","-90.5917446090476"],"website":"http://www.stem2u.org/Programs/FTC-10868"}
+{"id":"10869","name":"Maze Masters","address":"Ashburn, VA 20147 USA","latlong":["39.04684415894348","-77.47173748749195"],"website":""}
+{"id":"10870","name":"Ardsley Robotics","address":"Ardsley, NY 10502 USA","latlong":["41.01331598544318","-73.83421739726272"],"website":""}
+{"id":"10871","name":"Forged","address":"Fort Leavenworth, KS 66027 USA","latlong":["39.37168312471788","-94.90701288308829"],"website":""}
+{"id":"10872","name":"Electronic Camels","address":"Fort Leavenworth, KS 66027 USA","latlong":["39.3787532596578","-94.90555065334404"],"website":""}
+{"id":"10874","name":"LIONS","address":"Montclair, NJ 07042 USA","latlong":["40.82170943229189","-74.20832393405085"],"website":""}
+{"id":"10875","name":"Spare Parts","address":"Fort Leavenworth, KS 66027 USA","latlong":["39.38501276113261","-94.90138227426179"],"website":""}
+{"id":"10877","name":"Cardinals","address":"Greenwich, CT 06830 USA","latlong":["41.063769851377415","-73.62663189341619"],"website":""}
+{"id":"10878","name":"BOODY BOTS","address":"Brooklyn, NY 11223 USA","latlong":["40.646349730041635","-73.93913942386354"],"website":""}
+{"id":"10888","name":"Team Kirobo","address":"Chicago, IL 60625 USA","latlong":["41.8419650352868","-87.67283708979551"],"website":"http://maheshalur.net/stem-club"}
+{"id":"10890","name":"Blue Angles","address":"Allen, TX 75002 USA","latlong":["33.11092764144323","-96.65668728335876"],"website":""}
+{"id":"10891","name":"Oriolebots","address":"Quincy, MI 49082 USA","latlong":["41.944310004050735","-84.87984420127826"],"website":""}
+{"id":"10892","name":"HammerTime 10892","address":"Alpine, UT 84004 USA","latlong":["40.5031819673643","-111.69138085697553"],"website":""}
+{"id":"10898","name":"Metal Motion","address":"Brooklyn, NY 11211 USA","latlong":["40.64732514983544","-73.92958735104182"],"website":"http://None"}
+{"id":"10899","name":"Mansfield Mechanics","address":"Jericho, VT 05465 USA","latlong":["44.50241080435983","-72.9788953290881"],"website":""}
+{"id":"10902","name":"Techno Pirates","address":"Lytle, TX 78052 USA","latlong":["29.237320179821964","-98.77830477349653"],"website":""}
+{"id":"10904","name":"CyberWolves","address":"Spring, TX 77388 USA","latlong":["30.070365587185492","-95.37270818930347"],"website":""}
+{"id":"10908","name":"B.E.M.H.E-D-F.D.K.A.S IV","address":"Fairbanks, AK 99701 USA","latlong":["64.82993072966825","-147.70279008634827"],"website":""}
+{"id":"10911","name":"Cavs","address":"Saginaw, MI 48604 USA","latlong":["43.41807128789852","-83.93719527171174"],"website":""}
+{"id":"10912","name":"Blue Star Tech","address":"Attleboro, MA 02703 USA","latlong":["41.930622450114264","-71.282870637213"],"website":""}
+{"id":"10914","name":"Delta","address":"Dallas, TX 75244 USA","latlong":["32.79558321968348","-96.75727058560831"],"website":""}
+{"id":"10915","name":"Alchemy","address":"Juneau, AK 99801 USA","latlong":["58.58135877731495","-134.75927645909007"],"website":""}
+{"id":"10916","name":"Eagle FTC Robotics","address":"Kansas City, MO 64034 USA","latlong":["38.85052269970233","-94.32785280342009"],"website":""}
+{"id":"10917","name":"ninja-te.ch","address":"San Francisco, CA 94110 USA","latlong":["37.74462914757761","-122.39867707102076"],"website":"http://www.ninja-te.ch/"}
+{"id":"10919","name":"Fawkes Robotics","address":"Livingston, NJ 07039 USA","latlong":["40.789101954344616","-74.31726224077357"],"website":""}
+{"id":"10920","name":"The Prototype Panthers","address":"Palmyra, NJ 08065 USA","latlong":["40.00579597154175","-75.02343222132967"],"website":""}
+{"id":"10921","name":"Falcons","address":"San Antonio, TX 78251 USA","latlong":["29.46089632737222","-98.48885477660353"],"website":""}
+{"id":"10922","name":"Spartans","address":"Bentonville, AR 72712 USA","latlong":["36.365912221918336","-94.18840757412454"],"website":""}
+{"id":"10923","name":"The Down Unders","address":"Syracuse, NY 13224 USA","latlong":["43.05240716181597","-76.13612685663938"],"website":"http://lmuok1998.wix.com/thedownunders"}
+{"id":"10924","name":"Beta Hawks","address":"Los Alamos, NM 87544 USA","latlong":["35.902259483328926","-106.27941610052264"],"website":""}
+{"id":"10925","name":"Spartacles","address":"Beaverton, OR 97005 USA","latlong":["45.49232637184196","-122.7943976954555"],"website":""}
+{"id":"10928","name":"Warren Tech Warriors","address":"Warren, NJ 07059 USA","latlong":["40.64154616499987","-74.50728241452178"],"website":""}
+{"id":"10929","name":"Hornets","address":"Damascus, MD 20872 USA","latlong":["39.28022030259995","-77.19370391197212"],"website":""}
+{"id":"10933","name":"Tech Titans","address":"Brooklyn, NY 11208 USA","latlong":["40.64376934112032","-73.9373266634303"],"website":""}
+{"id":"10934","name":"Vicenza HS","address":"APO, AE 09630 USA","latlong":["0.000326592387954143","0.009951713301450534"],"website":""}
+{"id":"10935","name":"Bahrain","address":"FPO, AE 09834 USA","latlong":["0.0006285444951490804","0.003183327299067518"],"website":""}
+{"id":"10936","name":"Sigonella High School","address":"FPO, AE 09627 USA","latlong":["0.0005081309513662258","7.053744823996288e-05"],"website":""}
+{"id":"10937","name":"Stuttgart HS","address":"APO, AE 09107 USA","latlong":["0.0005027345220627172","0.008782232602419008"],"website":""}
+{"id":"10938","name":"Hohenfels MHS","address":"APO, AE 09173 USA","latlong":["0.005921305682635436","0.010847873340168294"],"website":""}
+{"id":"10939","name":"RoboLancers ~2","address":"APO, AE 09461 USA","latlong":["0.011668974580971252","0.0031767256668466526"],"website":""}
+{"id":"10940","name":"Ramstein High School","address":"APO, AE 09094 USA","latlong":["0.008775557274081379","0.0031291834954336574"],"website":""}
+{"id":"10941","name":"SHAPE HS","address":"APO, AE 09705 USA","latlong":["0.009732170875258577","0.009319537598795063"],"website":""}
+{"id":"10942","name":"Vilseck HS","address":"APO, AE 09112 USA","latlong":["0.00382545988136838","0.003915453459145306"],"website":""}
+{"id":"10944","name":"Kaiserslautern HS 2","address":"APO, AE 09021 USA","latlong":["0.010977954389331957","0.0013667563392730023"],"website":""}
+{"id":"10948","name":"PHMS Engineer Pioneers","address":"Mooresville, IN 46158 USA","latlong":["39.61570394945493","-86.36718513334766"],"website":""}
+{"id":"10949","name":"Indians","address":"Cross River, NY 10518 USA","latlong":["41.26985114978444","-73.58156505660241"],"website":""}
+{"id":"10950","name":"PHMS - Geared Gals","address":"Mooresville, IN 46158 USA","latlong":["39.623459193905404","-86.36537729951402"],"website":""}
+{"id":"10963","name":"Falcons","address":"Houston, TX 77088 USA","latlong":["29.768719384461807","-95.37261759717738"],"website":""}
+{"id":"10966","name":"RIS Braves","address":"Anadarko, OK 73005 USA","latlong":["35.0622560477762","-98.23121591386837"],"website":"http://www.ris.bie.edu/"}
+{"id":"10969","name":"Ir0n K!ng$","address":"San Antonio, TX 78228 USA","latlong":["29.46191102051008","-98.49114082600794"],"website":""}
+{"id":"10970","name":"Somerset Un-named #1","address":"Somerset, TX 78069 USA","latlong":["29.228108352761655","-98.642546025157"],"website":""}
+{"id":"10971","name":"The LuNaTeCs","address":"Somerset, TX 78069 USA","latlong":["29.230440532568746","-98.6309697400656"],"website":""}
+{"id":"10974","name":"IronMariners","address":"Toms River, NJ 08753 USA","latlong":["39.96204036207003","-74.16816423226308"],"website":""}
+{"id":"10975","name":"Raiders-ShortCircuits","address":"Toms River, NJ 08753 USA","latlong":["39.96392704460846","-74.15914065207599"],"website":""}
+{"id":"10980","name":"Cookiebytes","address":"Apopka, FL 32703 USA","latlong":["28.684288295503137","-81.5051615104994"],"website":""}
+{"id":"10981","name":"Soaring Eagles","address":"Phoenix, AZ 85043 USA","latlong":["33.42983508015575","-112.19323777006603"],"website":""}
+{"id":"10982","name":"Ulrich Robotics","address":"Houston, TX 77070 USA","latlong":["29.77005867437618","-95.37443667125387"],"website":""}
+{"id":"10984","name":"Beep Patrol","address":"Litchfield Park, AZ 85340 USA","latlong":["33.51862900976659","-112.34888849347169"],"website":""}
+{"id":"10985","name":"Warriors 1","address":"Fort Worth, TX 76133 USA","latlong":["32.75699583277446","-97.31784595538382"],"website":""}
+{"id":"10986","name":"ARC","address":"Anamosa, IA 52205 USA","latlong":["42.107305422450096","-91.27727664141284"],"website":""}
+{"id":"10990","name":"Mountain Home AFB","address":"Mountain Home AFB, ID 83648 USA","latlong":["43.052017123845154","-115.85726812316628"],"website":""}
+{"id":"10991","name":"Eagles","address":"Anchorage, AK 99517 USA","latlong":["61.191185240396756","-149.93902766977692"],"website":""}
+{"id":"10992","name":"Arsenal","address":"Fort Worth, TX 76133 USA","latlong":["32.76920790335217","-97.30644400620236"],"website":""}
+{"id":"10994","name":"PSJA Buell HS","address":"Pharr, TX 78577 USA","latlong":["26.187897496650834","-98.1704551786302"],"website":"http://firstrgv.org/"}
+{"id":"10995","name":"T-STEM FTC 1","address":"Pharr, TX 78577 USA","latlong":["26.19342302161467","-98.16888208980198"],"website":""}
+{"id":"10996","name":"T-STEM FTC 2","address":"Pharr, TX 78577 USA","latlong":["26.202112960494084","-98.15764285264314"],"website":""}
+{"id":"10998","name":"MechaLynx","address":"anchorage, AK 99502 USA","latlong":["61.16702014589481","-149.98671718206617"],"website":"http://www.dimondrobotics.com"}
+{"id":"11000","name":"Rowe-botic Warriors","address":"McAllen, TX 78501 USA","latlong":["26.21725007370827","-98.2212544363175"],"website":""}
+{"id":"11002","name":"Die Toaster Die!","address":"Midvale, UT 84047 USA","latlong":["40.60999543465052","-111.87743607436204"],"website":""}
+{"id":"11003","name":"Cyber Blue","address":"Manasquan, NJ 08736 USA","latlong":["40.1127634642254","-74.02397468777934"],"website":""}
+{"id":"11004","name":"Heartbreakers","address":"Odessa, TX 79762 USA","latlong":["31.87372977855495","-102.34486927207833"],"website":""}
+{"id":"11009","name":"McHi Robotics","address":"McAllen, TX 78503 USA","latlong":["26.21039154166148","-98.22821498132153"],"website":""}
+{"id":"11011","name":"BearBot","address":"Beaumont, TX 77706 USA","latlong":["30.08334847165925","-94.13900596271542"],"website":""}
+{"id":"11012","name":"FRONTIER STEM","address":"Kansas City, MO 64120 USA","latlong":["39.10050140878893","-94.57289576147161"],"website":""}
+{"id":"11013","name":"AHCS Cougars","address":"Auburn Hills, MI 48326 USA","latlong":["42.67011877414198","-83.23427971601295"],"website":""}
+{"id":"11014","name":"Chemawa Brave Bots","address":"Salem, OR 97305 USA","latlong":["45.02070509136324","-122.89857975089978"],"website":""}
+{"id":"11018","name":"RoBovine","address":"Coppell, TX 75019 USA","latlong":["32.96095163483161","-96.98574927979884"],"website":""}
+{"id":"11019","name":"RRock^3","address":"Round Rock, TX 78681 USA","latlong":["30.510091594567765","-97.65812612757777"],"website":""}
+{"id":"11020","name":"Terminators","address":"Apopka, FL 32703 USA","latlong":["28.693835124709857","-81.50079000188327"],"website":""}
+{"id":"11021","name":"Catalyst","address":"Imperial, MO 63052 USA","latlong":["38.36310366593576","-90.35818018287861"],"website":""}
+{"id":"11023","name":"Robowarriors","address":"Jourdanton, TX 78026 USA","latlong":["28.91251251723456","-98.53332138960508"],"website":""}
+{"id":"11025","name":"Taurus","address":"San Antonio, TX 78228 USA","latlong":["29.47423779098319","-98.48718800068342"],"website":""}
+{"id":"11026","name":"Rebel Robotics FTC","address":"Tallapoosa, GA 30176 USA","latlong":["33.75217780090779","-85.28601541957525"],"website":"http://www.rebelrobotiics.info"}
+{"id":"11030","name":"Metal Jackets","address":"Fort Worth, TX 76107 USA","latlong":["32.757042336922936","-97.32842934331143"],"website":""}
+{"id":"11031","name":"BentonBots 2.0","address":"Potts Camp, MS 38659 USA","latlong":["34.642735957362156","-89.29534388281783"],"website":""}
+{"id":"11032","name":"elcentrobots","address":"philadelphia , PA 19133 USA","latlong":["39.962259237247174","-75.15192004147045"],"website":""}
+{"id":"11033","name":"Team Avengers","address":"Pascagoula, MS 39567 USA","latlong":["30.366039854465342","-88.5329351202688"],"website":""}
+{"id":"11034","name":"Cavemen Robotics","address":"Mishawaka, IN 46544 USA","latlong":["41.66928075954048","-86.14859903430498"],"website":""}
+{"id":"11035","name":"Gouverneur Robo Cats","address":"Gouverneur, NY 13642 USA","latlong":["44.33903788069246","-75.45293437849544"],"website":""}
+{"id":"11039","name":"Innov8rz","address":"Fremont, CA 94539 USA","latlong":["37.510191152719585","-121.88284263905976"],"website":""}
+{"id":"11045","name":"All-Tech-No-Logic","address":"Green Bay, WI 54301 USA","latlong":["44.523107326768155","-87.9722790749894"],"website":""}
+{"id":"11046","name":"Kindle the Passion Robotics","address":"North Hollywood, CA 91605 USA","latlong":["34.21087672274059","-118.38688098451107"],"website":""}
+{"id":"11049","name":"Unstable Nucleus","address":"Highland Park, IL 60035 USA","latlong":["42.18885950077904","-87.7897917441138"],"website":""}
+{"id":"11054","name":"Former Rhinososauruses","address":"Sandia Park, NM 87047 USA","latlong":["35.160313830082515","-106.35567168538765"],"website":""}
+{"id":"11055","name":"ROBOKRAFTERS","address":"Fort Lauderdale, FL 33311 USA","latlong":["26.143568013322028","-80.12370251469585"],"website":""}
+{"id":"11062","name":"Cookienauts","address":"Layton, UT 84040 USA","latlong":["41.0896797435047","-111.89215060099686"],"website":""}
+{"id":"11063","name":"eNDVR","address":"Missoula, MT 59801 USA","latlong":["46.85655736670598","-113.97861201451667"],"website":""}
+{"id":"11065","name":"QC NSBE Jr.","address":"Charlotte, NC 28216 USA","latlong":["35.19648656078961","-80.81924865772844"],"website":""}
+{"id":"11066","name":"Florence Robotics","address":"Florence, SC 29501 USA","latlong":["34.18646862197228","-79.77767533573817"],"website":""}
+{"id":"11067","name":"RaiderBots","address":"Elmsford, NY 10523 USA","latlong":["41.061845029589115","-73.79807113369277"],"website":""}
+{"id":"11068","name":"KIPP Liberation Eaglebots","address":"Houston, TX 77021 USA","latlong":["29.760942767780037","-95.37863165882048"],"website":""}
+{"id":"11069","name":"TechnoWizards","address":"Springfield, OH 45506 USA","latlong":["39.93047645555572","-83.78042700253509"],"website":""}
+{"id":"11070","name":"ScorpioTech","address":"San Luis, AZ 85349 USA","latlong":["32.495514407590576","-114.75846752484807"],"website":""}
+{"id":"11072","name":"Fe ArSeNAl","address":"Springfield, IL 62707 USA","latlong":["39.78872959474038","-89.63241688444138"],"website":""}
+{"id":"11073","name":"Brobotics","address":"Marble Hill, MO 63764 USA","latlong":["37.312276732452005","-89.9697537251602"],"website":""}
+{"id":"11074","name":"Fire and Brimstone","address":"San Antonio, TX 78245 USA","latlong":["29.450935999346626","-98.48868505765451"],"website":""}
+{"id":"11075","name":"South Jordan Middle School","address":"South Jordan, UT 84095 USA","latlong":["40.557063944770846","-111.94960532385079"],"website":""}
+{"id":"11076","name":"Chariho Middle School","address":"Wood River Junction, RI 02894 USA","latlong":["41.45866524930396","-71.68917786968977"],"website":""}
+{"id":"11077","name":"Alchesay Falcons","address":"Whiteriver, AZ 85941 USA","latlong":["33.8056388686171","-110.08175576856634"],"website":""}
+{"id":"11078","name":"Diet Water","address":"South Jordan, UT 84095 USA","latlong":["40.56178674411886","-111.94590440945781"],"website":""}
+{"id":"11079","name":"Nuts & Bolts","address":"Sidney, NE 69162 USA","latlong":["41.140919758159214","-102.96424525918873"],"website":""}
+{"id":"11081","name":"ftcSPARC","address":"Murray, KY 42071 USA","latlong":["36.61219550177827","-88.30803490047579"],"website":""}
+{"id":"11083","name":"Quantum Ghosts","address":"Randolph, VT 05060 USA","latlong":["43.927049755384864","-72.66893359430303"],"website":""}
+{"id":"11084","name":"BWSUP","address":"Middlefield, MA 01243 USA","latlong":["42.35176347706932","-73.00217824219413"],"website":""}
+{"id":"11085","name":"MHS","address":"Mansfield, TX 76063 USA","latlong":["32.56995047782332","-97.09837904748325"],"website":""}
+{"id":"11086","name":"Tech Waves","address":"Columbia, SC 29229 USA","latlong":["34.00780242361668","-81.01914394938066"],"website":""}
+{"id":"11087","name":"BAS TECH","address":"Brooklyn, NY 11235 USA","latlong":["40.64822043522949","-73.93577131793899"],"website":""}
+{"id":"11088","name":"STOBOR","address":"Syosset, NY 11791 USA","latlong":["40.81622092808827","-73.49877958733435"],"website":"http://WWW.STOBOR.CLUB"}
+{"id":"11089","name":"Bytes of Kitkats","address":"Portland, OR 97229 USA","latlong":["45.55836070979267","-122.8087813782888"],"website":""}
+{"id":"11090","name":"Chaos Monkeyz","address":"Austin, TX 78746 USA","latlong":["30.2723735494027","-97.73120345371487"],"website":""}
+{"id":"11091","name":"Reynoldsburg Robotics","address":"Reynoldsburg, OH 43068 USA","latlong":["39.95589993659062","-82.77817729361267"],"website":""}
+{"id":"11092","name":"The Dark Side","address":"Stover, MO 65078 USA","latlong":["38.447190051366405","-92.96976559933664"],"website":""}
+{"id":"11093","name":"MegaKnytes","address":"Austin, TX 78750 USA","latlong":["30.260759234918677","-97.73072784377857"],"website":""}
+{"id":"11095","name":"Loose Screws","address":"Solon, OH 44139 USA","latlong":["41.38169722566341","-81.43859971848785"],"website":""}
+{"id":"11096","name":"East Cobb Robotics FTC","address":"Marietta, GA 30062 USA","latlong":["33.96137524016633","-84.53231143998386"],"website":"http://www.eastcobbrobotics.org/"}
+{"id":"11097","name":"Cyber Surge","address":"Desoto, TX 75115 USA","latlong":["32.58167650284028","-96.85769961496715"],"website":"http://www.umepreprobotics.com/"}
+{"id":"11098","name":"Nuclear Norsemen","address":"Lake Odessa, MI 48849 USA","latlong":["42.791088377904565","-85.11888687504147"],"website":"http://www.lakewoodrobotics.org"}
+{"id":"11099","name":"Tacobots","address":"Fremont, CA 94539 USA","latlong":["37.51117829034642","-121.87470227439105"],"website":"http://www.tacobots.org/"}
+{"id":"11100","name":"We are Robo","address":"Wakefield, MA 01880 USA","latlong":["42.51023514888373","-71.05395123606742"],"website":""}
+{"id":"11101","name":"Insert Name Here","address":"Palo Alto, CA 94306 USA","latlong":["37.411639550030536","-122.12572676351945"],"website":""}
+{"id":"11102","name":"Team M.O.R.E. (Marshall Owls Robotics & Engineering)","address":"Marshall, MO 65340 USA","latlong":["39.11865971368561","-93.19045046893714"],"website":""}
+{"id":"11103","name":"Tech Tonix","address":"Bedford, NH 03110 USA","latlong":["42.95175502422332","-71.48978339023391"],"website":""}
+{"id":"11104","name":"Bearded Pineapples","address":"Redmond, WA 98052 USA","latlong":["47.691689161713484","-122.11799547201534"],"website":"http://www.beardedpineapples.com/"}
+{"id":"11105","name":"ROBOTICMINDS","address":"Westbury, NY 11590 USA","latlong":["40.75981789657075","-73.57064400190414"],"website":""}
+{"id":"11106","name":"Tech4mers","address":"Apopka, FL 32703 USA","latlong":["28.705678340885477","-81.49122956777164"],"website":""}
+{"id":"11107","name":"Wired Up","address":"Solana Beach, CA 92075 USA","latlong":["32.99806926754729","-117.24833770731881"],"website":""}
+{"id":"11108","name":"Bomb Squad: STEMinists","address":"Mountain Home, AR 72653 USA","latlong":["36.34014088977431","-92.36477799845017"],"website":""}
+{"id":"11109","name":"Pirate Tekerz","address":"Seattle, WA 98166 USA","latlong":["47.446024057970675","-122.34523123643177"],"website":""}
+{"id":"11111","name":"TechnoBots","address":"Brooklyn, NY 11208 USA","latlong":["40.65505712200623","-73.93708825645176"],"website":""}
+{"id":"11112","name":"RoboLords","address":"Ashburn, VA 20147 USA","latlong":["39.05466467392115","-77.46253471616407"],"website":""}
+{"id":"11113","name":"Team Tech","address":"Brooklyn, NY 11208 USA","latlong":["40.66554278065929","-73.93106983408013"],"website":""}
+{"id":"11114","name":"Jump Start","address":"Hobart, IN 46342 USA","latlong":["41.53764976943997","-87.25146188751462"],"website":""}
+{"id":"11115","name":"Gluten Free","address":"Hollis, NH 03049 USA","latlong":["42.736388748024716","-71.57005971024026"],"website":""}
+{"id":"11116","name":"Waffles and Bacon","address":"Houston, TX 77008 USA","latlong":["29.770279129913977","-95.37942625839703"],"website":""}
+{"id":"11117","name":"St. Paul Academy and Summit School","address":"Saint Paul, MN 55105 USA","latlong":["44.94309232885875","-93.09133818667362"],"website":""}
+{"id":"11118","name":"Jagbots","address":"Houston, TX 77025 USA","latlong":["29.761133657945003","-95.37176071767358"],"website":""}
+{"id":"11119","name":"Lincoln Trojans","address":"Stockton, CA 95209 USA","latlong":["38.04387602590457","-121.34828400246509"],"website":""}
+{"id":"11120","name":"Eagle Bots","address":"Kenmore, WA 98028 USA","latlong":["47.760571085933066","-122.23932439453934"],"website":"http://www.cpcroboticscouncil.org/"}
+{"id":"11121","name":"4-H Ocosta Robotics I","address":"Westport, WA 98595 USA","latlong":["46.88193484411883","-124.10140507740972"],"website":""}
+{"id":"11122","name":"4-H Ocosta Robotics II","address":"Westport, WA 98595 USA","latlong":["46.89016799117286","-124.08960293706924"],"website":""}
+{"id":"11123","name":"Fuzzy Logic","address":"Bellevue, WA 98008 USA","latlong":["47.601486133688816","-122.10564283670128"],"website":""}
+{"id":"11124","name":"Angelbots","address":"Demarest, NJ 07627 USA","latlong":["40.956336065009864","-73.93831248006036"],"website":""}
+{"id":"11126","name":"Revolution Robotics","address":"Chaffee, MO 63740 USA","latlong":["37.182908214672125","-89.64909400346154"],"website":"http://www.facebook.com/CIARobotics"}
+{"id":"11127","name":"Whitefield Robotics","address":"Mableton, GA 30126 USA","latlong":["33.813878136314145","-84.55038404968491"],"website":""}
+{"id":"11128","name":"Inspiration","address":"San Diego, CA 92131 USA","latlong":["32.891946920781805","-117.06938758568701"],"website":""}
+{"id":"11129","name":"RoboTitans","address":"Novi, MI 48375 USA","latlong":["42.472330568073794","-83.4816790702748"],"website":""}
+{"id":"11130","name":"Kokomo RoboKats","address":"Kokomo, IN 46902 USA","latlong":["40.47496663778361","-86.12409447938008"],"website":""}
+{"id":"11131","name":"Cyber Knights","address":"Pewaukee, WI 53072 USA","latlong":["43.08137459528148","-88.24571498430848"],"website":""}
+{"id":"11132","name":"HERD (High School Engineering Robotics Division)","address":"New Brunswick, NJ 08901 USA","latlong":["40.489788127871286","-74.42759157618212"],"website":""}
+{"id":"11133","name":"Milford Hawks","address":"Milford, MA 01757 USA","latlong":["42.14438356294007","-71.50890136546208"],"website":""}
+{"id":"11134","name":"Chicken Nuggets","address":"Pasco, WA 99301 USA","latlong":["46.41480012111849","-118.89702343754703"],"website":""}
+{"id":"11135","name":"Rusty Knights FTC","address":"Hebron, OH 43025 USA","latlong":["39.9612809769645","-82.48436777207506"],"website":""}
+{"id":"11136","name":"Warriors 3","address":"Fort Worth, TX 76133 USA","latlong":["32.77212298954562","-97.29905271030538"],"website":"http://wedgwood.fwisd.org/pages/Wedgwood"}
+{"id":"11137","name":"E-Lemon-Ators","address":"Holcomb, MO 63852 USA","latlong":["36.409539175033714","-90.0100922553552"],"website":""}
+{"id":"11138","name":"Robo Eclipse","address":"Bellevue, WA 98006 USA","latlong":["47.55373989995022","-122.13973758856883"],"website":""}
+{"id":"11139","name":"NRP RoboKnights","address":"Niles, IL 60714 USA","latlong":["42.02234491678548","-87.79465961763809"],"website":""}
+{"id":"11141","name":"Neon Nights Reload","address":"Lawrenceville, GA 30043 USA","latlong":["33.94011591172862","-83.98379107123074"],"website":""}
+{"id":"11142","name":"Robo Minions Rebooted","address":"Bettendorf, IA 52722 USA","latlong":["41.560992110159034","-90.4693030078025"],"website":"http://ftc-team11142.weebly.com/"}
+{"id":"11149","name":"LABRATS Robotics & Engineering","address":"Houston, TX 77069 USA","latlong":["29.763844485412644","-95.37738574905237"],"website":""}
+{"id":"11150","name":"Thunder PengWin Robotics Team","address":"Saint Paul, MN 55123 USA","latlong":["44.941342064958995","-93.09167168622429"],"website":"http://ThunderPengWinRoboticsTeam.com"}
+{"id":"11151","name":"Team Syntax","address":"Laredo, TX 78042 USA","latlong":["27.53467755709849","-99.47376397514441"],"website":""}
+{"id":"11152","name":"DigiCore","address":"Laredo, TX 78042 USA","latlong":["27.543569483740114","-99.47340859707006"],"website":""}
+{"id":"11153","name":"The Lightning Colts","address":"Big Rapids, MI 49307 USA","latlong":["43.70826384315299","-85.4746464649768"],"website":""}
+{"id":"11154","name":"Widener-Chester","address":"Chester, PA 19013 USA","latlong":["39.84652879752486","-75.36622276443136"],"website":""}
+{"id":"11155","name":"Clash of Coders","address":"San Antonio, TX 78255 USA","latlong":["29.45765807271447","-98.48865920518294"],"website":"https://www.facebook.com/Clash-of-Coders-559450594220692/"}
+{"id":"11156","name":"Harlingen High School","address":"Harlingen, TX 78550 USA","latlong":["26.200986920581006","-97.66905429983034"],"website":""}
+{"id":"11157","name":"Harlingen High School South","address":"Harlingen, TX 78550 USA","latlong":["26.210287501189928","-97.66162072840801"],"website":""}
+{"id":"11158","name":"ECHS Robotics","address":"Harlingen, TX 78550 USA","latlong":["26.212961447894827","-97.65922471033349"],"website":""}
+{"id":"11159","name":"Dr. Abraham P Cano Freshman Academy","address":"Harlingen, TX 78550 USA","latlong":["26.22320974074252","-97.65065722350776"],"website":""}
+{"id":"11160","name":"The Prophet Programmers","address":"Prophetstown, IL 61277 USA","latlong":["41.66184457008875","-89.9188092154911"],"website":""}
+{"id":"11161","name":"Tennessee Robotics Club","address":"Murfreesboro, TN 37127 USA","latlong":["35.85497478273899","-86.38070078452668"],"website":"http://www.tennesseeroboticsclub.org"}
+{"id":"11162","name":"Team Circuit Breakers","address":"Cos Cob, CT 06807 USA","latlong":["41.068547672858855","-73.58336100801536"],"website":"http://www.teamcircuitbreakers.com"}
+{"id":"11163","name":"LadyTitans","address":"Chicago, IL 60626 USA","latlong":["41.83162296318397","-87.66896909702368"],"website":""}
+{"id":"11164","name":"Sum Ting Wong","address":"Longview, TX 75605 USA","latlong":["32.5152077273792","-94.75191935692867"],"website":""}
+{"id":"11165","name":"O-Bots","address":"Honolulu, HI 96813 USA","latlong":["21.312350548523508","-157.84829087560016"],"website":""}
+{"id":"11166","name":"Big Red Robotics","address":"Lawrence Township, NJ 08648 USA","latlong":["40.224426682664706","-74.7579484646186"],"website":""}
+{"id":"11167","name":"Tezo Systems Robotics","address":"Sun Valley, CA 91352 USA","latlong":["34.23600478537616","-118.33650150674956"],"website":""}
+{"id":"11168","name":"The Quantum Mechanics","address":"Eagle River, AK 99577 USA","latlong":["61.218363125696044","-149.24810042388867"],"website":""}
+{"id":"11169","name":"The Nuts & Bolts of Fury","address":"Waterbury, CT 06708 USA","latlong":["41.55539065111116","-73.0191647994939"],"website":""}
+{"id":"11170","name":"Central Catholic High School","address":"Portland, OR 97214 USA","latlong":["45.51710662255415","-122.63075859843457"],"website":""}
+{"id":"11171","name":"Charge","address":"San Antonio, TX 78216 USA","latlong":["29.46184695985328","-98.49081691508195"],"website":"http://stemrobotics.weebly.com/"}
+{"id":"11172","name":"Bolles Bots","address":"Jacksonville, FL 32256 USA","latlong":["30.338800943969268","-81.643229870614"],"website":""}
+{"id":"11173","name":"Hall of Pi","address":"Montvale, NJ 07645 USA","latlong":["41.05985524680473","-74.0394479355757"],"website":""}
+{"id":"11174","name":"mc² Robotics","address":"Trumbull, CT 06611 USA","latlong":["41.25676593850926","-73.1959245084469"],"website":"http://mcsquarerobo.wix.com/robo"}
+{"id":"11175","name":"Providence Academy Lions","address":"Minneapolis, MN 55446 USA","latlong":["44.971492917407865","-93.25597231694071"],"website":""}
+{"id":"11176","name":"Panthers","address":"Redford, MI 48239 USA","latlong":["42.39313664899155","-83.27898187782795"],"website":""}
+{"id":"11177","name":"River Bend Red","address":"Fulton, IL 61252 USA","latlong":["41.86419887635925","-90.13862262787741"],"website":""}
+{"id":"11178","name":"River Bend Black","address":"Fulton, IL 61252 USA","latlong":["41.87260747741317","-90.13422531493342"],"website":""}
+{"id":"11179","name":"St. John Bosco Knights","address":"Edmond, OK 73025 USA","latlong":["35.65098892876887","-97.46262392442983"],"website":""}
+{"id":"11180","name":"Beaks n' Bolts Robotics","address":"Caldwell, NJ 07006 USA","latlong":["40.83958305466655","-74.2666344666749"],"website":""}
+{"id":"11181","name":"Robo-Raptors","address":"Burton, MI 48509 USA","latlong":["42.9997170546065","-83.60606957783672"],"website":""}
+{"id":"11182","name":"Wolverines","address":"Sacramento, CA 95827 USA","latlong":["38.5508343564789","-121.3131922504322"],"website":"https://sites.google.com/site/rosemontroboticsclub5274/home"}
+{"id":"11183","name":"McQueen High School- 32 Bit","address":"Reno, NV 89523 USA","latlong":["39.49426879703185","-119.89336906279851"],"website":""}
+{"id":"11184","name":"Obsidian Fortress","address":"Brooklyn, NY 11239 USA","latlong":["40.65055870411716","-73.92907773734878"],"website":"http://tech262.wixsite.com/obsidianfortress"}
+{"id":"11185","name":"Robotic Revolution","address":"Plano, TX 75025 USA","latlong":["33.047759765835536","-96.73740371909288"],"website":"http://roboticrevolutionFLL.weebly.com"}
+{"id":"11186","name":"Wahkiakum 4H Robotics","address":"Cathlamet, WA 98612 USA","latlong":["46.2200737823953","-123.29930273555534"],"website":""}
+{"id":"11187","name":"AZTECHS FTC","address":"Dublin, OH 43017 USA","latlong":["40.11358376510598","-83.12042613893831"],"website":""}
+{"id":"11188","name":"Team NOVA","address":"Beacon Falls, CT 06403 USA","latlong":["41.444732122675745","-73.03037222699304"],"website":""}
+{"id":"11189","name":"ROBOHAWKS2","address":"Beacon Falls, CT 06403 USA","latlong":["41.45168473931589","-73.02928615804096"],"website":""}
+{"id":"11190","name":"MechaDojo","address":"Eden Prairie, MN 55347 USA","latlong":["44.842384611018986","-93.44195395405919"],"website":""}
+{"id":"11191","name":"Red Vectors","address":"Saint Louis, MO 63131 USA","latlong":["38.6387287646712","-90.23112605277632"],"website":""}
+{"id":"11193","name":"Flying DutchBots","address":"Manchester, MI 48158 USA","latlong":["42.141685885715695","-84.0207028157544"],"website":""}
+{"id":"11194","name":"Ante-Bionics","address":"Point Pleasant Beach, NJ 08742 USA","latlong":["40.09179332180802","-74.02993783511276"],"website":""}
+{"id":"11195","name":"Envisioneers Jr. One","address":"Prentiss, MS 39474 USA","latlong":["31.59545769360873","-89.86708661051307"],"website":""}
+{"id":"11196","name":"madgamerz","address":"Troy, MI 48084 USA","latlong":["42.58914651098263","-83.13445333279596"],"website":""}
+{"id":"11197","name":"Envisioneers Jr. Two","address":"Prentiss, MS 39474 USA","latlong":["31.60063735814661","-89.85668797686408"],"website":""}
+{"id":"11198","name":"Ingene Intermediate Mechatronics","address":"Michigan City, IN 46360 USA","latlong":["41.71603270096563","-86.85958801371538"],"website":"http://www.nfrinstitute.org"}
+{"id":"11199","name":"Forge","address":"Pembroke Pines, FL 33028 USA","latlong":["26.00146468947665","-80.3359236457636"],"website":"http://www.ForgeRobotics.org"}
+{"id":"11200","name":"Phenomena","address":"Lafayette, LA 70508 USA","latlong":["30.21134057350729","-92.0141007833259"],"website":""}
+{"id":"11201","name":"Piedmont Pioneers","address":"Oakland, CA 94611 USA","latlong":["37.838333549514694","-122.20853345556314"],"website":""}
+{"id":"11202","name":"Cyber Centurions","address":"Sahuarita, AZ 85629 USA","latlong":["31.912257472983732","-110.8944313724875"],"website":""}
+{"id":"11203","name":"DURT (DeSmet United Robotics Team)","address":"Saint Louis, MO 63141 USA","latlong":["38.630566109676565","-90.23773011588246"],"website":""}
+{"id":"11204","name":"Shark-A-Tech","address":"Fort Lauderdale, FL 33309 USA","latlong":["26.14201433790554","-80.12637466423685"],"website":""}
+{"id":"11205","name":"Edgemont Robotics Club","address":"Scarsdale, NY 10583 USA","latlong":["40.98105075715698","-73.76770625498207"],"website":""}
+{"id":"11206","name":"Ordean Devil Dogs","address":"Duluth, MN 55804 USA","latlong":["46.79017253912542","-92.10493172848228"],"website":""}
+{"id":"11207","name":"Iron Panthers","address":"Chicago, IL 60616 USA","latlong":["41.83163416288533","-87.67590571468732"],"website":""}
+{"id":"11208","name":"Kardia STEM Program","address":"Reading, PA 19604 USA","latlong":["40.338678035657445","-75.90824583067284"],"website":""}
+{"id":"11209","name":"Code Crushing Griffins","address":"Glen Allen, VA 23060 USA","latlong":["37.66973647969949","-77.4742571586014"],"website":""}
+{"id":"11210","name":"Infinity Robotechs","address":"Canonsburg, PA 15317 USA","latlong":["40.26488086031466","-80.1749247542902"],"website":"http://www.infinityrobotechs.org"}
+{"id":"11211","name":"LCCS Thunderbots","address":"Hartville, OH 44632 USA","latlong":["40.97024642648903","-81.32031077189784"],"website":""}
+{"id":"11212","name":"The Clueless","address":"San Diego, CA 92129 USA","latlong":["32.96100776221812","-117.1128832459368"],"website":""}
+{"id":"11213","name":"Mustangs","address":"Los Angeles, CA 90003 USA","latlong":["33.961715401583575","-118.26930997018545"],"website":""}
+{"id":"11214","name":"Ground Shakers","address":"Summerville, SC 29485 USA","latlong":["33.00511222802856","-80.15938844768446"],"website":""}
+{"id":"11215","name":"Electrobots","address":"Bel Air, MD 21015 USA","latlong":["39.542305874203045","-76.33211107446186"],"website":""}
+{"id":"11216","name":"Buffering","address":"Lowville, NY 13367 USA","latlong":["43.783305752843965","-75.47927964170619"],"website":""}
+{"id":"11217","name":"Plainwell Stem Academy","address":"Plainwell, MI 49080 USA","latlong":["42.44192612782235","-85.628883947748"],"website":""}
+{"id":"11218","name":"Plaid Peacocks","address":"Charlottesville, VA 22901 USA","latlong":["38.0332365068366","-78.46991427874343"],"website":""}
+{"id":"11219","name":"Canyon State Techies","address":"Queen Creek, AZ 85142 USA","latlong":["33.164173112838846","-111.58516358135486"],"website":""}
+{"id":"11220","name":"Bayou Bots","address":"Alexandria, LA 71303 USA","latlong":["31.298835824962524","-92.45325954665338"],"website":""}
+{"id":"11221","name":"Byhalia Robotics Team","address":"Byhalia, MS 38611 USA","latlong":["34.86845470162029","-89.67095098775694"],"website":""}
+{"id":"11222","name":"TROJAN TERABYTES","address":"Neola, IA 51559 USA","latlong":["41.46018027955231","-95.6022359053612"],"website":""}
+{"id":"11223","name":"Heath Panthers","address":"Greeley, CO 80634 USA","latlong":["40.42734279839152","-104.73118791044098"],"website":""}
+{"id":"11225","name":"Louisville Collegiate Robotics","address":"Louisville, KY 40204 USA","latlong":["38.224408917009946","-85.73905711317629"],"website":""}
+{"id":"11227","name":"Gears^5 Power","address":"Houston, TX 77245 USA","latlong":["29.761426114436254","-95.36817997722491"],"website":""}
+{"id":"11228","name":"Cityside Middle School","address":"Zeeland, MI 49464 USA","latlong":["42.81334167432519","-86.0085139753841"],"website":""}
+{"id":"11230","name":"OMS ElektraKatz","address":"Oxford, MI 48371 USA","latlong":["42.82882606676551","-83.2450786097534"],"website":"https://www.facebook.com/OMS-ElektraKatz-FTC-Robotics-Team-11230-526099407584070/"}
+{"id":"11231","name":"Cyborg Cats","address":"Oxford, MI 48371 USA","latlong":["42.8406564965799","-83.24359212188273"],"website":"http://torc2137.com/oxford-first-family/"}
+{"id":"11232","name":"Ridgeview RoboRaptors","address":"Visalia, CA 93291 USA","latlong":["36.40486400565929","-119.3709378980464"],"website":""}
+{"id":"11233","name":"Charlie","address":"Spokane, WA 99212 USA","latlong":["47.658738821766526","-117.30166858576929"],"website":""}
+{"id":"11234","name":"Chandra","address":"Spokane, WA 99212 USA","latlong":["47.65949563502345","-117.29748887783774"],"website":""}
+{"id":"11235","name":"Retro Robotics","address":"East Peoria, IL 61611 USA","latlong":["40.67373674475976","-89.53977976672431"],"website":""}
+{"id":"11236","name":"IbotBuilders","address":"Holmdel, NJ 07733 USA","latlong":["40.37089462378383","-74.1607452150233"],"website":""}
+{"id":"11237","name":"Cal Coast Academy","address":"San Diego, CA 92130 USA","latlong":["32.9574825647234","-117.17833889737811"],"website":""}
+{"id":"11238","name":"STEAM TEAM","address":"Las Vegas, NV 89148 USA","latlong":["36.06303612726738","-115.29830212569235"],"website":""}
+{"id":"11239","name":"Bionic Eagles","address":"Houston, TX 77018 USA","latlong":["29.761007405817836","-95.36863804303816"],"website":""}
+{"id":"11240","name":"Tech Terrorz","address":"Mustang, OK 73064 USA","latlong":["35.395268895016784","-97.71577337841532"],"website":""}
+{"id":"11241","name":"Blue Steel","address":"Farmingdale, NJ 07727 USA","latlong":["40.19167734442137","-74.16160663674196"],"website":"https://mrrmorgan.wordpress.com/first-robotics/"}
+{"id":"11242","name":"Goofy Goobers","address":"Ferris, TX 75125 USA","latlong":["32.53021154984499","-96.65296228424698"],"website":"http://www.ftc11242.com/"}
+{"id":"11243","name":"CyberSenators","address":"Houston, TX 77047 USA","latlong":["29.76794766166287","-95.37196741278117"],"website":""}
+{"id":"11244","name":"Fierce Avengers","address":"Novi, MI 48374 USA","latlong":["42.48172110931846","-83.48132701467854"],"website":""}
+{"id":"11245","name":"Victor FTC Team 1","address":"Victor, NY 14564 USA","latlong":["42.98427074638002","-77.39800346862157"],"website":""}
+{"id":"11246","name":"Victor FTC Team 2","address":"Victor, NY 14564 USA","latlong":["42.9885875082816","-77.39258217341695"],"website":""}
+{"id":"11247","name":"Pro Vision HS","address":"Houston, TX 77021 USA","latlong":["29.761949493478866","-95.370404245402"],"website":""}
+{"id":"11248","name":"//Cougars","address":"Chatham, NJ 07928 USA","latlong":["40.7453722096621","-74.36833837332391"],"website":""}
+{"id":"11249","name":"Mc Reynolds MS Mighty Bears","address":"Houston, TX 77020 USA","latlong":["29.763831447599838","-95.37507426891024"],"website":""}
+{"id":"11250","name":"Dragon Bots","address":"Houston, TX 77017 USA","latlong":["29.764378946357926","-95.37442777505706"],"website":""}
+{"id":"11251","name":"Lexington Legoheads","address":"Lexington, MA 02420 USA","latlong":["42.44234156885098","-71.22099510171482"],"website":""}
+{"id":"11252","name":"RoboCats Black","address":"Central City, IA 52214 USA","latlong":["42.20070720773512","-91.51603507446835"],"website":""}
+{"id":"11253","name":"Roxbotix Jr.","address":"Succasunna, NJ 07876 USA","latlong":["40.858036753040984","-74.64140779571254"],"website":""}
+{"id":"11254","name":"Robo Rhinos","address":"Novi, MI 48377 USA","latlong":["42.47149881429356","-83.4888244818563"],"website":""}
+{"id":"11255","name":"TSAR","address":"Medford, OR 97504 USA","latlong":["42.33422831936011","-122.78850837493688"],"website":""}
+{"id":"11256","name":"Nano Nerds","address":"Folsom, CA 95630 USA","latlong":["38.671020687751486","-121.13002206565005"],"website":"http://nanonerds.org"}
+{"id":"11257","name":"Robotic Rockettes","address":"Princeton, NJ 08540 USA","latlong":["40.35988874338628","-74.64098368904439"],"website":"http://www.ywcaprinceton.org/robotics"}
+{"id":"11259","name":"Team ATOM","address":"Searcy, AR 72143 USA","latlong":["35.24689411807676","-91.72037022929652"],"website":""}
+{"id":"11260","name":"Up-A-Creek Robotics","address":"Longmont, CO 80501 USA","latlong":["40.172187992009036","-105.10222287980692"],"website":"http://www.team1619.org"}
+{"id":"11261","name":"Protectors of Rupert","address":"Berkeley Springs, WV 25411 USA","latlong":["39.55831975293995","-78.20193801605221"],"website":"https://www.facebook.com/groups/286481071543326/"}
+{"id":"11262","name":"Patriot Bot","address":"Spencer, IN 47460 USA","latlong":["39.280210369664424","-86.75452260349569"],"website":""}
+{"id":"11263","name":"TechnoMancers","address":"Jacksonville, FL 32207 USA","latlong":["30.330103060942125","-81.64847278645354"],"website":""}
+{"id":"11264","name":"Bots in Black","address":"Sioux Falls, SD 57103 USA","latlong":["43.54712419739611","-96.72276200806444"],"website":""}
+{"id":"11265","name":"Astro-Tigers","address":"Lanham, MD 20706 USA","latlong":["38.97181847703329","-76.84089429535611"],"website":""}
+{"id":"11266","name":"Black River","address":"Holland, MI 49423 USA","latlong":["42.77682486534632","-86.0891631803766"],"website":""}
+{"id":"11267","name":"Call of EON (Engineers of the New Age) Black ops III","address":"Houston, TX 77091 USA","latlong":["29.765769512010888","-95.37660692810398"],"website":""}
+{"id":"11268","name":"STEMdeck Team Neutron","address":"Iowa City, IA 52240 USA","latlong":["41.662350411282524","-91.52446796116554"],"website":""}
+{"id":"11269","name":"Titan Robotics","address":"Ridgeland, MS 39157 USA","latlong":["32.42111211497569","-90.1274529421637"],"website":""}
+{"id":"11270","name":"FTC Athena","address":"Saint Paul, MN 55108 USA","latlong":["44.94784534333279","-93.08751697854075"],"website":""}
+{"id":"11271","name":"STEMdeck RoboTux","address":"Iowa City, IA 52240 USA","latlong":["41.67010901615121","-91.52320692311822"],"website":""}
+{"id":"11272","name":"Faith Christian School","address":"Lafayette, IN 47905 USA","latlong":["40.42100129659516","-86.85880304475944"],"website":""}
+{"id":"11273","name":"CougarBots1","address":"Blountville, TN 37617 USA","latlong":["36.532783378165064","-82.3106474274392"],"website":""}
+{"id":"11274","name":"Knightshade","address":"Baton Rouge, LA 70816 USA","latlong":["30.442103454311038","-91.11551336386617"],"website":"https://sites.google.com/a/ehsbr.org/ftc-knightshade/"}
+{"id":"11275","name":"CougarBots2","address":"Blountville, TN 37617 USA","latlong":["36.542034837161324","-82.30500212688531"],"website":""}
+{"id":"11276","name":"Dream Machine","address":"Novi, MI 48374 USA","latlong":["42.493850359026524","-83.4697832780118"],"website":""}
+{"id":"11277","name":"BullBot","address":"Holderness, NH 03245 USA","latlong":["43.731229877775995","-71.57018443686856"],"website":""}
+{"id":"11278","name":"Virtually Creative","address":"Escondido, CA 92025 USA","latlong":["33.09550832298822","-116.9383842687619"],"website":""}
+{"id":"11279","name":"Pure Imagination","address":"Grenada, MS 38901 USA","latlong":["33.77186823053111","-89.80934725999674"],"website":""}
+{"id":"11280","name":"BeestBot","address":"Sandy Spring, MD 20860 USA","latlong":["39.14582421800835","-77.01230875862282"],"website":""}
+{"id":"11281","name":"WCV Team FTC","address":"Newport, NY 13416 USA","latlong":["43.18033201175987","-75.00449192904308"],"website":""}
+{"id":"11282","name":"Founders Academy FTC","address":"Manchester, NH 03103 USA","latlong":["42.99029897221845","-71.43835875517969"],"website":""}
+{"id":"11283","name":"Mmm...Java","address":"Washington, IL 61571 USA","latlong":["40.696364227853614","-89.42217890180542"],"website":""}
+{"id":"11284","name":"CO-LAB","address":"majed el krum, Z 20190 Israel","latlong":["38.952871902646095","-77.32805621010596"],"website":"http://moona.co"}
+{"id":"11285","name":"PATENT PENDING","address":"San Diego, CA 92129 USA","latlong":["32.97086128048927","-117.11287430203849"],"website":"http://Mchsrobotics.weebly.com"}
+{"id":"11286","name":"Kubasaki HS FTC Kubi Dragons","address":"APO, AP 96367 USA","latlong":["0.0005267757673285426","0.0069985356439025165"],"website":""}
+{"id":"11287","name":"STEM AMBASSADORS","address":"Lawton, OK 73507 USA","latlong":["34.60388465193603","-98.40834581653394"],"website":"http://www.stemachievement.org"}
+{"id":"11288","name":"Seminerds","address":"San Diego, CA 92122 USA","latlong":["32.8598413680869","-117.18906565408028"],"website":""}
+{"id":"11289","name":"Freaky Techno Creatures","address":"Rochester, IL 62563 USA","latlong":["39.75852463351473","-89.53487723513794"],"website":""}
+{"id":"11290","name":"TAXI K.A.B.D","address":"Saint Paul, MN 55113 USA","latlong":["44.94412501014732","-93.08990144335486"],"website":""}
+{"id":"11291","name":"Team Rolls","address":"Houston, TX 77004 USA","latlong":["29.76523463683236","-95.37880797374585"],"website":""}
+{"id":"11292","name":"WissBots","address":"Ambler, PA 19002 USA","latlong":["40.15497787390988","-75.21991516358612"],"website":""}
+{"id":"11293","name":"UCA Eagles","address":"Asheboro, NC 27205 USA","latlong":["35.651714393960006","-79.83482943670684"],"website":""}
+{"id":"11294","name":"Trillbotic Colts","address":"Houston, TX 77051 USA","latlong":["29.761988264571446","-95.37876684877668"],"website":"http://www.houstonisd.org/Domain/13646"}
+{"id":"11295","name":"Manhattan","address":"Boulder, CO 80303 USA","latlong":["40.028932804501046","-105.24107188867534"],"website":""}
+{"id":"11296","name":"3rd Phase Airship Pirates","address":"Socorro, NM 87801 USA","latlong":["34.05300265294688","-106.89224331088421"],"website":""}
+{"id":"11297","name":"3rd Phase Nerds Bots","address":"Socorro, NM 87801 USA","latlong":["34.05971422540035","-106.8921744385394"],"website":""}
+{"id":"11298","name":"Socorro HS Team 1","address":"Socorro, NM 87801 USA","latlong":["34.06948163478572","-106.88762219121867"],"website":""}
+{"id":"11299","name":"CrushBots","address":"Saint Paul, MN 55123 USA","latlong":["44.944180977377776","-93.09164478095214"],"website":""}
+{"id":"11300","name":"Socorro HS Team 2","address":"Socorro, NM 87801 USA","latlong":["34.080229318022006","-106.87628432033861"],"website":""}
+{"id":"11301","name":"Maranatha Christian Academy FTC 1","address":"Minneapolis, MN 55428 USA","latlong":["44.96412438535677","-93.25584581810841"],"website":""}
+{"id":"11302","name":"Next Nova","address":"Sylvania, OH 43560 USA","latlong":["41.715250501193616","-83.69460984109816"],"website":""}
+{"id":"11303","name":"Y Bridge Robotics","address":"Galena, MO 65633 USA","latlong":["36.901177173097324","-93.56458577022528"],"website":""}
+{"id":"11304","name":"Ridge Robotics","address":"Basking Ridge, NJ 07920 USA","latlong":["40.67925038629004","-74.5557759927366"],"website":""}
+{"id":"11305","name":"Vallibots","address":"Highland, MI 48357 USA","latlong":["42.634470624225145","-83.60611736129461"],"website":""}
+{"id":"11306","name":"Prototype G","address":"Princeton, NJ 08540 USA","latlong":["40.3671060395668","-74.6372461346767"],"website":""}
+{"id":"11307","name":"Michigan Marshals","address":"Waterford, MI 48329 USA","latlong":["42.6683340498888","-83.36920907390858"],"website":""}
+{"id":"11308","name":"MindCrafters FTC - YISE","address":"Parker, CO 80138 USA","latlong":["39.50775351926855","-104.75468409504592"],"website":""}
+{"id":"11309","name":"The Matalloids","address":"Bloomfield Hills, MI 48304 USA","latlong":["42.58175987397509","-83.23244871311955"],"website":""}
+{"id":"11310","name":"Mesa Ridge Grizzlies","address":"Colorado Springs, CO 80911 USA","latlong":["38.86136943643332","-104.75609368791082"],"website":""}
+{"id":"11311","name":"Paragon","address":"San Jose, CA 95148 USA","latlong":["37.33153235063854","-121.76864455066838"],"website":""}
+{"id":"11312","name":"JSTEM Tech 2","address":"Converse, TX 78109 USA","latlong":["29.514341778038343","-98.30859585359914"],"website":""}
+{"id":"11313","name":"UniqueHorns","address":"Los Angeles, CA 90035 USA","latlong":["34.06078432495066","-118.37669123469303"],"website":""}
+{"id":"11314","name":"The Pakbots","address":"Bloomfield Hills, MI 48304 USA","latlong":["42.58278329964006","-83.22955283588028"],"website":""}
+{"id":"11315","name":"GEM Bots","address":"Fairfax, VA 22033 USA","latlong":["38.8552236882995","-77.28563326590363"],"website":""}
+{"id":"11316","name":"Weapons of Mass Construction","address":"Indianola, IA 50125 USA","latlong":["41.3663388345768","-93.55250393933986"],"website":""}
+{"id":"11317","name":"Engineers","address":"Scottville, MI 49454 USA","latlong":["43.9623820758062","-86.26906244213546"],"website":""}
+{"id":"11318","name":"Engineers Bravo","address":"Scottville, MI 49454 USA","latlong":["43.964997451070886","-86.25722061674134"],"website":""}
+{"id":"11319","name":"La Salle Robotics BLUE","address":"Glenside, PA 19038 USA","latlong":["40.10518305861719","-75.14986707086179"],"website":""}
+{"id":"11320","name":"Pi in Number Form","address":"Boston, MA 02127 USA","latlong":["42.35439472781959","-71.04887484432903"],"website":"https://piinnumberform.wordpress.com/"}
+{"id":"11321","name":"Engineers Delta","address":"Scottville, MI 49454 USA","latlong":["43.97412613033995","-86.25207956486103"],"website":""}
+{"id":"11322","name":"Grace Lutheran College Team A","address":"Rothwell, QLD 04021 Australia","latlong":["43.81066251168585","-70.23943224253753"],"website":"http://www.gracerobotics.org.au"}
+{"id":"11323","name":"Grace Lutheran College Team B","address":"Rothwell, QLD 04021 Australia","latlong":["43.82224614800375","-70.23153985493202"],"website":"http://www.gracerobotics.org.au"}
+{"id":"11324","name":"Grace Lutheran College Team C","address":"Rothwell, QLD 04021 Australia","latlong":["43.82487267100607","-70.22542344904997"],"website":"http://www.gracerobotics.org.au"}
+{"id":"11325","name":"Grace Lutheran College Team D","address":"Rothwell, QLD 04021 Australia","latlong":["43.835487782176266","-70.21867153298153"],"website":"http://www.gracerobotics.org.au"}
+{"id":"11326","name":"Grace Lutheran College Team E","address":"Rothwell, QLD 04021 Australia","latlong":["43.84204011185394","-70.21380429114929"],"website":"http://www.gracerobotics.org.au"}
+{"id":"11327","name":"TECH AVATARS","address":"Plano, TX 75024 USA","latlong":["33.043635767721945","-96.73488566232609"],"website":""}
+{"id":"11328","name":"Foothills Engineers","address":"El Cajon, CA 92020 USA","latlong":["32.80058957136136","-116.95823168136238"],"website":""}
+{"id":"11329","name":"ICE Robotics","address":"Bloomington, IN 47403 USA","latlong":["39.16448317382014","-86.51413561890581"],"website":""}
+{"id":"11330","name":"DR Robotics","address":"Colorado Springs, CO 80911 USA","latlong":["38.87221576049674","-104.75350096846921"],"website":""}
+{"id":"11332","name":"LASERS","address":"Compton, CA 90221 USA","latlong":["33.87979944888211","-118.20736772225183"],"website":""}
+{"id":"11333","name":"Samurai","address":"Compton, CA 90221 USA","latlong":["33.890153529532746","-118.19691067522594"],"website":""}
+{"id":"11334","name":"Alpha Tech","address":"Compton, CA 90222 USA","latlong":["33.91873438479197","-118.22711911780844"],"website":""}
+{"id":"11335","name":"Delta Tech","address":"Compton, CA 90222 USA","latlong":["33.931211508746536","-118.22551877884452"],"website":""}
+{"id":"11336","name":"Hub Squad","address":"Compton, CA 90221 USA","latlong":["33.89924454504826","-118.18607188872787"],"website":""}
+{"id":"11337","name":"Robonauts","address":"Compton, CA 90221 USA","latlong":["33.903194949519566","-118.1830529265985"],"website":""}
+{"id":"11338","name":"JSTEM Tech 1","address":"Converse, TX 78109 USA","latlong":["29.52481827215389","-98.29716964625264"],"website":""}
+{"id":"11339","name":"Williams High School Warrior Robotics","address":"Plano, TX 75074 USA","latlong":["33.05133359672825","-96.73514280971804"],"website":""}
+{"id":"11340","name":"Indigo League","address":"West Bloomfield, MI 48324 USA","latlong":["42.563700390377186","-83.37901854306082"],"website":""}
+{"id":"11341","name":"ViBøts","address":"Plano, TX 75075 USA","latlong":["33.04309590696314","-96.73756053005785"],"website":""}
+{"id":"11342","name":"Ramstein HS (Team 2)","address":"APO, AE 09094 USA","latlong":["0.004277663637257656","0.009454711204491647"],"website":""}
+{"id":"11343","name":"CDS Patriot Bots","address":"Tampa, FL 33613 USA","latlong":["27.95947941137727","-82.46977868909904"],"website":""}
+{"id":"11344","name":"Merritt Oilers","address":"Elk City, OK 73644 USA","latlong":["35.41213397594182","-99.40069329588039"],"website":""}
+{"id":"11345","name":"Toothless","address":"Cedar Park, TX 78613 USA","latlong":["30.51443189881452","-97.82642237085493"],"website":""}
+{"id":"11346","name":"Athena Rising","address":"Bloomfield Hills, MI 48304 USA","latlong":["42.58862409681632","-83.21989396541761"],"website":""}
+{"id":"11347","name":"Circuit Runners - Black","address":"Marietta, GA 30068 USA","latlong":["33.958320561017736","-84.53421417155054"],"website":"http://circuitrunners.com"}
+{"id":"11348","name":"Moore High School Lions","address":"Moore, OK 73160 USA","latlong":["35.46577204725587","-97.49817760443752"],"website":""}
+{"id":"11349","name":"McCaskey Robotics","address":"Lancaster, PA 17602 USA","latlong":["40.05008103480144","-76.2997566864427"],"website":""}
+{"id":"11350","name":"Sloth Slowbotics","address":"San Diego, CA 92123 USA","latlong":["32.80663896387641","-117.12624120723204"],"website":""}
+{"id":"11351","name":"R^3B","address":"Pewaukee, WI 53072 USA","latlong":["43.08619205280458","-88.23771030458215"],"website":""}
+{"id":"11353","name":"The Formal Emus","address":"Hartland, WI 53029 USA","latlong":["43.09908455848011","-88.33119304153092"],"website":""}
+{"id":"11354","name":"The Midnight Ostrich Runners","address":"Broken Arrow, OK 74012 USA","latlong":["36.041184580924785","-95.77752608043434"],"website":""}
+{"id":"11355","name":"Neil Team Six","address":"Casselberry, FL 32707 USA","latlong":["28.663377493263816","-81.3125228167988"],"website":""}
+{"id":"11356","name":"Robosonics","address":"Troy, MI 48085 USA","latlong":["42.58607937120674","-83.13681465535883"],"website":""}
+{"id":"11357","name":"CrusaderBots","address":"Jefferson City, MO 65109 USA","latlong":["38.579159517521354","-92.18695426555463"],"website":""}
+{"id":"11358","name":"Silver Circuit","address":"Kingston, MA 02364 USA","latlong":["41.998857560781076","-70.69802428172679"],"website":""}
+{"id":"11359","name":"SilverBots","address":"Kingston, MA 02364 USA","latlong":["42.00869642909365","-70.68925163031673"],"website":""}
+{"id":"11360","name":"Space Unicorns","address":"Bloomfield Hills, MI 48302 USA","latlong":["42.58159136864386","-83.2346180914805"],"website":""}
+{"id":"11361","name":"HRHS Robotics","address":"Westhampton, MA 01027 USA","latlong":["42.27241287844225","-72.67783041317178"],"website":""}
+{"id":"11362","name":"M Cubed","address":"Union, WV 24983 USA","latlong":["37.59150407000479","-80.533355528614"],"website":"http://www.facebook.com/monroebotics"}
+{"id":"11363","name":"Silent Bot Deadly","address":"Folsom, CA 95630 USA","latlong":["38.68255439065831","-121.12228541024943"],"website":""}
+{"id":"11364","name":"Eagle Robotics - Diamond Plate","address":"Kennesaw, GA 30152 USA","latlong":["34.023179671777555","-84.60790896051287"],"website":"http://www.eaglerobotics.net"}
+{"id":"11365","name":"Ticket To Paradise","address":"Phoenix, AZ 85032 USA","latlong":["33.62706852167714","-111.98924322124248"],"website":""}
+{"id":"11366","name":"The Smarty Party","address":"Plano, TX 75025 USA","latlong":["33.050639625765456","-96.72698074200301"],"website":""}
+{"id":"11367","name":"Omegabots","address":"Northville, MI 48168 USA","latlong":["42.40803837457349","-83.59139893111127"],"website":""}
+{"id":"11368","name":"Robots at the Center of the Universe RATCOTU","address":"Ashland, VA 23005 USA","latlong":["37.77054159686594","-77.46052881756215"],"website":"http://www.ratcotu.org"}
+{"id":"11369","name":"Widefield Gladiator","address":"Colorado Springs, CO 80911 USA","latlong":["38.879841734609165","-104.74169753672297"],"website":""}
+{"id":"11370","name":"Spartans","address":"Colorado Springs, CO 80911 USA","latlong":["38.886322919674015","-104.7380273308875"],"website":""}
+{"id":"11371","name":"Watson","address":"Colorado Springs, CO 80911 USA","latlong":["38.89154065995498","-104.73772322340015"],"website":""}
+{"id":"11372","name":"Jaguars","address":"Colorado Springs, CO 80917 USA","latlong":["38.86168416562097","-104.75092119812048"],"website":""}
+{"id":"11373","name":"PowerSurge 2.0","address":"Bloomington, IL 61701 USA","latlong":["40.47905037357624","-88.96077351144909"],"website":""}
+{"id":"11374","name":"The Dream Machine","address":"Camas, WA 98607 USA","latlong":["45.651084348135946","-122.36894923862073"],"website":""}
+{"id":"11375","name":"Teen Tech","address":"Vicksburg, MS 39180 USA","latlong":["32.332304763487834","-90.86345750280775"],"website":""}
+{"id":"11376","name":"Cyber Tigers","address":"Tuttle, OK 73089 USA","latlong":["35.299234659659035","-97.74844576222395"],"website":""}
+{"id":"11377","name":"Ankara Unit School","address":"APO, AE 09822 USA","latlong":["0.0065033121716043295","0.0056417730488263155"],"website":""}
+{"id":"11378","name":"Energy HEROs","address":"Houston, TX 77007 USA","latlong":["29.76231198995634","-95.37748444658689"],"website":""}
+{"id":"11379","name":"PowerOp","address":"Inglewood, CA 90303 USA","latlong":["33.93526815295027","-118.31847371145521"],"website":""}
+{"id":"11380","name":"Golden Path","address":"Inglewood, CA 90303 USA","latlong":["33.94095677132859","-118.31184661807211"],"website":""}
+{"id":"11381","name":"Fairly Odd Panthers","address":"Riverdale, MD 20737 USA","latlong":["38.96472620013376","-76.91069820567539"],"website":""}
+{"id":"11382","name":"D92 Vulcan","address":"Homer Glen, IL 60491 USA","latlong":["41.60332065203997","-88.00002873941185"],"website":""}
+{"id":"11383","name":"Fortissimus","address":"Cartersville, GA 30120 USA","latlong":["34.17025986624826","-84.79315185880158"],"website":""}
+{"id":"11384","name":"FTC Thunderstruck","address":"Council Bluffs, IA 51503 USA","latlong":["41.242776155566126","-95.83841038493958"],"website":""}
+{"id":"11385","name":"Thee Wood Warriors","address":"Inglewood, CA 90301 USA","latlong":["33.96106967441524","-118.35800179942817"],"website":""}
+{"id":"11386","name":"Nitron 10","address":"Inglewood, CA 90301 USA","latlong":["33.968743183191265","-118.35644478341256"],"website":""}
+{"id":"11387","name":"iHexagon","address":"San Jose, CA 95124 USA","latlong":["37.26180338537005","-121.90851404069134"],"website":""}
+{"id":"11388","name":"Bellevue Bellebots","address":"Bellevue, WA 98007 USA","latlong":["47.62387637900604","-122.13301119663804"],"website":""}
+{"id":"11389","name":"BLT (Build Learn Teach)","address":"Potomac, MD 20854 USA","latlong":["39.027644619151836","-77.18305901774364"],"website":""}
+{"id":"11390","name":"Bows and Bolts","address":"Des Moines, IA 50315 USA","latlong":["41.57186123785202","-93.60440590868662"],"website":""}
+{"id":"11391","name":"Robotic Rails","address":"Des Moines, IA 50315 USA","latlong":["41.579906528530145","-93.59292528908057"],"website":""}
+{"id":"11392","name":"Defenestration","address":"Naperville, IL 60565 USA","latlong":["41.76539822442522","-88.14836937191309"],"website":""}
+{"id":"11393","name":"Fonda-Fultonville CSD","address":"Fonda, NY 12068 USA","latlong":["42.96071873593124","-74.36714701503298"],"website":""}
+{"id":"11394","name":"PixelBotics","address":"Troy, MI 48083 USA","latlong":["42.58408766975698","-83.12827693574665"],"website":"http://www.pixelbotics"}
+{"id":"11395","name":"Crystal Lake South Robotics","address":"Crystal Lake, IL 60014 USA","latlong":["42.23883448947778","-88.32923626439327"],"website":""}
+{"id":"11396","name":"Eastern Christian Eaglebot","address":"Haledon, NJ 07508 USA","latlong":["40.935304218455904","-74.17997547407187"],"website":""}
+{"id":"11397","name":"BBIT","address":"North Plains, OR 97133 USA","latlong":["45.6723939317345","-123.01731592312919"],"website":""}
+{"id":"11398","name":"Wired Knights","address":"Greensburg, IN 47240 USA","latlong":["39.340431862076244","-85.47793452617327"],"website":""}
+{"id":"11399","name":"PCA Panthers","address":"Phoenix, AZ 85040 USA","latlong":["33.409856001989255","-112.0081544901244"],"website":""}
+{"id":"11400","name":"Robot Challengers II","address":"Bowie, MD 20715 USA","latlong":["38.951670402535235","-76.72116201281274"],"website":""}
+{"id":"11401","name":"Girl Powered Robotics (GPR)","address":"Bay Shore, NY 11706 USA","latlong":["40.72792247769731","-73.24493472736465"],"website":""}
+{"id":"11402","name":"A.I.R.K.","address":"Cottonwood, MN 56229 USA","latlong":["44.60130280515931","-95.66940995095132"],"website":""}
+{"id":"11404","name":"Ballistic Botz","address":"Austin, TX 78750 USA","latlong":["30.271204017656107","-97.7304978062421"],"website":""}
+{"id":"11405","name":"Hohenfels MHS Tigers","address":"APO, AE 09173 USA","latlong":["0.006166592353652757","0.0036829946997382857"],"website":""}
+{"id":"11406","name":"Stuttgart HS Panthers","address":"APO, AE 09112 USA","latlong":["0.001928426431472298","0.010198717362524055"],"website":""}
+{"id":"11407","name":"Vilseck HS Falcons","address":"APO, AE 09112 USA","latlong":["0.0021309952747958646","0.012147077542341784"],"website":""}
+{"id":"11408","name":"Veritech","address":"Richmond, VA 23227 USA","latlong":["37.55598837697547","-77.45847839827783"],"website":""}
+{"id":"11409","name":"Ursa Mechanica","address":"Byron, MN 55920 USA","latlong":["44.037062973386845","-92.63768302813244"],"website":""}
+{"id":"11410","name":"Perspectives Warriors","address":"Chicago, IL 60620 USA","latlong":["41.83165493643054","-87.67550475315943"],"website":""}
+{"id":"11411","name":"Cherry Pi","address":"San Diego, CA 92129 USA","latlong":["32.97522656606336","-117.10300558690948"],"website":""}
+{"id":"11412","name":"Green Stop Sign Chisago Lakes Middle School","address":"Lindstrom, MN 55045 USA","latlong":["45.38761794070848","-92.83146848166392"],"website":""}
+{"id":"11413","name":"Auto Anonymous Chisago Lakes Middle School","address":"Lindstrom, MN 55045 USA","latlong":["45.389362969907204","-92.82823524713028"],"website":""}
+{"id":"11414","name":"Fondy Fire","address":"Fond du Lac, WI 54935 USA","latlong":["43.770213169467596","-88.43115029634973"],"website":"http://www.fondyfire.com/"}
+{"id":"11415","name":"MSE EAGLES","address":"Memphis, TN 38141 USA","latlong":["35.10249597772137","-89.99231685897203"],"website":""}
+{"id":"11416","name":"KPA MTX","address":"Kent, WA 98030 USA","latlong":["47.36491801590543","-122.18179422229025"],"website":""}
+{"id":"11417","name":"Static Screws","address":"Burnsville, MN 55337 USA","latlong":["44.76546774800888","-93.2582046885931"],"website":""}
+{"id":"11418","name":"CCA Middle","address":"Tiffin, IA 52340 USA","latlong":["41.70985009994268","-91.66983530530288"],"website":""}
+{"id":"11419","name":"Jasper Jaguar Robotics Team","address":"Plano, TX 75024 USA","latlong":["33.04833210788015","-96.72807375177908"],"website":""}
+{"id":"11420","name":"Syntax Error","address":"Alpharetta, GA 30009 USA","latlong":["34.07009106827321","-84.25962526559518"],"website":""}
+{"id":"11421","name":"Higher Ground","address":"Tucson, AZ 85713 USA","latlong":["32.197118603974836","-110.9719031958348"],"website":"http://www.higherground.me"}
+{"id":"11422","name":"Tunstall Titans","address":"Dry Fork, VA 24549 USA","latlong":["36.75739016344074","-79.39934612614984"],"website":"http://www.team11422/"}
+{"id":"11423","name":"ACG Robotics","address":"Pukekohe, AUK 02120 New Zealand","latlong":["42.357518555555885","-71.05273731998386"],"website":""}
+{"id":"11424","name":"Thales Academy Centurions","address":"Rolesville, NC 27571 USA","latlong":["35.93042976777392","-78.44890264408868"],"website":"https://sites.google.com/a/thalesacademy.org/thales-rolesville-jh-hs-dr-church/first-tech-challenge"}
+{"id":"11425","name":"Murphy Mavericks Robotics Team","address":"Murphy, TX 75094 USA","latlong":["33.04167305753849","-96.72766516777139"],"website":""}
+{"id":"11426","name":"Knights","address":"Napa, CA 94559 USA","latlong":["38.233607658600356","-122.28407343834404"],"website":""}
+{"id":"11427","name":"B^2","address":"Oxford, FL 34484 USA","latlong":["28.92825835097304","-82.02792658090222"],"website":""}
+{"id":"11428","name":"Blake Bengels","address":"Silver Spring, MD 20905 USA","latlong":["39.02101088446513","-77.01263994691028"],"website":""}
+{"id":"11429","name":"The Mechanical Bulls","address":"Valrico, FL 33596 USA","latlong":["27.889774459323164","-82.23565269006434"],"website":""}
+{"id":"11430","name":"Coconuts FTC","address":"Flagstaff, AZ 86004 USA","latlong":["35.294612456108304","-111.31493429767346"],"website":""}
+{"id":"11431","name":"Morgan High School","address":"Morgan, UT 84050 USA","latlong":["41.02038855067854","-111.66091814844539"],"website":""}
+{"id":"11432","name":"SAY Play Warriors 1","address":"Detroit, MI 48234 USA","latlong":["42.388560347549685","-83.09255960665803"],"website":""}
+{"id":"11433","name":"Pataula Panthers Golden Gears Robotics Team","address":"Edison, GA 39846 USA","latlong":["31.562786794900134","-84.72884155651123"],"website":""}
+{"id":"11434","name":"JagWires","address":"Tampa, FL 33629 USA","latlong":["27.952442259065997","-82.47348854010512"],"website":""}
+{"id":"11435","name":"CrowCougarbots","address":"Eugene, OR 97402 USA","latlong":["44.04269090887422","-123.21642371425031"],"website":""}
+{"id":"11436","name":"Hall County","address":"Cairo, NE 68824 USA","latlong":["41.01027260420282","-98.5993344019051"],"website":""}
+{"id":"11437","name":"Scotbot11437","address":"Cincinnati, OH 45248 USA","latlong":["39.092028283341314","-84.50884061815984"],"website":"http://www.scotbot4284.com"}
+{"id":"11438","name":"SAY Play Warriors 2","address":"Detroit, MI 48234 USA","latlong":["42.389192611743205","-83.08009344772044"],"website":""}
+{"id":"11440","name":"Ohmega","address":"Oxford, PA 19363 USA","latlong":["39.787080836694365","-75.97215438599055"],"website":""}
+{"id":"11441","name":"M^3 (McMinnville Mastermind Mechanics)","address":"McMinnville, OR 97128 USA","latlong":["45.19145552608973","-123.23520948447394"],"website":""}
+{"id":"11442","name":"Blackbird","address":"McMinnville, OR 97128 USA","latlong":["45.19320919738708","-123.2260454933842"],"website":""}
+{"id":"11444","name":"Garnet Squadron","address":"Columbia, SC 29201 USA","latlong":["34.00233831237977","-81.02899241444177"],"website":"http://www.garnetsquadron.com"}
+{"id":"11445","name":"Crusader Creators","address":"Chula Vista, CA 91913 USA","latlong":["32.643510589411264","-116.97253356603"],"website":""}
+{"id":"11446","name":"Tech Know Logic","address":"Fredericksburg, TX 78624 USA","latlong":["30.270326645541374","-98.86716458535665"],"website":""}
+{"id":"11447","name":"New NERDs on the Block","address":"Eugene, OR 97404 USA","latlong":["44.10200246275528","-123.12028569955385"],"website":""}
+{"id":"11448","name":"Moona","address":"Majd al-Krum - Karmiel, Z 20190 Israel","latlong":["38.958848183743186","-77.32152054521524"],"website":"http://moona.co"}
+{"id":"11449","name":"Yama Elkana","address":"Elkana, M 44814 Israel","latlong":["41.32563515822309","-82.48528285426457"],"website":""}
+{"id":"11450","name":"Dickinson Rams","address":"Jersey City, NJ 07306 USA","latlong":["40.714461387683784","-74.05927839673888"],"website":""}
+{"id":"11451","name":"Alphabots","address":"Monmouth Junction, NJ 08852 USA","latlong":["40.38634373756607","-74.53636679230411"],"website":""}
+{"id":"11453","name":"Uncertainty Principle","address":"New York, NY 10128 USA","latlong":["40.71416976622338","-73.98604616357184"],"website":""}
+{"id":"11454","name":"RayBots","address":"Myrtle Beach, SC 29579 USA","latlong":["33.69358696692373","-78.88448809946084"],"website":""}
+{"id":"11455","name":"Gutierrez Jags","address":"Harlingen, TX 78552 USA","latlong":["26.19470046189254","-97.67556648040669"],"website":""}
+{"id":"11456","name":"Blair Academy","address":"Blairstown, NJ 07825 USA","latlong":["40.9868059621362","-74.95014756798058"],"website":""}
+{"id":"11457","name":"STARbots","address":"Kansas City, MO 64113 USA","latlong":["39.09261640613372","-94.57770758487514"],"website":""}
+{"id":"11458","name":"animatronics","address":"Wheeler, TX 79096 USA","latlong":["35.443946645120164","-100.26444519302309"],"website":""}
+{"id":"11459","name":"White Sabers","address":"Shakopee, MN 55379 USA","latlong":["44.771439388684335","-93.46090617572267"],"website":""}
+{"id":"11460","name":"Sliced Breadboards","address":"Harvard, MA 01451 USA","latlong":["42.51174581402141","-71.56884166727657"],"website":""}
+{"id":"11461","name":"BOT Spot Robots","address":"Niles, IL 60714 USA","latlong":["42.021028869086614","-87.78891622207732"],"website":""}
+{"id":"11462","name":"Mechanical Muses","address":"Marion, IL 62959 USA","latlong":["37.73178524889425","-88.93825016956265"],"website":""}
+{"id":"11463","name":"Eisenhower High School","address":"Decatur, IL 62521 USA","latlong":["39.85240466115057","-88.92768349636881"],"website":""}
+{"id":"11464","name":"Technical Terminators","address":"Coulterville, IL 62237 USA","latlong":["38.18246524970858","-89.5902744177252"],"website":"https://sites.google.com/site/cvillescience1/home/csc"}
+{"id":"11465","name":"Fort White Indibots","address":"Fort White, FL 32038 USA","latlong":["29.92526774494616","-82.70275983468997"],"website":""}
+{"id":"11466","name":"tinorobotics2016","address":"Cupertino, CA 95014 USA","latlong":["37.31164594241279","-122.08964035692503"],"website":""}
+{"id":"11467","name":"tinorobotics2016A","address":"Cupertino, CA 95014 USA","latlong":["37.31983472503561","-122.08906391830588"],"website":""}
+{"id":"11468","name":"Baylor Robotics","address":"Chattanooga, TN 37405 USA","latlong":["35.06249980267172","-85.24687856962535"],"website":""}
+{"id":"11469","name":"Piney Woods Robotics Team","address":"Piney Woods, MS 39148 USA","latlong":["32.126419877198124","-90.12541447122916"],"website":""}
+{"id":"11470","name":"Jennings","address":"Saint Louis, MO 63136 USA","latlong":["38.63664457341698","-90.23985363723668"],"website":""}
+{"id":"11471","name":"Codebusters","address":"Reno, NV 89512 USA","latlong":["39.56163129231792","-119.7953502371844"],"website":""}
+{"id":"11472","name":"Rice Raven Robotics","address":"Plano, TX 75075 USA","latlong":["33.05418624370575","-96.73696826525503"],"website":""}
+{"id":"11473","name":"Oxford High School","address":"Oxford, MA 01540 USA","latlong":["42.11105993277792","-71.86071492381751"],"website":""}
+{"id":"11474","name":"Horizon Huskies","address":"Chicago, IL 60609 USA","latlong":["41.83057728613772","-87.67342354592131"],"website":""}
+{"id":"11475","name":"Teravoltz","address":"Davis, CA 95618 USA","latlong":["38.53769102255415","-121.65466668884056"],"website":""}
+{"id":"11477","name":"Four Eyes","address":"Maple Valley, WA 98038 USA","latlong":["47.406376050306996","-121.98763115349549"],"website":""}
+{"id":"11478","name":"STEMdeck TechBots","address":"Iowa City, IA 52240 USA","latlong":["41.674850415371985","-91.51341435939452"],"website":""}
+{"id":"11479","name":"Circuit Squad","address":"Alexandria, VA 22301 USA","latlong":["38.82141666677344","-77.07473447018103"],"website":""}
+{"id":"11480","name":"STEMdeck [ICN]","address":"Iowa City, IA 52245 USA","latlong":["41.652920424093985","-91.52977733699365"],"website":""}
+{"id":"11481","name":"STEMdeck Wall-E","address":"Iowa City, IA 52245 USA","latlong":["41.654100545840315","-91.52130709645935"],"website":""}
+{"id":"11482","name":"MaverBITS","address":"Bedford, NH 03110 USA","latlong":["42.953055195799344","-71.4967766983376"],"website":""}
+{"id":"11483","name":"Glitter Spartans","address":"Fort Wayne, IN 46814 USA","latlong":["41.072198390442516","-85.12372175159481"],"website":""}
+{"id":"11484","name":"JMHS Robotics","address":"Richmond, VA 23227 USA","latlong":["37.55715101758463","-77.44649210805912"],"website":""}
+{"id":"11485","name":"Wyldcats","address":"Chouteau, OK 74337 USA","latlong":["36.1912126857496","-95.32436662226428"],"website":""}
+{"id":"11486","name":"Rebot 2","address":"Harwood Heights, IL 60706 USA","latlong":["41.96061520500255","-87.7888748104465"],"website":""}
+{"id":"11487","name":"Gibson Ek Robotics","address":"Issaquah, WA 98027 USA","latlong":["47.50334145770454","-121.99111842136809"],"website":""}
+{"id":"11488","name":"Solid","address":"Saint Paul, MN 55123 USA","latlong":["44.95569094064869","-93.08336397060009"],"website":""}
+{"id":"11489","name":"Tsunami Samurai","address":"Troy, MI 48083 USA","latlong":["42.584413557080936","-83.11616276813058"],"website":""}
+{"id":"11490","name":"Muffin Tanks","address":"Sussex, WI 53089 USA","latlong":["43.140064124221226","-88.20203904595026"],"website":""}
+{"id":"11491","name":"Ada CouGears","address":"Ada, OK 74820 USA","latlong":["34.77284489620871","-96.65642661700421"],"website":""}
+{"id":"11493","name":"The Upside Down","address":"Philadelphia, PA 19131 USA","latlong":["39.95984107810718","-75.14971746809897"],"website":""}
+{"id":"11494","name":"SLA Beeber Beta","address":"Philadelphia, PA 19131 USA","latlong":["39.960001514870115","-75.14228834586905"],"website":""}
+{"id":"11495","name":"Robo Legends","address":"Saint Hedwig, TX 78152 USA","latlong":["29.43136421704939","-98.20561161072736"],"website":""}
+{"id":"11496","name":"MacArthur High School","address":"Decatur, IL 62521 USA","latlong":["39.8531322810994","-88.91778624141128"],"website":""}
+{"id":"11497","name":"CHS Wolverines FTC","address":"Cordova, AK 99574 USA","latlong":["60.79497108843365","-145.60903459033682"],"website":"https://sites.google.com/a/cordovasd.org/tech-club/"}
+{"id":"11498","name":"EhadHaam","address":"PETACH-TIKVA, M 49002 Israel","latlong":["42.21175720093568","-85.58866714003575"],"website":""}
+{"id":"11499","name":"Pink Pelicans","address":"Melbourne, FL 32940 USA","latlong":["28.081622920966538","-80.59115157313315"],"website":""}
+{"id":"11500","name":"St. Mark Robotics","address":"Catonsville, MD 21228 USA","latlong":["39.263591592951926","-76.73565517518514"],"website":""}
+{"id":"11501","name":"White Vectors","address":"Saint Louis, MO 63131 USA","latlong":["38.64119547939976","-90.2248557981235"],"website":""}
+{"id":"11502","name":"Shirley Heim MS","address":"Stafford, VA 22554 USA","latlong":["38.4304650513158","-77.39819659202168"],"website":""}
+{"id":"11503","name":"ViperBots HyperFang","address":"Austin, TX 78750 USA","latlong":["30.27736053876051","-97.72940475394047"],"website":"http://viperbots.org"}
+{"id":"11504","name":"Xenon","address":"Los Angeles, CA 90064 USA","latlong":["34.038796084126695","-118.42521643227347"],"website":""}
+{"id":"11505","name":"The Sea Team","address":"Indooroopilly, QLD 04075 Australia","latlong":["43.858502243221835","-70.62437381769962"],"website":""}
+{"id":"11506","name":"The Bee Team","address":"Indooroopilly, QLD 04068 Australia","latlong":["43.79307036902058","-70.92726799680918"],"website":"http://beeteamftc.weebly.com/"}
+{"id":"11507","name":"S.U.C.H","address":"Springfield, OH 45506 USA","latlong":["39.927737599788394","-83.787104112731"],"website":""}
+{"id":"11508","name":"Avogardro","address":"Invercargill, S 09810 New Zealand","latlong":["0.01084745336066386","0.010854693749539016"],"website":""}
+{"id":"11509","name":"ort tel -nof","address":"gedera, M 58541 Israel","latlong":["47.29182310346832","-102.04880278593414"],"website":""}
+{"id":"11510","name":"Freyberg Robotics","address":"Palmerston North, N 04413 New Zealand","latlong":["45.5256966883015","-67.74854621884796"],"website":""}
+{"id":"11513","name":"Guards","address":"Burbank, CA 91501 USA","latlong":["34.197621480883384","-118.28449578741883"],"website":""}
+{"id":"11514","name":"TechNOlogic","address":"Saint Louis, MO 63121 USA","latlong":["38.64246159768782","-90.22995535312644"],"website":""}
+{"id":"11515","name":"RobotIGS","address":"Göttingen, NI 37083 Germany","latlong":["36.52493159868793","-86.02481762304126"],"website":""}
+{"id":"11516","name":"49ers STEM Leadership Institute: Evolution Robotics","address":"Santa Clara, CA 95051 USA","latlong":["37.35492437187698","-121.974811999705"],"website":""}
+{"id":"11517","name":"Digital Darlings","address":"Garden City, NY 11530 USA","latlong":["40.73143684657791","-73.63407432491015"],"website":""}
+{"id":"11518","name":"The ATCEPA Robotics Team","address":"Albany, GA 31701 USA","latlong":["31.572089654429675","-84.16440581420223"],"website":""}
+{"id":"11519","name":"South Valley Preparatory","address":"Albuquerque, NM 87105 USA","latlong":["35.11501327754945","-106.61842736228647"],"website":""}
+{"id":"11520","name":"Omegabots","address":"Troy, MI 48085 USA","latlong":["42.58745522053482","-83.1325686245968"],"website":""}
+{"id":"11521","name":"49ers STEM Leadership Institute: Vortechs","address":"Santa Clara, CA 95051 USA","latlong":["37.36114883280317","-121.97195733141909"],"website":""}
+{"id":"11522","name":"Shell Lake First Tech Challenge","address":"Shell Lake, WI 54871 USA","latlong":["45.734323687973436","-91.8828004037531"],"website":""}
+{"id":"11523","name":"Mechanics In Black","address":"Lagrange, GA 30240 USA","latlong":["33.035740907985115","-84.96794347199467"],"website":""}
+{"id":"11524","name":"Team Name Wanted: Dead or Alive","address":"Houston, TX 77059 USA","latlong":["29.77163279006213","-95.37090909491394"],"website":"http://TeamNameWanted.com"}
+{"id":"11525","name":"Minerva's Mechanics","address":"Jefferson, MD 21755 USA","latlong":["39.37096672744012","-77.51825862513499"],"website":""}
+{"id":"11526","name":"Digibots","address":"New Orleans, LA 70125 USA","latlong":["30.06558740298464","-89.92484435183856"],"website":""}
+{"id":"11527","name":"49ers STEM Leadership Institute: The Shovels","address":"Santa Clara, CA 95051 USA","latlong":["37.361247392707575","-121.95986763572154"],"website":""}
+{"id":"11528","name":"Franklin Academy","address":"Wake Forest, NC 27587 USA","latlong":["35.978927408030515","-78.51245510907965"],"website":""}
+{"id":"11529","name":"Navajo Code Writers","address":"Saint Michaels, AZ 86511 USA","latlong":["35.64289038187492","-109.24979708025221"],"website":""}
+{"id":"11530","name":"Hayovel","address":"Mevasseret Zion , JM 90805 Israel","latlong":["33.87216882651079","-118.17475717486052"],"website":""}
+{"id":"11531","name":"Techno Trojans","address":"Fruitport, MI 49415 USA","latlong":["43.1231961409233","-86.1416290559151"],"website":""}
+{"id":"11532","name":"Arghbots","address":"Fort Walton Beach, FL 32547 USA","latlong":["30.43245875016353","-86.60290160248931"],"website":""}
+{"id":"11533","name":"Ignite","address":"Baltimore, MD 21216 USA","latlong":["39.31179375950411","-76.60153043439823"],"website":""}
+{"id":"11534","name":"Bot Brigade Quartic","address":"California, MD 20619 USA","latlong":["38.30048011761074","-76.48722632470722"],"website":""}
+{"id":"11535","name":"Perpetual Minds","address":"Saint George, UT 84790 USA","latlong":["37.07221870950603","-113.56582839992798"],"website":""}
+{"id":"11536","name":"Derryfield School","address":"Manchester, NH 03104 USA","latlong":["43.000641230370015","-71.4384389218672"],"website":""}
+{"id":"11537","name":"Blazing Comets","address":"Florissant, MO 63031 USA","latlong":["38.79860404692683","-90.30766156869514"],"website":""}
+{"id":"11538","name":"TGS Kingfishers First Tech","address":"Pawleys Island, SC 29585 USA","latlong":["33.38077606419455","-79.16110116473607"],"website":""}
+{"id":"11539","name":"Team Voltage","address":"Saint Louis, MO 63104 USA","latlong":["38.64026992131895","-90.23092373834217"],"website":"http://mrkalmes.weebly.com/hs-robotics-team.html"}
+{"id":"11540","name":"La Salle Robotics GOLD","address":"Wyndmoor, PA 19038 USA","latlong":["40.105618263841514","-75.14156633480528"],"website":""}
+{"id":"11541","name":"Little Lost robot","address":"Renton, WA 98058 USA","latlong":["47.433739101816215","-122.10923902403877"],"website":""}
+{"id":"11542","name":"Techno-Bulls","address":"Owens Cross Roads, AL 35763 USA","latlong":["34.60290813959206","-86.45501856906368"],"website":""}
+{"id":"11543","name":"West Pine Robotics","address":"West End, NC 27376 USA","latlong":["35.25045346204931","-79.52507434016016"],"website":""}
+{"id":"11544","name":"Octa-Core","address":"Mount Prospect, IL 60056 USA","latlong":["42.06064200556621","-87.9182931969055"],"website":"http://www.octa-core.co"}
+{"id":"11545","name":"Dread Pirate Robots","address":"Coos Bay, OR 97420 USA","latlong":["43.375068569399254","-124.1307991661391"],"website":""}
+{"id":"11546","name":"BWS Eaglets","address":"Los Angeles, CA 90049 USA","latlong":["34.083284256276166","-118.48981510621326"],"website":""}
+{"id":"11547","name":"Dayton FTC","address":"Dayton, OR 97114 USA","latlong":["45.19291537532556","-123.06352717609248"],"website":""}
+{"id":"11548","name":"MaD Robotics","address":"Sacramento, CA 95831 USA","latlong":["38.502118986152404","-121.52065786170662"],"website":""}
+{"id":"11549","name":"Rhomans","address":"Austin, TX 78746 USA","latlong":["30.268673445859488","-97.73663174070082"],"website":""}
+{"id":"11550","name":"49ers STEM Leadership Institute: Java Seals","address":"Santa Clara, CA 95051 USA","latlong":["37.36816978439359","-121.95981624228929"],"website":""}
+{"id":"11551","name":"Robot Matrix","address":"Boca Raton, FL 33431 USA","latlong":["26.37790598146825","-80.09517070286884"],"website":""}
+{"id":"11552","name":"tbd","address":"Baltimore, MD 21210 USA","latlong":["39.311781276492724","-76.60914113518008"],"website":""}
+{"id":"11553","name":"Absolute Control Jr.","address":"Fulton, MD 20759 USA","latlong":["39.156730148638616","-76.91791657259762"],"website":""}
+{"id":"11554","name":"Bot of Gold","address":"Pittsburgh, PA 15241 USA","latlong":["40.440554156036754","-79.96278791399764"],"website":"http://botofgold.org"}
+{"id":"11555","name":"JEDI KNIGHTS","address":"Boynton Beach, FL 33435 USA","latlong":["26.525018151183698","-80.07356683391863"],"website":""}
+{"id":"11556","name":"Valley Catholic Robotics","address":"Beaverton, OR 97078 USA","latlong":["45.482992854390154","-122.7885030911361"],"website":""}
+{"id":"11557","name":"The Raging Seabiscuits","address":"Danville, CA 94526 USA","latlong":["37.816278157548446","-121.95892275190089"],"website":""}
+{"id":"11558","name":"IHC Cav-Bots","address":"Watertown, NY 13601 USA","latlong":["43.9712454223159","-75.90261419868365"],"website":""}
+{"id":"11559","name":"Mecha Montessori","address":"Grand Rapids, MI 49503 USA","latlong":["42.967900520760885","-85.63829542650554"],"website":""}
+{"id":"11560","name":"STAA Robotics","address":"Marinette, WI 54143 USA","latlong":["45.089144771238345","-87.61041695248936"],"website":""}
+{"id":"11561","name":"Mustangs","address":"Manitou Springs, CO 80829 USA","latlong":["38.85250952379595","-104.90704161912153"],"website":""}
+{"id":"11562","name":"TFS Robotics","address":"Tallulah Falls, GA 30573 USA","latlong":["34.723563410484175","-83.368300934186"],"website":""}
+{"id":"11563","name":"Hedrick Garage","address":"Flower Mound, TX 75022 USA","latlong":["33.027172393102404","-97.07980743644582"],"website":""}
+{"id":"11564","name":"Stratford Fremont","address":"Fremont, CA 94538 USA","latlong":["37.50425028514625","-121.95960845062253"],"website":""}
+{"id":"11565","name":"We Robot","address":"Eden Prairie, MN 55344 USA","latlong":["44.85021411502498","-93.43965897732893"],"website":"http://ism-werobot.com/"}
+{"id":"11566","name":"Tough Cookies","address":"Minneapolis, MN 55435 USA","latlong":["44.961474421347916","-93.250041998521"],"website":""}
+{"id":"11568","name":"Faster than Light","address":"El Cerrito, CA 94530 USA","latlong":["37.92123116546283","-122.29412256873258"],"website":""}
+{"id":"11569","name":"Project Phoenix","address":"Westport, CT 06880 USA","latlong":["41.12899583414084","-73.33363394948084"],"website":""}
+{"id":"11570","name":"Etude Engineers","address":"Sheboygan, WI 53081 USA","latlong":["43.700305748011814","-87.73866235080041"],"website":""}
+{"id":"11572","name":"Post 26 #2","address":"Tulsa, OK 74133 USA","latlong":["36.1323806098175","-95.8988013133833"],"website":"http://post26.org"}
+{"id":"11574","name":"Sonic Screwdrivers","address":"Virginia City and Reno, NV 89521 USA","latlong":["39.38954785006394","-119.66973713094261"],"website":"https://www.facebook.com/FTC-Team-11574-Eagle-Robotics-Club-532465066945401/?ref=bookmarks"}
+{"id":"11575","name":"Robust Robots","address":"Berkeley, CA 94707 USA","latlong":["37.9028332658541","-122.27025672586922"],"website":""}
+{"id":"11576","name":"Zombies","address":"La Luz, NM 88337 USA","latlong":["32.970012637197094","-105.92211383740917"],"website":""}
+{"id":"11577","name":"Tech Kings","address":"Tucson, AZ 85710 USA","latlong":["32.22613919729267","-110.80852380330732"],"website":"http://ssab-techkings.weebly.com/"}
+{"id":"11578","name":"Phoenix Coding Academy Pythons","address":"Phoenix, AZ 85012 USA","latlong":["33.506447575853436","-112.05886573942344"],"website":""}
+{"id":"11579","name":"Walsh/Hudson Wolfpack Omega","address":"Stow, OH 44224 USA","latlong":["41.17907147917568","-81.42946989577425"],"website":""}
+{"id":"11580","name":"StemPunks","address":"Oregon, OH 43616 USA","latlong":["41.66660068912625","-83.40527383577898"],"website":""}
+{"id":"11581","name":"FTC Ramhawks","address":"Winona, MN 55987 USA","latlong":["44.04939360293411","-91.64381504171264"],"website":""}
+{"id":"11582","name":"RoboCats","address":"Franklin, KY 42134 USA","latlong":["36.72662788777901","-86.56721817956087"],"website":""}
+{"id":"11583","name":"RoboDawgs","address":"Martinsville, VA 24112 USA","latlong":["36.68464179913525","-79.85939492036425"],"website":""}
+{"id":"11584","name":"Walsh/Hudson Wolfpack Alpha","address":"Stow, OH 44224 USA","latlong":["41.18904991434219","-81.42767316755527"],"website":""}
+{"id":"11585","name":"ClayBotics","address":"Oregon, OH 43616 USA","latlong":["41.67294322870675","-83.39958484821719"],"website":""}
+{"id":"11586","name":"Becker Middle School","address":"Becker, MN 55308 USA","latlong":["45.37664287402946","-93.86625224647246"],"website":""}
+{"id":"11587","name":"IDA Starry Knights","address":"Alamogordo, NM 88310 USA","latlong":["32.888508195845574","-105.94959427693259"],"website":""}
+{"id":"11588","name":"Purple Gears Rookie Team","address":"Raleigh, NC 27607 USA","latlong":["35.83235474607524","-78.64316133780436"],"website":""}
+{"id":"11590","name":"Hall of the Power Eagles","address":"Austin, TX 78748 USA","latlong":["30.26277140327896","-97.73777323946985"],"website":""}
+{"id":"11591","name":"Falcons","address":"Hillsboro, OR 97124 USA","latlong":["45.59135821508409","-122.90378192423366"],"website":""}
+{"id":"11592","name":"Miss Frankenstein's Robotics","address":"Woodstock, GA 30188 USA","latlong":["34.1073055103374","-84.49945225866722"],"website":""}
+{"id":"11593","name":"Brainstormers","address":"Jacksonville, FL 32277 USA","latlong":["30.340117398210058","-81.64764669283716"],"website":""}
+{"id":"11594","name":"Fruitvale HS","address":"Fruitvale, TX 75127 USA","latlong":["32.68131107543597","-95.79298465606148"],"website":""}
+{"id":"11595","name":"GA STEM Power","address":"Waynesboro, GA 30830 USA","latlong":["33.09435600847197","-81.9980681435906"],"website":""}
+{"id":"11596","name":"Cuda","address":"Boca Raton, FL 33431 USA","latlong":["26.390094983244364","-80.08350052536191"],"website":""}
+{"id":"11597","name":"Mechanical Owls","address":"Boca Raton, FL 33431 USA","latlong":["26.391331125731202","-80.07193645933987"],"website":""}
+{"id":"11598","name":"SFdA Saints","address":"Flagstaff, AZ 86001 USA","latlong":["35.234457578907815","-111.71747674229314"],"website":"http://www.sfdaparish.org"}
+{"id":"11599","name":"Westgate 1","address":"West Palm Beach, FL 33409 USA","latlong":["26.750158441749534","-80.11793167417308"],"website":""}
+{"id":"11600","name":"Westgate 2","address":"West Palm Beach, FL 33409 USA","latlong":["26.75707750969557","-80.10957786173422"],"website":""}
+{"id":"11601","name":"Westgate 3","address":"West Palm Beach, FL 33409 USA","latlong":["26.762690848501986","-80.10776230495682"],"website":""}
+{"id":"11602","name":"Westgate 4","address":"West Palm Beach, FL 33409 USA","latlong":["26.769024293301122","-80.1028107137624"],"website":""}
+{"id":"11603","name":"Westgate 5","address":"West Palm Beach, FL 33409 USA","latlong":["26.770468834576814","-80.10201565310437"],"website":""}
+{"id":"11604","name":"Cabana 1","address":"Palm Beach Gardens, FL 33410 USA","latlong":["26.746863411102037","-80.10846256825624"],"website":""}
+{"id":"11605","name":"Cabana 2","address":"West Palm Beach, FL 33409 USA","latlong":["26.77519216594317","-80.09795951841966"],"website":""}
+{"id":"11606","name":"Tigerbits","address":"Baton Rouge, LA 70803 USA","latlong":["30.44600639253534","-91.11433555386697"],"website":""}
+{"id":"11607","name":"HazMatrix","address":"Ballston Spa, NY 12020 USA","latlong":["43.007531645035","-73.84394038022135"],"website":""}
+{"id":"11608","name":"Crimson Robotics #1","address":"Osseo, MN 55369 USA","latlong":["45.11681304863427","-93.38205222774079"],"website":"http://crimsonrobotics.com"}
+{"id":"11609","name":"Crimson Robotics #2","address":"Osseo, MN 55369 USA","latlong":["45.12923485182537","-93.38200028090257"],"website":"http://crimsonrobotics.com"}
+{"id":"11610","name":"Tertius Oculus","address":"Philadelphia, PA 19131 USA","latlong":["39.9691834184125","-75.13366865515735"],"website":""}
+{"id":"11611","name":"Henry FTC","address":"Minneapolis, MN 55412 USA","latlong":["44.96266152381664","-93.25567720923122"],"website":""}
+{"id":"11612","name":"Crimson Robotics #3","address":"Osseo, MN 55369 USA","latlong":["45.14026365914635","-93.37891142140865"],"website":"http://crimsonrobotics.com"}
+{"id":"11613","name":"Crimson Robotics #4","address":"Osseo, MN 55369 USA","latlong":["45.1483209206798","-93.36706854615059"],"website":"http://crimsonrobotics.com"}
+{"id":"11614","name":"PCH Robo Patriots","address":"Southern Pines, NC 28387 USA","latlong":["35.189678913836374","-79.39310893846049"],"website":""}
+{"id":"11615","name":"Pantherbots","address":"Minneapolis, MN 55430 USA","latlong":["44.9719052850346","-93.25359159182234"],"website":""}
+{"id":"11616","name":"Wire-Catz","address":"Big Rapids, MI 49307 USA","latlong":["43.70804737069481","-85.47955808447976"],"website":""}
+{"id":"11617","name":"Chelsea Glitch","address":"Chelsea, MI 48118 USA","latlong":["42.31945646335488","-84.00949246399188"],"website":""}
+{"id":"11618","name":"Chelsea Gremlins","address":"Chelsea, MI 48118 USA","latlong":["42.32236477164346","-84.00532790897412"],"website":""}
+{"id":"11619","name":"14 Spicy Boiz","address":"Lakeland, FL 33815 USA","latlong":["28.048630851078894","-81.95258227634986"],"website":"http://14spicyboizftc.wixsite.com/spicy"}
+{"id":"11620","name":"RobotEagles","address":"Fremont, CA 94538 USA","latlong":["37.50633523832721","-121.9537292230469"],"website":""}
+{"id":"11621","name":"Light Speed","address":"Saint Paul, MN 55124 USA","latlong":["44.94712121363656","-93.09866399136926"],"website":""}
+{"id":"11622","name":"Vikings Too!","address":"Cameron, NC 28326 USA","latlong":["35.329707005400934","-79.24232430545108"],"website":"http://moorecountyrobotics.weebly.com/union-pines.html"}
+{"id":"11623","name":"Coram Deo Robotics","address":"Flower Mound, TX 75022 USA","latlong":["33.03715521986896","-97.07301583904284"],"website":""}
+{"id":"11624","name":"Robocats","address":"Radford, VA 24141 USA","latlong":["37.12502238511569","-80.5446879253639"],"website":""}
+{"id":"11625","name":"Clockwork Robotics","address":"Portland, OR 97219 USA","latlong":["45.461255413615305","-122.68637261299514"],"website":""}
+{"id":"11626","name":"PJP II Robotics","address":"Royersford, PA 19468 USA","latlong":["40.18011193043835","-75.51883385934502"],"website":""}
+{"id":"11627","name":"Stevenson RoboPirates","address":"Carmel, CA 93923 USA","latlong":["36.46319718275433","-121.818257687062"],"website":""}
+{"id":"11628","name":"Coding Hope","address":"Tampa, FL 33602 USA","latlong":["27.96201818295306","-82.47181803751143"],"website":""}
+{"id":"11629","name":"Todoians","address":"Plano, TX 75024 USA","latlong":["33.059025464676026","-96.72758272572968"],"website":""}
+{"id":"11630","name":"Carroll County High School","address":"Hillsville, VA 24343 USA","latlong":["36.76991604751241","-80.72859059543282"],"website":""}
+{"id":"11631","name":"LTRA-TECHIES","address":"Chester, PA 19013 USA","latlong":["39.84181636547002","-75.35922944238813"],"website":""}
+{"id":"11632","name":"Dunkin' DoBots","address":"Northville, MI 48168 USA","latlong":["42.41553754813841","-83.58782521334159"],"website":""}
+{"id":"11637","name":"Grease Wolves","address":"Davisburg, MI 48350 USA","latlong":["42.75341694810472","-83.53813893454334"],"website":""}
+{"id":"11638","name":"Neptune","address":"Greensboro, NC 27408 USA","latlong":["36.07350484039269","-79.8121396492416"],"website":""}
+{"id":"11640","name":"Redstone Warriors","address":"Pearland, TX 77584 USA","latlong":["29.55626911842799","-95.26646496795524"],"website":""}
+{"id":"11641","name":"AGS","address":"Auckland, AUK 02120 New Zealand","latlong":["42.358427542060035","-71.04988928950502"],"website":""}
+{"id":"11642","name":"Dolos","address":"Kingswood, SA 05062 Australia","latlong":["43.48231813574251","-72.5478611528452"],"website":""}
+{"id":"11643","name":"Hercules Robotics","address":"Hercules, CA 94547 USA","latlong":["38.019521041761045","-122.24924537326267"],"website":""}
+{"id":"11644","name":"Mountain Bots","address":"Flagstaff, AZ 86004 USA","latlong":["35.299400211525835","-111.30940596612062"],"website":""}
+{"id":"11645","name":"Tigerbots","address":"Laredo, TX 78040 USA","latlong":["27.535974727109583","-99.47557090649318"],"website":""}
+{"id":"11646","name":"MGGM","address":"Dickinson, TX 77539 USA","latlong":["29.451880139740418","-95.0582456619434"],"website":""}
+{"id":"11647","name":"GnomeBots","address":"Chicago, IL 60610 USA","latlong":["41.83295024738332","-87.67227465072936"],"website":""}
+{"id":"11648","name":"Pyle Panthers","address":"Bethesda, MD 20817 USA","latlong":["38.98694519420434","-77.1081663992876"],"website":""}
+{"id":"11649","name":"Portledge Robo Time","address":"Locust Valley, NY 11560 USA","latlong":["40.88622070415135","-73.5679235264323"],"website":""}
+{"id":"11650","name":"TechTiger Robotics","address":"Pompano Beach, FL 33063 USA","latlong":["26.236438631393376","-80.11990462187994"],"website":"http://www.team1251.org"}
+{"id":"11651","name":"Northwestern Robotics Unnamed Team","address":"Maple, WI 54854 USA","latlong":["46.5820553443081","-91.71791612232636"],"website":"http://www.northwesternrobotics.org"}
+{"id":"11652","name":"Digital Youth Divas","address":"Chicago, IL 60649 USA","latlong":["41.835923789403395","-87.67403203035867"],"website":"http://digitalyouthnetwork.org/divas"}
+{"id":"11653","name":"Starbase 2.0 team 2","address":"Cheyenne, WY 82009 USA","latlong":["41.14218283580748","-104.78174448683278"],"website":""}
+{"id":"11654","name":"Plus or Minos","address":"Cedar City, UT 84720 USA","latlong":["37.8106163137974","-113.2109078461689"],"website":""}
+{"id":"11655","name":"Klamath Basin Robotics","address":"Klamath Falls, OR 97603 USA","latlong":["42.16578418467197","-121.67603089948945"],"website":""}
+{"id":"11656","name":"Neutron Stars","address":"San Diego, CA 92129 USA","latlong":["32.98076341332186","-117.09919883703608"],"website":""}
+{"id":"11657","name":"Mitcham Girls FTC","address":"Kingswood, SA 05062 Australia","latlong":["43.48297651375815","-72.54520466008103"],"website":""}
+{"id":"11658","name":"Bearing Bots","address":"Martinsville, NJ 08836 USA","latlong":["40.60364514284748","-74.55840155320944"],"website":""}
+{"id":"11659","name":"Wheaton Robodogs","address":"Wheaton, MO 64874 USA","latlong":["36.7705579891724","-94.04972069197532"],"website":""}
+{"id":"11660","name":"Rocket Robotics - Falcons","address":"Corvallis, OR 97330 USA","latlong":["44.63545311657903","-123.26578299657724"],"website":""}
+{"id":"11661","name":"roboBears","address":"Ogden, UT 84401 USA","latlong":["41.220552603175946","-111.96295092532702"],"website":""}
+{"id":"11662","name":"Grace & the BroBots","address":"Thomasville, GA 31792 USA","latlong":["30.83967697934022","-83.96294045037845"],"website":""}
+{"id":"11663","name":"Mundelein Robotics","address":"Mundelein, IL 60060 USA","latlong":["42.26375321892012","-87.99094204172896"],"website":""}
+{"id":"11664","name":"Open Window School","address":"Bellevue, WA 98006 USA","latlong":["47.55467537788262","-122.12969681160234"],"website":""}
+{"id":"11665","name":"CASLV FTC (Temporary Name)","address":"Henderson, NV 89052 USA","latlong":["35.98961688467081","-115.10446356852685"],"website":""}
+{"id":"11666","name":"Glendale Prep Robotics Club","address":"Peoria, AZ 85383 USA","latlong":["33.76256366402089","-112.23601655480556"],"website":""}
+{"id":"11667","name":"We Robot 2","address":"Eden Prairie, MN 55344 USA","latlong":["44.86196545022367","-93.42742422660714"],"website":"http://ism-werobot.com/"}
+{"id":"11668","name":"To Bee Determined","address":"Commerce Township, MI 48382 USA","latlong":["42.59874087710833","-83.49137616219498"],"website":""}
+{"id":"11669","name":"Fission Chips","address":"Port Orford, OR 97465 USA","latlong":["42.72515404855714","-124.34922008018331"],"website":""}
+{"id":"11670","name":"To Be Determined","address":"Port Orford, OR 97465 USA","latlong":["42.7273780064897","-124.3473963451026"],"website":""}
+{"id":"11671","name":"Robotic Longhorns","address":"Layton, UT 84041 USA","latlong":["41.07890976543549","-111.97025833626881"],"website":""}
+{"id":"11672","name":"Keith Valley RoboHatters Red","address":"Horsham, PA 19044 USA","latlong":["40.18595256905525","-75.1220057202468"],"website":""}
+{"id":"11673","name":"Keith Valley RoboHatters Black","address":"Horsham, PA 19044 USA","latlong":["40.19450698783758","-75.12088298650455"],"website":""}
+{"id":"11674","name":"Tempe T-REX","address":"Sydney, NSW 02044 Australia","latlong":["42.24085918569247","-70.87836142670936"],"website":""}
+{"id":"11675","name":"HVA RoHAWKtics","address":"Knoxville, TN 37932 USA","latlong":["35.97029763155051","-83.93708031730432"],"website":"http://rohawktics.org"}
+{"id":"11676","name":"Lexan Pixies","address":"Hughes Springs, TX 75656 USA","latlong":["32.994137976649554","-94.61930181247355"],"website":""}
+{"id":"11677","name":"MURA FTC","address":"Minneapolis, MN 55412 USA","latlong":["44.97094877105272","-93.2501051130941"],"website":""}
+{"id":"11678","name":"Arrow Flight","address":"Strafford, MO 65757 USA","latlong":["37.26482629625726","-93.09805830207776"],"website":""}
+{"id":"11679","name":"Titanium Trojans Too","address":"Whitmore Lake, MI 48189 USA","latlong":["42.42871143480179","-83.72894925574717"],"website":""}
+{"id":"11680","name":"Energy HEROs","address":"Houston, TX 77003 USA","latlong":["29.768389044937816","-95.37102708212365"],"website":""}
+{"id":"11681","name":"BANANAS","address":"Melbourne, FL 32940 USA","latlong":["28.082393006771433","-80.5820685913093"],"website":""}
+{"id":"11682","name":"Botman and Robo","address":"Tilton, NH 03276 USA","latlong":["43.45199104154111","-71.57013844218731"],"website":""}
+{"id":"11683","name":"RoboKnights Too","address":"Sherman Oaks, CA 91423 USA","latlong":["34.14795236689667","-118.41475240468887"],"website":""}
+{"id":"11685","name":"Eagles 2","address":"Lake Villa, IL 60046 USA","latlong":["42.41753754433949","-88.0792784743249"],"website":""}
+{"id":"11686","name":"Mechanical Madness","address":"Julian, NC 27283 USA","latlong":["35.951093716325005","-79.62673765769246"],"website":""}
+{"id":"11687","name":"Lincoln School","address":"Providence, RI 02906 USA","latlong":["41.825776363947654","-71.40462067417006"],"website":""}
+{"id":"11688","name":"Dads' Club Robotics","address":"Glendale, CA 91208 USA","latlong":["34.196248157113736","-118.23917934893358"],"website":""}
+{"id":"11689","name":"We Love Pi","address":"Fremont, CA 94536 USA","latlong":["37.56433978909295","-121.97691148696333"],"website":""}
+{"id":"11690","name":"The Steel Rebellion","address":"Jefferson, TX 75657 USA","latlong":["32.767279188388706","-94.33154446008274"],"website":"http://jhstsr.wix.com/home"}
+{"id":"11691","name":"Scripps Dragons","address":"Lake Orion, MI 48360 USA","latlong":["42.78440294327407","-83.23704641074035"],"website":""}
+{"id":"11692","name":"Southeast Knights","address":"Kansas City, MO 64131 USA","latlong":["39.10010002607315","-94.56762515766606"],"website":""}
+{"id":"11693","name":"GEARS 2.0","address":"Barron, WI 54812 USA","latlong":["45.405983541076495","-91.834282091176"],"website":""}
+{"id":"11694","name":"GEARS 2.1","address":"Rice Lake, WI 54868 USA","latlong":["45.4900374755533","-91.7184842426156"],"website":""}
+{"id":"11695","name":"tbd","address":"Baltimore, MD 21210 USA","latlong":["39.31335085292227","-76.59814662066177"],"website":""}
+{"id":"11696","name":"Bedford Botz","address":"Bedford, MI 49017 USA","latlong":["42.29919758770774","-85.2129841611934"],"website":""}
+{"id":"11697","name":"Ro11botics697","address":"South River, NJ 08882 USA","latlong":["40.44589781182441","-74.36756259663566"],"website":""}
+{"id":"11698","name":"Lamar Christian","address":"Purvis, MS 39475 USA","latlong":["31.148110101597215","-89.39876348723406"],"website":""}
+{"id":"11699","name":"TigerBits (B)","address":"Baton Rouge, LA 70803 USA","latlong":["30.44874226679386","-91.11068269161974"],"website":""}
+{"id":"11700","name":"AISeahorse","address":"Christchurch, VA 23031 USA","latlong":["37.58240019410711","-76.5935314291966"],"website":""}
+{"id":"11701","name":"Elksplosion","address":"Springerville, AZ 85938 USA","latlong":["34.04310423446689","-109.19308401454322"],"website":""}
+{"id":"11702","name":"Sentinel Robotics","address":"Bogart, GA 30622 USA","latlong":["33.94071310541711","-83.52042907571622"],"website":""}
+{"id":"11703","name":"Rough Cut Robotics","address":"Banks, OR 97106 USA","latlong":["45.66248895345033","-123.14396193594956"],"website":""}
+{"id":"11704","name":"Peanuts and Lightning Bolts","address":"Saint Charles, MO 63301 USA","latlong":["38.79247700015818","-90.50397304187277"],"website":""}
+{"id":"11705","name":"JC Strong Bots","address":"Elsie, MI 48831 USA","latlong":["43.08723954814047","-84.38693978058593"],"website":"http://jcstrongbots.weebly.com/"}
+{"id":"11706","name":"Robots in Paradise","address":"Saint Petersburg, FL 33710 USA","latlong":["27.761619562659092","-82.63338653271727"],"website":"http://www2.flrayrobotics.org/sites/Home/team_11706/SitePages/Home.aspx"}
+{"id":"11707","name":"Hornets","address":"Dover, DE 19901 USA","latlong":["39.15880259106159","-75.49946205865312"],"website":""}
+{"id":"11709","name":"Hairston Tsunami Surfers","address":"Greensboro, NC 27406 USA","latlong":["36.074441502794414","-79.80893973607148"],"website":"http://www.thewave1891.com"}
+{"id":"11710","name":"RoboRaiders","address":"Bushnell, FL 33513 USA","latlong":["28.66134065056094","-82.09979383622301"],"website":""}
+{"id":"11711","name":"Tech Tigers","address":"Albany, GA 31701 USA","latlong":["31.573515912335168","-84.16273362203098"],"website":""}
+{"id":"11713","name":"Southwest Community Campus GR","address":"Grand Rapids, MI 49503 USA","latlong":["42.97788688752266","-85.62597617249229"],"website":""}
+{"id":"11714","name":"Burr Oak BossCats","address":"Burr Oak, MI 49030 USA","latlong":["41.8520951224666","-85.30771428144581"],"website":""}
+{"id":"11715","name":"Southeast High Seminoles Team Blue","address":"Bradenton, FL 34208 USA","latlong":["27.48113986787941","-82.56206097050197"],"website":"http://www.richardplatt.net/southeastengineering/index.html"}
+{"id":"11716","name":"Southeast High Seminoles Team Orange","address":"Bradenton, FL 34208 USA","latlong":["27.484510306046573","-82.56203842297403"],"website":"http://www.richardplatt.net/southeastengineering/index.html"}
+{"id":"11717","name":"Baker Bobcats","address":"Troy, MI 48083 USA","latlong":["42.59446462126475","-83.10502457875224"],"website":""}
+{"id":"11718","name":"Warren County Wildcats","address":"Front Royal, VA 22630 USA","latlong":["38.92394076051312","-78.17401744482594"],"website":""}
+{"id":"11719","name":"Your Motherboard","address":"Lubbock, TX 79423 USA","latlong":["33.572321156738","-101.86037629639776"],"website":""}
+{"id":"11720","name":"PUROBOTS","address":"Terlingua, TX 79852 USA","latlong":["29.330574875312564","-103.60783859666755"],"website":""}
+{"id":"11721","name":"Outlaws","address":"Davenport, IA 52803 USA","latlong":["41.55043059547926","-90.59272693895004"],"website":""}
+{"id":"11723","name":"Canton GearHounds","address":"Canton, MA 02021 USA","latlong":["42.160532681158514","-71.12732416801003"],"website":""}
+{"id":"11724","name":"Northeast Middle School Robot Team","address":"Minneapolis, MN 55418 USA","latlong":["44.96197330168367","-93.24838589080326"],"website":""}
+{"id":"11725","name":"KCDML","address":"Kansas City, MO 64105 USA","latlong":["39.094555325956826","-94.56821350454332"],"website":"http://www.kcdml.org"}
+{"id":"11726","name":"Hack 29th St.","address":"Detroit, MI 48210 USA","latlong":["42.3868808969965","-83.08793706877884"],"website":""}
+{"id":"11727","name":"Neutrons","address":"Grand Rapids, MI 49503 USA","latlong":["42.98221300325591","-85.61406096891247"],"website":""}
+{"id":"11728","name":"WOW - West Ottawa Wizards","address":"Holland, MI 49424 USA","latlong":["42.77068447158025","-86.08852563071478"],"website":"http://team141.net"}
+{"id":"11729","name":"Chelsea Crash","address":"Chelsea, MI 48118 USA","latlong":["42.32473468704341","-84.00347527244146"],"website":""}
+{"id":"11730","name":"Fuzzy Wuzzy","address":"Olympia, WA 98501 USA","latlong":["46.98246612955548","-122.86199920187796"],"website":""}
+{"id":"11731","name":"Good 'Nuff","address":"Olympia, WA 98501 USA","latlong":["46.98294244810682","-122.86193357237346"],"website":""}
+{"id":"11732","name":"Are we there yet?","address":"Olympia, WA 98501 USA","latlong":["46.98490681341634","-122.8504680242888"],"website":""}
+{"id":"11733","name":"Jackets STEAM Team","address":"Ocean Springs, MS 39564 USA","latlong":["30.409335021198682","-88.7931506606763"],"website":""}
+{"id":"11734","name":"Golden Eagles","address":"Phoenix, AZ 85043 USA","latlong":["33.42610899515403","-112.19946230545585"],"website":""}
+{"id":"11735","name":"Robo Toasters Blue","address":"South Lyon, MI 48178 USA","latlong":["42.47227618206147","-83.6453916270152"],"website":"http://www.robotoasters.org"}
+{"id":"11736","name":"RASCALS","address":"Garden Grove, CA 92845 USA","latlong":["33.78007944326225","-118.01879942142625"],"website":""}
+{"id":"11738","name":"Dragon Pie","address":"Saint Paul, MN 55113 USA","latlong":["44.94917075431678","-93.08958131276526"],"website":""}
+{"id":"11739","name":"Cyborg Wolves","address":"Clarkston, MI 48346 USA","latlong":["42.73240922861817","-83.40769798356614"],"website":""}
+{"id":"11740","name":"Roadrunners24","address":"Stanfield, AZ 85172 USA","latlong":["32.93508259175889","-111.91688091968271"],"website":""}
+{"id":"11741","name":"Okapi","address":"Farmington Hills, MI 48336 USA","latlong":["42.46718783931436","-83.36766685358447"],"website":""}
+{"id":"11742","name":"Parkland Matbotz","address":"El Paso, TX 79924 USA","latlong":["31.84854112225692","-106.41854704667787"],"website":"http://www.matbotz.com"}
+{"id":"11743","name":"Fontbotics","address":"Brooklyn, NY 11209 USA","latlong":["40.64429102220289","-73.93424304096278"],"website":""}
+{"id":"11744","name":"Galileo","address":"Kfar Blum, Z 12150 Israel","latlong":["42.87676315925625","-74.03060363279347"],"website":""}
+{"id":"11745","name":"Woodrow Wilson HS Robocats I","address":"Dallas, TX 75214 USA","latlong":["32.790828595876164","-96.74812955285194"],"website":""}
+{"id":"11746","name":"Robostangs","address":"Oologah, OK 74053 USA","latlong":["36.44026446940353","-95.70170700840293"],"website":""}
+{"id":"11747","name":"Extreme Robotics","address":"Cincinnati, OH 45243 USA","latlong":["39.09418648988264","-84.50435895292742"],"website":""}
+{"id":"11748","name":"Enterprise Academy","address":"Greenville, NC 27834 USA","latlong":["35.59107373314037","-77.3622895039616"],"website":""}
+{"id":"11749","name":"Imagination Patriots","address":"Northville, MI 48168 USA","latlong":["42.41766568583655","-83.58773009925511"],"website":""}
+{"id":"11750","name":"Bellatorum","address":"Cartersville, GA 30120 USA","latlong":["34.174643151717476","-84.78435774716964"],"website":""}
+{"id":"11751","name":"Wooster FIRST Robotics Team","address":"Reno, NV 89511 USA","latlong":["39.38078857873456","-119.86055271892867"],"website":""}
+{"id":"11752","name":"Orphan Bots","address":"Centralia, IL 62801 USA","latlong":["38.52303481558202","-89.11576186146429"],"website":""}
+{"id":"11753","name":"SigmaBotics","address":"Chicago, IL 60629 USA","latlong":["41.83534090275121","-87.66799819249518"],"website":"http://www.phibetasigma1914.org/"}
+{"id":"11754","name":"EnergySmart FTC","address":"Somerset, NJ 08873 USA","latlong":["40.49814563376852","-74.47575235898846"],"website":""}
+{"id":"11755","name":"Trinity Tech Saints","address":"Bend, OR 97701 USA","latlong":["44.07445317735852","-121.24791353956775"],"website":""}
+{"id":"11756","name":"Tiger Robotics","address":"College Station, TX 77840 USA","latlong":["30.60866217408159","-96.29894245981511"],"website":""}
+{"id":"11757","name":"Rebellious Robots","address":"Apple Valley, MN 55124 USA","latlong":["44.9542288357272","-93.09228773857457"],"website":""}
+{"id":"11758","name":"ATA Inventors II","address":"Dearborn, MI 48126 USA","latlong":["42.31320607179882","-83.19961527804898"],"website":""}
+{"id":"11759","name":"ATA Inventors IV","address":"Dearborn, MI 48126 USA","latlong":["42.31604128398764","-83.19326706438503"],"website":""}
+{"id":"11760","name":"Timberline Ladies Team","address":"Alpine, UT 84004 USA","latlong":["40.503034337204205","-111.69780443513936"],"website":""}
+{"id":"11761","name":"Woodrow Wilson Robocats II","address":"Dallas, TX 75214 USA","latlong":["32.79913695690538","-96.74647653725954"],"website":""}
+{"id":"11762","name":"Metal Storm","address":"Niles, MI 49120 USA","latlong":["41.837076800267816","-86.23743979198807"],"website":""}
+{"id":"11764","name":"UC HIGH CENTURIONS","address":"San Diego, CA 92122 USA","latlong":["32.866306273229725","-117.18309919133"],"website":""}
+{"id":"11765","name":"The Crusader Collective","address":"Pittsfield, MA 01201 USA","latlong":["42.457988471623615","-73.25908095900796"],"website":""}
+{"id":"11766","name":"Prairieville Robotics","address":"Prairieville, LA 70769 USA","latlong":["30.307873658224757","-90.96644289590441"],"website":""}
+{"id":"11767","name":"Meridian Jr. Mustangs","address":"Midland, MI 48640 USA","latlong":["43.62824575401666","-84.21051725956075"],"website":""}
+{"id":"11768","name":"FCLC Freedom Fighters","address":"Troy, MO 63379 USA","latlong":["38.977865388545005","-90.97368884629795"],"website":""}
+{"id":"11769","name":"Pioneer Robotics 3","address":"Canton, MI 48187 USA","latlong":["42.31139141065353","-83.47319978970715"],"website":"http://pioneer-ftc-robotics.club/"}
+{"id":"11770","name":"Curiosity","address":"Los Angeles, CA 90004 USA","latlong":["34.07227896881642","-118.29794248735315"],"website":""}
+{"id":"11771","name":"Allen Village School Robotics","address":"Kansas City, MO 64111 USA","latlong":["39.098007470618775","-94.57414591584316"],"website":""}
+{"id":"11772","name":"JAVATOMIC","address":"Geneseo, IL 61254 USA","latlong":["41.442354600841504","-90.13918565986134"],"website":""}
+{"id":"11773","name":"DOGPOUND","address":"Plainview, TX 79072 USA","latlong":["34.197201293249705","-101.71673378797942"],"website":""}
+{"id":"11774","name":"Palatka High School Robo-Panthers","address":"Palatka, FL 32177 USA","latlong":["29.644543525590098","-81.63793737611438"],"website":"http://renaissancejax.org"}
+{"id":"11775","name":"Shelby Middle II","address":"Shelby, NC 28150 USA","latlong":["35.284759003745975","-81.52920765024756"],"website":""}
+{"id":"11776","name":"Pyro Sharks","address":"Palacios, TX 77465 USA","latlong":["28.72213737236071","-96.22253672159378"],"website":""}
+{"id":"11777","name":"Titanium Badgers","address":"Bennington, NE 68007 USA","latlong":["41.36276813548136","-96.14299114762018"],"website":"http://titaniumbadgers.weebly.com/"}
+{"id":"11778","name":"Century High Robotics","address":"Hillsboro, OR 97123 USA","latlong":["45.44651258329745","-122.95824498794909"],"website":""}
+{"id":"11779","name":"Chrononauts","address":"Rochester, NY 14618 USA","latlong":["43.16977242597582","-77.60329923676265"],"website":""}
+{"id":"11780","name":"iTryRobotic","address":"Windham, NH 03087 USA","latlong":["42.8049191154508","-71.28837241332832"],"website":""}
+{"id":"11781","name":"MVS Rams","address":"Dayton, OH 45429 USA","latlong":["39.77324236901439","-84.18628311473076"],"website":""}
+{"id":"11782","name":"Robo Pirates - Gold","address":"Lytle, TX 78052 USA","latlong":["29.23711608150939","-98.78325217815363"],"website":""}
+{"id":"11783","name":"The Mystery Machines","address":"Monett, MO 65708 USA","latlong":["36.923484044144836","-93.90950425121355"],"website":""}
+{"id":"11784","name":"Northside Robotics","address":"Fort Smith, AR 72901 USA","latlong":["35.370049560876424","-94.36883702547748"],"website":""}
+{"id":"11785","name":"Code 31","address":"Macon, MO 63552 USA","latlong":["39.7414219593183","-92.46852278291814"],"website":""}
+{"id":"11786","name":"2PawsRoboticsJr","address":"Paw Paw, MI 49079 USA","latlong":["42.21662228091918","-85.88400652629609"],"website":""}
+{"id":"11787","name":"the turing machines","address":"White Salmon, WA 98672 USA","latlong":["45.83041380729973","-121.45063478673241"],"website":""}
+{"id":"11788","name":"Robo Pelicans","address":"Port Allen, LA 70767 USA","latlong":["30.459717055705955","-91.19700198624972"],"website":""}
+{"id":"11789","name":"Rising Resistance Robotics","address":"Tucson, AZ 85710 USA","latlong":["32.23143134782108","-110.80315604700513"],"website":"https://www.risingresistancerobotics.org/"}
+{"id":"11790","name":"Dancing Pandas of CART","address":"Clovis, CA 93612 USA","latlong":["36.812558641309856","-119.70983924325121"],"website":""}
+{"id":"11791","name":"Robotanists","address":"Allen, TX 75002 USA","latlong":["33.10969102646603","-96.65230167713705"],"website":""}
+{"id":"11792","name":"BotsBurgh","address":"Pittsburgh, PA 15241 USA","latlong":["40.444184236972006","-79.95940068779558"],"website":""}
+{"id":"11793","name":"TRICERABOTS","address":"Allen, TX 75002 USA","latlong":["33.11304321288233","-96.6503308425825"],"website":""}
+{"id":"11794","name":"Sunrise Koolbotics","address":"Scottsdale, AZ 85254 USA","latlong":["33.62162294983118","-111.93622890948241"],"website":""}
+{"id":"11795","name":"ITW David Speer Academy 2","address":"Chicago, IL 60639 USA","latlong":["41.836777651003715","-87.67496894900574"],"website":""}
+{"id":"11796","name":"TechGarage 1","address":"Boca Raton, FL 33431 USA","latlong":["26.402718110136462","-80.07119523411303"],"website":"http://www.tech-garage.org"}
+{"id":"11797","name":"TechGarage2","address":"Boca Raton, FL 33431 USA","latlong":["26.412440158675416","-80.0592907314762"],"website":"http://www.tech-garage.org"}
+{"id":"11798","name":"TechGarage3","address":"Boca Raton, FL 33431 USA","latlong":["26.41296016226305","-80.0535667346186"],"website":"http://www.tech-garage.org"}
+{"id":"11799","name":"Blazers Robotics 2","address":"Boca Raton, FL 33431 USA","latlong":["26.422581586596817","-80.05155781941264"],"website":"http://www.tech-garage.org"}
+{"id":"11800","name":"TechGarage5","address":"Boca Raton, FL 33431 USA","latlong":["26.42747896592195","-80.04792408067307"],"website":"http://www.tech-garage.org"}
+{"id":"11801","name":"Endgame","address":"West Milford, NJ 07480 USA","latlong":["41.101822096123726","-74.38762498227157"],"website":""}
+{"id":"11802","name":"Illuminuts","address":"Sydney, NSW 02122 Australia","latlong":["42.35134101036848","-71.05157240638525"],"website":"https://www.facebook.com/Illuminuts-FTC-team-201600474-Eastwood-NSW-1593650220949569/"}
+{"id":"11804","name":"Centreville 4","address":"Clifton, VA 20124 USA","latlong":["38.77175252977789","-77.36927765875204"],"website":""}
+{"id":"11805","name":"THE FIRST WOLVES","address":"jerusalem, JM 97539 Israel","latlong":["42.61514849415337","-122.7977803582275"],"website":""}
+{"id":"11806","name":"Malakoff Robotics Team B","address":"Malakoff, TX 75148 USA","latlong":["32.18197824756216","-96.00777845715307"],"website":""}
+{"id":"11809","name":"Botqueros","address":"San Diego, TX 78384 USA","latlong":["27.75330850936633","-98.22753127979118"],"website":""}
+{"id":"11810","name":"Cyborg Zombies","address":"Temecula, CA 92590 USA","latlong":["33.48183086000713","-117.20794341801609"],"website":""}
+{"id":"11811","name":"DDoS Robotics","address":"Houston, TX 77062 USA","latlong":["29.767243084449152","-95.37815119483511"],"website":""}
+{"id":"11812","name":"We Robot 3","address":"Eden Prairie, MN 55344 USA","latlong":["44.86245854392094","-93.42228004453438"],"website":"http://ism-werobot.com/"}
+{"id":"11813","name":"Thunderbots","address":"Olympia, WA 98501 USA","latlong":["46.98534498451462","-122.84602140096759"],"website":""}
+{"id":"11814","name":"Project 1794","address":"Michigan City, IN 46360 USA","latlong":["41.72786256630591","-86.85312904621972"],"website":""}
+{"id":"11815","name":"We Robot 4","address":"Eden Prairie, MN 55344 USA","latlong":["44.864921519049176","-93.41092012855566"],"website":"http://ism-werobot.com/"}
+{"id":"11816","name":"CAA Kodiaks","address":"Battle Ground, WA 98604 USA","latlong":["45.80188284634977","-122.47906518124644"],"website":""}
+{"id":"11817","name":"< BITS_PLEASE >","address":"Clearwater, FL 33764 USA","latlong":["27.98051383092493","-82.75137191783149"],"website":""}
+{"id":"11818","name":"CYC Crown Commanders","address":"Chicago, IL 60649 USA","latlong":["41.84481283451531","-87.6616823336682"],"website":""}
+{"id":"11819","name":"Two Crows on a Fence","address":"Saint Peter, MN 56082 USA","latlong":["44.331360686726406","-93.95259883320159"],"website":""}
+{"id":"11820","name":"Cyber-liers","address":"Macon, GA 31201 USA","latlong":["32.83996738070643","-83.64955709984626"],"website":""}
+{"id":"11821","name":"Voltage","address":"Chicago, IL 60618 USA","latlong":["41.837088754537035","-87.67935961295728"],"website":""}
+{"id":"11822","name":"S.T.E.M. - Bulldogs","address":"Chicago, IL 60617 USA","latlong":["41.83704516353169","-87.66984229118863"],"website":"http://cameloteducation.org/our-schools/"}
+{"id":"11824","name":"Veritas Prep Robotics","address":"Phoenix, AZ 85018 USA","latlong":["33.51043961601111","-111.9745425676497"],"website":""}
+{"id":"11825","name":"Graveyard Shift","address":"Monrovia, CA 91016 USA","latlong":["34.160001667954226","-117.98588037040551"],"website":""}
+{"id":"11826","name":"Bionic Sharks","address":"Palacios, TX 77465 USA","latlong":["28.73344031651018","-96.21913290920091"],"website":""}
+{"id":"11827","name":"HoundBot","address":"Knox City, TX 79529 USA","latlong":["33.41950733506819","-99.80971381761212"],"website":"https://sites.google.com/a/esc9.net/krusemark/"}
+{"id":"11828","name":"White Salmon Snakes","address":"White Salmon, WA 98672 USA","latlong":["45.841034756117175","-121.44014026641307"],"website":""}
+{"id":"11829","name":"CPA-Tech Challenge","address":"Ferriday, LA 71334 USA","latlong":["31.630115195633355","-91.54000184882428"],"website":""}
+{"id":"11830","name":"RarBots","address":"Red Lion, PA 17356 USA","latlong":["39.89025457215814","-76.59441825910395"],"website":""}
+{"id":"11831","name":"MightyMustang^2","address":"McAllen, TX 78504 USA","latlong":["26.222474854446578","-98.22542810602019"],"website":""}
+{"id":"11832","name":"MightyMustang^4","address":"McAllen, TX 78504 USA","latlong":["26.22619878572874","-98.22363210035775"],"website":""}
+{"id":"11833","name":"Oasis Orbiters","address":"Paterson, NJ 07501 USA","latlong":["40.921034054132534","-74.15727515136996"],"website":""}
+{"id":"11834","name":"Norwegian Ninjas","address":"Decorah, IA 52101 USA","latlong":["43.312471923418165","-91.78443418236738"],"website":""}
+{"id":"11835","name":"Oasis Orions","address":"Paterson, NJ 07501 USA","latlong":["40.930898575246516","-74.14708062692453"],"website":""}
+{"id":"11837","name":"ZenoBots","address":"Gary, IN 46402 USA","latlong":["41.5928827975543","-87.3375228828558"],"website":""}
+{"id":"11838","name":"The Hot Comodity","address":"Savage, MN 55378 USA","latlong":["44.75236417922063","-93.34355553898719"],"website":""}
+{"id":"11839","name":"Metal Melters","address":"Saint Paul, MN 55124 USA","latlong":["44.9631464495546","-93.09024949575257"],"website":""}
+{"id":"11840","name":"Millennial Tech Middle (Pending)","address":"San Diego, CA 92102 USA","latlong":["32.723752828861464","-117.0832976376593"],"website":""}
+{"id":"11841","name":"STEAM Punks","address":"Latta, SC 29565 USA","latlong":["34.34087608365314","-79.4231472992299"],"website":""}
+{"id":"11842","name":"Cyber War Machines","address":"Tehachapi, CA 93561 USA","latlong":["35.1213588185202","-118.50345895186277"],"website":""}
+{"id":"11844","name":"Johnson's Jets","address":"Saint Paul, MN 55106 USA","latlong":["44.94751163986457","-93.09438307081862"],"website":""}
+{"id":"11845","name":"Tiki Techs","address":"Kailua Kona, HI 96740 USA","latlong":["19.63085257502991","-155.9786634750614"],"website":"http://KealakeheRobotics.org"}
+{"id":"11846","name":"Wayland Wildcat Cat-a-Tech-Nics","address":"Wayland, MI 49348 USA","latlong":["42.68236850441517","-85.63248303741946"],"website":""}
+{"id":"11847","name":"Cascade Carbon Cyborgs","address":"Bend, OR 97702 USA","latlong":["43.980368435339635","-121.26019405952259"],"website":"http://cmsrobotics.club/"}
+{"id":"11848","name":"Spare Parts Robotics","address":"Cary, IL 60013 USA","latlong":["42.20171246811953","-88.23870520069026"],"website":""}
+{"id":"11849","name":"Sheely STEM A","address":"Phoenix, AZ 85037 USA","latlong":["33.49165254592143","-112.24501212884458"],"website":""}
+{"id":"11850","name":"Trailblazers","address":"West Jordan, UT 84088 USA","latlong":["40.58070404785583","-111.9728597578505"],"website":""}
+{"id":"11851","name":"East Grand Rapids Middle School","address":"Grand Rapids, MI 49506 USA","latlong":["42.97130480271326","-85.64531149401718"],"website":""}
+{"id":"11852","name":"Cambridge FTC","address":"Weiser, ID 83672 USA","latlong":["44.479300782525705","-116.90669879300499"],"website":""}
+{"id":"11853","name":"Bruins Robotics","address":"Madison, MS 39110 USA","latlong":["32.461384801488656","-90.09840121944586"],"website":""}
+{"id":"11854","name":"STEM EAGLES","address":"Phoenix, AZ 85043 USA","latlong":["33.43215918291797","-112.19897251705744"],"website":""}
+{"id":"11855","name":"JoeBots","address":"Saint Joseph, MI 49085 USA","latlong":["42.037150449047196","-86.44933384158051"],"website":""}
+{"id":"11856","name":"ROBOTICATS","address":"Epworth, IA 52045 USA","latlong":["42.446224962572444","-90.92106304717393"],"website":""}
+{"id":"11857","name":"Patriotrons","address":"Dallas, GA 30157 USA","latlong":["33.912667476056484","-84.81818418104243"],"website":"http://www.paulding.k12.ga.us/Page/32605"}
+{"id":"11858","name":"bluefish B","address":"Kaneohe, HI 96744 USA","latlong":["21.412168289020276","-157.78270939120358"],"website":""}
+{"id":"11859","name":"bluefish A","address":"Kaneohe, HI 96744 USA","latlong":["21.41753574066305","-157.77827715969573"],"website":""}
+{"id":"11860","name":"BHK-CLK robotics","address":"Calumet, MI 49913 USA","latlong":["47.250166656892155","-88.44857654765676"],"website":""}
+{"id":"11861","name":"The Yooper Troopers","address":"Cedarville, MI 49719 USA","latlong":["45.99313441717922","-84.35424277084519"],"website":""}
+{"id":"11863","name":"Eaglebots","address":"Selma, CA 93662 USA","latlong":["36.53945147674381","-119.63501743007265"],"website":""}
+{"id":"11864","name":"Rosepine Robotics","address":"Rosepine, LA 70659 USA","latlong":["30.920142106852932","-93.2786901884819"],"website":""}
+{"id":"11865","name":"Steel Hearts","address":"Camas, WA 98607 USA","latlong":["45.652509256834","-122.35847558930998"],"website":""}
+{"id":"11866","name":"Gigabyte","address":"Hollis, NH 03049 USA","latlong":["42.73550388822433","-71.57406800432122"],"website":""}
+{"id":"11867","name":"MNMS Stallions","address":"Yukon, OK 73099 USA","latlong":["35.51934375287743","-97.7544823968172"],"website":""}
+{"id":"11868","name":"G(I2R)L Girl Power","address":"Chesterfield, VA 23832 USA","latlong":["37.37901491810291","-77.49378354810295"],"website":""}
+{"id":"11869","name":"Pangburn","address":"Pangburn, AR 72121 USA","latlong":["35.42406782027139","-91.8293224564938"],"website":""}
+{"id":"11870","name":"West Bloomfield Veagle Vortex","address":"West Bloomfield, MI 48324 USA","latlong":["42.57238658191153","-83.37692218801202"],"website":""}
+{"id":"11871","name":"Voltron","address":"Toms River, NJ 08753 USA","latlong":["39.96206167754276","-74.16971705201148"],"website":""}
+{"id":"11872","name":"Visible Spectrum","address":"Lakeville, MN 55044 USA","latlong":["44.67599259905364","-93.23206849261011"],"website":"http://visiblespectrumftc.weebly.com/"}
+{"id":"11873","name":"Parallax Shift","address":"Lakeville, MN 55044 USA","latlong":["44.67631856449747","-93.2303733238755"],"website":""}
+{"id":"11874","name":"Blue Valley CAPS Metal Mavericks","address":"Overland Park, KS 66223 USA","latlong":["38.90173109284962","-94.67270653936497"],"website":""}
+{"id":"11875","name":"Panther Robotics","address":"Port Byron, NY 13140 USA","latlong":["43.039408218257265","-76.61966279108105"],"website":""}
+{"id":"11877","name":"Rock n' Robots","address":"Vernon Rockville, CT 06066 USA","latlong":["41.8463910872272","-72.44714013469446"],"website":""}
+{"id":"11878","name":"Mechanical Mustangs","address":"Blackfoot, ID 83221 USA","latlong":["43.27947785414075","-112.55656197676649"],"website":""}
+{"id":"11879","name":"Spartan Red Robotics","address":"Norcross, GA 30093 USA","latlong":["33.94890047035665","-84.1916404129488"],"website":""}
+{"id":"11880","name":"Vertical Vectors","address":"East Saint Louis, IL 62201 USA","latlong":["38.617530069845735","-90.119295762835"],"website":""}
+{"id":"11881","name":"Cat Astrophe","address":"Bellevue, WA 98008 USA","latlong":["47.60161307400017","-122.10598440504593"],"website":""}
+{"id":"11882","name":"The Revolution - Orange","address":"Tacoma, WA 98405 USA","latlong":["47.243991752259554","-122.46849430008574"],"website":"http://www.frc360.com"}
+{"id":"11883","name":"Legion Of Bot","address":"Redmond, WA 98052 USA","latlong":["47.687704471442906","-122.11710180365866"],"website":"http://www.legionofbot.org/"}
+{"id":"11884","name":"Mechatronics Akademie","address":"Chattanooga, TN 37404 USA","latlong":["35.06674688958834","-85.24017365905702"],"website":""}
+{"id":"11885","name":"The Robotic Lakers","address":"Mackinac Island, MI 49757 USA","latlong":["45.853169654248696","-84.61499033085433"],"website":""}
+{"id":"11886","name":"Crossroads","address":"Oakland, MD 21550 USA","latlong":["39.41929787124122","-79.40082088649544"],"website":""}
+{"id":"11887","name":"Hermiston Middle Schools Robotics","address":"Hermiston, OR 97838 USA","latlong":["45.86075079696633","-119.20431646750417"],"website":""}
+{"id":"11888","name":"Annie Wright Upper School","address":"Tacoma, WA 98403 USA","latlong":["47.261150682658716","-122.44213820976107"],"website":""}
+{"id":"11889","name":"Phelps' Lions","address":"Malvern, PA 19355 USA","latlong":["40.03780301789765","-75.50844526373794"],"website":""}
+{"id":"11890","name":"Neon Robots","address":"West Linn, OR 97068 USA","latlong":["45.34445312962565","-122.64799842775012"],"website":""}
+{"id":"11891","name":"RoboStingers","address":"Yulee, FL 32097 USA","latlong":["30.634648386812362","-81.56177825704631"],"website":""}
+{"id":"11892","name":"Hilliard High School Flashes","address":"Hilliard, FL 32046 USA","latlong":["30.691813481080704","-81.91808564230698"],"website":""}
+{"id":"11893","name":"Fernandina Beach High School Pirates","address":"Fernandina Beach, FL 32034 USA","latlong":["30.650025692990436","-81.43306034078566"],"website":""}
+{"id":"11894","name":"Youth ImPakt","address":"Ferguson, MO 63135 USA","latlong":["38.63410505474758","-90.23129453494776"],"website":"http://www.paktcenter.org"}
+{"id":"11895","name":"South City Robodudes","address":"South San Francisco, CA 94080 USA","latlong":["37.658966161657325","-122.41417519848397"],"website":""}
+{"id":"11896","name":"Paul Charter School","address":"Washington, DC 20011 USA","latlong":["38.89659111049913","-77.01837096062916"],"website":"http://www.paulcharter.org/"}
+{"id":"11897","name":"RoboFoxes","address":"Arnold, MO 63010 USA","latlong":["38.421181252964416","-90.35953291924193"],"website":""}
+{"id":"11898","name":"Newark Memorial Robuckets","address":"Newark, CA 94560 USA","latlong":["37.51703874362223","-122.02773306733162"],"website":""}
+{"id":"11899","name":"Roboscouts","address":"Ann Arbor, MI 48105 USA","latlong":["42.27398384577519","-83.71930880677446"],"website":""}
+{"id":"11900","name":"ICCR Youth","address":"Cedar Rapids, IA 52405 USA","latlong":["41.981722332590444","-91.65186531771386"],"website":""}
+{"id":"11902","name":"Hydra","address":"Andrews, TX 79714 USA","latlong":["32.32203715435054","-102.53843614066966"],"website":""}
+{"id":"11903","name":"Happy Little Robots","address":"Saint Paul, MN 55123 USA","latlong":["44.96204727279438","-93.07816813931781"],"website":""}
+{"id":"11904","name":"Black Knights","address":"Saint Paul, MN 55123 USA","latlong":["44.97414093283184","-93.06724722856957"],"website":""}
+{"id":"11905","name":"The Pack","address":"Klamath Falls, OR 97601 USA","latlong":["42.32203248466771","-122.06312233160875"],"website":""}
+{"id":"11906","name":"Absolute Zero","address":"Saint Paul, MN 55123 USA","latlong":["44.97739698648479","-93.06327703353479"],"website":""}
+{"id":"11907","name":"Sraw Rats","address":"Dover, DE 19901 USA","latlong":["39.162797742979","-75.49468238222464"],"website":""}
+{"id":"11908","name":"Gardner Edgerton Electric Kiwis","address":"Gardner, KS 66030 USA","latlong":["38.8205613411517","-94.90750317348882"],"website":""}
+{"id":"11909","name":"Cuyahoga Falls High School Robotics Club","address":"Cuyahoga Falls, OH 44221 USA","latlong":["41.166613387639075","-81.51875831870753"],"website":""}
+{"id":"11910","name":"REEF ROBOTICS 2","address":"Miami, FL 33157 USA","latlong":["25.781352375431666","-80.19238439764764"],"website":""}
+{"id":"11911","name":"JPS Falcons","address":"San Antonio, TX 78251 USA","latlong":["29.45479279168217","-98.4955708619546"],"website":""}
+{"id":"11912","name":"Stevens Falcons","address":"San Antonio, TX 78251 USA","latlong":["29.464101352721222","-98.48695066314208"],"website":""}
+{"id":"11913","name":"Big Blue Bots","address":"McAllen, TX 78501 USA","latlong":["26.221342867295345","-98.22430180958787"],"website":""}
+{"id":"11914","name":"StangBOTS","address":"McAllen, TX 78501 USA","latlong":["26.221564251294524","-98.21779901393583"],"website":""}
+{"id":"11915","name":"Dragons","address":"Cleveland, OH 44103 USA","latlong":["41.47151069177176","-81.65921157871024"],"website":""}
+{"id":"11916","name":"Beacon Tech","address":"Stamford, CT 06902 USA","latlong":["41.09113148785013","-73.54822070155544"],"website":""}
+{"id":"11918","name":"Grizzly Bots","address":"Leander, TX 78641 USA","latlong":["30.565238959393458","-97.85847187075213"],"website":""}
+{"id":"11919","name":"Leopardrobo.1","address":"Van Vleck, TX 77482 USA","latlong":["29.031980353266302","-95.87258910167418"],"website":""}
+{"id":"11920","name":"Quarry Lane Cougars","address":"Dublin, CA 94568 USA","latlong":["37.71427019768611","-121.89920438992911"],"website":""}
+{"id":"11921","name":"KIPP Create College Prep","address":"Chicago, IL 60644 USA","latlong":["41.833273161329366","-87.67794592515146"],"website":""}
+{"id":"11922","name":"Nightmare Robotics","address":"Colorado Springs, CO 80916 USA","latlong":["38.862665215750575","-104.75685728779165"],"website":""}
+{"id":"11923","name":"The Terabots","address":"Blackfoot, ID 83221 USA","latlong":["43.28257218881478","-112.55617178762533"],"website":""}
+{"id":"11924","name":"Martin Robots","address":"Corpus Christi, TX 78416 USA","latlong":["27.81161347920206","-97.37850596885959"],"website":""}
+{"id":"11925","name":"CyborgKings","address":"Blackfoot, ID 83221 USA","latlong":["43.28719824422735","-112.54632753505379"],"website":""}
+{"id":"11926","name":"Holy Family Bears","address":"Port Allen, LA 70767 USA","latlong":["30.464858819537888","-91.19203822842356"],"website":""}
+{"id":"11927","name":"Fantastic 5","address":"Oregon City, OR 97045 USA","latlong":["45.32384835388894","-122.51063328856984"],"website":""}
+{"id":"11928","name":"Teen Connection","address":"Berwyn, IL 60402 USA","latlong":["41.84815151838603","-87.78277114444587"],"website":""}
+{"id":"11929","name":"Crimson Robotics #5","address":"Osseo, MN 55369 USA","latlong":["45.16057272638833","-93.36084416060856"],"website":"http://crimsonrobotics.com"}
