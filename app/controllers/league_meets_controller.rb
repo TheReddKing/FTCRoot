@@ -5,7 +5,7 @@ class LeagueMeetsController < ApplicationController
   # GET /league_meets.json
   def index
       @league_meets = if params[:search] != nil
-                  LeagueMeet.where('location like ? or name like ? or date like ?', "#{params[:search]}%", "%#{params[:search]}%","%#{params[:search]}%")
+                  LeagueMeet.where('lower(location) LIKE lower(?) or lower(name) LIKE lower(?) or date LIKE ?', "#{params[:search]}%", "%#{params[:search]}%","%#{params[:search]}%")
               else
                   LeagueMeet.all
               end
