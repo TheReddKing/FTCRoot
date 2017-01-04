@@ -2,9 +2,21 @@
 <p id="notice"><%= notice %></p>
 
 <h1>League Meets</h1>
+
+
 <p>Note: if you have result files, send them to <a href="mailto:help@ftcroot.com">help@ftcroot.com</a></p>
 <p>A lot of events have been added, but it is no means all of it. </p>
 <p> Thank you to everybody who has sent in meet results! </p>
+
+<br/>
+
+<%= form_tag(league_meets_path(""), method: "get",:class => "pure-form") do %>
+  <p>
+    <%= label_tag(:search, "Search Meet name, location or date:") %>
+    <%= text_field_tag(:search,params[:search]) %>
+    <%= submit_tag("Search", :class=>"pure-button pure-button-primary") %>
+  </p>
+<% end %>
 <table class="pure-table">
     <thead>
         <tr>
@@ -24,6 +36,8 @@
             <td><%= link_to league_meet.location, league_meet.region %></td>
         </tr>
         <% end %>
+
+        <%= will_paginate @league_meets %>
     </tbody>
 </table>
 

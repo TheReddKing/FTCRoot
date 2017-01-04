@@ -4,7 +4,12 @@ class LeagueMeetsController < ApplicationController
   # GET /league_meets
   # GET /league_meets.json
   def index
-    @league_meets = LeagueMeet.all.order( 'date DESC' )
+      @league_meets = if params[:search] != nil
+                  LeagueMeet.where('location like ? or name like ? or date like ?', "#{params[:search]}%", "%#{params[:search]}%","%#{params[:search]}%")
+              else
+                  LeagueMeet.all
+              end
+    @league_meets = @league_meets.order( 'date DESC' ).paginate(:page => params[:page], :per_page => 20)
   end
 
   # GET /league_meets/1

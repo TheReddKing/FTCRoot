@@ -26,13 +26,15 @@ class ResultsSpider(BaseSpider):
 
         repeatedFilenames = []
         repeatedCompetitionnames = []
+        repeatedCompetitionnamesAll = []
         i = 1
         while i < len(helperl) - 1:
             repeatedFilenames.append(helperl[i])
             i+=1
         i = 1
-        while i < len(helperf) - 1:
-            repeatedCompetitionnames.append(helperf[i].split("|")[0])
+        while i < len(helperf):
+            repeatedCompetitionnames.append(helperf[i-1].split("|")[0])
+            repeatedCompetitionnamesAll.append(helperf[i-1])
             i+=1
 
 
@@ -124,7 +126,8 @@ class ResultsSpider(BaseSpider):
                 else:
                     date = date[0] + "/" + date[1] + "/" + date[2]
                 datastore.write("-THEREDDKING-," + tournhash[currentGame][1] + "," + date + "," + tournhash[currentGame][2].split(" -")[0]+ "\n")
-                repeatedCompetitionnames.append(currentGame + "|" + tournhash[currentGame][1] + "|" + date)
+                # repeatedCompetitionnames.append(currentGame + "")
+                repeatedCompetitionnamesAll.append(currentGame + "|" + tournhash[currentGame][1] + "|" + date)
                 # 1617velv-gadz-Q-4,Q-4,0-50 B,7437,7432,0,5100,11127,0,0,0,0 ,  0,0,0  ,50,5,0,  45,0, 0,
                 #               0    1  2       3    4    5  6   7    8 9 10 11 12 13 14 15 16 17 18 19 20
             datastore.write(spl[1] + "|" + ','.join(spl[3:5]) + "|" + ','.join(spl[6:8]) + "|" + ",".join(spl[9:11] + spl[12:15]) + "|" + ",".join(spl[15:17] + spl[18:21]) + "\n")
@@ -136,5 +139,5 @@ class ResultsSpider(BaseSpider):
             helper.write(file + "\n")
 
         helper = open("parsedgameresults/ftc-dataparse.kf", 'wb')
-        for file in repeatedCompetitionnames:
+        for file in repeatedCompetitionnamesAll:
             helper.write(file + "\n")
