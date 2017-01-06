@@ -5,7 +5,11 @@ class TeamsController < ApplicationController
     # GET /teams.json
     def index
         @teams = if params[:search] != nil
-                    Team.where('CAST(id as CHAR) like ? or lower(name) like lower(?)', "#{params[:search].to_i}%", "%#{params[:search]}%")
+                    if(ActiveRecord::Base.connection.adapter_name == 'Mysql2' )
+                        Team.where('CAST(id as CHAR) like ? or lower(name) like lower(?)', "#{params[:search].to_i}%", "%#{params[:search]}%")
+                    else
+                        Team.where('id::text like ? or lower(name) like lower(?)', "#{params[:search].to_i}%", "%#{params[:search]}%")
+                    end
                 else
                     Team.all
                 end
