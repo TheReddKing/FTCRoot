@@ -733,7 +733,7 @@
 {"id":"9618","name":"Cyber Spartans","address":"Glenside, PA 19038 USA","latlong":["40.10998085838037","-75.14800680511026"],"website":""}
 {"id":"9619","name":"Wahtonka FTC","address":"The Dalles, OR 97058 USA","latlong":["45.55012678349596","-121.12628311869018"],"website":""}
 {"id":"9620","name":"R.O.U.S.'s (Robots of Unusual Size)","address":"Concord, NH 03301 USA","latlong":["43.23145063771666","-71.55137810889855"],"website":""}
-{"id":"9621","name":"Neologics","address":"Fremont, CA 94536 USA","latlong":["37.57054767174165","-121.96949661937128"],"website":""}
+{"id":"9621","name":"Neologics","address":"Fremont, CA 94536 USA","latlong":["37.583815", "-121.997902"],"website":""}
 {"id":"9622","name":"TechRaiders","address":"Rutland, VT 05750 USA","latlong":["43.60764315383368","-73.20254707719681"],"website":""}
 {"id":"9624","name":"Spartobots","address":"Springport, MI 49284 USA","latlong":["42.37681547247124","-84.68586313510278"],"website":"http://www.spartobots.weebly.com"}
 {"id":"9625","name":"8D-8","address":"Lesterville, MO 63654 USA","latlong":["37.46244893017189","-90.79983532654474"],"website":""}
