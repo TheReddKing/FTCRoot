@@ -1,7 +1,201 @@
-<h3>FTC Root</h3>
+<table>
+    <tr>
+        <td>
+<h3><%= link_to("FTC Teams Search",teams_path, class: 'pure-button pure-button-primary nav-link') %> </h3>
+<h3><%= link_to("Map Search","map", class: 'pure-button pure-button-primary nav-link') %> </h3>
+</td>
+<td>
+<h3><%= link_to("League Meet Search",league_meets_path, class: 'pure-button button-primary nav-link') %> </h3>
 
-<p> Lets find new stuff </p>
 
+<h3><%= link_to("Global Top Scorers","stats/highscores", class: 'pure-button') %> </h3>
+</td>
+</tr>
+</table>
 
-<h4> What this site strives to achieve </h4>
-<p> Provide adequete info for all FTC teams. </p>
+<div id="container">
+    <div id="map-container">
+        <input id="pac-input" class="controls" type="text" placeholder="Enter City or Zipcode">
+        <div id="map"><h1>LOADING</h1></div>
+    </div>
+    <div id="data-container">
+        <h1> FTC Team Finder </h1>
+        <h5><%= link_to("Search by team name/id instead", teams_path,:class=>"pure-button button-secondary nav-link") %></h5>
+        <br/>
+        <div id="data-info">
+            <h3 id="data-teamname"> Click on a marker to begin</h3>
+        </div>
+        <br/>
+        <br/>
+        <div>
+            <p> If any information is incorrect, contact <%= link_to("meeee","mailto:help@ftcroot.com") %></p>
+            <p> Also the locations are approximations based off of zipcode </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    var geocoder;
+    var map;
+    var markers = [];
+    var realIndex = 0;
+    var didinit = false;
+    $(document).on('turbolinks:load', function() {
+
+        if(!didinit) {
+            initialize();
+            didinit = true;
+        }
+
+    });
+    function initialize() {
+        geocoder = new google.maps.Geocoder();
+        var center = new google.maps.LatLng(37.9990858, -100.98347380000001);
+        console.log(map);
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 5,
+          center: center,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+
+        // Create the search box and link it to the UI element.
+        var input = document.getElementById('pac-input');
+        var searchBox = new google.maps.places.SearchBox(input);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+        // Bias the SearchBox results towards current map's viewport.
+        map.addListener('bounds_changed', function() {
+          searchBox.setBounds(map.getBounds());
+        });
+        searchBox.addListener('places_changed', function() {
+          var places = searchBox.getPlaces();
+
+          if (places.length == 0) {
+            return;
+          }
+          var bounds = new google.maps.LatLngBounds();
+        places.forEach(function(place) {
+          if (!place.geometry) {
+            console.log("Returned place contains no geometry");
+            return;
+          }
+          if (place.geometry.viewport) {
+            // Only geocodes have viewport.
+            bounds.union(place.geometry.viewport);
+          } else {
+            bounds.extend(place.geometry.location);
+          }
+        });
+        map.fitBounds(bounds);
+      });
+      var infowindow = new google.maps.InfoWindow();
+      var mak;
+      var e;
+      <% @hello.each do |team| %>
+        mak = new google.maps.Marker({map: map,position: new google.maps.LatLng(<%= team.location_lat %>, <%= team.location_long %>),title: "<%= team.name %>",address: "<%= team.location %>",id: "<%= team.id %>"});
+        markers.push(mak);
+       <% end %>
+       for(var i=0;i<markers.length;i++) {
+           mak = markers[i];
+           mak.addListener('click', (function(makr) {
+               return function() {
+               $.ajax({
+                    url: "/teams/" + makr.id +"/plain",
+                    cache: false,
+                    success: function(html){
+                      $("#data-info").html(html);
+                    }
+                });
+                 realIndex = makr.id;
+               //   console.log(i);
+               }
+          })(mak));
+       }
+        var options = {
+            imagePath: 'images/m',
+            maxZoom: 8
+        };
+        var markerCluster = new MarkerClusterer(map, markers, options);
+    }
+</script>
+
+<style >
+  #container {
+      display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;                /* establish flex container */
+      flex-direction: row;            /* default value; can be omitted */
+      flex-wrap: nowrap;              /* default value; can be omitted */
+      justify-content: space-between; /* switched from default (flex-start, see below) */
+      /*background-color: lightyellow;*/
+      height:600px;
+  }
+  #map-container {
+    padding: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc #ccc #999 #ccc;
+    -webkit-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
+    -moz-box-shadow: rgba(64, 64, 64, 0.5) 0 2px 5px;
+    box-shadow: rgba(64, 64, 64, 0.1) 0 2px 5px;
+    min-width: 500px;
+    width:60%;
+    height:600px;
+  }
+  #data-container {
+        width:35%;
+        height:100%;
+        margin: 10px;
+  }
+  #map {
+    /*height: calc(100%-10px);*/
+    height:585px;
+    width: calc(100%);
+  }
+  .controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  #pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 300px;
+  }
+
+  #pac-input:focus {
+    border-color: #4d90fe;
+  }
+
+  .pac-container {
+    font-family: Roboto;
+  }
+
+  #type-selector {
+    color: #fff;
+    background-color: #4d90fe;
+    padding: 5px 11px 0px 11px;
+  }
+
+  #type-selector label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  #target {
+    width: 345px;
+  }
+</style>

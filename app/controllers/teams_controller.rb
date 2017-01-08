@@ -28,6 +28,7 @@ class TeamsController < ApplicationController
             # return
         end
         @competitions = LeagueMeetEvent.all.where("red1 = ? OR red2 = ? OR blue1 = ? OR blue2 = ?", @team.id, @team.id,@team.id,@team.id)
+        @avgPreScore = 0
     end
 
     # GET /teams/new

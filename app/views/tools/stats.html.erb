@@ -1,0 +1,135 @@
+<% content_for :title do %>FTCRoot Global Stats<% end %>
+<h1>Global Stats</h1>
+<p> NOTE: Only teams with DETAILED match data will be ranked. Contact us with match data to be placed in a ranking </p>
+<h2>
+    High Scorers
+</h2>
+<p>
+    If your team has a higher score, plz contact me :P
+</p>
+<p>
+    This is penalty normalized
+</p>
+<center>
+    <table class="pure-table pure-table-horizontal centered">
+        <thead>
+            <tr>
+                <th style="width:30%;">Match</th>
+                <th colspan="2" style="width:25%;">Red Team</th>
+                <center>
+                    <th>Score</th>
+                    <th>Result</th>
+                    <th>Score</th>
+                </center>
+                <th colspan="2" style="width:25%;">Blue Team</th>
+            </tr>
+        </thead>
+        <% @highScores.each do |event| %>
+        <tr style="border-top:4px solid gray;">
+            <td><%= event.league_meet.name %> (<%=event.league_meet.region.name %>)
+            </td>
+            <% ([event.red1, event.red2]).each do |team| %>
+            <td class="teamred">
+                <% if Team.exists?(team) %>
+                <% tt = Team.find(team) %>
+                <%= link_to(team, tt) %>
+                <span class="teamname">(<%= tt.name %>)</span>
+            <% else %>
+                <%= team %>
+                <% end %>
+            </td>
+            <% end %>
+            <td><%= event.redscore %></td>
+            <% if event.redscore > event.bluescore %>
+            <td class="teamred">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </td>
+            <% elsif event.redscore == event.bluescore %>
+            <td></td>
+        <% else %>
+            <td class="teamblue">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </td>
+            <% end %>
+            <td><%= event.bluescore %></td>
+            <% ([event.blue1,event.blue2]).each  do |team| %>
+            <td class="teamblue">
+                <% if Team.exists?(team) %>
+                <% tt = Team.find(team) %>
+                <%= link_to(team, tt) %>
+                <span class="teamname">(<%= tt.name %>)</span>
+            <% else %>
+                <%= team  %>
+                <% end %>
+            </td>
+            <% end %>
+        </tr>
+        <tr>
+            <td><%= event.name %></td>
+
+            <td colspan="3" class="teamred">
+                <center>
+                    <table class="pure-table pure-table-horizontal centered">
+                        <thead style="font-size:8px;">
+                            <tr>
+                                <th>
+                                    Autonomous
+                                </th>
+                                <th>
+                                    TeleOP
+                                </th>
+                                <th>
+                                    Penalty
+                                </th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td><%= event.redauto %>
+                            </td>
+                            <td><%= event.redteleop %>
+                            </td>
+                            <td><%= event.redpenalty %>
+                            </td>
+                        </tr>
+
+                    </table>
+                </center>
+            </td>
+            <td></td>
+            <td colspan="3" class="teamblue">
+                <center>
+                    <table class="pure-table pure-table-horizontal centered">
+                        <thead style="font-size:8px;">
+                            <tr>
+                                <th>
+                                    Autonomous
+                                </th>
+                                <th>
+                                    TeleOP
+                                </th>
+                                <th>
+                                    Penalty
+                                </th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td><%= event.blueauto %>
+                            </td>
+                            <td><%= event.blueteleop %>
+                            </td>
+                            <td><%= event.bluepenalty %>
+                            </td>
+                        </tr>
+
+                    </table>
+                </center>
+            </td>
+        </tr>
+        <% end %>
+    </table>
+</center>
+
+
+<!-- <h2>
+    Highest Ranks
+</h2> -->

@@ -6,4 +6,7 @@ class VisitorsController < ApplicationController
          format.xml
         end
     end
+    def index
+        @hello = Team.all
+    end
 end

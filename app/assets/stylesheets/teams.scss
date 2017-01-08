@@ -3,10 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 table {
     width: 100%;
+    table-layout: fixed;
     // border: 1px solid black;
 }
 .centered tr {
     text-align: center;
+}
+td span{
+
+    overflow: hidden;;
 }
 
 .button-secondary {

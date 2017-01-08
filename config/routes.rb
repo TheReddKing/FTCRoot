@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :regions
-    root to: "tools#map"
+    root to: "visitors#index"
     # scope constraints: {format: :html} do
         resources :teams
             get 'teams/:id/plain', to: 'teams#plain'
@@ -18,5 +18,6 @@ Rails.application.routes.draw do
     get 'images/misc/quote-left.png', to: "tools#nothing"
     get 'teams/:id/:name', to: 'teams#show', as: 'fullname'
     get 'league_meets/:id/:name', to: 'league_meets#show', as: 'fullmeet'
+    get 'stats/highscores', to: "tools#stats"
     get "sitemap.xml" => "visitors#sitemap"
 end
