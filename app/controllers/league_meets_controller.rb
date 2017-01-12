@@ -11,9 +11,9 @@ class LeagueMeetsController < ApplicationController
               end
 
       if(ActiveRecord::Base.connection.adapter_name == 'Mysql2' )
-          @league_meets = @league_meets.order( 'STR_TO_DATE(date, "%d/%m/%Y") DESC' ).paginate(:page => params[:page], :per_page => 20)
+          @league_meets = @league_meets.order( 'STR_TO_DATE(date, "%m/%d/%y") DESC' ).paginate(:page => params[:page], :per_page => 20)
       else
-          @league_meets = @league_meets.order( 'to_date(date,"MM/DD/YY") DESC' ).paginate(:page => params[:page], :per_page => 20)
+          @league_meets = @league_meets.order( 'to_date(date,\'MM/DD/YY\') DESC' ).paginate(:page => params[:page], :per_page => 20)
       end
   end
 
