@@ -9,7 +9,12 @@ class LeagueMeetsController < ApplicationController
               else
                   LeagueMeet.all
               end
-    @league_meets = @league_meets.order( 'date DESC' ).paginate(:page => params[:page], :per_page => 20)
+
+      if(ActiveRecord::Base.connection.adapter_name == 'Mysql2' )
+          @league_meets = @league_meets.order( 'STR_TO_DATE(date, "%d/%m/%Y") DESC' ).paginate(:page => params[:page], :per_page => 20)
+      else
+          @league_meets = @league_meets.order( 'to_date(date,"MM/DD/YY") DESC' ).paginate(:page => params[:page], :per_page => 20)
+      end
   end
 
   # GET /league_meets/1
