@@ -1,0 +1,42 @@
+{"id":"7979","name":"Apple Tau","address":"Madison, WI 53717 USA","latlong":["43.07705932228834","-89.37201672718366"],"website":""}
+{"id":"3141","name":"Bears","address":"Mexico City, DIF 01050 Mexico","latlong":["42.24241906508754","-72.87250998848076"],"website":"http://bears.com.mx"}
+{"id":"12474","name":"BobaBots","address":"San Martin, CA 95046 USA","latlong":["37.104013223947696","-121.5910262217339"],"website":""}
+{"id":"9173","name":"BuccyBots","address":"Anaheim, CA 92805 USA","latlong":["33.82362986591279","-117.90761804150526"],"website":""}
+{"id":"6872","name":"CPBOTS","address":"Gomez Palacio, DUR 35070 Mexico","latlong":["34.02121761649522","-86.73903025084047"],"website":""}
+{"id":"8902","name":"Cosmic Goose","address":"Glen Rock, NJ 07452 USA","latlong":["40.9541671557198","-74.11668217289298"],"website":""}
+{"id":"12469","name":"Cougar Robotics","address":"The Colony, TX 75056 USA","latlong":["33.09971733381546","-96.8772002639317"],"website":""}
+{"id":"12477","name":"EAG","address":"Oberkochen, BW 73447 Germany","latlong":["34.18876920342258","-96.87914364975464"],"website":""}
+{"id":"12467","name":"Earhart Aviators","address":"Detroit, MI 48209 USA","latlong":["42.38414201491852","-83.09846222678703"],"website":""}
+{"id":"12466","name":"IDA MS LIGHTNING ENGINEERS","address":"Ida, MI 48140 USA","latlong":["41.91205183831054","-83.56849895552364"],"website":""}
+{"id":"10778","name":"JAG","address":"Upper Marlboro, MD 20774 USA","latlong":["38.81184838253242","-76.74931741699358"],"website":""}
+{"id":"12462","name":"Lejeune 1","address":"Camp Lejeune, NC 28547 USA","latlong":["34.689360420658375","-77.33966449918042"],"website":""}
+{"id":"7751","name":"MHSHS1","address":"New York, NY 10023 USA","latlong":["40.71470512015165","-73.9865875718237"],"website":""}
+{"id":"5911","name":"Mean Green Machine","address":"El Paso, TX 79936 USA","latlong":["31.84694660494123","-106.4224132538201"],"website":"http://www.sisd.net/Page/27857"}
+{"id":"5470","name":"Montwood Rambotics","address":"El Paso, TX 79936 USA","latlong":["31.854022353263268","-106.41352526161796"],"website":"http://www.sisd.net/Page/27857"}
+{"id":"12461","name":"Mustang Robotics","address":"Clio, MI 48420 USA","latlong":["43.18134793539586","-83.72480274064684"],"website":""}
+{"id":"11027","name":"NA First","address":"Pittsburgh, PA 15237 USA","latlong":["40.43562581309031","-79.96721030785945"],"website":""}
+{"id":"12471","name":"NOSIDE 4","address":"San Antonio, TX 78212 USA","latlong":["29.456258625178652","-98.48974337412315"],"website":""}
+{"id":"12470","name":"NOSIDE 5","address":"San Antonio, TX 78212 USA","latlong":["29.45690741928379","-98.4810931836123"],"website":""}
+{"id":"12472","name":"NOSIDE 6","address":"San Antonio, TX 78212 USA","latlong":["29.457234317407764","-98.47235558748008"],"website":""}
+{"id":"10400","name":"NanoBytes","address":"Kodiak, AK 99615 USA","latlong":["57.79999330949139","-152.39328499744255"],"website":"http://TBD"}
+{"id":"12460","name":"OW BEST ROYALS","address":"Dearborn Heights, MI 48125 USA","latlong":["42.32322351464573","-83.26658551335753"],"website":""}
+{"id":"10399","name":"OctoBots","address":"Kodiak, AK 99615 USA","latlong":["57.811316310999146","-152.38323007411284"],"website":"http://TBD"}
+{"id":"10686","name":"Phoenix","address":"Middleton, WI 53562 USA","latlong":["43.10786630292752","-89.49017202572479"],"website":""}
+{"id":"12480","name":"Roadrunner Robotics","address":"Edwardsburg, MI 49112 USA","latlong":["41.79293002602961","-86.07917296114478"],"website":""}
+{"id":"6971","name":"Robo Panthers","address":"Woodside, DE 19980 USA","latlong":["39.081088502433225","-75.55019782136304"],"website":""}
+{"id":"12465","name":"RoboCats","address":"Chestnut Hill, MA 02467 USA","latlong":["42.31910706786905","-71.15716636897903"],"website":""}
+{"id":"9505","name":"Roboteers","address":"Wilton, ND 58501 USA","latlong":["46.80498164323381","-100.75010779435975"],"website":"http://Wilton%20Public%20School"}
+{"id":"12459","name":"Seahawk Demolition","address":"Gibraltar, MI 48173 USA","latlong":["42.07579155610495","-83.22882586928506"],"website":""}
+{"id":"10777","name":"Security Administration","address":"Cedar City, UT 84721 USA","latlong":["37.666927490197786","-113.18723651952139"],"website":""}
+{"id":"10321","name":"Shtark Enterprises","address":"Brookline, MA 02145 USA","latlong":["42.39665084214469","-71.0977145525547"],"website":""}
+{"id":"8327","name":"Spartans","address":"Metepec, MEX 52140 Mexico","latlong":["43.46140636561156","-91.50404899170212"],"website":""}
+{"id":"12479","name":"Sutton Middle School Cougars","address":"Atlanta, GA 30305 USA","latlong":["33.83498616624317","-84.37707645230289"],"website":""}
+{"id":"12478","name":"Team Meta-Mega","address":"San Juan, TX 78589 USA","latlong":["26.196442574697524","-98.14871493830933"],"website":""}
+{"id":"8827","name":"The Empire","address":"Flat Rock, NC 28731 USA","latlong":["35.27595181262497","-82.4279439349428"],"website":""}
+{"id":"12473","name":"The Learning Village","address":"Acworth, GA 30102 USA","latlong":["34.06241823663672","-84.66201513154907"],"website":""}
+{"id":"12468","name":"TheIncredibles","address":"Sewickley, PA 15143 USA","latlong":["40.537324835697056","-80.17009886319384"],"website":""}
+{"id":"10945","name":"Toaster Squad","address":"Fort Worth, TX 76126 USA","latlong":["32.753298522771296","-97.326237267062"],"website":""}
+{"id":"12476","name":"William Penn Senior High","address":"York, PA 17401 USA","latlong":["39.971638234003976","-76.720211114194"],"website":""}
+{"id":"9605","name":"XCLR","address":"Newburgh, NY 12550 USA","latlong":["41.500207299121","-74.00991232612655"],"website":""}
+{"id":"12464","name":"center moriches middle school 2","address":"Center Moriches, NY 11934 USA","latlong":["40.80157249776742","-72.78460594655168"],"website":""}
+{"id":"6137","name":"RoBowties","address":"San Diego, CA 92122 USA","latlong":["32.85730317949006","-117.19349874649363"],"website":""}
