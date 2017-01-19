@@ -6,6 +6,8 @@ from scrapy.http import Request
 from scrapy.http import HtmlResponse
 import glob
 import time
+import codecs
+
 
 
 class ResultsSpider(BaseSpider):
@@ -22,7 +24,7 @@ class ResultsSpider(BaseSpider):
 
         helperl = open("parsedgameresults/settings.kf","r").read().decode("utf-8").split("\n")
         helperf = open("parsedgameresults/ftc-dataparse.kf","r").read().decode("utf-8").split("\n")
-        datastore = open("parsedgameresults/migrate" + helperl[0].zfill(4) + "-" + time.strftime("%Y%m%d") + ".txt", 'wb')
+        datastore = codecs.open("parsedgameresults/migrate" + helperl[0].zfill(4) + "-" + time.strftime("%Y%m%d") + ".txt", 'wb',encoding='utf8')
 
         repeatedFilenames = []
         repeatedCompetitionnames = []
@@ -53,7 +55,7 @@ class ResultsSpider(BaseSpider):
             for line in others:
                 if("generated at " in line):
                     dategenerated = line.split("generated at ")[1]
-            datastore.write("-THEREDDKING-," + name[0].split("<br>")[0] + "," + dategenerated + "," + filename.split("/")[-2]+ "\n")
+            datastore.write("-THEREDDKING-," + name[0].split("<br>")[0].encode('utf-8') + "," + dategenerated.encode('utf-8') + "," + filename.split("/")[-2].encode('utf-8')+ "\n")
             for q in games:
                 q = q.replace("*","")
                 vals = Selector(text=q).xpath('//tr/td/text()').extract()
@@ -125,7 +127,7 @@ class ResultsSpider(BaseSpider):
                     date = date[0] + "/0" + date[1] + "/" + date[2]
                 else:
                     date = date[0] + "/" + date[1] + "/" + date[2]
-                datastore.write("-THEREDDKING-," + tournhash[currentGame][1] + "," + date + "," + tournhash[currentGame][2].split(" -")[0]+ "\n")
+                datastore.write("-THEREDDKING-," + tournhash[currentGame][1].encode('utf-8') + "," + date.encode('utf-8') + "," + tournhash[currentGame][2].split(" -")[0].encode('utf-8')+ "\n")
                 # repeatedCompetitionnames.append(currentGame + "")
                 repeatedCompetitionnamesAll.append(currentGame + "|" + tournhash[currentGame][1] + "|" + date)
                 # 1617velv-gadz-Q-4,Q-4,0-50 B,7437,7432,0,5100,11127,0,0,0,0 ,  0,0,0  ,50,5,0,  45,0, 0,

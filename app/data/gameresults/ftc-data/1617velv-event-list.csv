@@ -17,9 +17,12 @@
 12/11/2016,Andover HS Qualifier 1,Massachusetts,Qualifying Tournament,1,ma,an,x,maan,MA,D
 12/11/2016,Hudson Valley Red Hook Qualifying Tournament,New York - Hudson Valley,Qualifying Tournament,1,ny,rh,x,nyrh,NY,D
 12/13/2016,Interior Qualifying Tournamnet,Alaska,Qualifying Tournament,1,ak,in,x,akin,AK,D
-12/10/2016,Northern Qualifier Flowers Division,Virginia,Qualifying Tournament,1,va,no,d1,vanod1,VA,D
-12/10/2016,Northern Qualifier Kamen Division,Virginia,Qualifying Tournament,2,va,no,d2,vanod2,VA,D
-12/17/2016,Shenandoah Qualifier,Virginia,Qualifying Tournament,1,va,sh,x,vash,VA,D
+12/18/2016,FIRST Tech Challenge Dayton OH Qualifying Tournament,Ohio,Qualifying Tournament,1,oh,da,x,ohda,OH,D
+12/17/2016,Finger Lakes FIRST Tech Challenge Qualifying Tournament,New York � Excelsior,Qualifying Tournament,1,ny,fl,x,nyfl,NY,D
+12/17/2016,Alamogordo FIRST Tech Challenge Qualifying Tournament,New Mexico,Qualifying Tournament,1,nm,al,x,nmal,NM,D
+12/17/2016,Mississippi FTC Vicksburg Qualifier,Mississippi,Qualifying Tournament,1,ms,vi,x,msvi,MS,D
+12/17/2016,Southeast Qualifying Tournament,Alaska,Qualifying Tournament,1,ak,se,x,akse,AK,D
+12/17/2016,Indy South FIRST Tech Challenge Qualifying Tournament,Indiana,Qualifying Tournament,1,in,so,x,inso,IN,D
 10/21/2016,Alaska East Anchorage HS,Alaska,Qualifying Tournament,1,ak,ea,x,akea,AK,R
 10/28/2016,Alaska Dimond HS,Alaska,Qualifying Tournament,1,ak,di,x,akdi,AK,R
 11/1/2016,Alaska East HS,Alaska,Qualifying Tournament,1,ak,ea2,x,akea2,AK,R
@@ -28,6 +31,14 @@
 11/11/2016,Alaska Eagle River HS 2,Alaska,Qualifying Tournament,1,ak,er2,x,aker2,AK,R
 11/19/2016,Alaska Southcentral League Championship,Alaska,League Championship,1,ak,lcmpsc,x,aklcmpsc,AK,R
 12/17/2016,Alaska Southeast Qualifier,Alaska,Qualifying Tournament,1,ak,se,x,akse,AK,R
+12/10/2016,California SD La Jolla Country Day 1,California SD,Qualifying Tournament,1,casd,lj1,x,casdlj1,CASD,R
+12/10/2016,California SD Francis Parker 1,California SD,Qualifying Tournament,1,casd,fp1,x,casdfp1,CASD,R
+12/10/2016,California SD R Roger Rowe 1,California SD,Qualifying Tournament,1,casd,rr1,x,casdrr1,CASD,R
+12/10/2016,California SD Escondido Charter High,California SD,Qualifying Tournament,1,casd,ec,x,casdec,CASD,R
+01/07/2017,California SD La Jolla Country Day 2,California SD,Qualifying Tournament,1,casd,lj2,x,casdlj2,CASD,R
+01/07/2017,California SD R Roger Rowe 2,California SD,Qualifying Tournament,1,casd,rr2,x,casdrr2,CASD,R
+01/07/2017,California SD Francis Parker 2,California SD,Qualifying Tournament,1,casd,fp2,x,casdfp2,CASD,R
+01/07/2017,California SD SET High,California SD,Qualifying Tournament,1,casd,set,x,casdset,CASD,R
 12/17/2016,Indiana Indy South,Indiana,Qualifying Tournament,1,in,so,x,inso,IN,R
 11/12/2016,Hawaii Le Jardin,Hawaii,Qualifying Tournament,1,hi,lj,x,hilj,HI,D
 11/26/2016,Hawaii Mililani,Hawaii,Qualifying Tournament,1,hi,mi,x,himi,HI,D
@@ -53,23 +64,13 @@
 11/20/2016,Minnesota Eden Prairie 2,Minnesota,Qualifying Tournament,1,mn,ep2,x,mnep2,MN,R
 12/03/2016,Minnesota Columbia Academy 1,Minnesota,Qualifying Tournament,1,mn,ca1,x,mnca1,MN,R
 12/04/2016,Minnesota Columbia Academy 2,Minnesota,Qualifying Tournament,1,mn,ca2,x,mnca2,MN,R
-10/29/2016,Missouri Octobo-Robo Fest,Missouri,Meet,1,mo,m1,x,mom1,MO,D
-11/5/2016,Missouri Vive Velocity Vortex!,Missouri,Meet,1,mo,m2,x,mom2,MO,D
-11/12/2016,Missouri Gator,Missouri,Meet,1,mo,m3,x,mom3,MO,D
-11/12/2016,Missouri Stover MO Robo Show,Missouri,Meet,1,mo,m4,x,mom4,MO,D
-11/15/2016,Missouri Eureka Meet,Missouri,Meet,1,mo,m5,x,mom5,MO,D
-11/19/2016,Missouri Pattonville High School,Missouri,Meet,1,mo,m6,x,mom6,MO,D
-11/19/2016,Missouri Turkey Day Meet,Missouri,Meet,1,mo,m7,x,mom7,MO,D
-12/03/2016,Missouri Engineering Zone Meet,Missouri,Meet,1,mo,m8,x,mom8,MO,D
-12/03/2016,Missouri NDHS Robofest,Missouri,Meet,1,mo,m9,x,mom9,MO,D
-12/10/2016,Missouri Roboteer Cadets,Missouri,Meet,1,mo,m10,x,mom10,MO,D
-12/10/2016,Missouri Kicking it with the Mules,Missouri,Meet,1,mo,m11,x,mom11,MO,D
-12/10/2016,Missouri STLCC WILDWOOD BOTSHOW,Missouri,Meet,1,mo,m12,x,mom12,MO,D
-12/03/2016,Missouri Florissant Valley,Missouri,Qualifying Tournament,1,mo,q1,x,moq1,MO,D
-12/10/2016,Missouri Smithville,Missouri,Qualifying Tournament,1,mo,q2,x,moq2,MO,D
-12/17/2016,Missouri Camdenton,Missouri,Qualifying Tournament,1,mo,q3,x,moq3,MO,D
-12/10/2016,New York John Dewey #1,New York,Qualifying Tournament,1,ny,jd1,x,nyjd1,NY,R
-12/11/2016,New York John Dewey #2,New York,Qualifying Tournament,1,ny,jd2,x,nyjd2,NY,R
+12/10/2016,Minnesota Burnsville 1,Minnesota,Qualifying Tournament,1,mn,bu1,x,mnbu1,MN,R
+12/11/2016,Minnesota Burnsville 2,Minnesota,Qualifying Tournament,1,mn,bu2,x,mnbu2,MN,R
+01/14/2017,Minnesota St. Peter 1,Minnesota,Qualifying Tournament,1,mn,sp1,x,mnsp1,MN,R
+01/15/2017,Minnesota St. Peter 2,Minnesota,Qualifying Tournament,1,mn,sp2,x,mnsp2,MN,R
+01/21/2017,Minnesota North Branch 1,Minnesota,Qualifying Tournament,1,mn,nb1,x,mnnb1,MN,R
+01/22/2017,Minnesota North Branch 2,Minnesota,Qualifying Tournament,1,mn,nb2,x,mnnb2,MN,R
+02/10/2017,Minnesota Championship,Minnesota,Qualifying Tournament,1,mn,cmp,x,mncmp,MN,R
 10/29/2016,Oklahoma SWOSU Qualifier,Oklahoma,Qualifying Tournament,1,ok,sw,x,oksw,OK,R
 11/12/2016,Oklahoma Gordon Cooper Qualifier,Oklahoma,Qualifying Tournament,1,ok,gc,x,okgc,OK,R
 11/19/2016,Oklahoma Bishop Kelley Qualifier,Oklahoma,Qualifying Tournament,1,ok,bk,x,okbk,OK,R
@@ -87,6 +88,12 @@
 11/19/2016,Pennsylvania Eastern,Pennsylvania,Qualifying Tournament,1,pa,ea,x,paea,PA,D
 12/3/2016,Pennsylvania Pittsburgh Area,Pennsylvania,Qualifying Tournament,1,pa,pi,x,papi,PA,D
 12/10/2016,Pennsylvania Hat Tricks,Pennsylvania,Qualifying Tournament,1,pa,ht,x,paht,PA,D
+01/07/2017,Pennsylvania Southeastern,Pennsylvania,Qualifying Tournament,1,pa,se,x,pase,PA,D
+01/14/2017,Pennsylvania Southwestern,Pennsylvania,Qualifying Tournament,1,pa,sw,x,pasw,PA,D
+01/21/2017,Pennsylvania South Central,Pennsylvania,Qualifying Tournament,1,pa,sc,x,pasc,PA,D
+01/28/2017,Pennsylvania Philadelphia,Pennsylvania,Qualifying Tournament,1,pa,ph,x,paph,PA,D
+02/11/2017,Pennsylvania Lehigh Valley,Pennsylvania,Qualifying Tournament,1,pa,lv,x,palv,PA,D
+02/25/2017,Pennsylvania Championship,Pennsylvania,Championship Tournament,1,pa,cmp,x,pacmp,PA,D
 11/14/2016,Texas AML Clubs Meet 1,Texas,Meet,1,tx,amlc1,x,txamlc1,TX,R
 11/12/2016,Texas AML Diamonds Meet 1,Texas,Meet,1,tx,amld1,x,txamld1,TX,R
 11/14/2016,Texas AML Hearts Meet 1,Texas,Meet,1,tx,amlh1,x,txamlh1,TX,R
@@ -95,26 +102,33 @@
 12/03/2016,Texas AML Diamonds Meet 2,Texas,Meet,1,tx,amld2,x,txamld2,TX,D
 12/03/2016,Texas AML Hearts Meet 2,Texas,Meet,1,tx,amlh2,x,txamlh2,TX,D
 12/03/2016,Texas AML Spades Meet 2,Texas,Meet,1,tx,amls2,x,txamls2,TX,D
-01/01/2017,Florida Middleton Madness,Florida,Meet,1,fl,mm,x,flmm,FL,R
-01/01/2017,Florida NEFL Match Play 1,Florida,Meet,1,fl,neflmp1,x,flneflmp1,FL,R
-01/01/2017,Florida Clearwater Meet 1,Florida,Meet,1,fl,cw1,x,flcw1,FL,R
-01/01/2017,Florida Palm Beach League - Meet 1a,Florida,Meet,1,fl,pbl1a,x,flpbl1a,FL,R
-01/01/2017,Florida Palm Beach League - Meet 1b,Florida,Meet,1,fl,pbl1b,x,flpbl1b,FL,R
-01/01/2017,Florida Palm Beach League - Meet 1c,Florida,Meet,1,fl,pbl1c,x,flpbl1c,FL,R
-01/01/2017,Florida Meet #1 Robots In Oz,Florida,Meet,1,fl,rio1,x,flrio1,FL,R
-01/01/2017,Florida South Florida League PantherRobotics,Florida,Meet,1,fl,sflpr,x,flsflpr,FL,R
-01/01/2017,Florida Space Coast League Meet #1,Florida,Meet,1,fl,scl1,x,flscl1,FL,R
-01/01/2017,Florida PHUHS Meet 2,Florida,Meet,1,fl,phu2,x,flphu2,FL,R
-01/01/2017,Florida ROBOT League Coleman Chaos,Florida,Meet,1,fl,rlcc,x,flrlcc,FL,R
-01/01/2017,Florida Space Coast League Meet #2,Florida,Meet,1,fl,scl2,x,flscl2,FL,R
-01/01/2017,Florida Tesla Meet #2,Florida,Meet,1,fl,te1,x,flte1,FL,R
-01/01/2017,Florida NEFL Matchplay 2,Florida,Meet,1,fl,neflmp2,x,flneflmp2,FL,R
-01/01/2017,Florida ROBOT League Keystone Prep Meet,Florida,Meet,1,fl,rlkp,x,flrlkp,FL,R
-01/01/2017,Florida Palm Beach League Meet 2-1,Florida,Meet,1,fl,pbl21,x,flpbl21,FL,R
-01/01/2017,Florida Palm Beach League Meet 2-2,Florida,Meet,1,fl,pbl22,x,flpbl22,FL,R
-01/01/2017,Florida PuntaGorda,Florida,Meet,1,fl,pg,x,flpg,FL,R
-01/01/2017,Florida South Florida Tournament 2,Florida,Meet,1,fl,sf2,x,flsf2,FL,R
-01/01/2017,Florida NEFL Meet 1,Florida,Meet,1,fl,neflmt1,x,flneflmt1,FL,R
+01/07/2017,Texas AML Clubs Meet 3,Texas,Meet,1,tx,amlc3,x,txamlc3,TX,D
+01/07/2017,Texas AML Diamonds Meet 3,Texas,Meet,1,tx,amld3,x,txamld3,TX,D
+01/07/2017,Texas AML Hearts Meet 3,Texas,Meet,1,tx,amlh3,x,txamlh3,TX,D
+01/07/2017,Texas AML Spades Meet 3,Texas,Meet,1,tx,amls3,x,txamls3,TX,D
+01/01/2017,Florida Middleton Madness,Florida,Meet,1,fl,mm,x,flmm,FL,F
+01/01/2017,Florida NEFL Match Play 1,Florida,Meet,1,fl,neflmp1,x,flneflmp1,FL,F
+01/01/2017,Florida Clearwater Meet 1,Florida,Meet,1,fl,cw1,x,flcw1,FL,F
+01/01/2017,Florida Palm Beach League - Meet 1a,Florida,Meet,1,fl,pbl1a,x,flpbl1a,FL,F
+01/01/2017,Florida Palm Beach League - Meet 1b,Florida,Meet,1,fl,pbl1b,x,flpbl1b,FL,F
+01/01/2017,Florida Palm Beach League - Meet 1c,Florida,Meet,1,fl,pbl1c,x,flpbl1c,FL,F
+01/01/2017,Florida Meet #1 Robots In Oz,Florida,Meet,1,fl,rio1,x,flrio1,FL,F
+01/01/2017,Florida South Florida League PantherRobotics,Florida,Meet,1,fl,sflpr,x,flsflpr,FL,F
+01/01/2017,Florida Space Coast League Meet #1,Florida,Meet,1,fl,scl1,x,flscl1,FL,F
+01/01/2017,Florida PHUHS Meet 2,Florida,Meet,1,fl,phu2,x,flphu2,FL,F
+01/01/2017,Florida ROBOT League Coleman Chaos,Florida,Meet,1,fl,rlcc,x,flrlcc,FL,F
+01/01/2017,Florida Space Coast League Meet #2,Florida,Meet,1,fl,scl2,x,flscl2,FL,F
+01/01/2017,Florida Tesla Meet #2,Florida,Meet,1,fl,te1,x,flte1,FL,F
+01/01/2017,Florida NEFL Matchplay 2,Florida,Meet,1,fl,neflmp2,x,flneflmp2,FL,F
+01/01/2017,Florida ROBOT League Keystone Prep Meet,Florida,Meet,1,fl,rlkp,x,flrlkp,FL,F
+01/01/2017,Florida Palm Beach League Meet 2-1,Florida,Meet,1,fl,pbl21,x,flpbl21,FL,F
+01/01/2017,Florida Palm Beach League Meet 2-2,Florida,Meet,1,fl,pbl22,x,flpbl22,FL,F
+01/01/2017,Florida PuntaGorda,Florida,Meet,1,fl,pg,x,flpg,FL,F
+01/01/2017,Florida South Florida Tournament 2,Florida,Meet,1,fl,sf2,x,flsf2,FL,F
+01/01/2017,Florida NEFL Meet 1,Florida,Meet,1,fl,neflmt1,x,flneflmt1,FL,F
+12/03/2016,West Virginia Championship,West Virginia,Championship Tournament,1,wv,cmp,x,wvcmp,WV,R
+12/03/2017,Virginia Central Flowers,Virginia,Qualifying Tournament,1,va,ced1,1,vaced1,VA,R
+12/03/2017,Virginia Central Kamen,Virginia,Qualifying Tournament,2,va,ced2,2,vaced2,VA,R
 11/12/2016,Illinois Chicago Central 1,Illinois,Meet,1,il,cc1,x,ilcc1,IL,D
 11/05/2016,Illinois Chicago North 1,Illinois,Meet,1,il,cn1,x,ilcn1,IL,D
 11/19/2016,Illinois Chicago South 1,Illinois,Meet,1,il,cs1,x,ilcs1,IL,D
@@ -154,3 +168,88 @@
 02/12/2017,Illinois West League Qualifier,Illinois,Qualifying Tournament,1,il,wq,x,ilwq,IL,D
 02/18/2017,Illinois Chicago League Qualifier,Illinois,Qualifying Tournament,1,il,cq,x,ilcq,IL,D
 02/25/2017,Illinois State Championship,Illinois,Championship Tournament,1,il,cmp,x,ilcmp,IL,D
+12/10/2016,Virginia Northern D1,Virginia,Qualifying Tournament,1,va,nod1,1,vanod1,VA,D
+12/10/2016,Virginia Northern D2,Virginia,Qualifying Tournament,2,va,nod2,2,vanod2,VA,D
+12/17/2016,Virginia Shenandoah,Virginia,Qualifying Tournament,1,va,sh,x,vash,VA,D
+01/14/2017,Virginia North Central D1,Virginia,Qualifying Tournament,1,va,ncd1,1,vancd1,VA,D
+01/14/2017,Virginia North Central D2,Virginia,Qualifying Tournament,1,va,ncd2,2,vancd2,VA,D
+01/28/2017,Virginia Southwest,Virginia,Qualifying Tournament,1,va,sw,x,vasw,VA,D
+02/04/2017,Virginia Eastern D1,Virginia,Qualifying Tournament,1,va,ead1,1,vaead1,VA,D
+02/04/2017,Virginia Eastern D2,Virginia,Qualifying Tournament,1,va,ead2,2,vaead2,VA,D
+02/25/2017,Virginia Championship D1,Virginia,Championship,1,va,cmpd1,1,vacmpd1,VA,D
+02/25/2017,Virginia Championship D2,Virginia,Championship,2,va,cmpd2,2,vacmpd2,VA,D
+12/17/2016,California LA A1M1,California LA ,Meet,1,cala,a1m1,x,calaa1m1,CA,D
+01/07/2017,California LA A1M1,California LA ,Meet,1,cala,a1m2,x,calaa1m2,CA,D
+01/21/2017,California LA A1M3,California LA ,Meet,1,cala,a1m3,x,calaa1m3,CA,D
+12/04/2016,California LA A2M0,California LA ,Meet,1,cala,a2m0,x,calaa2m0,CA,D
+12/18/2016,California LA A2M1,California LA ,Meet,1,cala,a2m1,x,calaa2m1,CA,D
+02/08/2017,California LA A2M2,California LA ,Meet,1,cala,a2m2,x,calaa2m2,CA,D
+12/03/2016,California LA BM1,California LA ,Meet,1,cala,bm1,x,calabm1,CA,D
+12/17/2016,California LA BM2,California LA ,Meet,1,cala,bm2,x,calabm2,CA,D
+01/14/2017,California LA BM3,California LA ,Meet,1,cala,bm3,x,calabm3,CA,D
+12/02/2016,California LA C1M0,California LA ,Meet,1,cala,c1m0,x,calac1m0,CA,D
+12/16/2016,California LA C1M1,California LA ,Meet,1,cala,c1m1,x,calac1m1,CA,D
+01/14/2017,California LA C1M2,California LA ,Meet,1,cala,c1m2,x,calac1m2,CA,D
+01/28/2017,California LA C1M3,California LA ,Meet,1,cala,c1m3,x,calac1m3,CA,D
+12/03/2016,California LA C2M0,California LA ,Meet,1,cala,c2m0,x,calac2m0,CA,D
+12/17/2016,California LA C2M1,California LA ,Meet,1,cala,c2m1,x,calac2m1,CA,D
+01/11/2017,California LA C2M2,California LA ,Meet,1,cala,c2m2,x,calac2m2,CA,D
+01/21/2017,California LA C2M3,California LA ,Meet,1,cala,c2m3,x,calac2m3,CA,D
+12/04/2016,California LA DM0,California LA ,Meet,1,cala,dm0,x,caladm0,CA,D
+12/18/2016,California LA DM1,California LA ,Meet,1,cala,dm1,x,caladm1,CA,D
+01/08/2017,California LA DM2,California LA ,Meet,1,cala,dm2,x,caladm2,CA,D
+01/22/2017,California LA DM3,California LA ,Meet,1,cala,dm3,x,caladm3,CA,D
+12/02/2016,California LA EM0,California LA ,Meet,1,cala,em0,x,calaem0,CA,D
+12/16/2016,California LA EM1,California LA ,Meet,1,cala,em1,x,calaem1,CA,D
+01/13/2017,California LA EM2,California LA ,Meet,1,cala,em2,x,calaem2,CA,D
+01/27/2017,California LA EM3,California LA ,Meet,1,cala,em3,x,calaem3,CA,D
+12/03/2016,California LA F1M0,California LA ,Meet,1,cala,f1m0,x,calaf1m0,CA,D
+12/17/2016,California LA F1M1,California LA ,Meet,1,cala,f1m1,x,calaf1m1,CA,D
+01/07/2017,California LA F1M2,California LA ,Meet,1,cala,f1m2,x,calaf1m2,CA,D
+01/21/2017,California LA F1M3,California LA ,Meet,1,cala,f1m3,x,calaf1m3,CA,D
+12/17/2016,California LA F2M1,California LA ,Meet,1,cala,f2m1,x,calaf2m1,CA,D
+01/07/2017,California LA F2M2,California LA ,Meet,1,cala,f2m2,x,calaf2m2,CA,D
+01/21/2017,California LA F2M3,California LA ,Meet,1,cala,f2m3,x,calaf2m3,CA,D
+12/13/2016,California LA F3M1,California LA ,Meet,1,cala,f3m1,x,calaf3m1,CA,D
+01/10/2017,California LA F3M2,California LA ,Meet,1,cala,f3m2,x,calaf3m2,CA,D
+01/23/2017,California LA F3M3,California LA ,Meet,1,cala,f3m3,x,calaf3m3,CA,D
+10/29/2016,Missouri Octobo-Robo Fest,Missouri,Meet,1,mo,m1,x,mom1,MO,D
+11/5/2016,Missouri Vive Velocity Vortex!,Missouri,Meet,1,mo,m2,x,mom2,MO,D
+11/12/2016,Missouri Gator,Missouri,Meet,1,mo,m3,x,mom3,MO,D
+11/12/2016,Missouri Stover MO Robo Show,Missouri,Meet,1,mo,m4,x,mom4,MO,D
+11/15/2016,Missouri Eureka Meet,Missouri,Meet,1,mo,m5,x,mom5,MO,D
+11/19/2016,Missouri Pattonville High School,Missouri,Meet,1,mo,m6,x,mom6,MO,D
+11/19/2016,Missouri Turkey Day Meet,Missouri,Meet,1,mo,m7,x,mom7,MO,D
+12/03/2016,Missouri Engineering Zone Meet,Missouri,Meet,1,mo,m8,x,mom8,MO,D
+12/03/2016,Missouri NDHS Robofest,Missouri,Meet,1,mo,m9,x,mom9,MO,D
+12/10/2016,Missouri Roboteer Cadets,Missouri,Meet,1,mo,m10,x,mom10,MO,D
+12/10/2016,Missouri Kicking it with the Mules,Missouri,Meet,1,mo,m11,x,mom11,MO,D
+12/10/2016,Missouri STLCC WILDWOOD BOTSHOW,Missouri,Meet,1,mo,m12,x,mom12,MO,D
+01/07/2017,Missouri St. Teresa's Academy,Missouri,Meet,1,mo,m13,x,mom13,MO,D
+01/14/2017,Missouri Botshow,Missouri,Meet,1,mo,m14,x,mom14,MO,D
+01/14/2017,Missouri Rocking Robotics,Missouri,Meet,1,mo,m15,x,mom15,MO,D
+01/18/2017,Missouri Mid MO,Missouri,Meet,1,mo,m16,x,mom16,MO,D
+01/21/2017,Missouri Bombers Joebotics,Missouri,Meet,1,mo,m17,x,mom17,MO,D
+01/22/2017,Missouri MIDCS,Missouri,Meet,1,mo,m18,x,mom18,MO,D
+01/28/2017,Missouri Girl Scouts,Missouri,Meet,1,mo,m19,x,mom19,MO,D
+01/28/2017,Missouri GHS,Missouri,Meet,1,mo,m20,x,mom20,MO,D
+01/28/2017,Missouri Olathe Northwest,Missouri,Meet,1,mo,m21,x,mom21,MO,D
+01/28/2017,Missouri Pattonville,Missouri,Meet,1,mo,m22,x,mom22,MO,D
+02/04/2017,Missouri Science Center,Missouri,Meet,1,mo,m23,x,mom23,MO,D
+12/03/2016,Missouri Florissant Valley,Missouri,Qualifying Tournament,1,mo,q1,x,moq1,MO,D
+12/10/2016,Missouri Smithville,Missouri,Qualifying Tournament,1,mo,q2,x,moq2,MO,D
+12/17/2016,Missouri Camdenton,Missouri,Qualifying Tournament,1,mo,q3,x,moq3,MO,D
+01/07/2017,Missouri Meramec,Missouri,Qualifying Tournament,1,mo,q4,x,moq4,MO,D
+01/21/2017,Missouri Blue Valley,Missouri,Qualifying Tournament,1,mo,q5,x,moq5,MO,D
+01/29/2017,Missouri SEMO,Missouri,Qualifying Tournament,1,mo,q6,x,moq6,MO,D
+02/11/2017,Missouri Selvidge,Missouri,Qualifying Tournament,1,mo,q7,x,moq7,MO,D
+02/18/2017,Missouri West Conference,Missouri,Qualifying Tournament,1,mo,cq1,x,mocq1,MO,D
+02/18/2017,Missouri East Conference,Missouri,Qualifying Tournament,1,mo,cq2,x,mocq2,MO,D
+03/04/2017,Missouri Championship,Missouri,Championship Tournament,1,mo,cmp,d1,mocmpd1,MO,D
+03/04/2017,Missouri Championship,Missouri,Championship Tournament,2,mo,cmp,d2,mocmpd2,MO,D
+12/10/2016,New York John Dewey #1,New York,Qualifying Tournament,1,ny,jd1,x,nyjd1,NY,D
+12/11/2016,New York John Dewey #2,New York,Qualifying Tournament,1,ny,jd2,x,nyjd2,NY,D
+01/14/2017,New York Francis Lewis #1,New York,Qualifying Tournament,1,ny,fl1,x,nyfl1,NY,D
+01/05/2017,New York Francis Lewis #2,New York,Qualifying Tournament,1,ny,fl2,x,nyfl2,NY,D
+02/18/2017,New York Dalton #1,New York,Qualifying Tournament,1,ny,da1,x,nyda1,NY,D
+02/19/2017,New York Dalton #2,New York,Qualifying Tournament,1,ny,da2,x,nyda2,NY,D
