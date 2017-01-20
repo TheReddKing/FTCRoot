@@ -10,24 +10,30 @@
 <p>
     This is penalty normalized
 </p>
+
+<%= render "shared/eventresults" %>
+<div class="overflow-big">
 <center>
     <table class="pure-table pure-table-horizontal centered">
         <thead>
             <tr>
-                <th style="width:30%;">Match</th>
-                <th colspan="2" style="width:25%;">Red Team</th>
+                <th>Rank</th>
+                <th class="td-superimportant">Match</th>
+                <th colspan="2">Team</th>
                 <center>
                     <th>Score</th>
-                    <th>Result</th>
-                    <th>Score</th>
+                    <th class="td-meh"></th>
                 </center>
-                <th colspan="2" style="width:25%;">Blue Team</th>
             </tr>
         </thead>
-        <% @highScores.each do |event| %>
-        <tr style="border-top:4px solid gray;">
-            <td><%= event.league_meet.name %> (<%=event.league_meet.region.name %>)
+        <% @highScores.each_with_index do |event,ind| %>
+        <tr style="border-top:2px solid gray;">
+            <td><%= ind + 1 %></td>
+            <td><%= link_to(event.league_meet.name,event.league_meet) %> (<%=event.league_meet.region.name %>) - <%= event.name %>
+            <br/>
+            <%= event.league_meet.date %>
             </td>
+            <% if event.redscore > event.bluescore %>
             <% ([event.red1, event.red2]).each do |team| %>
             <td class="teamred">
                 <% if Team.exists?(team) %>
@@ -39,19 +45,14 @@
                 <% end %>
             </td>
             <% end %>
-            <td><%= event.redscore %></td>
-            <% if event.redscore > event.bluescore %>
+            <% dat = "#{event.redscore},#{event.redauto},#{event.redteleop},#{event.redpenalty}"%>
+            <td><%= button_to((event.redscore).to_s,"#", class:"score_popup_open pure-button button-full",data:dat) %></td>
             <td class="teamred">
                 <i class="fa fa-arrow-left" aria-hidden="true"></i>
             </td>
             <% elsif event.redscore == event.bluescore %>
             <td></td>
         <% else %>
-            <td class="teamblue">
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </td>
-            <% end %>
-            <td><%= event.bluescore %></td>
             <% ([event.blue1,event.blue2]).each  do |team| %>
             <td class="teamblue">
                 <% if Team.exists?(team) %>
@@ -63,73 +64,20 @@
                 <% end %>
             </td>
             <% end %>
+                <% dat = "#{event.bluescore},#{event.blueauto},#{event.blueteleop},#{event.bluepenalty}"%>
+                <td><%= button_to((event.bluescore).to_s,"#", class:"score_popup_open pure-button button-full",data:dat) %></td>
+                <td class="teamblue">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </td>
+
+            <% end %>
         </tr>
-        <tr>
-            <td><%= event.name %></td>
 
-            <td colspan="3" class="teamred">
-                <center>
-                    <table class="pure-table pure-table-horizontal centered">
-                        <thead style="font-size:8px;">
-                            <tr>
-                                <th>
-                                    Autonomous
-                                </th>
-                                <th>
-                                    TeleOP
-                                </th>
-                                <th>
-                                    Penalty
-                                </th>
-                            </tr>
-                        </thead>
-                        <tr>
-                            <td><%= event.redauto %>
-                            </td>
-                            <td><%= event.redteleop %>
-                            </td>
-                            <td><%= event.redpenalty %>
-                            </td>
-                        </tr>
-
-                    </table>
-                </center>
-            </td>
-            <td></td>
-            <td colspan="3" class="teamblue">
-                <center>
-                    <table class="pure-table pure-table-horizontal centered">
-                        <thead style="font-size:8px;">
-                            <tr>
-                                <th>
-                                    Autonomous
-                                </th>
-                                <th>
-                                    TeleOP
-                                </th>
-                                <th>
-                                    Penalty
-                                </th>
-                            </tr>
-                        </thead>
-                        <tr>
-                            <td><%= event.blueauto %>
-                            </td>
-                            <td><%= event.blueteleop %>
-                            </td>
-                            <td><%= event.bluepenalty %>
-                            </td>
-                        </tr>
-
-                    </table>
-                </center>
-            </td>
-        </tr>
         <% end %>
     </table>
 </center>
-
-
+</div>
+<br/>
 <!-- <h2>
     Highest Ranks
 </h2> -->

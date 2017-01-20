@@ -28,14 +28,21 @@ class TeamsController < ApplicationController
             # return
         end
         # @competitions = LeagueMeetEvent.joins("LEFT JOIN league_meets ON league_meets.id = league_meet_events.league_meet_id").where("red1 = ? OR red2 = ? OR blue1 = ? OR blue2 = ?", @team.id, @team.id,@team.id,@team.id)
-        @competitions = LeagueMeetEvent.select('league_meet_events.*, league_meets.date').joins(:league_meet).where("red1 = ? OR red2 = ? OR blue1 = ? OR blue2 = ?", @team.id, @team.id,@team.id,@team.id)
+        # @competitions = LeagueMeetEvent.select('league_meet_events.*, league_meets.date').joins(:league_meet).where("red1 = ? OR red2 = ? OR blue1 = ? OR blue2 = ?", @team.id, @team.id,@team.id,@team.id)
         # .joins("INNER JOIN league_meets ON league_meets.id = league_meet_events.league_meet_id")
         # raise
+        @competitions = LeagueMeet.all
         if(ActiveRecord::Base.connection.adapter_name == 'Mysql2' )
             @competitions = @competitions.order( 'STR_TO_DATE(date, "%m/%d/%y") ASC' )
         else
             @competitions = @competitions.order( 'to_date(date,\'MM/DD/YY\') ASC' )
         end
+        compet = []
+        @competitions.each do |comp|
+            compet.push(*comp.league_meet_events.where("red1 = ? OR red2 = ? OR blue1 = ? OR blue2 = ?", @team.id, @team.id,@team.id,@team.id))
+        end
+        @competitions = compet
+
         @avgPreScore = 0
     end
 

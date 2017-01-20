@@ -14,7 +14,7 @@ class ToolsController < ApplicationController
         def long; latlong[1].to_s; end
     end
     def stats
-        @highScores = LeagueMeetEvent.order("greatest(redscore-redpenalty,bluescore-bluepenalty) DESC").where.not(:redauto => "-1").first(10)
+        @highScores = LeagueMeetEvent.order("greatest(redscore-redpenalty,bluescore-bluepenalty) DESC").where.not(:redauto => "-1").first(20)
     end
     def index
 

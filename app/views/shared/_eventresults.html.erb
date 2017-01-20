@@ -1,0 +1,21 @@
+<div id="score_popup">
+    <p>Score: <span id="score_score"></span> <br/>
+    Autonomous: <span id="score_auto"></span><br/>
+    Teleop:    <span id="score_teleop"></span><br/>
+    Penalty:    <span id="score_penalty"></span>
+    </p>
+    <button class="score_popup_close">Close</button>
+</div>
+<script>
+    $(document).ready(function () {
+        // Initialize the plugin
+        $('#score_popup').popup({beforeopen: function (call) {}});
+        $(".score_popup_open").click(function (e) {
+            spl = $(e.currentTarget).attr("data").split(",");
+            $("#score_score").html(spl[0]);
+            $("#score_auto").html(spl[1]);
+            $("#score_teleop").html(spl[2]);
+            $("#score_penalty").html(spl[3]);
+        })
+    });
+</script>

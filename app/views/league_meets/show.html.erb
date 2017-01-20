@@ -16,6 +16,9 @@
     <strong>Approximate Date:</strong>
     <%= @league_meet.date %>
 </p>
+
+<%= render "shared/eventresults" %>
+
 <center>
     <div class="overflow">
 <table class="pure-table pure-table-horizontal centered">
@@ -45,7 +48,8 @@
                     <% end %>
                 </td>
             <% end %>
-            <td><%= event.redscore %></td>
+            <% dat = "#{event.redscore},#{event.redauto},#{event.redteleop},#{event.redpenalty}"%>
+            <td><%= button_to((event.redscore).to_s,"#", class:"score_popup_open pure-button button-full",data:dat) %></td>
             <% if event.redscore > event.bluescore %>
                 <td class="teamred"><i class="fa fa-arrow-left" aria-hidden="true"></i></td>
             <% elsif event.redscore == event.bluescore %>
@@ -53,7 +57,8 @@
             <% else %>
                 <td class="teamblue"><i class="fa fa-arrow-right" aria-hidden="true"></i></td>
             <% end %>
-            <td><%= event.bluescore %></td>
+            <% dat = "#{event.bluescore},#{event.blueauto},#{event.blueteleop},#{event.bluepenalty}"%>
+            <td><%= button_to((event.bluescore).to_s,"#", class:"score_popup_open pure-button button-full",data:dat) %></td>
             <% ([event.blue1,event.blue2]).each  do |team| %>
                 <td class="teamblue">
                     <% if Team.exists?(team) %>

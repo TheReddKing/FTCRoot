@@ -28,7 +28,7 @@ class LeagueMeetsController < ApplicationController
           # render :search
           # return
       end
-
+      
   end
 
   # GET /league_meets/new

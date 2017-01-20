@@ -1,39 +1,47 @@
-<% content_for :title do %><%= @team.name %> (<%=@team.id %>) -- FTCRoot<%end %>
+<% content_for :title do %><%= @team.name %>
+(<%=@team.id %>) -- FTCRoot<%end %>
 <p id="notice"><%= notice %></p>
 <center>
-<h2>
-    <%= @team.name %>
-</h2>
-<br/>
-<p>
-    <strong>Team ID:</strong>
-    <%= @team.id %>
-</p>
-<p>
-    <strong>Website:</strong>
-    <%= link_to(@team.website,@team.website) %>
-</p>
-<p>
-    <strong>Location:</strong>
-    <%= @team.location %>
-</p>
+    <h2>
+        <%= @team.name %>
+    </h2>
+    <br/>
+    <p>
+        <strong>Team ID:</strong>
+        <%= @team.id %>
+    </p>
+    <p>
+        <strong>Website:</strong>
+        <%= link_to(@team.website,@team.website) %>
+    </p>
+    <p>
+        <strong>Location:</strong>
+        <%= @team.location %>
+    </p>
 </center>
+
+<%= render "shared/eventresults" %>
+<%#= link_to("Test","#",:class=>"score_popup_open") %>
+
 <% if @competitions != [] %>
-<p> Note: <i class="fa fa-trophy" aria-hidden="true"></i>=WIN, empty for LOSS</p>
+<p>
+    Note:
+    <i class="fa fa-trophy" aria-hidden="true"></i>=WIN, empty for LOSS</p>
 <table class="pure-table pure-table-horizontal">
     <thead>
         <tr>
-            <th class="td-important">Event Name</th>
+            <th class="td-superimportant">Event Name</th>
             <th>Q_name</th>
             <th>Score</th>
-            <th colspan="2"> Pre-penalized</th>
+            <th colspan="1">
+                Details</th>
             <th>Result</th>
             <!-- <th colspan="3"></th> -->
         </tr>
     </thead>
     <tbody>
-    <% wins = 0 %>
-    <% draws = 0 %>
+        <% wins = 0 %>
+        <% draws = 0 %>
         <% @competitions.each do |event| %>
         <tr>
             <td><%= link_to(event.league_meet.name,event.league_meet) %></td>
@@ -41,10 +49,12 @@
             <% if @team.id == event.red1 or @team.id == event.red2 %>
             <% @avgPreScore += event.redscore-event.redpenalty%>
             <td><%= event.redscore %></td>
-            <td><%= event.redscore-event.redpenalty %></td>
-            <td><%= event.redauto %>-<%= event.redteleop %></td>
+            <% dat = "#{event.redscore},#{event.redauto},#{event.redteleop},#{event.redpenalty}"%>
+            <td><%= button_to((event.redscore-event.redpenalty).to_s,"#", class:"score_popup_open pure-button",data:dat) %></td>
             <% if event.redscore > event.bluescore %>
-            <td><i class="fa fa-trophy" aria-hidden="true"></i></td>
+            <td>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </td>
             <% wins += 1 %>
             <% elsif event.redscore == event.bluescore %>
             <% draws += 1 %>
@@ -55,10 +65,12 @@
             else %>
             <% @avgPreScore += event.bluescore-event.bluepenalty %>
             <td><%= event.bluescore %></td>
-            <td><%= event.bluescore-event.bluepenalty %></td>
-            <td><%= event.blueauto %>-<%= event.blueteleop %></td>
+            <% dat = "#{event.bluescore},#{event.blueauto},#{event.blueteleop},#{event.bluepenalty}"%>
+            <td><%= button_to((event.bluescore-event.bluepenalty).to_s,"#", class:"score_popup_open pure-button",data:dat) %></td>
             <% if event.redscore < event.bluescore %>
-            <td><i class="fa fa-trophy" aria-hidden="true"></i></td>
+            <td>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </td>
             <% wins += 1 %>
             <% elsif event.redscore == event.bluescore %>
             <% draws += 1 %>
@@ -74,18 +86,26 @@
     </tbody>
     <thead>
         <tr>
-            <th colspan="2">Results</th>
-            <th colspan="2"> Average Pre-penalized score: <%= @avgPreScore/@competitions.length %></th>
-            <th colspan="2"> Vals: <i class="fa fa-trophy" aria-hidden="true"></i><%= wins %>/<%= @competitions.length - wins - draws %> = total <%= @competitions.length %></th>
+            <th colspan="1">Results</th>
+            <th colspan="2">
+                Average Pre-penalized score:
+                <%= @avgPreScore/@competitions.length %></th>
+            <th colspan="2">
+                Vals:
+                <i class="fa fa-trophy" aria-hidden="true"></i><%= wins %>/<%= @competitions.length - wins - draws %>
+                = total
+                <%= @competitions.length %></th>
         </tr>
     </thead>
 </table>
 <% else %>
 <table>
-<center><h5>
-    There are no competitions to show for this team.
-    If you want to help out, have your mentor send result files to <a href="mailto:help@ftcroot.com">help@ftcroot.com</a>
-</h5></center>
+    <center>
+        <h5>
+            There are no competitions to show for this team. If you want to help out, have your mentor send result files to
+            <a href="mailto:help@ftcroot.com">help@ftcroot.com</a>
+        </h5>
+    </center>
 </table>
 <% end %>
 <%= link_to 'Back', 'javascript:history.go(-1);' %>
