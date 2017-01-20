@@ -39,7 +39,7 @@ class TeamsController < ApplicationController
         end
         compet = []
         @competitions.each do |comp|
-            compet.push(*comp.league_meet_events.where("red1 = ? OR red2 = ? OR blue1 = ? OR blue2 = ?", @team.id, @team.id,@team.id,@team.id))
+            compet.push(*(comp.league_meet_events.where("red1 = ? OR red2 = ? OR blue1 = ? OR blue2 = ?", @team.id, @team.id,@team.id,@team.id).order("league_meet_events.order ASC")))
         end
         @competitions = compet
 
