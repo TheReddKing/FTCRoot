@@ -6,8 +6,13 @@ table {
     table-layout: fixed;
     // border: 1px solid black;
 }
+.overflow {
+    min-width: 600px;
+    overflow-x:scroll;
+}
 .centered tr {
     text-align: center;
+
 }
 td span{
 
@@ -33,3 +38,21 @@ td span{
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
+.td-superimportant {
+    min-width: 300px;
+    width:50%;
+}
+.td-important {
+    min-width: 300px;
+    width:20%;
+}
+.td-meh {
+    // min-width: 30px;
+    width:10%;
+}
+.td-smeh {
+    min-width: 30px;
+    width:10%;
+}
+
+td,th  { font-size: 0.9em !important; } /* =14px */
