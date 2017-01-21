@@ -44,6 +44,33 @@ class TeamsController < ApplicationController
         @competitions = compet
 
         @avgPreScore = 0
+
+
+        @avgTele = 0
+        @avgEnd = 0
+        @avgAuto = 0
+        # More data analysis
+        @competitions.each do |event|
+            if @team.id == event.red1 or @team.id == event.red2
+                # Red team
+                @avgPreScore += event.redscore - event.redpenalty
+                @avgTele += event.redteleop
+                @avgEnd += event.redend
+                @avgAuto += event.redauto
+            else
+                # Blue team
+                @avgPreScore += event.bluescore - event.bluepenalty
+                @avgTele += event.blueteleop
+                @avgEnd += event.blueend
+                @avgAuto += event.blueauto
+            end
+        end
+        if(@competitions.length > 0 )
+            @avgTele /= @competitions.length
+            @avgEnd /= @competitions.length
+            @avgAuto /= @competitions.length
+            @avgPreScore /= @competitions.length
+        end
     end
 
     # GET /teams/new

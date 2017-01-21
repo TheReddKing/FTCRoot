@@ -48,7 +48,7 @@
                     <% end %>
                 </td>
             <% end %>
-            <% dat = "#{event.redscore},#{event.redauto},#{event.redteleop},#{event.redpenalty}"%>
+            <% dat = "#{event.redscore},#{event.redauto},#{event.redteleop},#{event.redend},#{event.redpenalty}"%>
             <td><%= button_to((event.redscore).to_s,"#", class:"score_popup_open pure-button button-full",data:dat) %></td>
             <% if event.redscore > event.bluescore %>
                 <td class="teamred"><i class="fa fa-arrow-left" aria-hidden="true"></i></td>
@@ -57,7 +57,7 @@
             <% else %>
                 <td class="teamblue"><i class="fa fa-arrow-right" aria-hidden="true"></i></td>
             <% end %>
-            <% dat = "#{event.bluescore},#{event.blueauto},#{event.blueteleop},#{event.bluepenalty}"%>
+            <% dat = "#{event.bluescore},#{event.blueauto},#{event.blueteleop},#{event.blueend},#{event.bluepenalty}"%>
             <td><%= button_to((event.bluescore).to_s,"#", class:"score_popup_open pure-button button-full",data:dat) %></td>
             <% ([event.blue1,event.blue2]).each  do |team| %>
                 <td class="teamblue">

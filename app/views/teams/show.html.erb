@@ -24,6 +24,7 @@
 <%#= link_to("Test","#",:class=>"score_popup_open") %>
 
 <% if @competitions != [] %>
+<%= pie_chart [["Autonomous",@avgAuto],["Teleop",@avgTele],["End Game",@avgEnd]],title:"Average (Non-penalized) score: #{@avgPreScore}" %>
 <p>
     Note:
     <i class="fa fa-trophy" aria-hidden="true"></i>=WIN, empty for LOSS</p>
@@ -47,9 +48,8 @@
             <td><%= link_to(event.league_meet.name,event.league_meet) %></td>
             <td><%= event.name %></td>
             <% if @team.id == event.red1 or @team.id == event.red2 %>
-            <% @avgPreScore += event.redscore-event.redpenalty%>
             <td><%= event.redscore %></td>
-            <% dat = "#{event.redscore},#{event.redauto},#{event.redteleop},#{event.redpenalty}"%>
+            <% dat = "#{event.redscore},#{event.redauto},#{event.redteleop},#{event.redend},#{event.redpenalty}"%>
             <td><%= button_to((event.redscore-event.redpenalty).to_s,"#", class:"score_popup_open pure-button",data:dat) %></td>
             <% if event.redscore > event.bluescore %>
             <td>
@@ -63,9 +63,8 @@
             <td></td>
         <% end
             else %>
-            <% @avgPreScore += event.bluescore-event.bluepenalty %>
             <td><%= event.bluescore %></td>
-            <% dat = "#{event.bluescore},#{event.blueauto},#{event.blueteleop},#{event.bluepenalty}"%>
+            <% dat = "#{event.bluescore},#{event.blueauto},#{event.blueteleop},#{event.blueend},#{event.bluepenalty}"%>
             <td><%= button_to((event.bluescore-event.bluepenalty).to_s,"#", class:"score_popup_open pure-button",data:dat) %></td>
             <% if event.redscore < event.bluescore %>
             <td>
@@ -89,7 +88,7 @@
             <th colspan="1">Results</th>
             <th colspan="2">
                 Average Pre-penalized score:
-                <%= @avgPreScore/@competitions.length %></th>
+                <%= @avgPreScore %></th>
             <th colspan="2">
                 Vals:
                 <i class="fa fa-trophy" aria-hidden="true"></i><%= wins %>/<%= @competitions.length - wins - draws %>

@@ -18,3 +18,5 @@
 //= require bootstrap-sprockets
 //= require_tree .
 //= require popupoverlay
+//= require Chart.bundle
+//= require chartkick
