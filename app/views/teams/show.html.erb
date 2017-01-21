@@ -24,7 +24,7 @@
 <%#= link_to("Test","#",:class=>"score_popup_open") %>
 
 <% if @competitions != [] %>
-<%= pie_chart [["Autonomous",@avgAuto],["Teleop",@avgTele],["End Game",@avgEnd]],title:"Average (Non-penalized) score: #{@avgPreScore}" %>
+<%= pie_chart [["Autonomous (#{@avgAuto})",@avgAuto],["Teleop (#{@avgTele})",@avgTele],["End Game (#{@avgEnd})",@avgEnd]],title:"Average (Non-penalized) score: #{@avgPreScore}" %>
 <p>
     Note:
     <i class="fa fa-trophy" aria-hidden="true"></i>=WIN, empty for LOSS</p>
