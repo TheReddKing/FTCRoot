@@ -50,6 +50,9 @@ namespace :init do
                 meet.region = region
                 meet.save
                 region.save
+            else
+                meet.date = spl[0]
+                meet.save
             end
         end
         for meet in LeagueMeet.all
