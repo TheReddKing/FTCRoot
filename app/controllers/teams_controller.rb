@@ -38,19 +38,15 @@ class TeamsController < ApplicationController
         end
         @avgAuto = 0
         if(@competitions.length != 0)
-            # if(ActiveRecord::Base.connection.adapter_name == 'Mysql2' )
-            #     @competitions = @competitions.order( 'STR_TO_DATE(date, "%m/%d/%Y") ASC' )
-            # else
-            #     @competitions = @competitions.order( 'to_date(date,\'MM/DD/YYYY\') ASC' )
-            # end
+            @competitions = @competitions.sort_by { |k,_| Date.strptime(k.date,"%m/%d/%Y") }.reverse
             compet = []
             @competitions.each do |com|
                 alldata = com.data_competition.split("|")
                 meetdat = []
                 for c in alldata
                     comp = c.split(",")
-                    if(comp[1,6].join(",").include?("#{@team.id}"))
-                        puts c
+                    if((","+ comp[1,6].join(",")+",").include?(",#{@team.id},"))
+                        # puts c
                         dat = Hash.new
                         dat[:name] = comp[0]
                         if comp[3].to_i == 0
@@ -75,7 +71,7 @@ class TeamsController < ApplicationController
                             dat[:bluescore] = comp[8]
                         end
 
-                        if(comp[1,3].join(",").include?("#{@team.id}"))
+                        if((","+ comp[1,3].join(",")+",").include?(",#{@team.id},"))
                             # Red
                             dat[:ownscore] = dat[:redscore]
                             dat[:oppscore] = dat[:bluescore]
@@ -104,8 +100,10 @@ class TeamsController < ApplicationController
             @avgEnd = 0
             @avgAuto = 0
             @totalMatches = 0
+            @avgData = []
+            @important = 0
             # More data analysis
-            @competitions.each do |meet|
+            @competitions.each_with_index do |meet,i|
                 # ONLY DETAILED DATA HAS IT
                 #dat = "#{event.redscore},#{event.redauto},#{event.redteleop},#{event.redend},#{event.redpenalty}"
                 @avgPreScore = 0
@@ -113,7 +111,6 @@ class TeamsController < ApplicationController
                 @avgEnd = 0
                 @avgAuto = 0
                 @totalMatches = 0
-
                 meet[:data].each do |event|
                     if(event[:owndetails].length > 0)
                         det = event[:owndetails].split(",")
@@ -122,14 +119,18 @@ class TeamsController < ApplicationController
                         @avgEnd += det[4].to_i
                         @avgAuto += det[1].to_i
                         @totalMatches += 1
+                        if(@important == 0)
+                            @important = i
+                        end
                     end
                 end
-            end
-            if(@totalMatches > 0 )
-                @avgTele /= @totalMatches
-                @avgEnd /= @totalMatches
-                @avgAuto /= @totalMatches
-                @avgPreScore /= @totalMatches
+                if(@totalMatches > 0 )
+                    @avgTele /= @totalMatches
+                    @avgEnd /= @totalMatches
+                    @avgAuto /= @totalMatches
+                    @avgPreScore /= @totalMatches
+                end
+                @avgData.push([@totalMatches,@avgPreScore,@avgAuto,@avgTele,@avgEnd])
             end
         end
     end

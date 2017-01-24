@@ -23,8 +23,8 @@
 <%= render "shared/eventresults" %>
 <%#= link_to("Test","#",:class=>"score_popup_open") %>
 
-<% if @avgAuto > 0 %>
-<%= pie_chart [["Autonomous (#{@avgAuto})",@avgAuto],["Teleop (#{@avgTele})",@avgTele],["End Game (#{@avgEnd})",@avgEnd]],title:"Last Competition (avg. score #{@avgPreScore})" %>
+<% if @avgData[@important][0] > 0 %>
+<%= pie_chart [["Autonomous (#{@avgAuto})",@avgAuto],["Teleop (#{@avgTele})",@avgTele],["End Game (#{@avgEnd})",@avgEnd]],title:"#{@competitions[@important][:meet].name}. score #{@@avgData[@important][0]})" %>
 <% end %>
 <% if @competitions.length > 0 %>
 <p>
@@ -41,14 +41,14 @@
         </tr>
     </thead>
     <tbody>
-        <% wins = 0 %>
-        <% draws = 0 %>
-        <% @competitions.each do |meet| %>
+        <% @competitions.each_with_index do |meet,i| %>
             <tr>
                 <th colspan="4"><%= link_to(meet[:meet].name,meet[:meet]) %></th>
                 <th><%= meet[:meet].date %></th>
                 <!-- <th> </th> -->
             </tr>
+            <% wins = 0 %>
+            <% draws = 0 %>
             <% meet[:data].each do |match| %>
                 <tr>
                     <td></td>
@@ -73,22 +73,19 @@
                     <td></td>
                 </tr>
             <% end
-            end
-        end %>
+            end %>
+            <tr>
+                <th colspan="1">Results</th>
+                <th colspan="2">
+                    Average Pre-penalized score: <%= @avgData[i][1] %></th>
+                <th colspan="2">
+                    Vals:
+                    <i class="fa fa-trophy" aria-hidden="true"></i><%= wins %>/<%= @avgData[i][0] - wins - draws %>
+                    = total
+                    <%= @avgData[i][0] %></th>
+            </tr>
+        <% end %>
     </tbody>
-    <thead>
-        <tr>
-            <th colspan="1">Results</th>
-            <th colspan="2">
-                Average Pre-penalized score:
-                <%= @avgPreScore %></th>
-            <th colspan="2">
-                Vals:
-                <i class="fa fa-trophy" aria-hidden="true"></i><%= wins %>/<%= @totalMatches - wins - draws %>
-                = total
-                <%= @totalMatches %></th>
-        </tr>
-    </thead>
 </table>
 <% else %>
 <table>
