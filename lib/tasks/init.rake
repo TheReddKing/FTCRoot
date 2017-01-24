@@ -80,6 +80,29 @@ namespace :init do
                     meet.data_competition = meet.data_competition + "|#{spl[1]},#{spl[3,8].join(",")}"
                 end
                 meet.save
+                
+                # TEAMSS
+                teams = []
+                for teamid in spl[3,6]
+                    if(Team.exists?(teamid))
+                        teams.push(Team.find(teamid))
+                    end
+                end
+                for team in teams
+                    if(team == nil)
+                        next
+                    end
+                    if(team.data_competitions.include?("#{meet.id}_"))
+                        next
+                    end
+                    if(team.data_competitions.length == 0)
+                        team.data_competitions = "#{meet.id}_"
+                    else
+                        team.data_competitions += "|#{meet.id}_"
+                    end
+                    # puts team.data_competitions
+                    team.save
+                end
             else
                 puts "Error meet not found: " + spl[0]
             end
