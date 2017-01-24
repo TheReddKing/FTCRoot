@@ -80,7 +80,7 @@ namespace :init do
                     meet.data_competition = meet.data_competition + "|#{spl[1]},#{spl[3,8].join(",")}"
                 end
                 meet.save
-                
+
                 # TEAMSS
                 teams = []
                 for teamid in spl[3,6]

@@ -22,9 +22,8 @@
 
 <%= render "shared/eventresults" %>
 <%#= link_to("Test","#",:class=>"score_popup_open") %>
-
-<% if @avgData[@important][0] > 0 %>
-<%= pie_chart [["Autonomous (#{@avgAuto})",@avgAuto],["Teleop (#{@avgTele})",@avgTele],["End Game (#{@avgEnd})",@avgEnd]],title:"#{@competitions[@important][:meet].name}. score #{@@avgData[@important][0]})" %>
+<% if @important > -1 %>
+<%= pie_chart [["Autonomous (#{@avgData[@important][2]})",@avgData[@important][2]],["Teleop (#{@avgData[@important][3]})",@avgData[@important][3]],["End Game (#{@avgData[@important][4]})",@avgData[@important][4]]], title:"#{@competitions[@important][:meet].name} score (#{@avgData[@important][1]})" %>
 <% end %>
 <% if @competitions.length > 0 %>
 <p>
@@ -42,7 +41,7 @@
     </thead>
     <tbody>
         <% @competitions.each_with_index do |meet,i| %>
-            <tr>
+            <tr style="background-color:#dfd;">
                 <th colspan="4"><%= link_to(meet[:meet].name,meet[:meet]) %></th>
                 <th><%= meet[:meet].date %></th>
                 <!-- <th> </th> -->
@@ -74,6 +73,7 @@
                 </tr>
             <% end
             end %>
+            <% if meet[:data].length > 0 and meet[:data][0][:owndetails].length > 0 %>
             <tr>
                 <th colspan="1">Results</th>
                 <th colspan="2">
@@ -84,6 +84,7 @@
                     = total
                     <%= @avgData[i][0] %></th>
             </tr>
+            <% end %>
         <% end %>
     </tbody>
 </table>

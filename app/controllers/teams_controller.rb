@@ -101,7 +101,7 @@ class TeamsController < ApplicationController
             @avgAuto = 0
             @totalMatches = 0
             @avgData = []
-            @important = 0
+            @important = -1
             # More data analysis
             @competitions.each_with_index do |meet,i|
                 # ONLY DETAILED DATA HAS IT
@@ -119,7 +119,7 @@ class TeamsController < ApplicationController
                         @avgEnd += det[4].to_i
                         @avgAuto += det[1].to_i
                         @totalMatches += 1
-                        if(@important == 0)
+                        if(@important == -1)
                             @important = i
                         end
                     end
