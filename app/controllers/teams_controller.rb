@@ -37,6 +37,7 @@ class TeamsController < ApplicationController
             @competitions.push(LeagueMeet.find(meet.gsub("_","")))
         end
         @avgAuto = 0
+        @important = -1
         if(@competitions.length != 0)
             @competitions = @competitions.sort_by { |k,_| Date.strptime(k.date,"%m/%d/%Y") }.reverse
             compet = []
@@ -101,7 +102,6 @@ class TeamsController < ApplicationController
             @avgAuto = 0
             @totalMatches = 0
             @avgData = []
-            @important = -1
             # More data analysis
             @competitions.each_with_index do |meet,i|
                 # ONLY DETAILED DATA HAS IT
