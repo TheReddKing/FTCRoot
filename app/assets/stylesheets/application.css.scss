@@ -15,4 +15,17 @@
  *= require tether
  *= require tether-theme-basic
  *= require font-awesome
+ *= require social-share-button
  */
+
+ $size: 34px;
+
+ .social-share-button {
+   .ssb-icon {
+     background-size: $size $size !important;
+     height: $size !important;
+     width: $size !important;
+     margin: 0px;
+     margin-left: 10px;
+   }
+ }

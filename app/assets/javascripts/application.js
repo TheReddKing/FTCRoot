@@ -20,3 +20,4 @@
 //= require popupoverlay
 //= require Chart.bundle
 //= require chartkick
+//= require social-share-button
