@@ -32,8 +32,10 @@ ActiveRecord::Schema.define(version: 20170101220346) do
     t.integer  "league_meet_id"
     t.integer  "red1"
     t.integer  "red2"
+    t.integer  "red3"
     t.integer  "blue1"
     t.integer  "blue2"
+    t.integer  "blue3"
     t.integer  "redscore"
     t.integer  "redauto"
     t.integer  "redteleop"
@@ -55,10 +57,14 @@ ActiveRecord::Schema.define(version: 20170101220346) do
     t.integer  "region_id"
     t.string   "name"
     t.string   "date"
-    t.text     "description", limit: 65535
+    t.string   "ftcmatchcode"
+    t.text     "description",      limit: 65535
     t.string   "location"
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.string   "competitiontype"
+    t.text     "data_competition", limit: 65535
+    t.boolean  "advanceddata"
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
     t.index ["region_id"], name: "index_league_meets_on_region_id", using: :btree
   end
 
@@ -82,11 +88,17 @@ ActiveRecord::Schema.define(version: 20170101220346) do
   create_table "teams", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
     t.string   "location"
-    t.float    "location_lat",  limit: 24
-    t.float    "location_long", limit: 24
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.float    "location_lat",      limit: 24
+    t.float    "location_long",     limit: 24
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
     t.string   "website"
+    t.string   "contact"
+    t.text     "data_competitions", limit: 65535
+    t.text     "blurb",             limit: 65535
+    t.string   "data_strong"
+    t.string   "data_rootrank"
+    t.string   "data_rootscore"
   end
 
 end

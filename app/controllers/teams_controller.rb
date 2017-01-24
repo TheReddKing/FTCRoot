@@ -31,45 +31,106 @@ class TeamsController < ApplicationController
         # @competitions = LeagueMeetEvent.select('league_meet_events.*, league_meets.date').joins(:league_meet).where("red1 = ? OR red2 = ? OR blue1 = ? OR blue2 = ?", @team.id, @team.id,@team.id,@team.id)
         # .joins("INNER JOIN league_meets ON league_meets.id = league_meet_events.league_meet_id")
         # raise
-        @competitions = LeagueMeet.all
-        if(ActiveRecord::Base.connection.adapter_name == 'Mysql2' )
-            @competitions = @competitions.order( 'STR_TO_DATE(date, "%m/%d/%y") ASC' )
-        else
-            @competitions = @competitions.order( 'to_date(date,\'MM/DD/YY\') ASC' )
+        league_meets = @team.data_competitions.split("|")
+        @competitions = []
+        for meet in league_meets
+            @competitions.push(LeagueMeet.find(meet.gsub("_","")))
         end
-        compet = []
-        @competitions.each do |comp|
-            compet.push(*(comp.league_meet_events.where("red1 = ? OR red2 = ? OR blue1 = ? OR blue2 = ?", @team.id, @team.id,@team.id,@team.id).order("league_meet_events.order ASC")))
-        end
-        @competitions = compet
-
-        @avgPreScore = 0
-
-
-        @avgTele = 0
-        @avgEnd = 0
         @avgAuto = 0
-        # More data analysis
-        @competitions.each do |event|
-            if @team.id == event.red1 or @team.id == event.red2
-                # Red team
-                @avgPreScore += event.redscore - event.redpenalty
-                @avgTele += event.redteleop
-                @avgEnd += event.redend
-                @avgAuto += event.redauto
-            else
-                # Blue team
-                @avgPreScore += event.bluescore - event.bluepenalty
-                @avgTele += event.blueteleop
-                @avgEnd += event.blueend
-                @avgAuto += event.blueauto
+        if(@competitions.length != 0)
+            # if(ActiveRecord::Base.connection.adapter_name == 'Mysql2' )
+            #     @competitions = @competitions.order( 'STR_TO_DATE(date, "%m/%d/%Y") ASC' )
+            # else
+            #     @competitions = @competitions.order( 'to_date(date,\'MM/DD/YYYY\') ASC' )
+            # end
+            compet = []
+            @competitions.each do |com|
+                alldata = com.data_competition.split("|")
+                meetdat = []
+                for c in alldata
+                    comp = c.split(",")
+                    if(comp[1,6].join(",").include?("#{@team.id}"))
+                        puts c
+                        dat = Hash.new
+                        dat[:name] = comp[0]
+                        if comp[3].to_i == 0
+                            dat[:redteam] = comp[1,2]
+                            dat[:blueteam] = comp[4,2]
+                            dat[:numteams] = 3
+                        else
+                            dat[:redteam] = comp[1,3]
+                            dat[:blueteam] = comp[4,3]
+                            dat[:numteams] = 2
+                        end
+                        if(com.advanceddata)
+                            #dat = "#{event.redscore},#{event.redauto},#{event.redteleop},#{event.redend},#{event.redpenalty}"
+                            dat[:reddetails] = comp[7,6].join(",")
+                            dat[:bluedetails] = comp[13,6].join(",")
+                            dat[:redscore] = comp[7]
+                            dat[:bluescore] = comp[13]
+                        else
+                            dat[:reddetails] = ""
+                            dat[:bluedetails] = ""
+                            dat[:redscore] = comp[7]
+                            dat[:bluescore] = comp[8]
+                        end
+
+                        if(comp[1,3].join(",").include?("#{@team.id}"))
+                            # Red
+                            dat[:ownscore] = dat[:redscore]
+                            dat[:oppscore] = dat[:bluescore]
+                            dat[:owndetails] = dat[:reddetails]
+                            dat[:oppdetails] = dat[:bluedetails]
+                        else
+                            dat[:ownscore] = dat[:bluescore]
+                            dat[:oppscore] = dat[:redscore]
+                            dat[:owndetails] = dat[:bluedetails]
+                            dat[:oppdetails] = dat[:reddetails]
+                        end
+                        meetdat.push(dat)
+                    end
+                end
+                meet = Hash.new
+                meet[:data] = meetdat
+                meet[:meet] = com
+                compet.push(meet)
             end
-        end
-        if(@competitions.length > 0 )
-            @avgTele /= @competitions.length
-            @avgEnd /= @competitions.length
-            @avgAuto /= @competitions.length
-            @avgPreScore /= @competitions.length
+            @competitions = compet
+            # raise
+            @avgPreScore = 0
+
+
+            @avgTele = 0
+            @avgEnd = 0
+            @avgAuto = 0
+            @totalMatches = 0
+            # More data analysis
+            @competitions.each do |meet|
+                # ONLY DETAILED DATA HAS IT
+                #dat = "#{event.redscore},#{event.redauto},#{event.redteleop},#{event.redend},#{event.redpenalty}"
+                @avgPreScore = 0
+                @avgTele = 0
+                @avgEnd = 0
+                @avgAuto = 0
+                @totalMatches = 0
+
+                meet[:data].each do |event|
+                    if(event[:owndetails].length > 0)
+                        det = event[:owndetails].split(",")
+                        @avgPreScore += event[:ownscore].to_i - det[5].to_i
+                        @avgTele += det[3].to_i
+                        @avgEnd += det[4].to_i
+                        @avgAuto += det[1].to_i
+                        @totalMatches += 1
+                    end
+                end
+            end
+            if(@totalMatches > 0 )
+                @avgTele /= @totalMatches
+                @avgEnd /= @totalMatches
+                @avgAuto /= @totalMatches
+                @avgPreScore /= @totalMatches
+            end
         end
     end
 

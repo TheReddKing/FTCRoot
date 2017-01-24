@@ -5,9 +5,11 @@ class CreateLeagueMeetEvents < ActiveRecord::Migration[5.0]
     #   t.string :name
       t.integer :red1
       t.integer :red2
+      t.integer :red3
       t.integer :blue1
       t.integer :blue2
-      
+      t.integer :blue3
+
       t.integer :redscore
       t.integer :redauto
       t.integer :redteleop

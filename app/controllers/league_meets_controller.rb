@@ -9,11 +9,11 @@ class LeagueMeetsController < ApplicationController
               else
                   LeagueMeet.all
               end
-
+    @league_meets = @league_meets.where("advanceddata is not null")
       if(ActiveRecord::Base.connection.adapter_name == 'Mysql2' )
-          @league_meets = @league_meets.order( 'STR_TO_DATE(date, "%m/%d/%y") DESC' ).paginate(:page => params[:page], :per_page => 20)
+          @league_meets = @league_meets.order( 'STR_TO_DATE(date, "%m/%d/%Y") DESC' ).paginate(:page => params[:page], :per_page => 20)
       else
-          @league_meets = @league_meets.order( 'to_date(date,\'MM/DD/YY\') DESC' ).paginate(:page => params[:page], :per_page => 20)
+          @league_meets = @league_meets.order( 'to_date(date,\'MM/DD/YYYY\') DESC' ).paginate(:page => params[:page], :per_page => 20)
       end
   end
 
@@ -28,7 +28,36 @@ class LeagueMeetsController < ApplicationController
           # render :search
           # return
       end
+      @league_meet_events = []
+      alldata = @league_meet.data_competition.split("|")
+      for c in alldata
+          comp = c.split(',')
+          dat = Hash.new
+          dat[:name] = comp[0]
 
+          if comp[3].to_i == 0
+              dat[:redteam] = comp[1,2]
+              dat[:blueteam] = comp[4,2]
+              dat[:numteams] = 3
+          else
+              dat[:redteam] = comp[1,3]
+              dat[:blueteam] = comp[4,3]
+              dat[:numteams] = 2
+          end
+          if(@league_meet.advanceddata)
+              #dat = "#{event.redscore},#{event.redauto},#{event.redteleop},#{event.redend},#{event.redpenalty}"
+              dat[:reddetails] = comp[7,6].join(",")
+              dat[:bluedetails] = comp[13,6].join(",")
+              dat[:redscore] = comp[7]
+              dat[:bluescore] = comp[13]
+          else
+              dat[:reddetails] = ""
+              dat[:bluedetails] = ""
+              dat[:redscore] = comp[7]
+              dat[:bluescore] = comp[8]
+          end
+          @league_meet_events.push(dat)
+      end
   end
 
   # GET /league_meets/new

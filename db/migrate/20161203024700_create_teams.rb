@@ -6,7 +6,6 @@ class CreateTeams < ActiveRecord::Migration[5.0]
       t.string :location
       t.float :location_lat
       t.float :location_long
-
       t.timestamps
     end
   end

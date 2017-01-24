@@ -153,7 +153,7 @@
 {"id":"11087","name":"BAS TECH","address":"Brooklyn, NY 11235 USA","latlong":["40.64822043522949","-73.93577131793899"],"website":""}
 {"id":"11088","name":"STOBOR","address":"Syosset, NY 11791 USA","latlong":["40.81622092808827","-73.49877958733435"],"website":"http://WWW.STOBOR.CLUB"}
 {"id":"11089","name":"Bytes of Kitkats","address":"Portland, OR 97229 USA","latlong":["45.55836070979267","-122.8087813782888"],"website":""}
-{"id":"11090","name":"Chaos Monkeyz","address":"Austin, TX 78746 USA","latlong":["30.2723735494027","-97.73120345371487"],"website":""}
+{"id":"11090","name":"Chaos Monkeyz","address":"Austin, TX 78746 USA","latlong":["30.2723735494027","-97.73120345371487"],"website":"http://chaosmonkeyz.com/"}
 {"id":"11091","name":"Reynoldsburg Robotics","address":"Reynoldsburg, OH 43068 USA","latlong":["39.95589993659062","-82.77817729361267"],"website":""}
 {"id":"11092","name":"The Dark Side","address":"Stover, MO 65078 USA","latlong":["38.447190051366405","-92.96976559933664"],"website":""}
 {"id":"11093","name":"MegaKnytes","address":"Austin, TX 78750 USA","latlong":["30.260759234918677","-97.73072784377857"],"website":""}

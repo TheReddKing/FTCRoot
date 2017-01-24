@@ -1,21 +1,19 @@
 <% content_for :title do %><%=@league_meet.name %> (<%= @league_meet.location %> FTC Results)<%end %>
 <p id="notice"><%= notice %></p>
 
-<h1>
     <center>
+<h1>
     <%= @league_meet.name %>
-</center>
 </h1>
 
+<h3>
+    <%= @league_meet.location %> (~<%= @league_meet.date %>)
+</h3>
 <p>
-    <strong>Location:</strong>
-    <%= @league_meet.location %>
+    Type: <%= @league_meet.competitiontype %>
 </p>
+</center>
 
-<p>
-    <strong>Approximate Date:</strong>
-    <%= @league_meet.date %>
-</p>
 
 <%= render "shared/eventresults" %>
 
@@ -24,21 +22,21 @@
 <table class="pure-table pure-table-horizontal centered">
     <thead>
         <tr>
-            <th>Match Number</th>
-            <th colspan="2">Red Team</th>
+            <th colspan="3">Match Number</th>
+            <th colspan="6">Red Team</th>
             <center>
-                <th>Score</th>
-                <th class="td-meh">Result</th>
-                <th>Score</th>
+                <th colspan="3">Score</th>
+                <th colspan="3" class="td-meh">Result</th>
+                <th colspan="3">Score</th>
             </center>
-            <th colspan="2">Blue Team</th>
+            <th colspan="6">Blue Team</th>
         </tr>
     </thead>
-    <% @league_meet.league_meet_events.each do |event| %>
+    <% @league_meet_events.each do |event| %>
         <tr>
-            <td><%= event.name %></td>
-            <% ([event.red1, event.red2]).each do |team| %>
-                <td class="teamred">
+            <td colspan="3"><%= event[:name] %></td>
+            <% event[:redteam].each do |team| %>
+                <td colspan="<%= event[:numteams] %>" class="teamred">
                     <% if Team.exists?(team) %>
                     <% tt = Team.find(team) %>
                         <%= link_to(team, tt) %>
@@ -48,19 +46,26 @@
                     <% end %>
                 </td>
             <% end %>
-            <% dat = "#{event.redscore},#{event.redauto},#{event.redteleop},#{event.redend},#{event.redpenalty}"%>
-            <td><%= button_to((event.redscore).to_s,"#", class:"score_popup_open pure-button button-full",data:dat) %></td>
-            <% if event.redscore > event.bluescore %>
-                <td class="teamred"><i class="fa fa-arrow-left" aria-hidden="true"></i></td>
-            <% elsif event.redscore == event.bluescore %>
-                <td></td>
+            <% if event[:reddetails].length > 0 %>
+                <td colspan="3"><%= button_to(event[:redscore],"#", class:"score_popup_open pure-button button-full",data:event[:reddetails]) %></td>
             <% else %>
-                <td class="teamblue"><i class="fa fa-arrow-right" aria-hidden="true"></i></td>
+                <td colspan="3"><%= event[:redscore] %></td>
             <% end %>
-            <% dat = "#{event.bluescore},#{event.blueauto},#{event.blueteleop},#{event.blueend},#{event.bluepenalty}"%>
-            <td><%= button_to((event.bluescore).to_s,"#", class:"score_popup_open pure-button button-full",data:dat) %></td>
-            <% ([event.blue1,event.blue2]).each  do |team| %>
-                <td class="teamblue">
+
+            <% if event[:redscore].to_i > event[:bluescore].to_i %>
+                <td colspan="3" class="teamred"><i class="fa fa-arrow-left" aria-hidden="true"></i></td>
+            <% elsif event[:redscore].to_i == event[:bluescore].to_i%>
+                <td colspan="3"></td>
+            <% else %>
+                <td colspan="3" class="teamblue"><i class="fa fa-arrow-right" aria-hidden="true"></i></td>
+            <% end %>
+            <% if event[:bluedetails].length > 0 %>
+                <td colspan="3"><%= button_to(event[:bluescore],"#", class:"score_popup_open pure-button button-full",data:event[:bluedetails]) %></td>
+            <% else %>
+                <td colspan="3"><%= event[:bluescore] %></td>
+            <% end %>
+            <% event[:blueteam].each  do |team| %>
+                <td colspan="<%= event[:numteams] %>" class="teamblue">
                     <% if Team.exists?(team) %>
                     <% tt = Team.find(team) %>
                         <%= link_to(team, tt) %>
@@ -76,4 +81,4 @@
 </div>
 </center>
 <p> Team number not highlighted? <%= link_to "Contact Me", "help@ftcroot.com" %> </p>
-<%= link_to 'Back', 'javascript:history.go(-1);' %>
+<%#= link_to 'Back', 'javascript:history.go(-1);' %>

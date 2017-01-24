@@ -18,7 +18,7 @@
 12/11/2016,Hudson Valley Red Hook Qualifying Tournament,New York - Hudson Valley,Qualifying Tournament,1,ny,rh,x,nyrh,NY,D
 12/13/2016,Interior Qualifying Tournamnet,Alaska,Qualifying Tournament,1,ak,in,x,akin,AK,D
 12/18/2016,FIRST Tech Challenge Dayton OH Qualifying Tournament,Ohio,Qualifying Tournament,1,oh,da,x,ohda,OH,D
-12/17/2016,Finger Lakes FIRST Tech Challenge Qualifying Tournament,New York's Excelsior,Qualifying Tournament,1,ny,fl,x,nyfl,NY,D
+12/17/2016,Finger Lakes FIRST Tech Challenge Qualifying Tournament,New York - Excelsior,Qualifying Tournament,1,ny,fl,x,nyfl,NY,D
 12/17/2016,Alamogordo FIRST Tech Challenge Qualifying Tournament,New Mexico,Qualifying Tournament,1,nm,al,x,nmal,NM,D
 12/17/2016,Mississippi FTC Vicksburg Qualifier,Mississippi,Qualifying Tournament,1,ms,vi,x,msvi,MS,D
 12/17/2016,Southeast Qualifying Tournament,Alaska,Qualifying Tournament,1,ak,se,x,akse,AK,D
@@ -39,7 +39,6 @@
 01/07/2017,California SD R Roger Rowe 2,California SD,Qualifying Tournament,1,casd,rr2,x,casdrr2,CASD,R
 01/07/2017,California SD Francis Parker 2,California SD,Qualifying Tournament,1,casd,fp2,x,casdfp2,CASD,R
 01/07/2017,California SD SET High,California SD,Qualifying Tournament,1,casd,set,x,casdset,CASD,R
-12/17/2016,Indiana Indy South,Indiana,Qualifying Tournament,1,in,so,x,inso,IN,R
 11/12/2016,Hawaii Le Jardin,Hawaii,Qualifying Tournament,1,hi,lj,x,hilj,HI,D
 11/26/2016,Hawaii Mililani,Hawaii,Qualifying Tournament,1,hi,mi,x,himi,HI,D
 11/5/2016,Michigan Big Rapids,Michigan,Qualifying Tournament,1,mi,br,x,mibr,MI,R
@@ -71,6 +70,8 @@
 01/21/2017,Minnesota North Branch 1,Minnesota,Qualifying Tournament,1,mn,nb1,x,mnnb1,MN,R
 01/22/2017,Minnesota North Branch 2,Minnesota,Qualifying Tournament,1,mn,nb2,x,mnnb2,MN,R
 02/10/2017,Minnesota Championship,Minnesota,Qualifying Tournament,1,mn,cmp,x,mncmp,MN,R
+01/14/2017,North Carolina Raleigh,North Carolina,Qualifying Tournament,1,nc,ra,x,ncra,NC,R
+01/21/2017,North Carolina Boone,North Carolina,Qualifying Tournament,1,nc,bo,x,ncbo,NC,D
 10/29/2016,Oklahoma SWOSU Qualifier,Oklahoma,Qualifying Tournament,1,ok,sw,x,oksw,OK,R
 11/12/2016,Oklahoma Gordon Cooper Qualifier,Oklahoma,Qualifying Tournament,1,ok,gc,x,okgc,OK,R
 11/19/2016,Oklahoma Bishop Kelley Qualifier,Oklahoma,Qualifying Tournament,1,ok,bk,x,okbk,OK,R
@@ -90,14 +91,14 @@
 12/10/2016,Pennsylvania Hat Tricks,Pennsylvania,Qualifying Tournament,1,pa,ht,x,paht,PA,D
 01/07/2017,Pennsylvania Southeastern,Pennsylvania,Qualifying Tournament,1,pa,se,x,pase,PA,D
 01/14/2017,Pennsylvania Southwestern,Pennsylvania,Qualifying Tournament,1,pa,sw,x,pasw,PA,D
-01/21/2017,Pennsylvania South Central,Pennsylvania,Qualifying Tournament,1,pa,sc,x,pasc,PA,D
+01/21/2017,Pennsylvania Southcentral,Pennsylvania,Qualifying Tournament,1,pa,sc,x,pasc,PA,D
 01/28/2017,Pennsylvania Philadelphia,Pennsylvania,Qualifying Tournament,1,pa,ph,x,paph,PA,D
 02/11/2017,Pennsylvania Lehigh Valley,Pennsylvania,Qualifying Tournament,1,pa,lv,x,palv,PA,D
 02/25/2017,Pennsylvania Championship,Pennsylvania,Championship Tournament,1,pa,cmp,x,pacmp,PA,D
-11/14/2016,Texas AML Clubs Meet 1,Texas,Meet,1,tx,amlc1,x,txamlc1,TX,R
-11/12/2016,Texas AML Diamonds Meet 1,Texas,Meet,1,tx,amld1,x,txamld1,TX,R
-11/14/2016,Texas AML Hearts Meet 1,Texas,Meet,1,tx,amlh1,x,txamlh1,TX,R
-11/12/2016,Texas AML Spades Meet 1,Texas,Meet,1,tx,amls1,x,txamls1,TX,R
+11/14/2016,Texas AML Clubs Meet 1,Texas,Meet,1,tx,amlc1,x,txamlc1,TX,D
+11/12/2016,Texas AML Diamonds Meet 1,Texas,Meet,1,tx,amld1,x,txamld1,TX,D
+11/14/2016,Texas AML Hearts Meet 1,Texas,Meet,1,tx,amlh1,x,txamlh1,TX,D
+11/12/2016,Texas AML Spades Meet 1,Texas,Meet,1,tx,amls1,x,txamls1,TX,D
 12/03/2016,Texas AML Clubs Meet 2,Texas,Meet,1,tx,amlc2,x,txamlc2,TX,D
 12/03/2016,Texas AML Diamonds Meet 2,Texas,Meet,1,tx,amld2,x,txamld2,TX,D
 12/03/2016,Texas AML Hearts Meet 2,Texas,Meet,1,tx,amlh2,x,txamlh2,TX,D
@@ -106,29 +107,17 @@
 01/07/2017,Texas AML Diamonds Meet 3,Texas,Meet,1,tx,amld3,x,txamld3,TX,D
 01/07/2017,Texas AML Hearts Meet 3,Texas,Meet,1,tx,amlh3,x,txamlh3,TX,D
 01/07/2017,Texas AML Spades Meet 3,Texas,Meet,1,tx,amls3,x,txamls3,TX,D
-01/01/2017,Florida Middleton Madness,Florida,Meet,1,fl,mm,x,flmm,FL,F
-01/01/2017,Florida NEFL Match Play 1,Florida,Meet,1,fl,neflmp1,x,flneflmp1,FL,F
-01/01/2017,Florida Clearwater Meet 1,Florida,Meet,1,fl,cw1,x,flcw1,FL,F
-01/01/2017,Florida Palm Beach League - Meet 1a,Florida,Meet,1,fl,pbl1a,x,flpbl1a,FL,F
-01/01/2017,Florida Palm Beach League - Meet 1b,Florida,Meet,1,fl,pbl1b,x,flpbl1b,FL,F
-01/01/2017,Florida Palm Beach League - Meet 1c,Florida,Meet,1,fl,pbl1c,x,flpbl1c,FL,F
-01/01/2017,Florida Meet #1 Robots In Oz,Florida,Meet,1,fl,rio1,x,flrio1,FL,F
-01/01/2017,Florida South Florida League PantherRobotics,Florida,Meet,1,fl,sflpr,x,flsflpr,FL,F
-01/01/2017,Florida Space Coast League Meet #1,Florida,Meet,1,fl,scl1,x,flscl1,FL,F
-01/01/2017,Florida PHUHS Meet 2,Florida,Meet,1,fl,phu2,x,flphu2,FL,F
-01/01/2017,Florida ROBOT League Coleman Chaos,Florida,Meet,1,fl,rlcc,x,flrlcc,FL,F
-01/01/2017,Florida Space Coast League Meet #2,Florida,Meet,1,fl,scl2,x,flscl2,FL,F
-01/01/2017,Florida Tesla Meet #2,Florida,Meet,1,fl,te1,x,flte1,FL,F
-01/01/2017,Florida NEFL Matchplay 2,Florida,Meet,1,fl,neflmp2,x,flneflmp2,FL,F
-01/01/2017,Florida ROBOT League Keystone Prep Meet,Florida,Meet,1,fl,rlkp,x,flrlkp,FL,F
-01/01/2017,Florida Palm Beach League Meet 2-1,Florida,Meet,1,fl,pbl21,x,flpbl21,FL,F
-01/01/2017,Florida Palm Beach League Meet 2-2,Florida,Meet,1,fl,pbl22,x,flpbl22,FL,F
-01/01/2017,Florida PuntaGorda,Florida,Meet,1,fl,pg,x,flpg,FL,F
-01/01/2017,Florida South Florida Tournament 2,Florida,Meet,1,fl,sf2,x,flsf2,FL,F
-01/01/2017,Florida NEFL Meet 1,Florida,Meet,1,fl,neflmt1,x,flneflmt1,FL,F
+01/21/2017,Texas AML Spades-Diamonds Championship,Texas,Championship Tournament,1,tx,sdcmp,x,txsdcmp,TX,D
+01/21/2017,Texas AML Clubs-Hearts Championship,Texas,Championship Tournament,1,tx,chcmp,x,txchcmp,TX,D
+12/03/2016,Florida TBTA 2,Florida,Meet,1,fl,tbta2,x,fltbta2,FL,F
+12/03/2016,Florida ROBOT Coleman Chaos,Florida,Meet,1,fl,rcc,x,flrcc,FL,F
+12/03/2016,Florida Spacecoast 2,Florida,Meet,1,fl,sc2,x,flsc2,FL,F
+01/07/2017,Florida Tesla 3,Florida,Meet,1,fl,t3,x,flt3,FL,F
 12/03/2016,West Virginia Championship,West Virginia,Championship Tournament,1,wv,cmp,x,wvcmp,WV,R
 12/03/2017,Virginia Central Flowers,Virginia,Qualifying Tournament,1,va,ced1,1,vaced1,VA,R
 12/03/2017,Virginia Central Kamen,Virginia,Qualifying Tournament,2,va,ced2,2,vaced2,VA,R
+12/17/2016,California LA F2M1,California LA ,Meet,1,cala,f2m1,x,calaf2m1,CA,R
+01/15/2017,Indiana NorWestIn,Indiana,Qualifying Tournament,1,in,nw,x,innw,IN,R
 11/12/2016,Illinois Chicago Central 1,Illinois,Meet,1,il,cc1,x,ilcc1,IL,D
 11/05/2016,Illinois Chicago North 1,Illinois,Meet,1,il,cn1,x,ilcn1,IL,D
 11/19/2016,Illinois Chicago South 1,Illinois,Meet,1,il,cs1,x,ilcs1,IL,D
@@ -183,7 +172,8 @@
 01/21/2017,California LA A1M3,California LA ,Meet,1,cala,a1m3,x,calaa1m3,CA,D
 12/04/2016,California LA A2M0,California LA ,Meet,1,cala,a2m0,x,calaa2m0,CA,D
 12/18/2016,California LA A2M1,California LA ,Meet,1,cala,a2m1,x,calaa2m1,CA,D
-02/08/2017,California LA A2M2,California LA ,Meet,1,cala,a2m2,x,calaa2m2,CA,D
+01/08/2017,California LA A2M2,California LA ,Meet,1,cala,a2m2,x,calaa2m2,CA,D
+01/22/2017,California LA A2M3,California LA ,Meet,1,cala,a2m3,x,calaa2m3,CA,D
 12/03/2016,California LA BM1,California LA ,Meet,1,cala,bm1,x,calabm1,CA,D
 12/17/2016,California LA BM2,California LA ,Meet,1,cala,bm2,x,calabm2,CA,D
 01/14/2017,California LA BM3,California LA ,Meet,1,cala,bm3,x,calabm3,CA,D
@@ -207,12 +197,15 @@
 12/17/2016,California LA F1M1,California LA ,Meet,1,cala,f1m1,x,calaf1m1,CA,D
 01/07/2017,California LA F1M2,California LA ,Meet,1,cala,f1m2,x,calaf1m2,CA,D
 01/21/2017,California LA F1M3,California LA ,Meet,1,cala,f1m3,x,calaf1m3,CA,D
-12/17/2016,California LA F2M1,California LA ,Meet,1,cala,f2m1,x,calaf2m1,CA,D
 01/07/2017,California LA F2M2,California LA ,Meet,1,cala,f2m2,x,calaf2m2,CA,D
 01/21/2017,California LA F2M3,California LA ,Meet,1,cala,f2m3,x,calaf2m3,CA,D
 12/13/2016,California LA F3M1,California LA ,Meet,1,cala,f3m1,x,calaf3m1,CA,D
 01/10/2017,California LA F3M2,California LA ,Meet,1,cala,f3m2,x,calaf3m2,CA,D
 01/23/2017,California LA F3M3,California LA ,Meet,1,cala,f3m3,x,calaf3m3,CA,D
+12/03/2016,California LA IM0,California LA ,Meet,1,cala,im0,x,calaim0,CA,D
+01/14/2016,California LA IM1,California LA ,Meet,1,cala,im1,x,calaim1,CA,D
+01/21/2017,California LA IM2,California LA ,Meet,1,cala,im2,x,calaim2,CA,D
+01/28/2017,California LA IM3,California LA ,Meet,1,cala,im3,x,calaim3,CA,D
 10/29/2016,Missouri Octobo-Robo Fest,Missouri,Meet,1,mo,m1,x,mom1,MO,D
 11/5/2016,Missouri Vive Velocity Vortex!,Missouri,Meet,1,mo,m2,x,mom2,MO,D
 11/12/2016,Missouri Gator,Missouri,Meet,1,mo,m3,x,mom3,MO,D
@@ -250,6 +243,36 @@
 12/10/2016,New York John Dewey #1,New York,Qualifying Tournament,1,ny,jd1,x,nyjd1,NY,D
 12/11/2016,New York John Dewey #2,New York,Qualifying Tournament,1,ny,jd2,x,nyjd2,NY,D
 01/14/2017,New York Francis Lewis #1,New York,Qualifying Tournament,1,ny,fl1,x,nyfl1,NY,D
-01/05/2017,New York Francis Lewis #2,New York,Qualifying Tournament,1,ny,fl2,x,nyfl2,NY,D
+01/15/2017,New York Francis Lewis #2,New York,Qualifying Tournament,1,ny,fl2,x,nyfl2,NY,D
 02/18/2017,New York Dalton #1,New York,Qualifying Tournament,1,ny,da1,x,nyda1,NY,D
 02/19/2017,New York Dalton #2,New York,Qualifying Tournament,1,ny,da2,x,nyda2,NY,D
+02/25/2017,Florida Championship,Florida,Championship,1,fl,cmp,x,flcmp,FL,D
+11/05/2016,Florida ROBOT Middleton Madness,Florida,Meet,1,fl,rmm,x,flrmm,FL,D
+12/17/2016,Florida ROBOT Keystone Kinetics,Florida,Meet,1,fl,rkk,x,flrkk,FL,D
+01/14/2017,Florida ROBOT League Championship,Florida,League Championship,1,fl,rlcmp,x,flrlcmp,FL,D
+11/12/2016,Florida TBTA 1,Florida,Meet,1,fl,tbta1,x,fltbta1,FL,D
+12/17/2016,Florida TBTA 3,Florida,Meet,1,fl,tbta3,x,fltbta3,FL,D
+01/21/2017,Florida TBTA League Championship,Florida,League Championship,1,fl,tbtalcmp,x,fltbtalcmp,FL,D
+01/28/2017,Florida TBTA ROBOT League Championship 2,Florida,League Championship,1,fl,tbrlcmp,x,fltbrlcmp,FL,D
+11/19/2016,Florida South Panther Robotics,Florida,Meet,1,fl,spr,x,flspr,FL,D
+12/17/2016,Florida South Cypress Bay,Florida,Meet,1,fl,scb,x,flscb,FL,D
+01/28/2017,Florida South League Championship,Florida,League Championship,1,fl,slcmp,x,flslcmp,FL,D
+11/09/2016,Florida NEFL Match Play 1,Florida,Meet,1,fl,nemp1,x,flnemp1,FL,D
+12/02/2016,Florida NEFL Match Play 2,Florida,Meet,1,fl,nemp2,x,flnemp2,FL,D
+12/17/2016,Florida NEFL 1,Florida,Meet,1,fl,ne1,x,flne1,FL,D
+01/07/2017,Florida NEFL 2,Florida,Meet,1,fl,ne2,x,flne2,FL,D
+01/10/2017,Florida NEFL Match Play 3,Florida,Meet,1,fl,nemp3,x,flnemp3,FL,D
+01/21/2017,Florida NEFL League Championship,Florida,League Championship,1,fl,nelcmp,x,flnelcmp,FL,D
+11/19/2016,Florida Spacecoast 1,Florida,Meet,1,fl,sc1,x,flsc1,FL,D
+01/14/2017,Florida Spacecoast 3,Florida,Meet,1,fl,sc3,x,flsc3,FL,D
+01/28/2017,Florida Spacecoast League Championship,Florida,League Championship,1,fl,sclcmp,x,flsclcmp,FL,D
+11/13/2016,Florida Tesla 1,Florida,Meet,1,fl,t1,x,flt1,FL,D
+12/04/2016,Florida Tesla 2,Florida,Meet,1,fl,t2,x,flt2,FL,D
+01/28/2017,Florida Tesla League Championship,Florida,League Championship,1,fl,tlcmp,x,fltlcmp,FL,D
+11/12/2016,Florida Palm Beach 1a,Florida,Meet,1,fl,pb1a,x,flpb1a,FL,D
+11/12/2016,Florida Palm Beach 1b,Florida,Meet,1,fl,pb1b,x,flpb1b,FL,D
+11/12/2016,Florida Palm Beach 1c,Florida,Meet,1,fl,pb1c,x,flpb1c,FL,D
+12/17/2016,Florida Palm Beach 2a,Florida,Meet,1,fl,pb2a,x,flpb2a,FL,D
+12/17/2016,Florida Palm Beach 2b,Florida,Meet,1,fl,pb2b,x,flpb2b,FL,D
+01/07/2017,Florida Palm Beach 3,Florida,Meet,1,fl,pb3,x,flpb3,FL,D
+01/28/2017,Florida Palm Beach League Championship,Florida,League Championship,1,fl,pblcmp,x,flpblcmp,FL,D

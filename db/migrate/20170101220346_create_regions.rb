@@ -4,7 +4,6 @@ class CreateRegions < ActiveRecord::Migration[5.0]
       t.string :name
       t.text :website
       t.text :info
-
       t.timestamps
     end
   end

@@ -8,16 +8,24 @@
     <button class="score_popup_close">Close</button>
 </div>
 <script>
-    $(document).ready(function () {
+    var hasSeen = false;
+    $(function () {
         // Initialize the plugin
-        $('#score_popup').popup({beforeopen: function (call) {}});
-        $(".score_popup_open").click(function (e) {
-            spl = $(e.currentTarget).attr("data").split(",");
-            $("#score_score").html(spl[0]);
-            $("#score_auto").html(spl[1]);
-            $("#score_teleop").html(spl[2]);
-            $("#score_endgame").html(spl[3]);
-            $("#score_penalty").html(spl[4]);
-        })
+        if(!hasSeen) {
+
+            console.log("DO");
+            $('#score_popup').popup();
+            $(".score_popup_open").unbind("click");
+            $(".score_popup_open").click(function (e) {
+                console.log("CLICK");
+                spl = $(e.currentTarget).attr("data").split(",");
+                $("#score_score").html(spl[0]);
+                $("#score_auto").html(spl[1]);
+                $("#score_teleop").html(spl[3]);
+                $("#score_endgame").html(spl[4]);
+                $("#score_penalty").html(spl[5]);
+            });
+            hasSeen = true;
+        }
     });
 </script>

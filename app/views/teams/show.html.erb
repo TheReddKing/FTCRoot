@@ -2,40 +2,40 @@
 (<%=@team.id %>) -- FTCRoot<%end %>
 <p id="notice"><%= notice %></p>
 <center>
-    <h2>
-        <%= @team.name %>
-    </h2>
-    <br/>
+    <h1>
+        <%= @team.name %> (<%= @team.id %>)
+    </h1>
     <p>
-        <strong>Team ID:</strong>
-        <%= @team.id %>
-    </p>
-    <p>
-        <strong>Website:</strong>
-        <%= link_to(@team.website,@team.website) %>
-    </p>
-    <p>
-        <strong>Location:</strong>
         <%= @team.location %>
     </p>
+    <% if @team.website.length > 0%>
+    <p>
+        <%= link_to(@team.website,@team.website) %>
+    </p>
+    <% end %>
+    <% if @team.blurb%>
+    <%= @team.blurb.html_safe %>
+    <% else %>
+    <p> Are you this team and want to add a blurb/contact info? <br/><%= link_to("Add blurb","mailto:help@ftcroot.com",class:"pure-button button-primary nav-link") %></p>
+    <% end %>
 </center>
 
 <%= render "shared/eventresults" %>
 <%#= link_to("Test","#",:class=>"score_popup_open") %>
 
-<% if @competitions != [] %>
-<%= pie_chart [["Autonomous (#{@avgAuto})",@avgAuto],["Teleop (#{@avgTele})",@avgTele],["End Game (#{@avgEnd})",@avgEnd]],title:"Average (Non-penalized) score: #{@avgPreScore}" %>
+<% if @avgAuto > 0 %>
+<%= pie_chart [["Autonomous (#{@avgAuto})",@avgAuto],["Teleop (#{@avgTele})",@avgTele],["End Game (#{@avgEnd})",@avgEnd]],title:"Last Competition (avg. score #{@avgPreScore})" %>
+<% end %>
+<% if @competitions.length > 0 %>
 <p>
     Note:
     <i class="fa fa-trophy" aria-hidden="true"></i>=WIN, empty for LOSS</p>
 <table class="pure-table pure-table-horizontal">
     <thead>
         <tr>
-            <th class="td-superimportant">Event Name</th>
-            <th>Q_name</th>
+            <th colspan="2">Event Name</th>
             <th>Score</th>
-            <th colspan="1">
-                Details</th>
+            <th>Opp Score</th>
             <th>Result</th>
             <!-- <th colspan="3"></th> -->
         </tr>
@@ -43,45 +43,38 @@
     <tbody>
         <% wins = 0 %>
         <% draws = 0 %>
-        <% @competitions.each do |event| %>
-        <tr>
-            <td><%= link_to(event.league_meet.name,event.league_meet) %></td>
-            <td><%= event.name %></td>
-            <% if @team.id == event.red1 or @team.id == event.red2 %>
-            <td><%= event.redscore %></td>
-            <% dat = "#{event.redscore},#{event.redauto},#{event.redteleop},#{event.redend},#{event.redpenalty}"%>
-            <td><%= button_to((event.redscore-event.redpenalty).to_s,"#", class:"score_popup_open pure-button",data:dat) %></td>
-            <% if event.redscore > event.bluescore %>
-            <td>
-                <i class="fa fa-trophy" aria-hidden="true"></i>
-            </td>
-            <% wins += 1 %>
-            <% elsif event.redscore == event.bluescore %>
-            <% draws += 1 %>
-            <td>DRAW</td>
-            <%else %>
-            <td></td>
-        <% end
-            else %>
-            <td><%= event.bluescore %></td>
-            <% dat = "#{event.bluescore},#{event.blueauto},#{event.blueteleop},#{event.blueend},#{event.bluepenalty}"%>
-            <td><%= button_to((event.bluescore-event.bluepenalty).to_s,"#", class:"score_popup_open pure-button",data:dat) %></td>
-            <% if event.redscore < event.bluescore %>
-            <td>
-                <i class="fa fa-trophy" aria-hidden="true"></i>
-            </td>
-            <% wins += 1 %>
-            <% elsif event.redscore == event.bluescore %>
-            <% draws += 1 %>
-            <td>DRAW</td>
-            <%else %>
-            <td></td>
+        <% @competitions.each do |meet| %>
+            <tr>
+                <th colspan="4"><%= link_to(meet[:meet].name,meet[:meet]) %></th>
+                <th><%= meet[:meet].date %></th>
+                <!-- <th> </th> -->
+            </tr>
+            <% meet[:data].each do |match| %>
+                <tr>
+                    <td></td>
+                    <td><%= match[:name] %></td>
+
+                    <% if match[:owndetails].length > 0 %>
+                        <td colspan="1"><%= button_to(match[:ownscore],"#", class:"score_popup_open pure-button button-full",data:match[:owndetails]) %></td>
+                    <% else %>
+                        <td colspan="1"><%= match[:ownscore] %></td>
+                    <% end %>
+                    <td>v.s. <%= match[:oppscore] %></td>
+
+                    <% if match[:ownscore].to_i > match[:oppscore].to_i %>
+                    <td>
+                        <i class="fa fa-trophy" aria-hidden="true"></i>
+                    </td>
+                    <% wins += 1 %>
+                    <% elsif  match[:ownscore].to_i == match[:oppscore].to_i %>
+                    <% draws += 1 %>
+                    <td>DRAW</td>
+                    <%else %>
+                    <td></td>
+                </tr>
             <% end
             end
-            %>
-
-        </tr>
-        <% end %>
+        end %>
     </tbody>
     <thead>
         <tr>
@@ -91,9 +84,9 @@
                 <%= @avgPreScore %></th>
             <th colspan="2">
                 Vals:
-                <i class="fa fa-trophy" aria-hidden="true"></i><%= wins %>/<%= @competitions.length - wins - draws %>
+                <i class="fa fa-trophy" aria-hidden="true"></i><%= wins %>/<%= @totalMatches - wins - draws %>
                 = total
-                <%= @competitions.length %></th>
+                <%= @totalMatches %></th>
         </tr>
     </thead>
 </table>
@@ -107,4 +100,4 @@
     </center>
 </table>
 <% end %>
-<%= link_to 'Back', 'javascript:history.go(-1);' %>
+<%#= link_to 'Back', 'javascript:history.go(-1);' %>
