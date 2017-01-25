@@ -23,6 +23,12 @@
 <%= render "shared/eventresults" %>
 <%#= link_to("Test","#",:class=>"score_popup_open") %>
 <% if @competitions.length > 0 %>
+<% if @important > -1 %>
+<%= pie_chart [["Autonomous (#{@avgData[@important][2]})",@avgData[@important][2]],
+                ["Teleop (#{@avgData[@important][3]})",@avgData[@important][3]],
+                ["End Game (#{@avgData[@important][4]})",@avgData[@important][4]]],
+                title:"#{(@competitions[@important][:meet]).name} score (#{@avgData[@important][1]})" %>
+<% end %>
 <p>
     Note:
     <i class="fa fa-trophy" aria-hidden="true"></i>=WIN, empty for LOSS</p>
