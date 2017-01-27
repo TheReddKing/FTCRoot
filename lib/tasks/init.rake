@@ -25,12 +25,34 @@ namespace :init do
         files = Dir["#{Rails.root}/app/data/teams/*.txt"]
         for file in files
             File.read(file).each_line do |line|
-
                 ftcteam = FTCTeam.new(JSON.parse(line))
                 # For testing purposes only
                 # :name, :id, :location, :location_lat, :location_long
                 if(!Team.exists?(ftcteam.id))
                     team = Team.new(name: ftcteam.name, id: ftcteam.id, location: ftcteam.address, location_lat: ftcteam.lat.to_f, location_long: ftcteam.long.to_f,website:ftcteam.website,data_competitions:"")
+                    team.save
+                end
+            end
+        end
+    end
+    task updateT: :environment do
+        files = Dir["#{Rails.root}/app/data/teams/*.update"]
+        for file in files
+            File.read(file).each_line do |line|
+                ftcteam = JSON.parse(line, object_class: OpenStruct)
+                # For testing purposes only
+                # :name, :id, :location, :location_lat, :location_long
+                if(Team.exists?(ftcteam.id))
+                    team = Team.find(ftcteam.id)
+                    if(ftcteam.blurb != nil)
+                       team.blurb = ftcteam.blurb
+                    end
+                    if(ftcteam.contact_email != nil)
+                        team.contact_email = ftcteam.contact_email
+                    end
+                    if(ftcteam.contact_twitter != nil)
+                        team.contact_twitter = ftcteam.contact_twitter
+                    end
                     team.save
                 end
             end
@@ -105,6 +127,26 @@ namespace :init do
                 end
             else
                 puts "Error meet not found: " + spl[0]
+            end
+        end
+        
+        File.read("#{Rails.root}/app/data/gameresults/ftc-data/1617velv-FULL-StatsResults.csv").each_line do |line|
+            if line.include?("TournamentCode,Num")
+                next
+            end
+            spl = line.split(",")
+            tournname = spl[0].split("-")[1]
+            meet = LeagueMeet.where(ftcmatchcode:tournname).first
+            if(meet != nil)
+                if(meet.data_stats.length == 0)
+                    meet.data_stats = "#{spl[1]},#{spl[3,9].join(",")}"
+                else
+                    meet.data_stats = meet.data_competition + "|#{spl[1]},#{spl[3,9].join(",")}"
+                end
+                meet.save
+                # TournamentCode,   Num,    Name        ,R,QP,RP    ,High   ,MP ,Elim   ,WP,OPR,OPRm,
+                # 1617velv-akea,    3208,   Rocket 4.0  ,1,10,126   ,115    ,5  ,       ,1.00,58.7,51.6,
+                # 0                 1           2       ,3,4 ,5     ,6  ,7
             end
         end
 

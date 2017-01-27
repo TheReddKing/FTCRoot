@@ -4,15 +4,16 @@ class TeamsController < ApplicationController
     # GET /teams
     # GET /teams.json
     def index
-        @teams = if params[:search] != nil
+        @teams = if params[:search] != nil and params[:search].length > 0
                     if(ActiveRecord::Base.connection.adapter_name == 'Mysql2' )
                         Team.where('CAST(id as CHAR) like ? or lower(name) like lower(?)', "#{params[:search].to_i}%", "%#{params[:search]}%")
                     else
                         Team.where('id::text like ? or lower(name) like lower(?)', "#{params[:search].to_i}%", "%#{params[:search]}%")
                     end
                 else
-                    Team.all
+                    Team.all.order(blurb: :desc)
                 end
+        
         @teams = @teams.paginate(:page => params[:page], :per_page => 30)
     end
 

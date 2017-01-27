@@ -58,6 +58,8 @@ class LeagueMeetsController < ApplicationController
           end
           @league_meet_events.push(dat)
       end
+      
+      
   end
 
   # GET /league_meets/new
