@@ -26,6 +26,17 @@ FTC Results)<%end %>
     <li class="tab-link" data-tab="tab-2">Rank</li>
 </ul>
 </center>
+<script>
+$('ul.tabs li').click(function(){
+    var tab_id = $(this).attr('data-tab');
+
+    $('ul.tabs li').removeClass('current');
+    $('.tab-content').removeClass('current');
+
+    $(this).addClass('current');
+    $("#"+tab_id).addClass('current');
+})
+</script>
 
 <div id="tab-2" class="tab-content">
     <% if @league_meet_stats.length > 0 %>
