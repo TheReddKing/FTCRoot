@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170101220346) do
+ActiveRecord::Schema.define(version: 20170127182152) do
 
   create_table "event_migrations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
@@ -65,6 +65,9 @@ ActiveRecord::Schema.define(version: 20170101220346) do
     t.boolean  "advanceddata"
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
+    t.text     "data_stats",       limit: 65535
+    t.string   "data_highscore"
+    t.boolean  "advancedstats"
     t.index ["region_id"], name: "index_league_meets_on_region_id", using: :btree
   end
 
@@ -99,6 +102,12 @@ ActiveRecord::Schema.define(version: 20170101220346) do
     t.string   "data_strong"
     t.string   "data_rootrank"
     t.string   "data_rootscore"
+    t.string   "contact_email"
+    t.string   "contact_twitter"
+    t.string   "data_opr"
+    t.string   "data_oprauto"
+    t.string   "data_oprtele"
+    t.string   "data_oprend"
   end
 
 end

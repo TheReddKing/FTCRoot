@@ -58,8 +58,21 @@ class LeagueMeetsController < ApplicationController
           end
           @league_meet_events.push(dat)
       end
-      
-      
+    #   FOR THE OTHER STATS
+        statData = @league_meet.data_stats.split("|")
+        @league_meet_stats = []
+        for t in statData
+            dat = Hash.new
+            team = t.split(",")
+            dat[:id] = team[0]
+            dat[:rank] = team[1]
+            dat[:qp] = team[2]
+            dat[:rp] = team[3]
+            dat[:high] = team[4]
+            @league_meet_stats.push(dat)
+        end
+      # TournamentCode,   Num,    Name        ,R,QP,RP    ,High   ,MP ,Elim   ,WP,OPR,OPRm,
+
   end
 
   # GET /league_meets/new

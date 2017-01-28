@@ -1,84 +1,150 @@
-<% content_for :title do %><%=@league_meet.name %> (<%= @league_meet.location %> FTC Results)<%end %>
+<% content_for :title do %><%=@league_meet.name %>
+(<%= @league_meet.location %>
+FTC Results)<%end %>
 <p id="notice"><%= notice %></p>
 
-    <center>
-<h1>
-    <%= @league_meet.name %>
-</h1>
+<center>
+    <h1>
+        <%= @league_meet.name %>
+    </h1>
 
-<h3>
-    <%= @league_meet.location %> (~<%= @league_meet.date %>)
-</h3>
-<p>
-    Type: <%= @league_meet.competitiontype %>
-</p>
+    <h3>
+        <%= @league_meet.location %>
+        (~<%= @league_meet.date %>)
+    </h3>
+    <p>
+        Type:
+        <%= @league_meet.competitiontype %>
+    </p>
 </center>
-
 
 <%= render "shared/eventresults" %>
 
 <center>
-    <div class="overflow">
-<table class="pure-table pure-table-horizontal centered">
-    <thead>
-        <tr>
-            <th colspan="3">Match Number</th>
-            <th colspan="6">Red Team</th>
-            <center>
-                <th colspan="3">Score</th>
-                <th colspan="3" class="td-meh">Result</th>
-                <th colspan="3">Score</th>
-            </center>
-            <th colspan="6">Blue Team</th>
-        </tr>
-    </thead>
-    <% @league_meet_events.each do |event| %>
-        <tr>
-            <td colspan="3"><%= event[:name] %></td>
-            <% event[:redteam].each do |team| %>
-                <td colspan="<%= event[:numteams] %>" class="teamred">
-                    <% if Team.exists?(team) %>
-                    <% tt = Team.find(team) %>
-                        <%= link_to(team, tt) %>
-                        <span class="teamname">(<%= tt.name %>)</span>
-                    <% else %>
-                        <%= team %>
-                    <% end %>
-                </td>
-            <% end %>
-            <% if event[:reddetails].length > 0 %>
-                <td colspan="3"><%= button_to(event[:redscore],"#", class:"score_popup_open pure-button button-full",data:event[:reddetails]) %></td>
-            <% else %>
-                <td colspan="3"><%= event[:redscore] %></td>
-            <% end %>
-
-            <% if event[:redscore].to_i > event[:bluescore].to_i %>
-                <td colspan="3" class="teamred"><i class="fa fa-arrow-left" aria-hidden="true"></i></td>
-            <% elsif event[:redscore].to_i == event[:bluescore].to_i%>
-                <td colspan="3"></td>
-            <% else %>
-                <td colspan="3" class="teamblue"><i class="fa fa-arrow-right" aria-hidden="true"></i></td>
-            <% end %>
-            <% if event[:bluedetails].length > 0 %>
-                <td colspan="3"><%= button_to(event[:bluescore],"#", class:"score_popup_open pure-button button-full",data:event[:bluedetails]) %></td>
-            <% else %>
-                <td colspan="3"><%= event[:bluescore] %></td>
-            <% end %>
-            <% event[:blueteam].each  do |team| %>
-                <td colspan="<%= event[:numteams] %>" class="teamblue">
-                    <% if Team.exists?(team) %>
-                    <% tt = Team.find(team) %>
-                        <%= link_to(team, tt) %>
-                        <span class="teamname">(<%= tt.name %>)</span>
-                    <% else %>
-                        <%= team  %>
-                    <% end %>
-                </td>
-            <% end %>
-        </tr>
-    <% end %>
-</table>
-</div>
+<ul class="tabs">
+    <li class="tab-link current" data-tab="tab-1">Matches</li>
+    <li class="tab-link" data-tab="tab-2">Rank</li>
+</ul>
 </center>
-<p> Team number not highlighted? <%= link_to "Contact Me", "help@ftcroot.com" %> </p>
-<%#= link_to 'Back', 'javascript:history.go(-1);' %>
+
+<div id="tab-2" class="tab-content">
+    <% if @league_meet_stats.length > 0 %>
+    <table class="pure-table pure-table-horizontal centered">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Team</th>
+                <th>QP</th>
+                <th>RP</th>
+                <th>Highest</th>
+            </tr>
+        </thead>
+        <% @league_meet_stats.each do |team| %>
+        <% if team[:rank] == '1'
+                color = "#FFD700"
+            elsif team[:rank] == '2'
+                color = "#C0C0C0"
+            elsif team[:rank] == '3'
+                color= "#cd7f32"
+            else
+                color = "none"
+            end %>
+        <tr style="border-right: 3px solid <%= color %> !important;border-left: 3px solid <%= color %> !important;">
+            <td>
+                <%= team[:rank] %>
+            </td>
+            <td>
+                <% if Team.exists?(team[:id]) %>
+                <% tt = Team.find(team[:id]) %>
+                <%= link_to(team[:id], tt) %>
+                <span class="teamname">(<%= tt.name %>)</span>
+            <% else %>
+                <%= team[:id] %>
+                <% end %>
+            </td>
+            <td><%= team[:qp] %></td>
+            <td><%= team[:rp] %></td>
+            <td><%= team[:high] %></td>
+        </tr>
+        <% end %>
+    </table>
+<% else %>
+    <p>
+        This data is currently unavailable. </p>
+<% end %>
+    </div>
+
+    <div id="tab-1" class="tab-content current">
+        <center>
+            <div class="overflow">
+                <table class="pure-table pure-table-horizontal centered">
+                    <thead>
+                        <tr>
+                            <th colspan="3">Match Number</th>
+                            <th colspan="6">Red Team</th>
+                            <center>
+                                <th colspan="3">Score</th>
+                                <th colspan="3" class="td-meh">Result</th>
+                                <th colspan="3">Score</th>
+                            </center>
+                            <th colspan="6">Blue Team</th>
+                        </tr>
+                    </thead>
+                    <% @league_meet_events.each do |event| %>
+                    <tr>
+                        <td colspan="3"><%= event[:name] %></td>
+                        <% event[:redteam].each do |team| %>
+                        <td colspan="<%= event[:numteams] %>" class="teamred">
+                            <% if Team.exists?(team) %>
+                            <% tt = Team.find(team) %>
+                            <%= link_to(team, tt) %>
+                            <span class="teamname">(<%= tt.name %>)</span>
+                        <% else %>
+                            <%= team %>
+                            <% end %>
+                        </td>
+                        <% end %>
+                        <% if event[:reddetails].length > 0 %>
+                        <td colspan="3"><%= button_to(event[:redscore],"#", class:"score_popup_open pure-button button-full",data:event[:reddetails]) %></td>
+                    <% else %>
+                        <td colspan="3"><%= event[:redscore] %></td>
+                        <% end %>
+
+                        <% if event[:redscore].to_i > event[:bluescore].to_i %>
+                        <td colspan="3" class="teamred">
+                            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                        </td>
+                        <% elsif event[:redscore].to_i == event[:bluescore].to_i%>
+                        <td colspan="3"></td>
+                    <% else %>
+                        <td colspan="3" class="teamblue">
+                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        </td>
+                        <% end %>
+                        <% if event[:bluedetails].length > 0 %>
+                        <td colspan="3"><%= button_to(event[:bluescore],"#", class:"score_popup_open pure-button button-full",data:event[:bluedetails]) %></td>
+                    <% else %>
+                        <td colspan="3"><%= event[:bluescore] %></td>
+                        <% end %>
+                        <% event[:blueteam].each  do |team| %>
+                        <td colspan="<%= event[:numteams] %>" class="teamblue">
+                            <% if Team.exists?(team) %>
+                            <% tt = Team.find(team) %>
+                            <%= link_to(team, tt) %>
+                            <span class="teamname">(<%= tt.name %>)</span>
+                        <% else %>
+                            <%= team  %>
+                            <% end %>
+                        </td>
+                        <% end %>
+                    </tr>
+                    <% end %>
+                </table>
+            </div>
+        </center>
+    </div>
+    <p>
+        Team number not highlighted?
+        <%= link_to "Contact Me", "help@ftcroot.com" %>
+    </p>
+    <%#= link_to 'Back', 'javascript:history.go(-1);' %>

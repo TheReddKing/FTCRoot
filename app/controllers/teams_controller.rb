@@ -13,7 +13,7 @@ class TeamsController < ApplicationController
                 else
                     Team.all.order(blurb: :desc)
                 end
-        
+
         @teams = @teams.paginate(:page => params[:page], :per_page => 30)
     end
 
@@ -28,10 +28,6 @@ class TeamsController < ApplicationController
             # render :search
             # return
         end
-        # @competitions = LeagueMeetEvent.joins("LEFT JOIN league_meets ON league_meets.id = league_meet_events.league_meet_id").where("red1 = ? OR red2 = ? OR blue1 = ? OR blue2 = ?", @team.id, @team.id,@team.id,@team.id)
-        # @competitions = LeagueMeetEvent.select('league_meet_events.*, league_meets.date').joins(:league_meet).where("red1 = ? OR red2 = ? OR blue1 = ? OR blue2 = ?", @team.id, @team.id,@team.id,@team.id)
-        # .joins("INNER JOIN league_meets ON league_meets.id = league_meet_events.league_meet_id")
-        # raise
         league_meets = @team.data_competitions.split("|")
         @competitions = []
         for meet in league_meets
@@ -88,7 +84,16 @@ class TeamsController < ApplicationController
                         meetdat.push(dat)
                     end
                 end
+                allstats = com.data_stats.split("|")
                 meet = Hash.new
+                for s in allstats
+                    spl = s.split(",")
+                    if(spl[0] == @team.id.to_s)
+                        meet[:rank] = spl[1]
+                        meet[:rank_all] = allstats.length
+                        break
+                    end
+                end
                 meet[:data] = meetdat
                 meet[:meet] = com
                 compet.push(meet)

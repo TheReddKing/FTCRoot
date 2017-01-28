@@ -53,8 +53,62 @@ namespace :init do
                     if(ftcteam.contact_twitter != nil)
                         team.contact_twitter = ftcteam.contact_twitter
                     end
+                    if(ftcteam.website != nil)
+                        team.website = ftcteam.website
+                    end
                     team.save
                 end
+            end
+        end
+    end
+    task updateN: :environment do
+
+        for meet in LeagueMeet.all
+            meet.data_stats = ""
+            meet.save
+        end
+
+        File.read("#{Rails.root}/app/data/gameresults/ftc-data/1617velv-FULL-StatsRes.csv").each_line do |line|
+            if line.include?("TournamentCode,Num")
+                next
+            end
+            spl = line.split(",")
+            # puts line
+            tournname = spl[0].split("-")[1] + "-" + spl[0].split("-")[2]
+            meet = LeagueMeet.where(ftcmatchcode:tournname).first
+            if(meet != nil)
+                meet.advancedstats = true
+                if(meet.data_stats.length == 0)
+                    meet.data_stats = "#{spl[1]},#{spl[3,9].join(",")}"
+                else
+                    meet.data_stats = meet.data_stats + "|#{spl[1]},#{spl[3,9].join(",")}"
+                end
+                meet.save
+                # TournamentCode,   Num,    Name        ,R,QP,RP    ,High   ,MP ,Elim   ,WP,OPR,OPRm,
+                # 1617velv-akea,    3208,   Rocket 4.0  ,1,10,126   ,115    ,5  ,       ,1.00,58.7,51.6,
+                # 0                 1           2       ,3,4 ,5     ,6  ,7
+            end
+        end
+        # TournamentCode,Num,Name,R,QP,RP,High,MP,Elim,WP,OPR,OPRm,OPR-,OPRm-,OPRA,OPRmA,OPRB,OPRmB,OPRT,OPRmT,OPRE,OPRmE,OPRP,OPRmP,OPRp,OPRmp,
+        File.read("#{Rails.root}/app/data/gameresults/ftc-data/1617velv-FULL-StatsDet.csv").each_line do |line|
+            if line.include?("TournamentCode,Num")
+                next
+            end
+            spl = line.split(",")
+            # puts line
+            tournname = spl[0].split("-")[1] + "-" + spl[0].split("-")[2]
+            meet = LeagueMeet.where(ftcmatchcode:tournname).first
+            if(meet != nil)
+                meet.advancedstats = false
+                if(meet.data_stats.length == 0)
+                    meet.data_stats = "#{spl[1]},#{spl[3,23].join(",")}"
+                else
+                    meet.data_stats = meet.data_stats + "|#{spl[1]},#{spl[3,23].join(",")}"
+                end
+                meet.save
+                # TournamentCode,   Num,    Name        ,R,QP,RP    ,High   ,MP ,Elim   ,WP,OPR,OPRm,
+                # 1617velv-akea,    3208,   Rocket 4.0  ,1,10,126   ,115    ,5  ,       ,1.00,58.7,51.6,
+                # 0                 1           2       ,3,4 ,5     ,6  ,7
             end
         end
     end
@@ -79,6 +133,7 @@ namespace :init do
         end
         for meet in LeagueMeet.all
             meet.data_competition = ""
+            meet.data_stats = ""
             meet.save
         end
         for team in Team.all
@@ -88,11 +143,11 @@ namespace :init do
         end
         # For events with no details
         File.read("#{Rails.root}/app/data/gameresults/ftc-data/1617velv-FULL-MatchResults.csv").each_line do |line|
-            if line.include?("Red0,Red1,Red2")
+            if line.include?("Red1,Red2")
                 next
             end
             spl = line.split(",")
-            tournname = spl[0].split("-")[1]
+            tournname = spl[0].split("-")[1] + "-" + spl[0].split("-")[2]
             meet = LeagueMeet.where(ftcmatchcode:tournname).first
             if(meet != nil)
                 meet.advanceddata = false
@@ -129,34 +184,15 @@ namespace :init do
                 puts "Error meet not found: " + spl[0]
             end
         end
-        
-        File.read("#{Rails.root}/app/data/gameresults/ftc-data/1617velv-FULL-StatsResults.csv").each_line do |line|
-            if line.include?("TournamentCode,Num")
-                next
-            end
-            spl = line.split(",")
-            tournname = spl[0].split("-")[1]
-            meet = LeagueMeet.where(ftcmatchcode:tournname).first
-            if(meet != nil)
-                if(meet.data_stats.length == 0)
-                    meet.data_stats = "#{spl[1]},#{spl[3,9].join(",")}"
-                else
-                    meet.data_stats = meet.data_competition + "|#{spl[1]},#{spl[3,9].join(",")}"
-                end
-                meet.save
-                # TournamentCode,   Num,    Name        ,R,QP,RP    ,High   ,MP ,Elim   ,WP,OPR,OPRm,
-                # 1617velv-akea,    3208,   Rocket 4.0  ,1,10,126   ,115    ,5  ,       ,1.00,58.7,51.6,
-                # 0                 1           2       ,3,4 ,5     ,6  ,7
-            end
-        end
+
 
         # for Events with DETAILS
         File.read("#{Rails.root}/app/data/gameresults/ftc-data/1617velv-FULL-MatchResultsDetails.csv").each_line do |line|
-            if line.include?("Red0,Red1,Red2")
+            if line.include?("Red1,Red2")
                 next
             end
             spl = line.split(",")
-            tournname = spl[0].split("-")[1]
+            tournname = spl[0].split("-")[1] + "-" + spl[0].split("-")[2]
             meet = LeagueMeet.where(ftcmatchcode:tournname).first
             if(meet != nil)
                 meet.advanceddata = true
