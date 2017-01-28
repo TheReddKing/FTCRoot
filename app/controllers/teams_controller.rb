@@ -11,7 +11,8 @@ class TeamsController < ApplicationController
                         Team.where('id::text like ? or lower(name) like lower(?)', "#{params[:search].to_i}%", "%#{params[:search]}%")
                     end
                 else
-                    Team.all.order(blurb: :desc)
+                    # Team.where("blurb is not null").or Team.where("blurb is null")
+                    Team.all.order("blurb is null, id asc")
                 end
 
         @teams = @teams.paginate(:page => params[:page], :per_page => 30)
