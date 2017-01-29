@@ -160,7 +160,7 @@ class TeamsController < ApplicationController
         if params[:showlink]
             @existssss = "HI"
         end
-        render layout: false
+        render :partial => "plain"
         # render :layout => false
     end
 

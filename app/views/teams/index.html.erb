@@ -48,7 +48,7 @@
             <td><%= "<i class='fa fa-circle d-green'></i>".html_safe if team.blurb != nil %>
                 <%= "<i class='fa fa-circle d-red'></i>".html_safe if team.contact_email != nil %></td>
             <td><%= team.id %></td>
-            <td><%= team.location.split(" ")[0..1].join(" ") %></td>
+            <td><%= "#{team.location.split(", ")[0]}, #{team.location.split(" ")[-3]}" %></td>
         </tr>
         <tr class="hidden-sm-up">
             <td style="font-size:100% !important;"><%= link_to team.name, team %></td>
