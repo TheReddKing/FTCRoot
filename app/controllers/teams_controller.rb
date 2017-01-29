@@ -42,6 +42,9 @@ class TeamsController < ApplicationController
             @competitions.each do |com|
                 alldata = com.data_competition.split("|")
                 meetdat = []
+                meet = Hash.new
+                meet[:wins] = 0
+                meet[:draws] = 0
                 for c in alldata
                     comp = c.split(",")
                     if((","+ comp[1,6].join(",")+",").include?(",#{@team.id},"))
@@ -82,11 +85,15 @@ class TeamsController < ApplicationController
                             dat[:owndetails] = dat[:bluedetails]
                             dat[:oppdetails] = dat[:reddetails]
                         end
+                        if dat[:ownscore].to_i > dat[:oppscore].to_i
+                            meet[:wins] += 1
+                        elsif dat[:ownscore].to_i == dat[:oppscore].to_i
+                            meet[:draws] += 1
+                        end
                         meetdat.push(dat)
                     end
                 end
                 allstats = com.data_stats.split("|")
-                meet = Hash.new
                 for s in allstats
                     spl = s.split(",")
                     if(spl[0] == @team.id.to_s)
@@ -150,6 +157,9 @@ class TeamsController < ApplicationController
     # GET /teams/1/plain
     # GET /teams/1.json/plain
     def plain
+        if params[:showlink]
+            @existssss = "HI"
+        end
         render layout: false
         # render :layout => false
     end

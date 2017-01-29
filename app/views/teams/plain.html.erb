@@ -1,23 +1,37 @@
 <p id="notice"><%= notice %></p>
+<center>
+<div class="card">
+  <div class="card-container">
+    <% if @existssss %>
+    <h1><b><%= link_to "#{@team.name} (#{@team.id})",@team %></b></h1>
+    <% else %>
+    <h1><b><%= @team.name %> (<%= @team.id %>)</b></h1>
+    <% end %>
+    <p><%= @team.location %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= link_to @team.name , @team %>
-</p>
-
-<p>
-  <strong>Team Number:</strong>
-  <%= @team.id %>
-</p>
-
-<p>
-  <strong>Location:</strong>
-  <%= @team.location %>
-</p>
-
-<% if @team.team_assets[0] %>
-<p>
-  <strong>Website:</strong>
-  <%= link_to(@team.team_assets[0].content,@team.team_assets[0].content) %>
-</p>
-<% end %>
+    <% if @team.blurb%>
+        <%= @team.blurb.html_safe %>
+    <% else %>
+        <p> Are you this team and want to add a blurb/contact info? <br/><%= link_to("Add blurb","mailto:help@ftcroot.com",class:"pure-button button-primary nav-link") %></p>
+    <% end %>
+  </div>
+  <% if @team.website.length > 0  %>
+  <div class="card-contact">
+      <p><i class="fa fa-link"></i> <%= link_to(@team.website,@team.website) %>
+      </p>
+  </div>
+  <% end %>
+  <%  if @team.contact_email  and @team.contact_email.length > 0  %>
+  <div class="card-contact">
+      <p><i class="fa fa-envelope-o"></i> <%= link_to(@team.contact_email,"mailto:"+ @team.contact_email)%>
+      </p>
+  </div>
+  <% end %>
+  <%  if @team.contact_twitter  and @team.contact_twitter.length > 0  %>
+      <div class="card-contact">
+          <p><i class="fa fa-twitter"></i> <%= link_to("@" + @team.contact_twitter,"http://twitter.com/" + @team.contact_twitter) %>
+          </p>
+      </div>
+  <% end %>
+</div>
+</center>

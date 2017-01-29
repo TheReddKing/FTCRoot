@@ -5,44 +5,63 @@
 <h1>Teams</h1>
 
 <%= form_tag(teams_path(""), method: "get",:class => "pure-form") do %>
-  <p>
+<p>
     <%= label_tag(:search, "Search Team name or ID:") %>
     <%= text_field_tag(:search,params[:search]) %>
     <%= submit_tag("Search", :class=>"pure-button pure-button-primary") %>
-  </p>
+</p>
 <% end %>
 <div>
-<legend>
-Legend
-</legend>
-<p>
-<i class='fa fa-circle d-green'></i> = Has blurb <br/>
-<i class='fa fa-circle d-red'></i> = Has contact-info
-</p>
+    <legend>
+        Legend
+    </legend>
+    <p>
+        <i class='fa fa-circle d-green'></i>
+        = Has blurb
+        <br/>
+        <i class='fa fa-circle d-red'></i>
+        = Has contact-info
+    </p>
 </div>
-<table class="pure-table">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th class="td-meh">Status</th>
-      <th>Teamid</th>
-      <th>Location</th>
-      <!-- <th colspan="3"></th> -->
-    </tr>
-  </thead>
+<table class="pure-table centered">
+    <thead>
+        <tr class="hidden-xs-down">
+            <th style="text-align:left;">Name</th>
+            <th class="td-meh">Status</th>
+            <th>Teamid</th>
+            <th>Location</th>
+        </tr>
+        <tr class="hidden-sm-up">
+            <th>Name</th>
+            <th>Teamid</th>
+        </tr>
+        <tr class="hidden-sm-up">
+            <th>Location</th>
+            <th>Status</th>
+        </tr>
+    </thead>
 
-  <tbody>
-    <% @teams.each do |team| %>
-      <tr>
-      <td><%= link_to team.name, team %></td>
-      <td><%= "<i class='fa fa-circle d-green'></i>".html_safe if team.blurb != nil %>
-      <%= "<i class='fa fa-circle d-red'></i>".html_safe if team.contact_email != nil %></td>
-        <td><%= team.id %></td>
-        <td><%= team.location %></td>
-      </tr>
-    <% end %>
-    <%= will_paginate @teams %>
-  </tbody>
+    <tbody>
+        <% @teams.each do |team| %>
+        <tr class="hidden-xs-down">
+            <td style="text-align:left;"><%= link_to team.name, team %></td>
+            <td><%= "<i class='fa fa-circle d-green'></i>".html_safe if team.blurb != nil %>
+                <%= "<i class='fa fa-circle d-red'></i>".html_safe if team.contact_email != nil %></td>
+            <td><%= team.id %></td>
+            <td><%= team.location.split(" ")[0..1].join(" ") %></td>
+        </tr>
+        <tr class="hidden-sm-up">
+            <td style="font-size:100% !important;"><%= link_to team.name, team %></td>
+            <td><%= team.id %></td>
+        </tr>
+        <tr class="hidden-sm-up">
+            <td><%= team.location.split(" ")[0..1].join(" ") %></td>
+            <td><%= "<i class='fa fa-circle d-green'></i>".html_safe if team.blurb != nil %>
+                <%= "<i class='fa fa-circle d-red'></i>".html_safe if team.contact_email != nil %></td>
+        </tr>
+        <% end %>
+        <%= will_paginate @teams %>
+    </tbody>
 </table>
 
 <br>

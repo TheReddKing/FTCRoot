@@ -11,9 +11,9 @@ class EventsController < ApplicationController
               end
     @events = @events.where("advanceddata is not null")
       if(ActiveRecord::Base.connection.adapter_name == 'Mysql2' )
-          @events = @events.order( 'STR_TO_DATE(date, "%m/%d/%Y") DESC' ).paginate(:page => params[:page], :per_page => 20)
+          @events = @events.order( 'STR_TO_DATE(date, "%m/%d/%Y") DESC, name ASC' ).paginate(:page => params[:page], :per_page => 20)
       else
-          @events = @events.order( 'to_date(date,\'MM/DD/YYYY\') DESC' ).paginate(:page => params[:page], :per_page => 20)
+          @events = @events.order( 'to_date(date,\'MM/DD/YYYY\') DESC, name ASC' ).paginate(:page => params[:page], :per_page => 20)
       end
   end
 

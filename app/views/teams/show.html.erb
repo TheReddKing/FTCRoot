@@ -63,16 +63,25 @@
         <tbody>
             <% @competitions.each_with_index do |meet,i| %>
                 <tr style="background-color:#cfc;font-size:150%;">
-                    <th colspan="3"><%= link_to(meet[:meet].name,meet[:meet]) %> (Rank: <%= meet[:rank] %> out of <%= meet[:rank_all] %>)</th>
+                    <th colspan="3"><%= link_to(meet[:meet].name,meet[:meet]) %></th>
                     <th colspan="2" style="text-align:right"><%= meet[:meet].date %></th>
                     <!-- <th> </th> -->
                 </tr>
-                <% wins = 0 %>
-                <% draws = 0 %>
+                <% if meet[:data].length > 0 and meet[:data][0][:owndetails].length > 0 %>
+                <tr>
+                    <th colspan="1">Ranked <%= meet[:rank] %> out of <%= meet[:rank_all] %></th>
+                    <th colspan="2">
+                        Avg. score*: <%= @avgData[i][1] %> (<%= "#{@avgData[i][2]}-#{@avgData[i][3]}-#{@avgData[i][4]}" %>)</th>
+                    <th colspan="2">
+                        Vals:
+                        <i class="fa fa-trophy" aria-hidden="true"></i><%= meet[:wins] %>/<%= @avgData[i][0] - meet[:wins] - meet[:draws] %>
+                        = total
+                        <%= @avgData[i][0] %></th>
+                </tr>
+                <% end %>
                 <% meet[:data].each do |match| %>
                     <tr>
                         <td colspan="2" style="text-align:right"><%= match[:name] %></td>
-
                         <% if match[:owndetails].length > 0 %>
                             <td colspan="1"><%= button_to(match[:ownscore],"#", class:"score_popup_open pure-button button-full",data:match[:owndetails]) %></td>
                         <% else %>
@@ -84,27 +93,14 @@
                         <td>
                             <i class="fa fa-trophy" aria-hidden="true"></i>
                         </td>
-                        <% wins += 1 %>
                         <% elsif  match[:ownscore].to_i == match[:oppscore].to_i %>
-                        <% draws += 1 %>
                         <td>DRAW</td>
                         <%else %>
                         <td></td>
                     </tr>
                 <% end
                 end %>
-                <% if meet[:data].length > 0 and meet[:data][0][:owndetails].length > 0 %>
-                <tr>
-                    <th colspan="1">Ranked <%= meet[:rank] %> out of <%= meet[:rank_all] %></th>
-                    <th colspan="2">
-                        Avg. score*: <%= @avgData[i][1] %> (<%= "#{@avgData[i][2]}-#{@avgData[i][3]}-#{@avgData[i][4]}" %>)</th>
-                    <th colspan="2">
-                        Vals:
-                        <i class="fa fa-trophy" aria-hidden="true"></i><%= wins %>/<%= @avgData[i][0] - wins - draws %>
-                        = total
-                        <%= @avgData[i][0] %></th>
-                </tr>
-                <% end %>
+
             <% end %>
         </tbody>
     </table>
