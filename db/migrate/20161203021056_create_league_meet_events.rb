@@ -1,7 +1,7 @@
-class CreateLeagueMeetEvents < ActiveRecord::Migration[5.0]
+class CreateEventEvents < ActiveRecord::Migration[5.0]
   def change
-    create_table :league_meet_events do |t|
-      t.belongs_to :league_meet, index: true
+    create_table :event_events do |t|
+      t.belongs_to :event, index: true
     #   t.string :name
       t.integer :red1
       t.integer :red2

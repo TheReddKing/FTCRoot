@@ -63,7 +63,7 @@ namespace :init do
     end
     task updateN: :environment do
 
-        for meet in LeagueMeet.all
+        for meet in Event.all
             meet.data_stats = ""
             meet.save
         end
@@ -75,7 +75,7 @@ namespace :init do
             spl = line.split(",")
             # puts line
             tournname = spl[0].split("-")[1] + "-" + spl[0].split("-")[2]
-            meet = LeagueMeet.where(ftcmatchcode:tournname).first
+            meet = Event.where(ftcmatchcode:tournname).first
             if(meet != nil)
                 meet.advancedstats = true
                 if(meet.data_stats.length == 0)
@@ -97,7 +97,7 @@ namespace :init do
             spl = line.split(",")
             # puts line
             tournname = spl[0].split("-")[1] + "-" + spl[0].split("-")[2]
-            meet = LeagueMeet.where(ftcmatchcode:tournname).first
+            meet = Event.where(ftcmatchcode:tournname).first
             if(meet != nil)
                 meet.advancedstats = false
                 if(meet.data_stats.length == 0)
@@ -120,9 +120,9 @@ namespace :init do
                 region = Region.new(name:spl[2])
                 region.save
             end
-            meet = LeagueMeet.where(ftcmatchcode:spl[8])[0]
+            meet = Event.where(ftcmatchcode:spl[8])[0]
             if(meet == nil)
-                meet = LeagueMeet.new(name: spl[1],date:spl[0],location:spl[2],ftcmatchcode:spl[8],competitiontype:spl[3],data_competition:"")
+                meet = Event.new(name: spl[1],date:spl[0],location:spl[2],ftcmatchcode:spl[8],competitiontype:spl[3],data_competition:"")
                 meet.region = region
                 meet.save
                 region.save
@@ -131,7 +131,7 @@ namespace :init do
                 meet.save
             end
         end
-        for meet in LeagueMeet.all
+        for meet in Event.all
             meet.data_competition = ""
             meet.data_stats = ""
             meet.save
@@ -148,7 +148,7 @@ namespace :init do
             end
             spl = line.split(",")
             tournname = spl[0].split("-")[1] + "-" + spl[0].split("-")[2]
-            meet = LeagueMeet.where(ftcmatchcode:tournname).first
+            meet = Event.where(ftcmatchcode:tournname).first
             if(meet != nil)
                 meet.advanceddata = false
                 if(meet.data_competition.length == 0)
@@ -193,7 +193,7 @@ namespace :init do
             end
             spl = line.split(",")
             tournname = spl[0].split("-")[1] + "-" + spl[0].split("-")[2]
-            meet = LeagueMeet.where(ftcmatchcode:tournname).first
+            meet = Event.where(ftcmatchcode:tournname).first
             if(meet != nil)
                 meet.advanceddata = true
                 if(meet.data_competition.length == 0)

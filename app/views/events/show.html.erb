@@ -1,20 +1,20 @@
-<% content_for :title do %><%=@league_meet.name %>
-(<%= @league_meet.location %>
+<% content_for :title do %><%=@event.name %>
+(<%= @event.location %>
 FTC Results)<%end %>
 <p id="notice"><%= notice %></p>
 
 <center>
     <h1>
-        <%= @league_meet.name %>
+        <%= @event.name %>
     </h1>
 
     <h3>
-        <%= @league_meet.location %>
-        (~<%= @league_meet.date %>)
+        <%= @event.location %>
+        (~<%= @event.date %>)
     </h3>
     <p>
         Type:
-        <%= @league_meet.competitiontype %>
+        <%= @event.competitiontype %>
     </p>
 </center>
 
@@ -39,7 +39,7 @@ $('ul.tabs li').click(function(){
 </script>
 
 <div id="tab-2" class="tab-content">
-    <% if @league_meet_stats.length > 0 %>
+    <% if @event_stats.length > 0 %>
     <table class="pure-table pure-table-horizontal centered">
         <thead>
             <tr>
@@ -50,7 +50,7 @@ $('ul.tabs li').click(function(){
                 <th>Highest</th>
             </tr>
         </thead>
-        <% @league_meet_stats.each do |team| %>
+        <% @event_stats.each do |team| %>
         <% if team[:rank] == '1'
                 color = "#FFD700"
             elsif team[:rank] == '2'
@@ -101,7 +101,7 @@ $('ul.tabs li').click(function(){
                             <th colspan="6">Blue Team</th>
                         </tr>
                     </thead>
-                    <% @league_meet_events.each do |event| %>
+                    <% @event_events.each do |event| %>
                     <tr>
                         <td colspan="3"><%= event[:name] %></td>
                         <% event[:redteam].each do |team| %>

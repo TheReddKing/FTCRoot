@@ -10,7 +10,7 @@ class RegionsController < ApplicationController
   # GET /regions/1
   # GET /regions/1.json
   def show
-      @meets = @region.league_meets.all
+      @meets = @region.events.all
   end
 
   # GET /regions/new

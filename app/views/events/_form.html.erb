@@ -1,10 +1,10 @@
-<%= form_for(league_meet) do |f| %>
-  <% if league_meet.errors.any? %>
+<%= form_for(event) do |f| %>
+  <% if event.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(league_meet.errors.count, "error") %> prohibited this league_meet from being saved:</h2>
+      <h2><%= pluralize(event.errors.count, "error") %> prohibited this event from being saved:</h2>
 
       <ul>
-      <% league_meet.errors.full_messages.each do |message| %>
+      <% event.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>

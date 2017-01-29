@@ -35,9 +35,9 @@
         <% @highScores.each_with_index do |event,ind| %>
         <tr style="border-top:2px solid gray;">
             <td><%= ind + 1 %></td>
-            <td><%= link_to(event.league_meet.name,event.league_meet) %> (<%=event.league_meet.region.name %>) - <%= event.name %>
+            <td><%= link_to(event.event.name,event.event) %> (<%=event.event.region.name %>) - <%= event.name %>
             <br/>
-            <%= event.league_meet.date %>
+            <%= event.event.date %>
             </td>
             <% if event.redscore > event.bluescore %>
             <% ([event.red1, event.red2]).each do |team| %>

@@ -4,7 +4,7 @@ Rails.application.routes.draw do
         # scope constraints: {format: :html} do
             resources :teams
                 get 'teams/:id/plain', to: 'teams#plain'
-            resources :league_meets
+            resources :events
         # end
         # resources :ftcteam
         # root to: 'visitors#index'
@@ -17,7 +17,10 @@ Rails.application.routes.draw do
         get 'images/buttons/viewpost-right.png', to: "tools#nothing"
         get 'images/misc/quote-left.png', to: "tools#nothing"
         get 'teams/:id/:name', to: 'teams#show', as: 'fullname'
-        get 'league_meets/:id/:name', to: 'league_meets#show', as: 'fullmeet'
+        get 'events/:id/:name', to: 'events#show', as: 'fullevent'
+        get 'league_meets/:id/:name', to: 'events#show'
+        get 'league_meets/:id', to: 'events#show'
+        get 'league_meets', to: 'events#index'
         get 'stats/highscores', to: "tools#stats"
         get "sitemap.xml" => "visitors#sitemap"
 

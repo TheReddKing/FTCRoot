@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class LeagueMeetEventTeamTest < ActiveSupport::TestCase
+class EventEventTeamTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

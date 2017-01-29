@@ -1,7 +1,7 @@
-<% content_for :title do %>FTC League Meets Result Search<%end %>
+<% content_for :title do %>FTC Events Result Search<%end %>
 <p id="notice"><%= notice %></p>
 
-<h1>League Meets</h1>
+<h1>Events</h1>
 
 
 <p>Note: if you have result files, send them to <a href="mailto:help@ftcroot.com">help@ftcroot.com</a></p>
@@ -9,7 +9,7 @@
 
 <br/>
 
-<%= form_tag(league_meets_path(""), method: "get",:class => "pure-form") do %>
+<%= form_tag(events_path(""), method: "get",:class => "pure-form") do %>
   <p>
     <%= label_tag(:search, "Search Meet name, location or date:") %>
     <%= text_field_tag(:search,params[:search]) %>
@@ -28,18 +28,18 @@
     </thead>
 
     <tbody>
-        <% @league_meets.each do |league_meet| %>
+        <% @events.each do |event| %>
         <tr>
-            <td><%= link_to league_meet.name, league_meet %></td>
-            <td><%= league_meet.date %></td>
-            <td><%= link_to league_meet.location, league_meet.region %></td>
+            <td><%= link_to event.name, event %></td>
+            <td><%= event.date %></td>
+            <td><%= link_to event.location, event.region %></td>
         </tr>
         <% end %>
 
-        <%= will_paginate @league_meets %>
+        <%= will_paginate @events %>
     </tbody>
 </table>
 
 <br>
 
-<%#link_to 'New League Meet', new_league_meet_path %>
+<%#link_to 'New Event', new_event_path %>

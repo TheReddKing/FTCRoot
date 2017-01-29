@@ -29,10 +29,10 @@ class TeamsController < ApplicationController
             # render :search
             # return
         end
-        league_meets = @team.data_competitions.split("|")
+        events = @team.data_competitions.split("|")
         @competitions = []
-        for meet in league_meets
-            @competitions.push(LeagueMeet.find(meet.gsub("_","")))
+        for meet in events
+            @competitions.push(Event.find(meet.gsub("_","")))
         end
         @avgAuto = 0
         @important = -1

@@ -27,11 +27,11 @@
     </thead>
 
     <tbody>
-        <% @meets.each do |league_meet| %>
+        <% @meets.each do |event| %>
         <tr>
-            <td><%= link_to league_meet.name, league_meet %></td>
-            <td><%= league_meet.date %></td>
-            <td><%= league_meet.location %></td>
+            <td><%= link_to event.name, event %></td>
+            <td><%= event.date %></td>
+            <td><%= event.location %></td>
         </tr>
         <% end %>
     </tbody>

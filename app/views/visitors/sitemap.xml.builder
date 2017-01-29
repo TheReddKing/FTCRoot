@@ -14,7 +14,7 @@ xml.tag! 'urlset', 'xmlns' => 'http://www.sitemaps.org/schemas/sitemap/0.9' do
     }
 
   xml.url{
-      xml.loc(base_url + "/league_meets")
+      xml.loc(base_url + "/events")
       xml.changefreq("weekly")
       xml.priority(1.0)
   }
@@ -43,7 +43,7 @@ xml.tag! 'urlset', 'xmlns' => 'http://www.sitemaps.org/schemas/sitemap/0.9' do
   end
   @meets.each do |meet|
     xml.url {
-      xml.loc(base_url + "/league_meets/" + meet.id.to_s + "/" + meet.name.gsub(/[^A-Za-z0-9_ ]/,"").gsub(" ","_"))
+      xml.loc(base_url + "/events/" + meet.id.to_s + "/" + meet.name.gsub(/[^A-Za-z0-9_ ]/,"").gsub(" ","_"))
       xml.changefreq("monthly")
       xml.priority(0.2)
     }

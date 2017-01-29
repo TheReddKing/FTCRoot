@@ -1,4 +1,4 @@
-class LeagueMeetEvent < ApplicationRecord
-    belongs_to :league_meet
-    has_many :league_meet_event_teams
+class EventEvent < ApplicationRecord
+    belongs_to :event
+    has_many :event_event_teams
 end
