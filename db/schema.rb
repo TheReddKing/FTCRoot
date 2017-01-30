@@ -37,17 +37,17 @@ ActiveRecord::Schema.define(version: 20170127182152) do
     t.index ["region_id"], name: "index_events_on_region_id", using: :btree
   end
 
-  create_table "event_event_teams", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "event_event_id"
+  create_table "league_meet_event_teams", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "league_meet_event_id"
     t.integer  "teamid"
     t.string   "alliance"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
-    t.index ["event_event_id"], name: "index_event_event_teams_on_event_event_id", using: :btree
+    t.index ["league_meet_event_id"], name: "index_league_meet_event_teams_on_league_meet_event_id", using: :btree
   end
 
-  create_table "event_events", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "event_id"
+  create_table "league_meet_events", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "league_meet_id"
     t.integer  "red1"
     t.integer  "red2"
     t.integer  "red3"
@@ -68,7 +68,7 @@ ActiveRecord::Schema.define(version: 20170127182152) do
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
     t.string   "name"
-    t.index ["event_id"], name: "index_event_events_on_event_id", using: :btree
+    t.index ["league_meet_id"], name: "index_league_meet_events_on_league_meet_id", using: :btree
   end
 
   create_table "regions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

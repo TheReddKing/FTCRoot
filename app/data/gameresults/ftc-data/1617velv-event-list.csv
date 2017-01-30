@@ -53,6 +53,8 @@
 01/21/2017,California SD Boys and Girls Club,California SD,Qualifying Tournament,1,casd,bg,x,casd-bg,CA,R
 01/22/2017,California SD Pacific Ridge,California SD,Qualifying Tournament,1,casd,pr,x,casd-pr,CA,R
 01/22/2017,California SD Master Dei,California SD,Qualifying Tournament,1,casd,md,x,casd-md,CA,R
+12/14/2016,Connecticut Mountain Matchup,Connecticut,Qualifying Tournament,1,ct,mm,x,ct-mm,CT,R
+01/21/2017,Connecticut Gator Bowl,Connecticut,Qualifying Tournament,1,ct,gb,x,ct-gb,CT,R
 11/12/2016,Hawaii Le Jardin,Hawaii,Qualifying Tournament,1,hi,lj,x,hi-lj,HI,D
 11/26/2016,Hawaii Mililani,Hawaii,Qualifying Tournament,1,hi,mi,x,hi-mi,HI,D
 01/21/2017,Louisiana New Orleans,Louisiana,Qualifying Tournament,1,la,no,x,la-no,LA,R
@@ -70,6 +72,8 @@
 02/10/2017,Minnesota Championship,Minnesota,Qualifying Tournament,1,mn,cmp,x,mn-cmp,MN,R
 01/14/2017,North Carolina Raleigh,North Carolina,Qualifying Tournament,1,nc,ra,x,nc-ra,NC,R
 01/21/2017,North Carolina Boone,North Carolina,Qualifying Tournament,1,nc,bo,x,nc-bo,NC,D
+01/28/2017,North Carolina Southern Guilford,North Carolina,Qualifying Tournament,1,nc,sg,x,nc-sg,NC,D
+01/28/2017,North Carolina Durham,North Carolina,Qualifying Tournament,1,nc,du,x,nc-du,NC,D
 10/29/2016,Oklahoma SWOSU,Oklahoma,Qualifying Tournament,1,ok,sw,x,ok-sw,OK,R
 11/12/2016,Oklahoma Gordon Cooper,Oklahoma,Qualifying Tournament,1,ok,gc,x,ok-gc,OK,R
 11/19/2016,Oklahoma Bishop Kelley,Oklahoma,Qualifying Tournament,1,ok,bk,x,ok-bk,OK,R
@@ -177,6 +181,7 @@
 12/17/2016,California LA A1 M1,California LA ,Meet,1,cala,a1m1,x,cala-a1m1,CA,D
 01/07/2017,California LA A1 M1,California LA ,Meet,1,cala,a1m2,x,cala-a1m2,CA,D
 01/21/2017,California LA A1 M3,California LA ,Meet,1,cala,a1m3,x,cala-a1m3,CA,D
+02/05/2017,California LA A1 A2 ILT,California LA ,Meet,1,cala,a1a2ilt,x,cala-a1a2ilt,CA,D
 12/04/2016,California LA A2 M0,California LA ,Meet,1,cala,a2m0,x,cala-a2m0,CA,D
 12/18/2016,California LA A2 M1,California LA ,Meet,1,cala,a2m1,x,cala-a2m1,CA,D
 01/08/2017,California LA A2 M2,California LA ,Meet,1,cala,a2m2,x,cala-a2m2,CA,D
@@ -184,10 +189,12 @@
 12/03/2016,California LA B M1,California LA ,Meet,1,cala,bm1,x,cala-bm1,CA,D
 12/17/2016,California LA B M2,California LA ,Meet,1,cala,bm2,x,cala-bm2,CA,D
 01/14/2017,California LA B M3,California LA ,Meet,1,cala,bm3,x,cala-bm3,CA,D
+01/28/2017,California LA B E ILT,California LA ,Meet,1,cala,beilt,x,cala-beilt,CA,D
 12/02/2016,California LA C1 M0,California LA ,Meet,1,cala,c1m0,x,cala-c1m0,CA,D
 12/16/2016,California LA C1 M1,California LA ,Meet,1,cala,c1m1,x,cala-c1m1,CA,D
 01/14/2017,California LA C1 M2,California LA ,Meet,1,cala,c1m2,x,cala-c1m2,CA,D
 01/28/2017,California LA C1 M3,California LA ,Meet,1,cala,c1m3,x,cala-c1m3,CA,D
+02/12/2017,California LA C1 C2 ILT,California LA ,Meet,1,cala,c1c2ilt,x,cala-c1c2ilt,CA,D
 12/03/2016,California LA C2 M0,California LA ,Meet,1,cala,c2m0,x,cala-c2m0,CA,D
 12/17/2016,California LA C2 M1,California LA ,Meet,1,cala,c2m1,x,cala-c2m1,CA,D
 01/11/2017,California LA C2 M2,California LA ,Meet,1,cala,c2m2,x,cala-c2m2,CA,D
@@ -196,6 +203,7 @@
 12/18/2016,California LA D M1,California LA ,Meet,1,cala,dm1,x,cala-dm1,CA,D
 01/08/2017,California LA D M2,California LA ,Meet,1,cala,dm2,x,cala-dm2,CA,D
 01/22/2017,California LA D M3,California LA ,Meet,1,cala,dm3,x,cala-dm3,CA,D
+02/12/2017,California LA D I ILT,California LA ,Meet,1,cala,diilt,x,cala-diilt,CA,D
 12/02/2016,California LA E M0,California LA ,Meet,1,cala,em0,x,cala-em0,CA,D
 12/16/2016,California LA E M1,California LA ,Meet,1,cala,em1,x,cala-em1,CA,D
 01/13/2017,California LA E M2,California LA ,Meet,1,cala,em2,x,cala-em2,CA,D
@@ -204,6 +212,7 @@
 12/17/2016,California LA F1 M1,California LA ,Meet,1,cala,f1m1,x,cala-f1m1,CA,D
 01/07/2017,California LA F1 M2,California LA ,Meet,1,cala,f1m2,x,cala-f1m2,CA,D
 01/21/2017,California LA F1 M3,California LA ,Meet,1,cala,f1m3,x,cala-f1m3,CA,D
+02/04/2017,California LA F1 F2 F3 ILT,California LA ,Meet,1,cala,f1f2f3ilt,x,cala-f1f2f3ilt,CA,D
 01/07/2017,California LA F2 M2,California LA ,Meet,1,cala,f2m2,x,cala-f2m2,CA,D
 01/21/2017,California LA F2 M3,California LA ,Meet,1,cala,f2m3,x,cala-f2m3,CA,D
 12/13/2016,California LA F3 M1,California LA ,Meet,1,cala,f3m1,x,cala-f3m1,CA,D
@@ -304,3 +313,4 @@
 12/17/2016,Michigan Championship Edison,Michigan,Championship,1,mi,cmpd1,d1,mi-cmpd1,MI,D
 12/17/2016,Michigan Championship Franklin,Michigan,Championship,2,mi,cmpd2,d2,mi-cmpd2,MI,D
 12/17/2016,Michigan Championship Finals,Michigan,Championship,0,mi,cmpd0,d0,mi-cmpd0,MI,D
+12/17/2016,Ohio Van Wert,Ohio,Qualifying Tournament,1,oh,vw,x,oh-vw,OH,D
