@@ -44,6 +44,7 @@ $('ul.tabs li').click(function(){
         <thead>
             <tr>
                 <th>Rank</th>
+                <%= "<th>Titles</th>".html_safe if @enableTitles %>
                 <th>Team</th>
                 <th>QP</th>
                 <th>RP</th>
@@ -62,8 +63,18 @@ $('ul.tabs li').click(function(){
             end %>
         <tr style="border-right: 3px solid <%= color %> !important;border-left: 3px solid <%= color %> !important;">
             <td>
-                <%= team[:rank] %>
+                <%= team[:rank] %> <%#= team[:elim] %>
             </td>
+            <% if @enableTitles %>
+            <td> <%= "Winning Alliance" if team[:elim][0] == "W" %>
+                <%= "Finalist Alliance" if team[:elim][0] == "F" %>
+                <%= "Semifinalist Alliance" if team[:elim][0] == "S" %>
+                <%= " Captain" if team[:elim][1] == "C" %>
+                <%= " 1st Pick" if team[:elim][1] == "1" %>
+                <%= " 2nd Pick" if team[:elim][1] == "2" %>
+
+            </td>
+            <% end %>
             <td>
                 <% if Team.exists?(team[:id]) %>
                 <% tt = Team.find(team[:id]) %>

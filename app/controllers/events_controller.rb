@@ -61,6 +61,7 @@ class EventsController < ApplicationController
     #   FOR THE OTHER STATS
         statData = @event.data_stats.split("|")
         @event_stats = []
+        @enableTitles = false;
         for t in statData
             dat = Hash.new
             team = t.split(",")
@@ -69,6 +70,10 @@ class EventsController < ApplicationController
             dat[:qp] = team[2]
             dat[:rp] = team[3]
             dat[:high] = team[4]
+            dat[:elim] = team[6] + "  "
+            if dat[:elim].length > 2
+                @enableTitles = true;
+            end
             @event_stats.push(dat)
         end
       # TournamentCode,   Num,    Name        ,R,QP,RP    ,High   ,MP ,Elim   ,WP,OPR,OPRm,

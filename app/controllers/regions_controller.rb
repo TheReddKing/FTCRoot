@@ -4,13 +4,18 @@ class RegionsController < ApplicationController
   # GET /regions
   # GET /regions.json
   def index
-    @regions = Region.all
+    @regions = Region.all.order("name ASC")
   end
 
   # GET /regions/1
   # GET /regions/1.json
   def show
       @meets = @region.events.all
+      if(ActiveRecord::Base.connection.adapter_name == 'Mysql2' )
+          @meets = @meets.order( 'STR_TO_DATE(date, "%m/%d/%Y") DESC, name ASC' ).paginate(:page => params[:page], :per_page => 20)
+      else
+          @meets = @meets.order( 'to_date(date,\'MM/DD/YYYY\') DESC, name ASC' ).paginate(:page => params[:page], :per_page => 20)
+      end
   end
 
   # GET /regions/new
