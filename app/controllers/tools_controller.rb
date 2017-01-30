@@ -14,7 +14,57 @@ class ToolsController < ApplicationController
         def long; latlong[1].to_s; end
     end
     def stats
-        @highScores = EventEvent.order("greatest(redscore-redpenalty,bluescore-bluepenalty) DESC").where.not(:redauto => "-1").first(20)
+        allEvents = Event.all
+        @allScores = []
+        allEvents.each do |com|
+            alldata = com.data_competition.split("|")
+            for c in alldata
+                comp = c.split(",")
+                    # puts c
+                dat = Hash.new
+                dat[:name] = comp[0]
+                if comp[3].to_i == 0
+                    dat[:redteam] = comp[1,2]
+                    dat[:blueteam] = comp[4,2]
+                    dat[:numteams] = 3
+                else
+                    dat[:redteam] = comp[1,3]
+                    dat[:blueteam] = comp[4,3]
+                    dat[:numteams] = 2
+                end
+                if(com.advanceddata)
+                    #dat = "#{event.redscore},#{event.redauto},#{event.redteleop},#{event.redend},#{event.redpenalty}"
+                    dat[:reddetails] = comp[7,6].join(",")
+                    dat[:bluedetails] = comp[13,6].join(",")
+                    dat[:redscore] = (comp[7].to_i - comp[12].to_i)
+                    dat[:bluescore] = (comp[13].to_i - comp[18].to_i)
+
+                    if(dat[:redscore].to_i > dat[:bluescore].to_i)
+                        # Red
+                        dat[:ownscore] = dat[:redscore]
+                        dat[:oppscore] = dat[:bluescore]
+                        dat[:ownteam] = dat[:redteam]
+                        dat[:owndetails] = dat[:reddetails]
+                        dat[:oppdetails] = dat[:bluedetails]
+                        dat[:owncolor] = "red"
+                    else
+                        dat[:ownscore] = dat[:bluescore]
+                        dat[:ownteam] = dat[:blueteam]
+                        dat[:oppscore] = dat[:redscore]
+                        dat[:owndetails] = dat[:bluedetails]
+                        dat[:oppdetails] = dat[:reddetails]
+                        dat[:owncolor] = "blue"
+                    end
+                    dat[:event] = com
+                    @allScores.push(dat)
+                end
+
+            end
+            # @allScores = @allScores.sort_by { |s| [-s[:ownscore].to_i,-s[:oppscore].to_i] }
+            @allScores = @allScores.sort { |a,b| a[:ownscore].to_i > b[:ownscore].to_i ? -1 : (a[:ownscore].to_i < b[:ownscore].to_i ? 1 : (a[:ownscore].to_i <=> b[:ownscore].to_i)) }
+            @allScores = @allScores.first(20)
+        end
+        # .order("greatest(redscore-redpenalty,bluescore-bluepenalty) DESC").where.not(:redauto => "-1").first(20)
     end
     def index
 
