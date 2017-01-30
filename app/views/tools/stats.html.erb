@@ -35,7 +35,7 @@
         <% @allScores.each_with_index do |event,ind| %>
         <tr style="border-top:2px solid gray;">
             <td><%= ind + 1 %></td>
-            <td colspan="3"><%= link_to(event[:event].name,event[:event]) %> (<%=event[:event].region.name %>) - <%= event[:name] %>
+            <td colspan="3"><%= link_to("#{event[:event].name} (#{event[:event].region.name})",event[:event]) %> - <%= event[:name] %>
             <br/>
             <%= event[:event].date %>
             </td>
