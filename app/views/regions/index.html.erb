@@ -2,7 +2,8 @@
 
 <h1>Regions</h1>
 
-<table  class="pure-table">
+<center>
+<table class="pure-table" style="max-width:600px;">
   <thead>
     <tr>
       <th>Name</th>
@@ -19,9 +20,10 @@
         <td><%#= link_to 'Destroy', region, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>
     <% end %>
+    <%= will_paginate @regions %>
   </tbody>
 </table>
-
+</center>
 <br>
 
 <%#= link_to 'New Region', new_region_path %>

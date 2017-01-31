@@ -24,11 +24,13 @@ table {
 td span{
     overflow: hidden;
 }
-tr:nth-child(even){background-color: #f2f2f2}
 td,th  {
     font-size: 0.85em !important;
  } /* =14px */
+@media screen and (min-width:767px) {
 
+    tr:nth-child(even){background-color: #f2f2f2}
+}
 @media screen and (max-width: 767px){
     td {
         padding:  2px !important;

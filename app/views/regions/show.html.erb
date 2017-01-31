@@ -14,13 +14,13 @@
   <strong>Info:</strong>
   <%= @region.info %>
 </p>
-
-<table class="pure-table">
+<center>
+<table class="pure-table" style="max-width:600px;">
     <thead>
         <tr>
             <th>Name</th>
             <th>Approx. Date</th>
-            <th>Location</th>
+            <!-- <th>Location</th> -->
 
             <!-- <th colspan="3"></th> -->
         </tr>
@@ -31,11 +31,12 @@
         <tr>
             <td><%= link_to event.name, event %></td>
             <td><%= event.date %></td>
-            <td><%= event.location %></td>
+            <!-- <td><%#= event.location %></td> -->
         </tr>
         <% end %>
+        <%= will_paginate @meets %>
     </tbody>
-</table>
+</table> </center>
 
 |
 <%= link_to 'Back', 'javascript:history.go(-1);' %>
