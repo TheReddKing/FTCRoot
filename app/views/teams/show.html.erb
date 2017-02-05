@@ -26,9 +26,9 @@
     </center>
     <% if meet[:data][0][:owndetails].length > 0 %>
         <center>
-        Average scores: </p>
+        <b>Qual Match Average Scores: </b></p>
         <div style="display:inline-block;">
-            <table class="pure-table" style="max-width:300px;height:300px;">
+            <table class="pure-table pie-chartS">
               <tr>
                 <th>Total before penalties</th>
                   <td><%= @avgData[i][1]%></td>
@@ -47,8 +47,8 @@
               </tr>
           </table>
       </div>
-          <div style="display:inline-block;">
-              <%= pie_chart [["Autonomous (#{@avgData[i][2]})",@avgData[i][2]], ["Teleop (#{@avgData[i][3]})",@avgData[i][3]], ["End Game (#{@avgData[i][4]})",@avgData[i][4]]] %>
+          <div style="display:inline-block;" class="pie-chart">
+              <%= pie_chart [["Autonomous (#{@avgData[i][2]})",@avgData[i][2]], ["Teleop (#{@avgData[i][3]})",@avgData[i][3]], ["End Game (#{@avgData[i][4]})",@avgData[i][4]]]%>
           </div></center>
           <% end %>
     <% end %>

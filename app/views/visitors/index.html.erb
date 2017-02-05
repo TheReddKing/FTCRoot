@@ -3,7 +3,7 @@
         <td>
             <h3><%= link_to("FTC Teams Search",teams_path, class: 'pure-button pure-button-primary nav-link full-width') %>
             </h3>
-            <h3><%= link_to("Map Search","map", class: 'pure-button pure-button-primary nav-link full-width') %>
+            <h3><%= link_to("Region Search",regions_path, class: 'pure-button button-red nav-link full-width') %>
             </h3>
         </td>
         <td>
@@ -44,7 +44,6 @@
             <h1>
                 FTC Team Finder
             </h1>
-            <h5><%= link_to("Search by team name/id instead", teams_path,:class=>"pure-button button-secondary nav-link") %></h5>
             <div id="data-info">
                 <h3 id="data-teamname">
                     Click on a marker to begin</h3>

@@ -127,6 +127,10 @@ class TeamsController < ApplicationController
                 @totalMatches = 0
                 meet[:data].each do |event|
                     if(event[:owndetails].length > 0)
+                        # Only include QUAL MATCHES
+                        if(event[:name][0] != "Q")
+                            next
+                        end
                         det = event[:owndetails].split(",")
                         @avgPreScore += event[:ownscore].to_i - det[5].to_i
                         @avgTele += det[3].to_i

@@ -1,21 +1,17 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Regions</h1>
-
 <center>
-<table class="pure-table" style="max-width:600px;">
+<h1>Regions</h1>
+<table class="pure-table centered" style="max-width:600px;">
   <thead>
     <tr>
       <th>Name</th>
-      <th colspan="1"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @regions.each do |region| %>
       <tr>
-        <td><%= region.name %></td>
-        <td><%= link_to 'Show', region %></td>
+        <td><%= link_to region.name,region %></td>
         <!-- <td><%#= link_to 'Edit', edit_region_path(region) %></td>
         <td><%#= link_to 'Destroy', region, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>

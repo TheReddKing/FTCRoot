@@ -10,11 +10,28 @@ class RegionsController < ApplicationController
   # GET /regions/1
   # GET /regions/1.json
   def show
+      if(!params[:name])
+          respond_to do |format|
+              format.html { redirect_to fullregion_path(:name=>@region.name.gsub(/[^A-Za-z0-9_ ]/,"").gsub(" ","_")) }
+          end
+          return
+          # render :search
+          # return
+      end
       @meets = @region.events.all
+      @meets = @meets.where("advanceddata is not null")
       if(ActiveRecord::Base.connection.adapter_name == 'Mysql2' )
           @meets = @meets.order( 'STR_TO_DATE(date, "%m/%d/%Y") DESC, name ASC' ).paginate(:page => params[:page], :per_page => 15)
       else
           @meets = @meets.order( 'to_date(date,\'MM/DD/YYYY\') DESC, name ASC' ).paginate(:page => params[:page], :per_page => 15)
+      end
+
+      if @region.name
+          @website = @region.name
+          if @region.name.split(" ")[-1].upcase == @region.name.split(" ")[-1]
+              @website = @region.name.split(" ")[0..-1]
+          end
+          @website = "http://ftcstats.org/"  + @website.gsub(" ","_").downcase + ".html"
       end
   end
 

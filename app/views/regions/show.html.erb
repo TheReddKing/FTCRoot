@@ -1,21 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @region.name %>
-</p>
-
-<p>
-  <strong>Website:</strong>
-  <%= @region.website %>
-</p>
-
-<p>
-  <strong>Info:</strong>
-  <%= @region.info %>
-</p>
 <center>
-<table class="pure-table" style="max-width:600px;">
+<h1>
+  <%= @region.name %>
+  </h1>
+  <h3>
+  <%= link_to "View team rankings at FTCStats", @website, :class=>"pure-button pure-button-primary nav-link" if @website %>
+</h3>
+
+
+<table class="pure-table centered" style="max-width:600px;">
     <thead>
         <tr>
             <th>Name</th>

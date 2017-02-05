@@ -18,6 +18,7 @@ Rails.application.routes.draw do
         get 'images/misc/quote-left.png', to: "tools#nothing"
         get 'teams/:id/:name', to: 'teams#show', as: 'fullname'
         get 'events/:id/:name', to: 'events#show', as: 'fullevent'
+        get 'regions/:id/:name', to: 'regions#show', as: 'fullregion'
         get 'league_meets/:id/:name', to: 'events#show'
         get 'league_meets/:id', to: 'events#show'
         get 'league_meets', to: 'events#index'
