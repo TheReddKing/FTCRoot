@@ -4,7 +4,32 @@ class RegionsController < ApplicationController
   # GET /regions
   # GET /regions.json
   def index
-      @regions = Region.all.order("name ASC").paginate(:page => params[:page], :per_page => 15)
+      @search = false
+      if params[:search]
+          @search = true
+          @regions = Region.where("name like ?","#{params[:search]}%").order("name ASC")
+      else
+          @regions = Region.all.order("name ASC")
+      end
+      @allStates = []
+      stateHash.each do |key, array|
+          @allStates.push(array)
+      end
+      for region in @regions
+          name = region.name.strip
+          spl = region.name.strip.split(" ")
+          if spl[-1].upcase == spl[-1]
+              name = spl[0..spl.length-2].join(" ")
+          end
+          @allStates.delete(stateHash[name])
+      end
+      if(@regions.length == 1)
+          respond_to do |format|
+              format.html { redirect_to @regions[0] }
+          end
+          return
+      end
+      @regions = @regions.paginate(:page => params[:page], :per_page => 15)
   end
 
   # GET /regions/1
@@ -12,7 +37,7 @@ class RegionsController < ApplicationController
   def show
       if(!params[:name])
           respond_to do |format|
-              format.html { redirect_to fullregion_path(:name=>@region.name.gsub(/[^A-Za-z0-9_ ]/,"").gsub(" ","_")) }
+              format.html { redirect_to fullregion_path(:name=>@region.name.strip.gsub(/[^A-Za-z0-9_ ]/,"").gsub(" ","_")) }
           end
           return
           # render :search
@@ -27,9 +52,10 @@ class RegionsController < ApplicationController
       end
 
       if @region.name
-          @website = @region.name
-          if @region.name.split(" ")[-1].upcase == @region.name.split(" ")[-1]
-              @website = @region.name.split(" ")[0..-1]
+          @website = @region.name.strip
+          spl = @region.name.strip.split(" ")
+          if spl[-1].upcase == spl[-1]
+              @website = spl[0..spl.length-2].join(" ")
           end
           @website = "http://ftcstats.org/"  + @website.gsub(" ","_").downcase + ".html"
       end
@@ -93,5 +119,60 @@ class RegionsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def region_params
       params.require(:region).permit(:name, :website, :info)
+    end
+
+    def stateHash
+         return {
+          "Alabama" => "AL",
+          "Alaska" => "AK",
+          "Arizona" => "AZ",
+          "Arkansas" => "AR",
+          "California" => "CA",
+          "Colorado" => "CO",
+          "Connecticut" => "CT",
+          "Delaware" => "DE",
+          "Florida" => "FL",
+          "Georgia" => "GA",
+          "Hawaii" => "HI",
+          "Idaho" => "ID",
+          "Illinois" => "IL",
+          "Indiana" => "IN",
+          "Iowa" => "IA",
+          "Kansas" => "KS",
+          "Kentucky" => "KY",
+          "Louisiana" => "LA",
+          "Maine" => "ME",
+          "Maryland" => "MD",
+          "Massachusetts" => "MA",
+          "Michigan" => "MI",
+          "Minnesota" => "MN",
+          "Mississippi" => "MS",
+          "Missouri" => "MO",
+          "Montana" => "MT",
+          "Nebraska" => "NE",
+          "Nevada" => "NV",
+          "New Hampshire" => "NH",
+          "New Jersey" => "NJ",
+          "New Mexico" => "NM",
+          "New York" => "NY",
+          "North Carolina" => "NC",
+          "North Dakota" => "ND",
+          "Ohio" => "OH",
+          "Oklahoma" => "OK",
+          "Oregon" => "OR",
+          "Pennsylvania" => "PA",
+          "Rhode Island" => "RI",
+          "South Carolina" => "SC",
+          "South Dakota" => "SD",
+          "Tennessee" => "TN",
+          "Texas" => "TX",
+          "Utah" => "UT",
+          "Vermont" => "VT",
+          "Virginia" => "VA",
+          "Washington" => "WA",
+          "West Virginia" => "WV",
+          "Wisconsin" => "WI",
+          "Wyoming" => "WY"
+        }
     end
 end

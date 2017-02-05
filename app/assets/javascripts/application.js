@@ -16,8 +16,9 @@
 //= require turbolinks
 //= require tether
 //= require bootstrap-sprockets
-//= require_tree .
 //= require popupoverlay
 //= require Chart.bundle
 //= require chartkick
 //= require social-share-button
+//= require raphael
+//= require_tree .

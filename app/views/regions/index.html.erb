@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 <center>
 <h1>Regions</h1>
+<div id="regionlist">
 <table class="pure-table centered" style="max-width:600px;">
   <thead>
     <tr>
@@ -19,7 +20,65 @@
     <%= will_paginate @regions %>
   </tbody>
 </table>
-</center>
-<br>
+<%= link_to 'Back', 'javascript:history.go(-1);' %>
+</div>
+<br />
+<script >
 
-<%#= link_to 'New Region', new_region_path %>
+$(document).on('turbolinks:load', function () {
+var surpress = false;
+if (!mobilecheck() <%= "&& false".html_safe if @search %>) {
+    $("#regionlist").hide();
+    $("#maplist").show();
+    $('#statemap').usmap({
+      'stateStyles': {
+        fill: '#025',
+        "stroke-width": 0,
+        'stroke' : '#000'
+      },
+      'stateHoverStyles': {
+        fill: 'teal'
+      },
+      'stateSpecificStyles': {
+          <% for abb in @allStates %>
+              '<%= abb %>' : {fill: "#333"},
+          <% end %>
+      },
+      'stateSpecificHoverStyles': {
+          <% for abb in @allStates %>
+              '<%= abb %>' : {fill: "#333"},
+          <% end %>
+      },
+      'clickState': {
+          <% for abb in @allStates %>
+              '<%= abb %>' : function(event, data) {surpress=true;},
+          <% end %>
+        },
+      'mouseover' : function(event, data) {
+        $('#alert')
+          .text(abbrState(data.name,"name"))
+          .stop()
+          .animate({backgroundColor: '#ddd'}, 1000);
+      },
+      'click' : function(event,data) {
+         console.log("YOLO");
+         if(surpress) {
+             surpress = false;
+             return true;
+         }
+         window.location.assign("?search=" +abbrState(data.name,"name"));
+      }
+    });
+    console.log("HI");
+} else {
+    $("#regionlist").show();
+    $("#maplist").hide();
+}
+});
+</script>
+<div id="maplist">
+<p><%= link_to "List All States", "?search=", :class=>"pure-button button-red nav-link" %> </p>
+<h4><span id="alert">Select State</span></h4>
+<div id="statemap" style="width: 850px; height: 630px;"></div>
+</div>
+</center>
