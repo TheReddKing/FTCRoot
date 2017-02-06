@@ -1,3 +1,4 @@
+<% content_for :title do %><%= @region.name %> -- FTC Root<%end %>
 <p id="notice"><%= notice %></p>
 
 <center>
@@ -5,7 +6,7 @@
   <%= @region.name %>
   </h1>
   <h3>
-  <%= link_to "View team rankings at FTCStats", @website, :class=>"pure-button pure-button-primary nav-link" if @website %>
+  <%= link_to "View region stats at FTCStats.org", @website, :class=>"pure-button pure-button-primary nav-link" if @website %>
 </h3>
 
 
