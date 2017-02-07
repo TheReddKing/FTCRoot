@@ -3,7 +3,6 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Teams</h1>
-
 <%= form_tag(teams_path(""), method: "get",:class => "pure-form") do %>
 <p>
     <%= label_tag(:search, "Search Team name or ID:") %>
@@ -21,6 +20,8 @@
         <br/>
         <i class='fa fa-circle d-red'></i>
         = Has contact-info
+        <br/>
+        <%= link_to("Update Your Team's Contact Info", "https://goo.gl/forms/ZoSendQUO2Y8c9N92",class:"pure-button button-primary nav-link button-xsmall") %>
     </p>
 </div>
 <table class="pure-table centered">
