@@ -67,6 +67,45 @@ namespace :init do
             end
         end
     end
+    task O: :environment do
+        for meet in Event.all
+            meet.data_raw = ""
+            meet.save
+        end
+        puts "End Clear"
+
+        currentMeet = nil
+        File.read("#{Rails.root}/app/data/gameresults/ftc-data/1617velv-FULL-MatchResultsRaw.csv").each_line do |line|
+            if line.include?("Red1,Red2")
+                next
+            end
+            spl = line.split(",")
+            fullcomp = spl[0].split("-")
+            tournname = fullcomp[1] + "-" + fullcomp[2]
+            qualName = fullcomp[3..fullcomp.length].join("-")
+            meet = Event.where(ftcmatchcode:tournname).first
+            if(!currentMeet or currentMeet.id != meet.id)
+                if(currentMeet)
+                    currentMeet.save
+                end
+                currentMeet = meet
+            end
+            if(currentMeet != nil)
+                currentMeet.advancedraw = true
+                if(currentMeet.data_raw.length == 0)
+                    # We going for beacons
+                    currentMeet.data_raw = "#{qualName},#{spl[29..56].join(",")}"
+                else
+                    currentMeet.data_raw = currentMeet.data_raw + "|#{qualName},#{spl[29..56].join(",")}"
+                end
+            else
+                puts "Error meet not found: " + spl[0]
+            end
+        end
+        currentMeet.save
+        puts "DONE"
+    end
+
     task N: :environment do
 
         for meet in Event.all
@@ -74,6 +113,7 @@ namespace :init do
             meet.save
         end
 
+        currentMeet = nil
         File.read("#{Rails.root}/app/data/gameresults/ftc-data/1617velv-FULL-StatsRes.csv").each_line do |line|
             if line.include?("TournamentCode,Num")
                 next
@@ -148,21 +188,32 @@ namespace :init do
             team.save
         end
         # For events with no details
+        puts "BEGIN"
+        currentMeet = nil
         File.read("#{Rails.root}/app/data/gameresults/ftc-data/1617velv-FULL-MatchResults.csv").each_line do |line|
             if line.include?("Red1,Red2")
                 next
             end
             spl = line.split(",")
             tournname = spl[0].split("-")[1] + "-" + spl[0].split("-")[2]
-            meet = Event.where(ftcmatchcode:tournname).first
-            if(meet != nil)
-                meet.advanceddata = false
-                if(meet.data_competition.length == 0)
-                    meet.data_competition = "#{spl[1]},#{spl[3,8].join(",")}"
-                else
-                    meet.data_competition = meet.data_competition + "|#{spl[1]},#{spl[3,8].join(",")}"
+
+            if(!currentMeet or currentMeet.ftcmatchcode != tournname)
+                meet = Event.where(ftcmatchcode:tournname).first
+                if(currentMeet)
+                    currentMeet.save
                 end
-                meet.save
+                puts "Meet #{meet.id}"
+                currentMeet = meet
+            end
+
+            if(currentMeet != nil)
+                currentMeet.advanceddata = false
+                if(currentMeet.data_competition.length == 0)
+                    currentMeet.data_competition = "#{spl[1]},#{spl[3,8].join(",")}"
+                else
+                    currentMeet.data_competition = currentMeet.data_competition + "|#{spl[1]},#{spl[3,8].join(",")}"
+                end
+                # meet.save
 
                 # TEAMSS
                 teams = []
@@ -190,8 +241,10 @@ namespace :init do
                 puts "Error meet not found: " + spl[0]
             end
         end
+        puts "END"
+        currentMeet.save
 
-
+        currentMeet = nil
         # for Events with DETAILS
         File.read("#{Rails.root}/app/data/gameresults/ftc-data/1617velv-FULL-MatchResultsDetails.csv").each_line do |line|
             if line.include?("Red1,Red2")
@@ -199,13 +252,20 @@ namespace :init do
             end
             spl = line.split(",")
             tournname = spl[0].split("-")[1] + "-" + spl[0].split("-")[2]
-            meet = Event.where(ftcmatchcode:tournname).first
-            if(meet != nil)
-                meet.advanceddata = true
-                if(meet.data_competition.length == 0)
-                    meet.data_competition = "#{spl[1]},#{spl[3,6].join(",")},#{spl[9,6].join(",")},#{spl[15,6].join(",")}"
+            if(!currentMeet or currentMeet.ftcmatchcode != tournname)
+                meet = Event.where(ftcmatchcode:tournname).first
+                if(currentMeet)
+                    currentMeet.save
+                end
+                puts "Meet #{meet.id}"
+                currentMeet = meet
+            end
+            if(currentMeet != nil)
+                currentMeet.advanceddata = true
+                if(currentMeet.data_competition.length == 0)
+                    currentMeet.data_competition = "#{spl[1]},#{spl[3,6].join(",")},#{spl[9,6].join(",")},#{spl[15,6].join(",")}"
                 else
-                    meet.data_competition = meet.data_competition + "|#{spl[1]},#{spl[3,6].join(",")},#{spl[9,6].join(",")},#{spl[15,6].join(",")}"
+                    currentMeet.data_competition = currentMeet.data_competition + "|#{spl[1]},#{spl[3,6].join(",")},#{spl[9,6].join(",")},#{spl[15,6].join(",")}"
                 end
                 # Red first
                 teams = []
@@ -229,11 +289,13 @@ namespace :init do
                     # puts team.data_competitions
                     team.save
                 end
-                meet.save
+                # meet.save
             else
                 puts "Error meet not found: " + spl[0]
             end
         end
+        currentMeet.save
+        puts "ADVANCED DONE"
 
         # for team in Team.all
         #     team.save

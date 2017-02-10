@@ -45,6 +45,16 @@
                 <th>End</th>
                   <td><%= @avgData[i][4]%></td>
               </tr>
+              <% if @avgData[i][5] %>
+              <tr>
+                  <th>Autonomous beacons pressed</th>
+                    <td><%= @avgData[i][6].round(2)%></td>
+                </tr>
+                <tr>
+                    <th>Balls scored into Center Vortex</th>
+                      <td><%= @avgData[i][7].round(2)%></td>
+                  </tr>
+                  <% end %>
           </table>
       </div>
           <div style="display:inline-block;" class="pie-chart">
@@ -69,7 +79,7 @@
         <tr>
             <td colspan="2" style="text-align:right"><%= match[:name] %></td>
             <% if match[:owndetails].length > 0 %>
-            <td colspan="1"><%= button_to(match[:ownscore],"#", class:"score_popup_open pure-button button-full",data:match[:owndetails]) %></td>
+            <td colspan="1"><%= button_to(match[:ownscore],"#", class:"score_popup_open pure-button button-full",data:(match[:owndetails] + "|" + ( match[:ownraw] ? "" : match[:ownraw]))) %></td>
         <% else %>
             <td colspan="1"><%= match[:ownscore] %></td>
             <% end %>

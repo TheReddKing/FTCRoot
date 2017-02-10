@@ -47,6 +47,11 @@ class TeamsController < ApplicationController
             compet = []
             @competitions.each do |com|
                 alldata = com.data_competition.split("|")
+                allraw = []
+                if(com.advancedraw)
+                    raws = com.data_raw.split("|")
+                    raws.each do |raw| allraw.push(raw.split(",")) end
+                end
                 meetdat = []
                 meet = Hash.new
                 meet[:wins] = 0
@@ -57,6 +62,16 @@ class TeamsController < ApplicationController
                         # puts c
                         dat = Hash.new
                         dat[:name] = comp[0]
+                        # Now we find that in the allRaw
+                        dat[:redraw] = ""
+                        dat[:blueraw] = ""
+                        for raw in allraw
+                            if(raw[0] == comp[0])
+                                dat[:redraw] = raw[1,14].join(",")
+                                dat[:blueraw] = raw[15,14].join(",")
+                                break;
+                            end
+                        end
                         if comp[3].to_i == 0
                             dat[:redteam] = comp[1,2]
                             dat[:blueteam] = comp[4,2]
@@ -85,11 +100,17 @@ class TeamsController < ApplicationController
                             dat[:oppscore] = dat[:bluescore]
                             dat[:owndetails] = dat[:reddetails]
                             dat[:oppdetails] = dat[:bluedetails]
+
+                            dat[:ownraw] = dat[:redraw]
+                            dat[:oppraw] = dat[:blueraw]
                         else
                             dat[:ownscore] = dat[:bluescore]
                             dat[:oppscore] = dat[:redscore]
                             dat[:owndetails] = dat[:bluedetails]
                             dat[:oppdetails] = dat[:reddetails]
+
+                            dat[:ownraw] = dat[:blueraw]
+                            dat[:oppraw] = dat[:redraw]
                         end
                         if dat[:ownscore].to_i > dat[:oppscore].to_i
                             meet[:wins] += 1
@@ -130,7 +151,10 @@ class TeamsController < ApplicationController
                 @avgTele = 0
                 @avgEnd = 0
                 @avgAuto = 0
+                @teleBallsScored = 0
                 @totalMatches = 0
+                @autoBeaconsPressed = 0
+                @fff = false
                 meet[:data].each do |event|
                     if(event[:owndetails].length > 0)
                         # Only include QUAL MATCHES
@@ -143,6 +167,12 @@ class TeamsController < ApplicationController
                         @avgEnd += det[4].to_i
                         @avgAuto += det[1].to_i
                         @totalMatches += 1
+                        if (event[:ownraw].length > 0 )
+                            @fff = true
+                            det2 = event[:ownraw].split(",")
+                            @autoBeaconsPressed += det2[0].to_i
+                            @teleBallsScored += det2[7].to_i
+                        end
                         if(@important == -1)
                             @important = i
                         end
@@ -153,8 +183,11 @@ class TeamsController < ApplicationController
                     @avgEnd /= @totalMatches
                     @avgAuto /= @totalMatches
                     @avgPreScore /= @totalMatches
+
+                    @autoBeaconsPressed /=  1.0 * @totalMatches
+                    @teleBallsScored /= 1.0 * @totalMatches
                 end
-                @avgData.push([@totalMatches,@avgPreScore,@avgAuto,@avgTele,@avgEnd])
+                @avgData.push([@totalMatches,@avgPreScore,@avgAuto,@avgTele,@avgEnd,@fff,@autoBeaconsPressed,@teleBallsScored])
             end
         end
     end

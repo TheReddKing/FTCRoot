@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170209165701) do
+ActiveRecord::Schema.define(version: 20170210194705) do
 
   create_table "event_migrations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
@@ -34,6 +34,8 @@ ActiveRecord::Schema.define(version: 20170209165701) do
     t.text     "data_stats",       limit: 65535
     t.string   "data_highscore"
     t.boolean  "advancedstats"
+    t.text     "data_raw",         limit: 65535
+    t.boolean  "advancedraw"
     t.index ["region_id"], name: "index_events_on_region_id", using: :btree
   end
 

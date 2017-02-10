@@ -4,6 +4,13 @@
     Teleop:    <span id="score_teleop"></span><br/>
     Endgame:    <span id="score_endgame"></span><br/>
     Penalty:    <span id="score_penalty"></span>
+
+    <br/>
+    <br/>
+
+    <br/>
+    Advanced Data: <br/><span id="match"></span><br/>
+
     </p>
     <button class="score_popup_close">Close</button>
 </div>
@@ -18,12 +25,25 @@
             $(".score_popup_open").unbind("click");
             $(".score_popup_open").click(function (e) {
                 console.log("CLICK");
-                spl = $(e.currentTarget).attr("data").split(",");
+                line =  $(e.currentTarget).attr("data").split("|");
+                spl = line[0].split(",");
                 $("#score_score").html(spl[0]);
                 $("#score_auto").html(spl[1]);
                 $("#score_teleop").html(spl[3]);
                 $("#score_endgame").html(spl[4]);
                 $("#score_penalty").html(spl[5]);
+                if(line[1].length > 0) {
+                    spl2 = line[1].split(",");
+                    $("#match").html("Autonomous: <br/>"
+                                    +"Beacons Tapped: " + spl2[0] + "<br/>" +
+                                    "Did Move Cap Ball: " + spl2[1] + "<br/>" +
+                                    "Ball Scored in Center Vortex: " + spl2[2] + "<br/>" +
+                                    "TeleOp <br/> Beacons scored: " + spl2[6] + "<br/>" +
+                                    "Ball Scored in Center Vortex: " + spl2[7] + "<br/>" +
+                                    "End Game: <br/>" + "Cap Ball Level: " + spl2[9]
+
+                );
+                }
             });
             hasSeen = true;
         }
