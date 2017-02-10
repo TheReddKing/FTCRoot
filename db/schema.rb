@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170127182152) do
+ActiveRecord::Schema.define(version: 20170209165701) do
 
   create_table "event_migrations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
@@ -35,40 +35,6 @@ ActiveRecord::Schema.define(version: 20170127182152) do
     t.string   "data_highscore"
     t.boolean  "advancedstats"
     t.index ["region_id"], name: "index_events_on_region_id", using: :btree
-  end
-
-  create_table "league_meet_event_teams", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "league_meet_event_id"
-    t.integer  "teamid"
-    t.string   "alliance"
-    t.datetime "created_at",           null: false
-    t.datetime "updated_at",           null: false
-    t.index ["league_meet_event_id"], name: "index_league_meet_event_teams_on_league_meet_event_id", using: :btree
-  end
-
-  create_table "league_meet_events", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "league_meet_id"
-    t.integer  "red1"
-    t.integer  "red2"
-    t.integer  "red3"
-    t.integer  "blue1"
-    t.integer  "blue2"
-    t.integer  "blue3"
-    t.integer  "redscore"
-    t.integer  "redauto"
-    t.integer  "redteleop"
-    t.integer  "redend"
-    t.integer  "redpenalty"
-    t.integer  "bluescore"
-    t.integer  "blueauto"
-    t.integer  "blueteleop"
-    t.integer  "blueend"
-    t.integer  "bluepenalty"
-    t.integer  "order"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
-    t.string   "name"
-    t.index ["league_meet_id"], name: "index_league_meet_events_on_league_meet_id", using: :btree
   end
 
   create_table "regions", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
@@ -108,6 +74,8 @@ ActiveRecord::Schema.define(version: 20170127182152) do
     t.string   "data_oprauto"
     t.string   "data_oprtele"
     t.string   "data_oprend"
+    t.string   "contact_youtube"
+    t.string   "contact_facebook"
   end
 
 end

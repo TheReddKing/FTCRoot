@@ -33,5 +33,18 @@
           </p>
       </div>
   <% end %>
+  <%  if @team.contact_facebook  and @team.contact_facebook.length > 0  %>
+  <div class="card-contact">
+      <p><i class="fa fa-facebook"></i> <%= link_to("Facebook Page",@team.contact_facebook)%>
+      </p>
+  </div>
+  <% end %>
+
+  <%  if @team.contact_youtube  and @team.contact_youtube.length > 0  %>
+  <div class="card-contact">
+      <p><i class="fa fa-youtube"></i> <%= link_to("Youtube",@team.contact_youtube)%>
+      </p>
+  </div>
+  <% end %>
 </div>
 </center>

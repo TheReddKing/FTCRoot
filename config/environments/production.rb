@@ -11,7 +11,7 @@ Rails.application.configure do
   config.eager_load = true
 
   # replace this with your tracker code
-  GA.tracker = "UA-38208507-5"
+  # GA.tracker = "UA-38208507-5"
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false

@@ -21,6 +21,12 @@ class TeamsController < ApplicationController
     # GET /teams/1
     # GET /teams/1.json
     def show
+        if @team == nil
+            respond_to do |format|
+                format.html { render 'showempty' }
+            end
+            return
+        end
         if(!params[:name])
             respond_to do |format|
                 format.html { redirect_to fullname_path(:name=>@team.name.gsub(/[^A-Za-z0-9_ ]/,"").gsub(" ","_")) }
@@ -223,7 +229,9 @@ class TeamsController < ApplicationController
 
     # Use callbacks to share common setup or constraints between actions.
     def set_team
-        @team = Team.find(params[:id])
+        if Team.exists?(params[:id])
+            @team = Team.find(params[:id])
+        end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

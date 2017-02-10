@@ -35,7 +35,7 @@ namespace :init do
             end
         end
     end
-    task updateT: :environment do
+    task T: :environment do
         files = Dir["#{Rails.root}/app/data/teams/*.update"]
         for file in files
             File.read(file).each_line do |line|
@@ -56,12 +56,18 @@ namespace :init do
                     if(ftcteam.website != nil)
                         team.website = ftcteam.website
                     end
+                    if(ftcteam.contact_facebook != nil)
+                        team.contact_facebook = ftcteam.contact_facebook
+                    end
+                    if(ftcteam.contact_youtube != nil)
+                        team.contact_youtube = ftcteam.contact_youtube
+                    end
                     team.save
                 end
             end
         end
     end
-    task updateN: :environment do
+    task N: :environment do
 
         for meet in Event.all
             meet.data_stats = ""
@@ -112,7 +118,7 @@ namespace :init do
             end
         end
     end
-    task updateM: :environment do
+    task M: :environment do
         File.read("#{Rails.root}/app/data/gameresults/ftc-data/1617velv-event-list.csv").each_line do |line|
             spl = line.split(',')
             region = Region.where(name:spl[2])[0]
