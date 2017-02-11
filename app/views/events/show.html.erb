@@ -184,7 +184,7 @@ FTC Results)<%end %>
                         </td>
                     <% end %>
                     <% if event[:reddetails].length > 0 %>
-                        <td colspan="3"><%= button_to(event[:redscore],"#", class:"score_popup_open pure-button button-full",data:event[:reddetails]) %></td>
+                        <td colspan="3"><%= button_to(event[:redscore],"#", class:"score_popup_open pure-button button-full",data:event[:reddetails] + "|" + event[:redraw]) %></td>
                     <% else %>
                         <td colspan="3"><%= event[:redscore] %></td>
                     <% end %>
@@ -201,7 +201,7 @@ FTC Results)<%end %>
                         </td>
                     <% end %>
                     <% if event[:bluedetails].length > 0 %>
-                        <td colspan="3"><%= button_to(event[:bluescore],"#", class:"score_popup_open pure-button button-full",data:event[:bluedetails]) %></td>
+                        <td colspan="3"><%= button_to(event[:bluescore],"#", class:"score_popup_open pure-button button-full",data:event[:bluedetails] + "|" + event[:blueraw]) %></td>
                     <% else %>
                         <td colspan="3"><%= event[:bluescore] %></td>
                     <% end %>
@@ -232,7 +232,7 @@ FTC Results)<%end %>
                         </td>
                     <% end %>
                     <% if event[:reddetails].length > 0 %>
-                        <td colspan="3"><%= button_to(event[:redscore],"#", class:"score_popup_open pure-button button-full",data:event[:reddetails]) %></td>
+                        <td colspan="3"><%= button_to(event[:redscore],"#", class:"score_popup_open pure-button button-full",data:event[:reddetails] + "|" + event[:redraw]) %></td>
                     <% else %>
                         <td colspan="3"><%= event[:redscore] %></td>
                     <% end %>
@@ -250,7 +250,7 @@ FTC Results)<%end %>
                     </td>
                     <% end %>
                     <% if event[:bluedetails].length > 0 %>
-                    <td colspan="3"><%= button_to(event[:bluescore],"#", class:"score_popup_open pure-button button-full",data:event[:bluedetails]) %></td>
+                    <td colspan="3"><%= button_to(event[:bluescore],"#", class:"score_popup_open pure-button button-full",data:event[:bluedetails] + "|" + event[:blueraw]) %></td>
                 <% else %>
                     <td colspan="3"><%= event[:bluescore] %></td>
                     <% end %>

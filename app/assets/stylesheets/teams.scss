@@ -133,8 +133,11 @@ td,th  {
     border-color: #000000;
     background: #eeeeee;
     padding: 12px;
-    width: 300px;
-    max-height: 604px;
+    min-width: 300px;
+    max-width: 400px;
+    width: 40%;
+    min-height: 404px;
+    overflow-y: scroll;
 }
 .d-green {
     color: #99FF99;

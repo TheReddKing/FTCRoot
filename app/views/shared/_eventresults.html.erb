@@ -9,8 +9,10 @@
     <br/>
 
     <br/>
-    Advanced Data: <br/><span id="match"></span><br/>
-
+    <div id="advinfo">
+        <center>Advanced Data </center><br/>
+        <span id="match"></span><br/>
+    </div>
     </p>
     <button class="score_popup_close">Close</button>
 </div>
@@ -32,15 +34,16 @@
                 $("#score_teleop").html(spl[3]);
                 $("#score_endgame").html(spl[4]);
                 $("#score_penalty").html(spl[5]);
+                $("#advinfo").hide();
                 if(line[1].length > 0) {
+                    $("#advinfo").show();
                     spl2 = line[1].split(",");
-                    $("#match").html("Autonomous: <br/>"
-                                    +"Beacons Tapped: " + spl2[0] + "<br/>" +
-                                    "Did Move Cap Ball: " + spl2[1] + "<br/>" +
-                                    "Ball Scored in Center Vortex: " + spl2[2] + "<br/>" +
-                                    "TeleOp <br/> Beacons scored: " + spl2[6] + "<br/>" +
-                                    "Ball Scored in Center Vortex: " + spl2[7] + "<br/>" +
-                                    "End Game: <br/>" + "Cap Ball Level: " + spl2[9]
+                    $("#match").html("<b>Autonomous</b> <br/>"
+                                    +"<ul><li>Beacons Pressed: " + spl2[0] + "</li>" +
+                                    "<li>Did Move Cap Ball: " + spl2[1] + "</li>" +
+                                    "<li>Ball Scored in Center Vortex: " + spl2[2] + "</li></ul>" +
+                                    "<b>TeleOp</b> <ul><li> Beacons scored: " + spl2[6] + "</li><li>Ball Scored in Center Vortex: " + spl2[7] + "</li></ul>" +
+                                    "<b>End Game</b> <ul><li>" + "Cap Ball Level: " + spl2[9] + "</li></ul>"
 
                 );
                 }

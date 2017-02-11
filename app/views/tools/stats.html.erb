@@ -16,24 +16,33 @@
 <p>
     This is penalty normalized
 </p>
-
+<p> CLICK ON THE SCORES TO VIEW EVEN MORE DETAILS! </p>
 <%= render "shared/eventresults" %>
-<div class="overflow-big">
+<!-- <div class="overflow-big"> -->
 <center>
     <table class="pure-table pure-table-horizontal centered">
         <thead>
-            <tr>
+            <tr class="hidden-xs-down">
                 <th>Rank</th>
                 <th colspan="3" class="td-superimportant">Match</th>
                 <th colspan="6">Team</th>
                 <center>
                     <th colspan="3">Score</th>
-                    <!-- <th class="td-meh"></th> -->
+                </center>
+            </tr>
+            <tr class="hidden-sm-up">
+                <th>Rank</th>
+                <th colspan="8">Match</th>
+            </tr>
+            <tr class="hidden-sm-up">
+                <th colspan="6">Team</th>
+                <center>
+                    <th colspan="3">Score</th>
                 </center>
             </tr>
         </thead>
         <% @allScores.each_with_index do |event,ind| %>
-        <tr style="border-top:2px solid gray;">
+        <tr style="border-top:2px solid gray;" class="hidden-xs-down">
             <td><%= ind + 1 %></td>
             <td colspan="3"><%= link_to("#{event[:event].name} (#{event[:event].region.name})",event[:event]) %> - <%= event[:name] %>
             <br/>
@@ -51,16 +60,42 @@
             </td>
             <% end %>
             <% if event[:owndetails].length > 0 %>
-            <td colspan="3"><%= button_to(event[:ownscore],"#", class:"score_popup_open pure-button button-full",data:event[:owndetails]) %></td>
+            <td colspan="3"><%= button_to(event[:ownscore],"#", class:"score_popup_open pure-button button-full",data:event[:owndetails] + "|" + event[:ownraw]) %></td>
             <% else %>
             <td colspan="3"><%= event[:ownscore] %></td>
+            <% end %>
+        </tr>
+
+        <tr style="border-top:2px solid gray;" class="hidden-sm-up">
+            <td><%= ind + 1 %></td>
+            <td colspan="8"><%= link_to("#{event[:event].name} (#{event[:event].region.name})",event[:event]) %> - <%= event[:name] %>
+            <br/>
+            <%= event[:event].date %>
+            </td>
+        </tr>
+        <tr class="hidden-sm-up">
+            <% (event[:ownteam]).each do |team| %>
+                <td class="team<%= event[:owncolor] %>" colspan="<%= event[:numteams] %>" >
+                    <% if Team.exists?(team) %>
+                    <% tt = Team.find(team) %>
+                    <%= link_to(team, tt) %>
+                    <span class="teamname">(<%= tt.name %>)</span>
+                <% else %>
+                    <%= team %>
+                    <% end %>
+                </td>
+                <% end %>
+                <% if event[:owndetails].length > 0 %>
+                <td colspan="3"><%= button_to(event[:ownscore],"#", class:"score_popup_open pure-button button-full",data:event[:owndetails] + "|" + event[:ownraw]) %></td>
+                <% else %>
+                <td colspan="3"><%= event[:ownscore] %></td>
             <% end %>
         </tr>
 
         <% end %>
     </table>
 </center>
-</div>
+<!-- </div> -->
 <br/>
 <!-- <h2>
     Highest Ranks

@@ -30,6 +30,12 @@ class EventsController < ApplicationController
       end
       @event_events = []
       alldata = @event.data_competition.split("|")
+      allraw = []
+      if(@event.advancedraw)
+          raws = @event.data_raw.split("|")
+          raws.each do |raw| allraw.push(raw.split(",")) end
+      end
+
       for c in alldata
           comp = c.split(',')
           dat = Hash.new
@@ -56,6 +62,18 @@ class EventsController < ApplicationController
               dat[:redscore] = comp[7]
               dat[:bluescore] = comp[8]
           end
+
+          dat[:redraw] = ""
+          dat[:blueraw] = ""
+          for raw in allraw
+              if(raw[0] == comp[0])
+                  dat[:redraw] = raw[1,14].join(",")
+                  dat[:blueraw] = raw[15,14].join(",")
+                  break;
+              end
+          end
+        #   n^2 retrieval
+
           @event_events.push(dat)
       end
     #   FOR THE OTHER STATS

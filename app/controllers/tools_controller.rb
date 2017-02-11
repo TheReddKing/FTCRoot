@@ -18,11 +18,28 @@ class ToolsController < ApplicationController
         @allScores = []
         allEvents.each do |com|
             alldata = com.data_competition.split("|")
+            allraw = []
+            if(com.advancedraw)
+                raws = com.data_raw.split("|")
+                raws.each do |raw| allraw.push(raw.split(",")) end
+            end
             for c in alldata
                 comp = c.split(",")
                     # puts c
                 dat = Hash.new
                 dat[:name] = comp[0]
+
+                # Now we find that in the allRaw
+                dat[:redraw] = ""
+                dat[:blueraw] = ""
+                for raw in allraw
+                    if(raw[0] == comp[0])
+                        dat[:redraw] = raw[1,14].join(",")
+                        dat[:blueraw] = raw[15,14].join(",")
+                        break;
+                    end
+                end
+
                 if comp[3].to_i == 0
                     dat[:redteam] = comp[1,2]
                     dat[:blueteam] = comp[4,2]
@@ -41,6 +58,8 @@ class ToolsController < ApplicationController
 
                     if(dat[:redscore].to_i > dat[:bluescore].to_i)
                         # Red
+                        dat[:ownraw] = dat[:redraw]
+                        dat[:oppraw] = dat[:blueraw]
                         dat[:ownscore] = dat[:redscore]
                         dat[:oppscore] = dat[:bluescore]
                         dat[:ownteam] = dat[:redteam]
@@ -48,6 +67,8 @@ class ToolsController < ApplicationController
                         dat[:oppdetails] = dat[:bluedetails]
                         dat[:owncolor] = "red"
                     else
+                        dat[:ownraw] = dat[:blueraw]
+                        dat[:oppraw] = dat[:redraw]
                         dat[:ownscore] = dat[:bluescore]
                         dat[:ownteam] = dat[:blueteam]
                         dat[:oppscore] = dat[:redscore]
