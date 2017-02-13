@@ -68,8 +68,10 @@ td,th  {
   > .Rtable-cell--foot { margin-bottom: 1em; }
 }
 
-
-
+#navigaa tr td h3{
+    font-size: 1.7em;
+    overflow: hidden;
+}
 .button-full {
     // background: rgba(0,0,0,0) !important;
     width: 100%;
@@ -96,6 +98,12 @@ td,th  {
 }
 .button-purple {
     background: rgb(150, 70, 150); /* this is a light blue */
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button-gray {
+    background: #999; /* this is a light blue */
     color: white;
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
