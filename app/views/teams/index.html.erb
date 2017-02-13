@@ -1,12 +1,13 @@
 <% content_for :title do %>FTC Team search<% end %>
 <% content_for :description do %>Search for FTC Teams around the US<% end %>
 <p id="notice"><%= notice %></p>
-
+<center>
 <h1>Teams</h1>
+<br/>
 <%= form_tag(teams_path(""), method: "get",:class => "pure-form") do %>
 <p>
-    <%= label_tag(:search, "Search Team name or ID:") %>
-    <%= text_field_tag(:search,params[:search]) %>
+    <%= label_tag(:search, "Search for ") %>
+    <%= text_field_tag(:search,params[:search],placeholder:"Team name or ID") %>
     <%= submit_tag("Search", :class=>"pure-button pure-button-primary") %>
 </p>
 <% end %>
@@ -65,4 +66,5 @@
     </tbody>
 </table>
 
+</center>
 <br>

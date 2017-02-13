@@ -1,22 +1,22 @@
 <% content_for :title do %>FTC Events Result Search<%end %>
 <p id="notice"><%= notice %></p>
-
+<center>
 <h1>Events</h1>
 
 
 <p>Note: if you have result files, send them to <a href="mailto:help@ftcroot.com">help@ftcroot.com</a></p>
-<p>A lot of events have been added, but it is no means all of it. Thank you to everybody who has sent in meet results! </p>
-
+<%= link_to("Search By Region",regions_path, class: 'pure-button button-red nav-link') %>
+<br/>
 <br/>
 
 <%= form_tag(events_path(""), method: "get",:class => "pure-form") do %>
   <p>
-  <%= link_to("Search By Region",regions_path, class: 'pure-button button-red nav-link') %>
-    <%= label_tag(:search, " or by name, location or date:") %>
-    <%= text_field_tag(:search,params[:search]) %>
+    <%= label_tag(:search, " or by") %>
+    <%= text_field_tag(:search,params[:search],placeholder:"name, location or date") %>
     <%= submit_tag("Search", :class=>"pure-button pure-button-primary") %>
   </p>
 <% end %>
+</center>
 <table class="pure-table centered">
     <thead>
         <tr class="hidden-xs-down">
@@ -58,6 +58,8 @@
     </tbody>
 </table>
 
-<br>
+<br />
+
+<p>350+ events have been added in 40+ regions, but it is no means all of it. Thank you to everybody who has sent in meet results! </p>
 
 <%#link_to 'New Event', new_event_path %>

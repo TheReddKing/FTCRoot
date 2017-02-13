@@ -1,0 +1,74 @@
+{"id":"3491","name":"FIX IT","address":"Victoria, BC V9C Canada","latlong":["48.38888018190906","-123.52818389810959"],"website":"http://www.ftcvictoria.org/"}
+{"id":"4169","name":"The Beavers","address":"Lacombe, AB T4L Canada","latlong":["52.47706403556303","-113.7321935955799"],"website":"http://unitedroboticslacombe@weebly.com"}
+{"id":"5009","name":"Helios","address":"Edmonton, AB T6C Canada","latlong":["53.524257503807625","-113.45257944884203"],"website":"https://twitter.com/FTC_5009"}
+{"id":"5784","name":"Mechanical Drop Bears","address":"Sydney, NSW 2570 Australia","latlong":["-34.02237295639663","150.6043663452446"],"website":"http://www.macarthurrobotics.com.au/"}
+{"id":"7649","name":"Botrregos Jr. 7649","address":"Chihuahua, CHH 31300 Mexico","latlong":["28.855991775044433","-106.26605669478776"],"website":""}
+{"id":"8287","name":"Thurber1","address":"Red Deer, AB T4N Canada","latlong":["52.23594566681667","-113.82462499191077"],"website":""}
+{"id":"8289","name":"Thurber4","address":"Red Deer, AB T4N Canada","latlong":["52.24466793085466","-113.8189604587091"],"website":""}
+{"id":"9164","name":"Zorrobots","address":"Ensenada, BCN 22860 Mexico","latlong":["31.131432690526186","-116.01720169038724"],"website":""}
+{"id":"9351","name":"Botrregos Jr. Delta","address":"Chihuahua, CHH 31100 Mexico","latlong":["28.12833185993381","-106.20300458734376"],"website":""}
+{"id":"10015","name":"SWAT Bots (Red)","address":"Airdrie, AB T4A Canada","latlong":["51.28882838982674","-113.98715401923992"],"website":""}
+{"id":"10036","name":"Tiger Terminators","address":"Lethbridge, AB T1K Canada","latlong":["49.65208781096308","-112.82620618686646"],"website":""}
+{"id":"10247","name":"Trinity BaCoNeers","address":"Evanston South, SA 5116 Australia","latlong":["-34.61565776429421","138.7499465317756"],"website":"http://www.teambacon.org.au"}
+{"id":"10325","name":"Wolvo-Bot","address":"Lethbridge, AB T1H Canada","latlong":["49.70990379437419","-112.80999757230276"],"website":""}
+{"id":"10544","name":"Cyber Eagles","address":"Sherwood Park, AB T8A Canada","latlong":["53.53768557405895","-113.24328550275412"],"website":""}
+{"id":"10793","name":"Voltrons","address":"Ensenada, BCN 22800 Mexico","latlong":["31.130748320961708","-116.01306798085518"],"website":""}
+{"id":"10881","name":"TECH-SETS","address":"Culiacan, SIN 80100 Mexico","latlong":["24.594469914539058","-107.29155489717203"],"website":""}
+{"id":"10903","name":"SM Tech","address":"Pune, MH 411001 India","latlong":["18.52366880165241","73.86006965196268"],"website":"http://sms-robotics.blogspot.in/"}
+{"id":"10905","name":"Dashavatar","address":"Pune, MH 411001 India","latlong":["18.535455627545286","73.8714147539652"],"website":""}
+{"id":"11094","name":"Canucks and Bolts","address":"Sidney, BC V8L Canada","latlong":["48.65448303539588","-123.3943467725686"],"website":""}
+{"id":"11110","name":"R Cubed","address":"Pune, MH 411001 India","latlong":["18.54273402456486","73.87908041132147"],"website":""}
+{"id":"11140","name":"TAES","address":"Hermosillo, SON 83224 Mexico","latlong":["29.186491767934932","-111.35997517105788"],"website":""}
+{"id":"11143","name":"Barker Redbacks","address":"Waitara, NSW 2077 Australia","latlong":["-33.69631572959153","151.10422882380024"],"website":""}
+{"id":"11144","name":"Barker FTC 4","address":"Hornsby, NSW 2077 Australia","latlong":["-33.69142301549276","151.1066362907158"],"website":""}
+{"id":"11145","name":"Barker FTC 5","address":"Hornsby, NSW 2077 Australia","latlong":["-33.68148732277436","151.11050161797706"],"website":""}
+{"id":"11146","name":"Barker FTC 10","address":"Hornsby, NSW 2077 Australia","latlong":["-33.67340986406552","151.11550785352452"],"website":""}
+{"id":"11147","name":"Barker FTC 6","address":"Hornsby, NSW 2077 Australia","latlong":["-33.665635056066","151.12140760695124"],"website":""}
+{"id":"11148","name":"Barker FTC 7","address":"Hornsby, NSW 2077 Australia","latlong":["-33.66018571000215","151.12861413588323"],"website":""}
+{"id":"11258","name":"Barker FTC 3","address":"Hornsby, NSW 2077 Australia","latlong":["-33.65067380609808","151.13883141388123"],"website":""}
+{"id":"11331","name":"Lamington Lords","address":"Mumbai, MH 400001 India","latlong":["18.687234531753205","72.88512344380855"],"website":"http://cathedralrobotics.wordpress.com"}
+{"id":"11352","name":"United Robotics of Lacombe 2016 Rookie Team","address":"Lacombe, AB T4L Canada","latlong":["52.48870961749297","-113.72112234423034"],"website":""}
+{"id":"11403","name":"SWAT Bots (Black)","address":"Airdrie, AB T4A Canada","latlong":["51.30062823485622","-113.98135337428499"],"website":""}
+{"id":"11511","name":"Referees","address":"Auckland, AUK 2244 New Zealand","latlong":["-37.05953347052628","174.95067949079672"],"website":""}
+{"id":"11589","name":"SmusTech","address":"Victoria, BC V8P Canada","latlong":["48.46787302688787","-123.32699772642042"],"website":""}
+{"id":"11639","name":"OpCom","address":"Edmonton, AB T5N Canada","latlong":["53.5547481836632","-113.55551055182168"],"website":"http://5064.ca"}
+{"id":"11712","name":"Aberhart Robotics Republic","address":"Calgary, AB T2M Canada","latlong":["51.140634928500596","-113.85493156178711"],"website":""}
+{"id":"11722","name":"Real Virtuality","address":"Edmonton, AB T6T Canada","latlong":["53.46584861429077","-113.37060496975401"],"website":"https://www.facebook.com/FTC11722"}
+{"id":"11836","name":"URL 2016-17","address":"Lacombe, AB T4L Canada","latlong":["52.492152429302095","-113.71467935980753"],"website":""}
+{"id":"11843","name":"Island Connect Ed","address":"Nanaimo, BC V9T Canada","latlong":["49.22527436058577","-124.01301096861216"],"website":""}
+{"id":"11862","name":"ULTIMATEBOT","address":"DELHII, DL 110085 India","latlong":["28.729877222084973","77.10520030255962"],"website":""}
+{"id":"11876","name":"Ecole La Verendrye","address":"Lethbridge, AB T1J Canada","latlong":["49.66472292893445","-112.74571853231078"],"website":""}
+{"id":"11917","name":"Sting Robotics FTC","address":"Fort Saskatchewan, AB T8L Canada","latlong":["53.723141871576644","-113.21005006455968"],"website":""}
+{"id":"11998","name":"Metal Minds Robotics Inc","address":"Evandale, TAS 7212 Australia","latlong":["-41.565429791822595","147.25835891729392"],"website":"http://www.metalmindsrobotics.wordpress.com"}
+{"id":"12006","name":"Royal Bay Robotics","address":"Victoria, BC V9C Canada","latlong":["48.389414943028164","-123.5160898520371"],"website":""}
+{"id":"12055","name":"Pinkham Robotics","address":"Calgary, AB T3E Canada","latlong":["50.9978759911346","-114.1461140984079"],"website":""}
+{"id":"12094","name":"Team TWOSE","address":"Edmonton, AB T5M Canada","latlong":["53.564648842002654","-113.55600473365949"],"website":""}
+{"id":"12133","name":"Bulls Squad","address":"SAN NICOLAS DE LOS GARZA, NLE 66450 Mexico","latlong":["25.762392376525575","-100.3022408581565"],"website":""}
+{"id":"12137","name":"Bentley Bits","address":"Bentley, AB T0C Canada","latlong":["52.15517569393921","-111.6909198030909"],"website":""}
+{"id":"12143","name":"The League of Relatively Ordinary Gentlemen","address":"Wollongong, NSW 2508 Australia","latlong":["-34.1081914043795","150.93805363769255"],"website":"https://www.facebook.com/LeagueofRelativelyOrdinaryGentlement/?fref=ts"}
+{"id":"12156","name":"Pacific School of Innovation and Inquiry","address":"Victoria, BC V8W Canada","latlong":["48.43235120734589","-123.35813304656553"],"website":"http://www.learningstorm.org"}
+{"id":"12204","name":"OJSH Robotics","address":"Onoway, AB T0E Canada","latlong":["53.676614657385606","-115.09256889564517"],"website":""}
+{"id":"12222","name":"Modularity Squad","address":"Scarborough, ON M1W Canada","latlong":["43.80233417556879","-79.31995364018793"],"website":""}
+{"id":"12262","name":"Barker FTC 2","address":"Waitara, NSW 2077 Australia","latlong":["-33.647838442012905","151.1499397375986"],"website":""}
+{"id":"12263","name":"Barker FTC 8","address":"Hornsby, NSW 2077 Australia","latlong":["-33.64057559352835","151.15383355226592"],"website":""}
+{"id":"12265","name":"CRT Community Robotics Team","address":"Calgary, AB T2Z Canada","latlong":["50.93504898002559","-113.96656669978661"],"website":""}
+{"id":"12281","name":"Elgin Robotics","address":"Surrey, BC V4A Canada","latlong":["49.04357686171786","-122.82095815970507"],"website":""}
+{"id":"12289","name":"Tech Eagles","address":"Edmonton, AB T5G Canada","latlong":["53.580159131978995","-113.494068343463"],"website":""}
+{"id":"12290","name":"Kipohatakaw HS","address":"Morinville, AB T8R Canada","latlong":["53.8124472102971","-113.64982639271027"],"website":""}
+{"id":"12312","name":"INNOVATE TECHNOOGY & ROBOTICS ACADEMY","address":"Melbourne, VIC 3000 Australia","latlong":["-37.80514226787","144.9712172633651"],"website":""}
+{"id":"12336","name":"Megatron","address":"Bentley, AB T0C Canada","latlong":["52.157823483191045","-111.68092229896337"],"website":""}
+{"id":"12354","name":"Belmont Bytes","address":"Victoria, BC V9B Canada","latlong":["48.47962444544594","-123.51797283328966"],"website":""}
+{"id":"620","name":"Lost Robot","address":"Hornell , NY 14843 USA","latlong":["42.332722523196","-77.65380733907622"],"website":""}
+{"id":"3499","name":"Da 'Bots","address":"Newtok, AK 99559 USA","latlong":["60.80342338176401","-161.74754954616395"],"website":""}
+{"id":"3609","name":"Polar Technics","address":"Des Moines, IA 50313 USA","latlong":["41.64066765155306","-93.6151116030657"],"website":""}
+{"id":"4957","name":"Quantum Gate","address":"Fayetteville, NY 13066 USA","latlong":["43.02909009401781","-76.00653321114284"],"website":"http://www.facebook.com/FTC4957"}
+{"id":"5024","name":"Central Pigeon Intelligence (CPI)","address":"Twin Falls, ID 83301 USA","latlong":["42.56358081025649","-114.45890473834785"],"website":"http://sites.google.com/site/ftcteam5024"}
+{"id":"6137","name":"RoBowties","address":"San Diego, CA 92122 USA","latlong":["32.86523362902759","-117.2079292964088"],"website":""}
+{"id":"6427","name":"Wright Angle","address":"Tacoma, WA 98467 USA","latlong":["47.21524941327075","-122.56548367915387"],"website":""}
+{"id":"6700","name":"X BOTS","address":"FAIRFAX, VA 22030 USA","latlong":["38.85300549670953","-77.32213494876112"],"website":"http://xbots.org/"}
+{"id":"7444","name":"Sisters of the Motherboard","address":"WINSTON SALEM, NC 27101 USA","latlong":["36.107967914980335","-80.22093778219306"],"website":""}
+{"id":"8584","name":"Robotic Spark","address":"Prior Lake, MN 55372 USA","latlong":["44.719703231499906","-93.40896476727141"],"website":""}
+{"id":"10022","name":"WiredCats Girls","address":"Davie, FL 33325 USA","latlong":["26.119812424168515","-80.30938441796138"],"website":"http://www.thewiredcats.com/"}
+{"id":"10265","name":"Force Green","address":"WILDWOOD, MO 63040 USA","latlong":["38.56940179106307","-90.62147344366521"],"website":"http://forcegreenrobotics.weebly.com/"}
+{"id":"10366","name":"WiredCats Future","address":"Davie, FL 33325 USA","latlong":["26.121330371298328","-80.30075830772823"],"website":""}
+{"id":"11684","name":"GSA Cardinals","address":"Saint Louis, MO 63139 USA","latlong":["38.61461693103112","-90.28430125629828"],"website":""}
