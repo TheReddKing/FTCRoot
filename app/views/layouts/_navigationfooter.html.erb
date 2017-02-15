@@ -1,19 +1,8 @@
 <%# navigation styled for Bootstrap 4.0 %>
 <div class="container">
-  <nav class="navbar navbar-dark bg-inverse">
-    <ul class="nav navbar-nav clearfix">
-      <li class="nav-item">
-        <button class="navbar-toggler hidden-sm-up nav-link" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
-          &#9776;
-        </button>
-      </li>
-    </ul>
-    <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar3">
-      <ul class="nav navbar-nav">
-          <li class='nav-item'><%= link_to 'Made by Chaos Monkeyz 11090', page_path('about'),:class=>"pure-button button-dark nav-link" %></li>
-          <li><span><%= social_share_button_tag("FTCRoot - find, scout and view FTC teams and events", :url => "http://www.ftcroot.com") %></span></li>
-      </ul>
-      <p class='nav' style="float:right;color:white;font-size:10px;"> Last: 2017-02-12 08:48:41PM, pull 20170130 </p>
-    </div>
-  </nav>
+  <div class="navbar navbar-dark bg-inverse">
+      <div style="float:right;">
+      <span style="text-align:right"><%= social_share_button_tag("FTCRoot - find, scout and view FTC teams and events", :url => "http://www.ftcroot.com") %></span></div>
+      <div><p class='nav' style="color:white;font-size:10px; float:right; "> Last: 2017-02-15 12:14:40PM, pull 20170130 </p></div>
+  </div>
 </div>

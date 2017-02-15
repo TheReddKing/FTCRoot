@@ -19,14 +19,14 @@ group :development do
   gem 'binding_of_caller'
 end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'bootstrap', '~> 4.0.0.alpha3.1'
+# gem 'bootstrap', '~> 4.0.0.alpha3.1'
+gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'high_voltage'
 gem 'mysql2', '~> 0.3.18'
 group :development do
   gem 'better_errors'
   gem 'rails_layout'
 end
-
 
 gem 'markerclustererplus-rails'
 gem 'gon'

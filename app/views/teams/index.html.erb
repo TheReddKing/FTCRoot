@@ -9,7 +9,7 @@
     <%= label_tag(:search, "Search for ") %>
     <%= text_field_tag(:search,params[:search],placeholder:"Team name or ID") %>
     <%= submit_tag("Search", :class=>"pure-button pure-button-primary") %>
-    <%= link_to "View global rankings", "http://ftcstats.org", :class=>"pure-button pure-button-primary nav-link", :style=>"border:0px;"%>
+    <%= link_to "View global rankings", "http://ftcstats.org", :class=>"pure-button pure-button-primary nav-link inline", :style=>"border:0px;"%>
 </p>
 <% end %>
 <div>
@@ -23,7 +23,7 @@
         <i class='fa fa-circle d-red'></i>
         = Has contact-info
         <br/>
-        <%= link_to("Update Your Team's Contact Info", "https://goo.gl/forms/ZoSendQUO2Y8c9N92",class:"pure-button button-primary nav-link button-xsmall") %>
+        <%= link_to("Update Your Team's Contact Info", "https://goo.gl/forms/ZoSendQUO2Y8c9N92",class:"pure-button button-primary nav-link button-xsmall inline") %>
     </p>
 </div>
 <table class="pure-table centered">
