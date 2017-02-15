@@ -9,6 +9,7 @@
     <%= label_tag(:search, "Search for ") %>
     <%= text_field_tag(:search,params[:search],placeholder:"Team name or ID") %>
     <%= submit_tag("Search", :class=>"pure-button pure-button-primary") %>
+    <%= link_to "View global rankings", "http://ftcstats.org", :class=>"pure-button pure-button-primary nav-link", :style=>"border:0px;"%>
 </p>
 <% end %>
 <div>

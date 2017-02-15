@@ -16,7 +16,15 @@ class DmozSpider(BaseSpider):
         "http://ftcforum.usfirst.org/showthread.php?6940-Autonomous-Period-Answer-Thread",
         "http://ftcforum.usfirst.org/showthread.php?6938-End-Game-Answer-Thread",
         "http://ftcforum.usfirst.org/showthread.php?6941-Pre-Match-Answer-Thread",
-        "http://ftcforum.usfirst.org/showthread.php?6942-Playing-Field-Answer-Thread"
+        "http://ftcforum.usfirst.org/showthread.php?6942-Playing-Field-Answer-Thread",
+
+        # OTHERS Robot Electrical Parts and Materials Rules
+        "http://ftcforum.usfirst.org/showthread.php?6880-Sensors-Answer-Thread",
+        "http://ftcforum.usfirst.org/showthread.php?6881-Motors-and-Servos-Answer-Thread",
+        "http://ftcforum.usfirst.org/showthread.php?6883-Miscellaneous-Robot-Electrical-Parts-and-Materials-Answer-Thread",
+        "http://ftcforum.usfirst.org/showthread.php?6882-Control-System-Answer-Thread",
+        "http://ftcforum.usfirst.org/showthread.php?6879-Driver-Station-Answer-Thread"
+
     ]
 
     def parse(self, response):
