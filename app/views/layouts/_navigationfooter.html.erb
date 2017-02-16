@@ -1,8 +1,15 @@
 <%# navigation styled for Bootstrap 4.0 %>
 <div class="container">
-  <div class="navbar navbar-dark bg-inverse">
-      <div style="float:right;">
-      <span style="text-align:right"><%= social_share_button_tag("FTCRoot - find, scout and view FTC teams and events", :url => "http://www.ftcroot.com") %></span></div>
-      <div><p class='nav' style="color:white;font-size:10px; float:right; "> Last: 2017-02-15 12:14:40PM, pull 20170130 </p></div>
+  <div class="navbar navbar-light bg-faded">
+      <div style="display: flex;">
+      <div style="flex-grow: 1;width:60%;height:100%;">
+          <%= link_to 'About this site', page_path('about'), class: 'pure-button button-secondary nav-link' %> <br/>
+          <p style="font-size:10px;">TheReddKing says hai</p>
+      </div>
+      <div style="width:30%;height:100%;">
+          <span style="text-align:right"><%= social_share_button_tag("FTCRoot - find, scout and view FTC teams and events", :url => "http://www.ftcroot.com") %></span>
+          <p class='nav' style="font-size:10px;text-align:right;float:right;"> Last: 2017-02-15 12:14:40PM, pull 20170130 </p>
+      </div>
+  </div>
   </div>
 </div>

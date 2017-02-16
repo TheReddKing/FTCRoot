@@ -1,21 +1,18 @@
-<% content_for :title do %>FTCRoot Global Stats<% end %>
-<h1>Global Stats</h1>
+<% content_for :title do %>FTCRoot High Scores<% end %>
+<h1>High Scores</h1>
 
-<!-- <center><h1 style="color:red"> This page is temporarily unavailable due to a huge database modification </h1>
-</center> -->
-<p> Please show your support for this website by either contacting us <%= link_to("here","mailto:help@ftcroot.com",class:"pure-button nav-link button-secondary") %> <br/>
-    or tweet us/sharing this website! @ChaosMonkeyzFTC with the #FTCRoot #omgrobots </p>
-
+<p> Please show your support for this website by tweet us and sharing this website! @ChaosMonkeyzFTC with the #FTCRoot #omgrobots </p>
+<%= social_share_button_tag("FTCRoot - find, scout and view FTC teams and events", :url => "http://www.ftcroot.com/") %>
 <p> NOTE: Only teams with DETAILED match data will be ranked. Contact us with match data to be placed in a ranking </p>
-<h2>
-    High Scorers
-</h2>
+
 <p>
     If your team has a higher score, plz contact me :P
 </p>
 <p>
     This is penalty normalized
 </p>
+
+<%= link_to "View Global Team Rankings at FTCStats", "http://ftcstats.org", :class=>"pure-button pure-button-primary nav-link"%>
 <p> CLICK ON THE SCORES TO VIEW EVEN MORE DETAILS! </p>
 <%= render "shared/eventresults" %>
 <!-- <div class="overflow-big"> -->
