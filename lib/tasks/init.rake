@@ -68,10 +68,10 @@ namespace :init do
         end
     end
     task O: :environment do
-        for meet in Event.all
-            meet.data_raw = ""
-            meet.save
-        end
+        # for meet in Event.all
+        #     meet.data_raw = ""
+        #     meet.save
+        # end
         puts "End Clear"
 
         currentMeet = nil
@@ -107,11 +107,11 @@ namespace :init do
     end
 
     task N: :environment do
-
-        for meet in Event.all
-            meet.data_stats = ""
-            meet.save
-        end
+        #
+        # for meet in Event.all
+        #     meet.data_stats = ""
+        #     meet.save
+        # end
 
         currentMeet = nil
         File.read("#{Rails.root}/app/data/gameresults/ftc-data/1617velv-FULL-StatsRes.csv").each_line do |line|
@@ -159,6 +159,9 @@ namespace :init do
         end
     end
     task M: :environment do
+        # if Time.now.tuesday? or Time.now.wednesday? or Time.now.thursday? or Time.now.friday? or Time.now.saturday? or Time.now.sunday?
+        #     return
+        # end
         File.read("#{Rails.root}/app/data/gameresults/ftc-data/1617velv-event-list.csv").each_line do |line|
             spl = line.split(',')
             region = Region.where(name:spl[2])[0]
@@ -174,12 +177,15 @@ namespace :init do
                 region.save
             else
                 meet.date = spl[0]
+                meet.name = spl[1]
+                meet.competitiontype = spl[3]
                 meet.save
             end
         end
         for meet in Event.all
             meet.data_competition = ""
             meet.data_stats = ""
+            meet.data_raw = ""
             meet.save
         end
         for team in Team.all
