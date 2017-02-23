@@ -28,6 +28,7 @@ group :development do
   gem 'rails_layout'
 end
 
+gem "stdlib"
 gem 'markerclustererplus-rails'
 gem 'gon'
 gem 'tether-rails'
