@@ -1,5 +1,7 @@
 # Database Structure
 
+Note the reason for this particular data structure was because Heroku limited the rows to 10000 on the free plan. Since this website currently doesn't have any funding, I had to change the structure multiple times to prevent it from taking up too many rows.
+
 ## Regions
 id
 

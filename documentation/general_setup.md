@@ -16,6 +16,8 @@ Setup a local MYSQL server with a database named "ftcroot_development"
 
 Edit the config/database.yml to the correct database username/password
 
+Setup tables with ``` rails db:create db:migrate```
+
 
 ## Updating everything to the latest stuff
 
