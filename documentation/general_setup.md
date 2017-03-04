@@ -12,7 +12,7 @@ First Clone this repo
 
 Then cd to this directory
 
-Setup a local MYSQL server with a database named "ftcroot_development"
+Ensure a local MYSQL server is running
 
 Edit the config/database.yml to the correct database username/password
 
