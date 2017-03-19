@@ -167,7 +167,9 @@ td,th  {
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
+.card-container .whiter a {
+    color: #030300;
+}
 /* Add some padding inside the card container */
 .card-container {
     padding: 20px 16px;
