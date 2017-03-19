@@ -12,6 +12,7 @@ Rails.application.routes.draw do
         get 'teams/twitter',                to: 'tools#twitter'
         resources :tools
         get "map", to: "tools#map"
+        get "live", to: "tools#live"
         get 'search',                to: 'tools#search'
         get 'images/misc/quote_icon.png', to: "tools#nothing"
         get 'images/buttons/viewpost-right.png', to: "tools#nothing"

@@ -93,6 +93,9 @@ class ToolsController < ApplicationController
     def initialize
         super # this calls ActionController::Base initialize
     end
+    def live
+        
+    end
     def map
         @hello = Team.all
         puts "SHOWING TEAMS"
