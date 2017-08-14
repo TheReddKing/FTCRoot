@@ -12,7 +12,8 @@
     <% if @team.blurb%>
         <%= @team.blurb.html_safe %>
     <% else %>
-        <p> Are you this team and want to add a blurb/contact info? <br/><%= link_to("Add blurb","https://goo.gl/forms/ZoSendQUO2Y8c9N92",class:"pure-button button-primary nav-link inline") %></p>
+        <p> Are you on this team and want to add a blurb/contact info?</p>
+        <%= link_to("Add blurb","https://goo.gl/forms/ZoSendQUO2Y8c9N92",class:"pure-button button-primary nav-link inline") %>
     <% end %>
   </div>
   <% if @team.website.length > 0  %>
