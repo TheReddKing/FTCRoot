@@ -1,6 +1,6 @@
 # rails init:load
 namespace :init do
-    desc 'TODO'
+    desc 'Load all teams into database'
     task load: :environment do
         class FTCTeam
             attr_accessor :id, :name, :address, :latlong, :website
@@ -35,6 +35,7 @@ namespace :init do
             end
         end
     end
+    desc 'Load all team updates'
     task T: :environment do
         files = Dir["#{Rails.root}/app/data/teams/*.update"]
         for file in files
@@ -67,6 +68,8 @@ namespace :init do
             end
         end
     end
+
+    desc 'Raw stats load'
     task O: :environment do
         # for meet in Event.all
         #     meet.data_raw = ""
@@ -106,6 +109,7 @@ namespace :init do
         puts "DONE"
     end
 
+    desc 'Results stuff'
     task N: :environment do
         #
         # for meet in Event.all
@@ -158,6 +162,8 @@ namespace :init do
             end
         end
     end
+
+    desc 'Load all events list'
     task M: :environment do
         # if Time.now.tuesday? or Time.now.wednesday? or Time.now.thursday? or Time.now.friday? or Time.now.saturday? or Time.now.sunday?
         #     return
