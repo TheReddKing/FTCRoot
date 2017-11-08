@@ -106,7 +106,7 @@ class ResultsSpider(BaseSpider):
         # Special!!!
         tournhash = {}
         for tournament in open("gameresults/ftc-data/1617velv-event-list.csv","r").read().decode("utf-8").splitlines(False):
-            print tournament
+            print (tournament)
             spl = tournament.split(",")
             tournhash[spl[8]] = spl
 
