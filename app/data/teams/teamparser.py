@@ -7,7 +7,7 @@ for file in glob.glob("*.csv"):
     print(file)
     filename = file #find first csv file
     break
-updatefile = open("allteams.update","w")
+updatefile = open("allteams1711.update","w")
 
 with open(filename, 'rb') as f:
     reader = csv.reader(f)
